@@ -1,0 +1,120 @@
+[
+  {
+    "image": "pexels-photo-10351367.jpg",
+    "analyzed_at": "2026-07-08T17:53:26.757460",
+    "labels": [
+      {
+        "name": "Coat",
+        "confidence": 99.99
+      },
+      {
+        "name": "Groupshot",
+        "confidence": 99.93
+      },
+      {
+        "name": "Person",
+        "confidence": 99.93
+      },
+      {
+        "name": "Blazer",
+        "confidence": 99.92
+      },
+      {
+        "name": "Adult",
+        "confidence": 99.36
+      },
+      {
+        "name": "Female",
+        "confidence": 99.36
+      },
+      {
+        "name": "Woman",
+        "confidence": 99.36
+      },
+      {
+        "name": "Tie",
+        "confidence": 98.81
+      },
+      {
+        "name": "Smile",
+        "confidence": 98.59
+      },
+      {
+        "name": "Man",
+        "confidence": 98.56
+      }
+    ]
+  },
+  {
+    "image": "tiger_laying_hero_background.jpg",
+    "analyzed_at": "2026-07-08T17:53:27.072610",
+    "labels": [
+      {
+        "name": "Animal",
+        "confidence": 99.34
+      },
+      {
+        "name": "Mammal",
+        "confidence": 99.34
+      },
+      {
+        "name": "Tiger",
+        "confidence": 99.34
+      },
+      {
+        "name": "Wildlife",
+        "confidence": 99.34
+      },
+      {
+        "name": "Zoo",
+        "confidence": 73.33
+      }
+    ]
+  },
+  {
+    "image": "where-to-see-christmas-lights-in-london-regents-street.jpg",
+    "analyzed_at": "2026-07-08T17:53:27.439142",
+    "labels": [
+      {
+        "name": "Car",
+        "confidence": 97.86
+      },
+      {
+        "name": "Vehicle",
+        "confidence": 97.86
+      },
+      {
+        "name": "Urban",
+        "confidence": 96.0
+      },
+      {
+        "name": "Coat",
+        "confidence": 95.54
+      },
+      {
+        "name": "Person",
+        "confidence": 94.09
+      },
+      {
+        "name": "Traffic Light",
+        "confidence": 88.9
+      },
+      {
+        "name": "Wheel",
+        "confidence": 86.31
+      },
+      {
+        "name": "Shoe",
+        "confidence": 83.3
+      },
+      {
+        "name": "Landmark",
+        "confidence": 78.77
+      },
+      {
+        "name": "Bicycle",
+        "confidence": 77.36
+      }
+    ]
+  }
+]

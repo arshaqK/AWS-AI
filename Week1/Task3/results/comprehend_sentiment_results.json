@@ -1,0 +1,62 @@
+[
+  {
+    "tweet": "I absolutely love the new update, it's fantastic!",
+    "sentiment": "POSITIVE",
+    "scores": {
+      "positive": 0.9998,
+      "negative": 0.0001,
+      "neutral": 0.0001,
+      "mixed": 0.0001
+    }
+  },
+  {
+    "tweet": "This is the worst service I have ever experienced.",
+    "sentiment": "NEGATIVE",
+    "scores": {
+      "positive": 0.0003,
+      "negative": 0.9993,
+      "neutral": 0.0004,
+      "mixed": 0.0
+    }
+  },
+  {
+    "tweet": "The event starts at 6 PM tomorrow at the community hall.",
+    "sentiment": "NEUTRAL",
+    "scores": {
+      "positive": 0.0027,
+      "negative": 0.0001,
+      "neutral": 0.9971,
+      "mixed": 0.0
+    }
+  },
+  {
+    "tweet": "I'm not sure how I feel about this, it's okay I guess but could be better.",
+    "sentiment": "MIXED",
+    "scores": {
+      "positive": 0.0055,
+      "negative": 0.0903,
+      "neutral": 0.0247,
+      "mixed": 0.8795
+    }
+  },
+  {
+    "tweet": "Best concert ever!! The band was incredible and the crowd was amazing.",
+    "sentiment": "POSITIVE",
+    "scores": {
+      "positive": 0.9999,
+      "negative": 0.0001,
+      "neutral": 0.0001,
+      "mixed": 0.0
+    }
+  },
+  {
+    "tweet": "Why is customer support so slow? I've been waiting for 3 days.",
+    "sentiment": "NEGATIVE",
+    "scores": {
+      "positive": 0.0003,
+      "negative": 0.9938,
+      "neutral": 0.0055,
+      "mixed": 0.0004
+    }
+  }
+]

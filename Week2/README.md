@@ -18,7 +18,7 @@ I completed four practice exams while preparing for the AWS Certified AI Practit
 **Score:** **76% (50/65)**  
 **Status:** ✅ Passed
 
-![Attempt 1](TestScores\First%20Attempt%20Practice%20Test%203%20AI%20Practicioner.png)
+![Attempt 1](TestScores\1stAttempt.png)
 
 ---
 
@@ -68,7 +68,6 @@ https://www.scu.edu/ethics/focus-areas/internet-ethics/resources/prompt-privacy-
 
 AWS provides several services and responsible AI practices that can help reduce privacy risks and protect sensitive information:
 
-- **Amazon SageMaker Clarify** – Detects bias and helps explain model predictions before deployment.
 - **Amazon S3 Server-Side Encryption** – Secures stored prompts, datasets, and model artifacts.
 - **Amazon Bedrock Guardrails** – Filters harmful content and helps prevent sensitive information from being exposed by foundation models.
 - **Data Governance & Human Oversight** – Implement consent management, minimize collection of personal information, continuously monitor AI systems, and require human review for high-impact decisions involving sensitive data.

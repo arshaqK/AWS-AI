@@ -18,7 +18,7 @@ I completed four practice exams while preparing for the AWS Certified AI Practit
 **Score:** **76% (50/65)**  
 **Status:** ✅ Passed
 
-![Attempt 1](TestScores\1stAttempt.png)
+![Attempt 1](TestScores/1_P3_Udemy.png)
 
 ---
 
@@ -27,7 +27,7 @@ I completed four practice exams while preparing for the AWS Certified AI Practit
 **Score:** **87.65% (71/81)**  
 **Status:** ✅ Passed
 
-![Attempt 2](TestScores\2nd%20Attempt%20AI%20Practicioner,%201st%20on%20Tutorials%20Dojo.png)
+![Attempt 2](TestScores/2_Set1_Dojo.png)
 
 ---
 
@@ -36,7 +36,7 @@ I completed four practice exams while preparing for the AWS Certified AI Practit
 **Score:** **90.48% (76/84)**  
 **Status:** ✅ Passed
 
-![Attempt 3](TestScores\3rd%20Attempt%20AI%20Practicioner,%202nd%20on%20Tutorials%20Dojo.png)
+![Attempt 3](TestScores/3_Set2_Dojo.png)
 
 ---
 
@@ -45,7 +45,7 @@ I completed four practice exams while preparing for the AWS Certified AI Practit
 **Score:** **81% (53/65)**  
 **Status:** ✅ Passed
 
-![Attempt 4](TestScores\4th%20Attempt,%20Practice%20Test%201%20Udemy.png)
+![Attempt 4](TestScores/4_P1_Udemy.png)
 
 ---
 

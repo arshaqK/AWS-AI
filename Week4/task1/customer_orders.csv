@@ -1,0 +1,51 @@
+order_id,customer_id,customer_name,email,city,state,order_date,product,category,quantity,unit_price,total_amount,payment_method,is_member,delivery_days,rating
+1001,C001,Alice Johnson,alice.johnson@email.com,Dallas,TX,2026-01-05,Laptop,Electronics,4,899.99,3599.96,PayPal,False,1,5.0
+1002,C002,Bob Smith,bob.smith@email.com,Houston,TX,2026-01-06,Wireless Mouse,Electronics,2,24.99,49.98,PayPal,False,4,5.0
+1003,C003,Charlie Brown,charlie.brown@email.com,Austin,TX,2026-01-07,Office Chair,Furniture,3,189.5,568.5,Debit Card,False,1,5.0
+1004,C004,Diana Evans,diana.evans@email.com,Seattle,WA,2026-01-08,Coffee Maker,Home Appliances,2,79.99,159.98,Cash,True,6,5.0
+1005,C005,Ethan Hall,ethan.hall@email.com,Denver,CO,2026-01-09,Notebook,Stationery,3,4.5,13.5,PayPal,False,3,4.0
+1006,C006,Fatima Khan,fatima.khan@email.com,Chicago,IL,2026-01-10,Smartphone,Electronics,5,699.0,3495.0,Credit Card,False,3,3.0
+1007,C007,George Wilson,george.wilson@email.com,Phoenix,AZ,2026-01-11,Desk Lamp,Furniture,4,34.99,139.96,Cash,True,4,5.0
+1008,C008,Hannah Lee,hannah.lee@email.com,Miami,FL,2026-01-12,Blender,Home Appliances,3,59.95,179.85,PayPal,True,1,3.0
+1009,C009,Ibrahim Ali,ibrahim.ali@email.com,New York,NY,2026-01-13,Monitor,Electronics,1,229.99,229.99,PayPal,False,2,5.0
+1010,C010,Julia Martin,julia.martin@email.com,San Diego,CA,2026-01-14,Keyboard,Electronics,3,49.99,149.97,Cash,True,1,3.0
+1011,C011,Kevin White,kevin.white@email.com,Boston,MA,2026-01-15,Bookshelf,Furniture,1,129.99,129.99,Debit Card,True,2,5.0
+1012,C012,Lisa Green,lisa.green@email.com,Portland,OR,2026-01-16,Vacuum Cleaner,Home Appliances,5,249.0,1245.0,Credit Card,True,2,5.0
+1013,C013,Mohammad Ahmed,mohammad.ahmed@email.com,Atlanta,GA,2026-01-17,Pen Set,Stationery,5,8.75,43.75,Cash,False,3,3.0
+1014,C014,Nina Patel,nina.patel@email.com,Las Vegas,NV,2026-01-18,Tablet,Electronics,5,399.99,1999.95,PayPal,True,2,4.0
+1015,C015,Owen Carter,owen.carter@email.com,Charlotte,NC,2026-01-19,Air Fryer,Home Appliances,3,119.99,359.97,PayPal,True,1,5.0
+1016,C016,Priya Sharma,priya.sharma@email.com,San Jose,CA,2026-01-20,Desk,Furniture,2,299.0,598.0,Cash,True,4,5.0
+1017,C017,Quincy Adams,quincy.adams@email.com,Nashville,TN,2026-01-21,Headphones,Electronics,2,89.99,179.98,PayPal,True,3,5.0
+1018,C018,Rachel Kim,rachel.kim@email.com,Orlando,FL,2026-01-22,Printer,Electronics,1,179.99,179.99,Credit Card,True,7,4.0
+1019,C019,Samuel Clark,samuel.clark@email.com,Philadelphia,PA,2026-01-23,Water Bottle,Sports,4,15.5,62.0,Cash,False,7,3.0
+1020,C020,Zara Hussain,zara.hussain@email.com,Islamabad,ICT,2026-01-24,Backpack,Travel,2,54.99,109.98,PayPal,True,2,5.0
+1021,C021,Adam Jones,adam.jones@email.com,Dallas,TX,2026-01-25,Laptop,Electronics,2,899.99,1799.98,Debit Card,False,4,4.0
+1022,C022,Sara Ahmed,sara.ahmed@email.com,Houston,TX,2026-01-26,Wireless Mouse,Electronics,4,24.99,99.96,Debit Card,True,3,4.0
+1023,C023,Usman Tariq,usman.tariq@email.com,Austin,TX,2026-01-27,Office Chair,Furniture,5,189.5,947.5,Debit Card,True,6,4.0
+1024,C024,Emily Davis,emily.davis@email.com,Seattle,WA,2026-01-28,Coffee Maker,Home Appliances,5,79.99,399.95,PayPal,True,5,3.0
+1025,C025,Noah Miller,noah.miller@email.com,Denver,CO,2026-01-29,Notebook,Stationery,1,4.5,4.5,Cash,False,2,3.0
+1026,C026,Alice Johnson,alice.johnson@email.com,Chicago,IL,2026-01-30,Smartphone,Electronics,4,699.0,2796.0,Credit Card,False,5,4.0
+1027,C027,Bob Smith,bob.smith@email.com,Phoenix,AZ,2026-01-31,Desk Lamp,Furniture,3,34.99,104.97,Credit Card,False,2,
+1028,C028,Charlie Brown,charlie.brown@email.com,Miami,FL,2026-02-01,Blender,Home Appliances,1,59.95,59.95,PayPal,False,7,4.0
+1029,C029,Diana Evans,diana.evans@email.com,New York,NY,2026-02-02,Monitor,Electronics,1,229.99,229.99,Cash,True,6,5.0
+1030,C030,Ethan Hall,ethan.hall@email.com,San Diego,CA,2026-02-03,Keyboard,Electronics,1,49.99,49.99,Debit Card,True,5,4.0
+1031,C031,Fatima Khan,fatima.khan@email.com,Boston,MA,2026-02-04,Bookshelf,Furniture,3,129.99,389.97,PayPal,False,2,3.0
+1032,C032,George Wilson,george.wilson@email.com,Portland,OR,2026-02-05,Vacuum Cleaner,Home Appliances,4,249.0,996.0,Cash,False,2,5.0
+1033,C033,Hannah Lee,hannah.lee@email.com,Atlanta,GA,2026-02-06,Pen Set,Stationery,2,8.75,17.5,PayPal,True,3,4.0
+1034,C034,Ibrahim Ali,ibrahim.ali@email.com,Las Vegas,NV,2026-02-07,Tablet,Electronics,1,399.99,399.99,Credit Card,False,3,4.0
+1035,C035,Julia Martin,julia.martin@email.com,Charlotte,NC,2026-02-08,Air Fryer,Home Appliances,4,119.99,479.96,Cash,False,4,3.0
+1036,C036,Kevin White,kevin.white@email.com,San Jose,CA,2026-02-09,Desk,Furniture,1,299.0,299.0,Debit Card,True,2,5.0
+1037,C037,Lisa Green,lisa.green@email.com,Nashville,TN,2026-02-10,Headphones,Electronics,2,89.99,179.98,Cash,True,1,5.0
+1038,C038,Mohammad Ahmed,mohammad.ahmed@email.com,Orlando,FL,2026-02-11,Printer,Electronics,4,179.99,719.96,PayPal,False,1,5.0
+1039,C039,Nina Patel,nina.patel@email.com,Philadelphia,PA,2026-02-12,Water Bottle,Sports,4,15.5,62.0,Cash,True,7,5.0
+1040,C040,Owen Carter,owen.carter@email.com,Islamabad,ICT,2026-02-13,Backpack,Travel,5,54.99,274.95,PayPal,True,6,3.0
+1041,C041,Priya Sharma,priya.sharma@email.com,Dallas,TX,2026-02-14,Laptop,Electronics,1,899.99,899.99,Credit Card,False,7,5.0
+1042,C042,Quincy Adams,quincy.adams@email.com,Houston,TX,2026-02-15,Wireless Mouse,Electronics,3,24.99,74.97,Debit Card,True,5,5.0
+1043,C043,Rachel Kim,rachel.kim@email.com,Austin,TX,2026-02-16,Office Chair,Furniture,5,189.5,947.5,Cash,True,7,5.0
+1044,C044,Samuel Clark,samuel.clark@email.com,Seattle,WA,2026-02-17,Coffee Maker,Home Appliances,1,79.99,79.99,Cash,False,7,3.0
+1045,C045,Zara Hussain,zara.hussain@email.com,Denver,CO,2026-02-18,Notebook,Stationery,3,4.5,13.5,Credit Card,False,6,4.0
+1046,C046,Adam Jones,adam.jones@email.com,Chicago,IL,2026-02-19,Smartphone,Electronics,3,699.0,2097.0,Cash,True,5,4.0
+1047,C047,Sara Ahmed,sara.ahmed@email.com,Phoenix,AZ,2026-02-20,Desk Lamp,Furniture,3,34.99,104.97,PayPal,False,7,4.0
+1048,C048,Usman Tariq,usman.tariq@email.com,Miami,FL,2026-02-21,Blender,Home Appliances,3,59.95,179.85,PayPal,True,7,4.0
+1049,C049,Emily Davis,emily.davis@email.com,New York,NY,2026-02-22,Monitor,Electronics,3,229.99,689.97,Debit Card,False,6,3.0
+1050,C050,Noah Miller,noah.miller@email.com,San Diego,CA,2026-02-23,Keyboard,Electronics,1,49.99,49.99,Cash,True,5,3.0

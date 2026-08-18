@@ -32,43 +32,19 @@ batch inference, and a monitoring loop that triggers retraining on drift or sche
 
 ---
 
-## Repository Structure
-
-```
-.
-├── README.md
-├── screenshots/
-│   └── pipeline.png                     # Architecture diagram (shown above)
-├── dataset/
-│   ├── raw/
-│   │   └── data.csv                     # Raw Telco churn dataset
-│   └── processed/
-│       ├── train_clean.csv              # Preprocessing outputs
-│       ├── val_clean.csv
-│       └── test_clean.csv
-├── notebooks/
-│   ├── eda_telco_churn.ipynb            # Exploratory data analysis
-│   ├── telco_churn_preprocessing.ipynb  # Cleaning, encoding, split, scale
-│   └── telco_churn_sagemaker.ipynb      # Training, HPO, evaluation, batch inference
-└── design/
-    └── churn_pipeline.drawio            # Editable pipeline diagram (draw.io)
-```
-
----
-
 ## Workflow
 
-**1. Exploratory Data Analysis** — `eda_telco_churn.ipynb`
+**1. Exploratory Data Analysis**
 Profiles the dataset, checks data quality, and visualizes the drivers of churn through
 distributions, cohort heatmaps, and feature-association measures.
 
-**2. Preprocessing** — `telco_churn_preprocessing.ipynb`
+**2. Preprocessing**
 Converts `TotalCharges` to numeric and fills new-customer blanks with 0, drops
 `customerID`, collapses redundant service categories, binary- and one-hot-encodes the
 categorical fields, performs a stratified 70/15/15 split, and standardizes numeric
 features (scaler fit on train only). Outputs the three `*_clean.csv` files.
 
-**3. Training, Tuning & Inference** — `telco_churn_sagemaker.ipynb`
+**3. Training, Tuning & Inference** 
 Reads the processed splits from S3, reformats them to the label-first, headerless CSV
 the built-in algorithm expects, trains a baseline XGBoost model, runs Bayesian HPO,
 evaluates the best model, selects a cost-sensitive threshold, and demonstrates Batch
@@ -76,18 +52,6 @@ Transform inference on the held-out test set.
 
 ---
 
-## Setup & Requirements
-
-- An **AWS account** with access to Amazon SageMaker AI and an S3 bucket (this project uses `s3://churn-prediction-ak/`).
-- A **SageMaker Notebook Instance** or **Studio** environment (Python 3, `boto3`, `sagemaker`, `pandas`, `scikit-learn`, `matplotlib`).
-- An **execution role** with SageMaker and S3 permissions.
-
-**To run:**
-1. Upload `data.csv` to `s3://churn-prediction-ak/raw/`.
-2. Run `telco_churn_preprocessing.ipynb` to generate the processed splits (saved to `dataset/processed/` and/or S3).
-3. Open `telco_churn_sagemaker.ipynb`, set `SOURCE_BUCKET` / `SOURCE_PREFIX`, and run the cells top to bottom.
-
----
 
 ## Data Versioning, Model Versioning & CI/CD
 

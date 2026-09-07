@@ -1,0 +1,17 @@
+{
+  "targets": {
+    "default": {
+      "resources": {
+        "runtimes": {
+          "SupportAgent": {
+            "runtimeId": "supportBot_SupportAgent-nkufP42p67",
+            "runtimeArn": "arn:aws:bedrock-agentcore:us-west-2:481719141347:runtime/supportBot_SupportAgent-nkufP42p67",
+            "roleArn": "arn:aws:iam::481719141347:role/AgentCore-supportBot-defa-ApplicationAgentSupportAg-uUj7uoIigwIZ"
+          }
+        },
+        "stackName": "AgentCore-supportBot-default",
+        "deployHash": "69f7f899bc5a3144"
+      }
+    }
+  }
+}

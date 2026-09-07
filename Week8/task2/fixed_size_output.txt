@@ -1,0 +1,468 @@
+
+======================================================================
+Session 2026-08-31 15:05:45  (model=haiku4.5)
+======================================================================
+RAG chatbot ready. Region=us-east-1  KB=XL69XTCTJL  Model=haiku4.5
+Type a question, or /models, /model <key>, /direct, /compare, /reset, /quit.
+
+======================================================================
+
+you> you> What is the AWS shared responsibility model, and which security responsibilities fall to the customer versus AWS?
+
+[RAG · haiku4.5]
+# AWS Shared Responsibility Model
+
+The AWS Shared Responsibility Model divides security responsibilities between AWS and its customers:
+
+## AWS Responsibility: "Security of the Cloud"
+AWS is responsible for protecting the infrastructure that runs all AWS Cloud services, including:
+- Hardware, software, networking, and facilities
+- Physical and environmental controls
+- Infrastructure layer security
+
+## Customer Responsibility: "Security in the Cloud"
+Customer responsibilities vary based on the AWS services selected:
+
+**For Infrastructure as a Service (IaaS) like Amazon EC2:**
+- Guest operating system management (updates and security patches)
+- Application software and utilities installed on instances
+- Security group (firewall) configuration
+- All necessary security configuration and management tasks
+
+**For Abstracted Services (like Amazon S3 and Amazon DynamoDB):**
+- Data management (including encryption options)
+- Asset classification
+- IAM permissions and access control
+- Consulting patching and maintenance documentation
+
+## Shared Controls
+Some controls are shared between AWS and customers but in different contexts:
+- **Patch management**: AWS applies patches for multi-tenant services; customers must understand notification mechanisms and maintenance windows
+- **Configuration management**: AWS maintains infrastructure configuration; customers configure their own guest operating systems, databases, and applications
+- **Awareness and training**: AWS trains its employees; customers train their own employees
+
+Understanding this model helps you scope your security responsibilities and identify which mitigations are under your control.
+
+  Retrieved chunks (Retrieve API — ground truth for accuracy):
+    1. s3://bedrock-t2-ak/docs/wellarchitected-security-pillar.pdf  (score 0.721)
+       "• For AWS managed services operating on multi-tenant architectures (such as Amazon ElastiCache Serverless, Amazon DynamoDB, and Amazon S3), patch management res..."
+    2. s3://bedrock-t2-ak/docs/wellarchitected-security-pillar.pdf  (score 0.689)
+       "As shown in the following chart, this differentiation of responsibility is commonly referred to as Security “of” the Cloud versus Security “in” the Cloud.   AWS..."
+    3. s3://bedrock-t2-ak/docs/wellarchitected-security-pillar.pdf  (score 0.668)
+       "For abstracted services, such as Amazon S3 and Amazon DynamoDB, AWS operates the infrastructure layer, the operating system, and platforms, and customers access..."
+    4. s3://bedrock-t2-ak/docs/aws-overview.pdf  (score 0.654)
+       "This means that you can have the security you need at a lower cost than in an on-premises environment.   As an AWS customer you inherit all the best practices o..."
+    5. s3://bedrock-t2-ak/docs/wellarchitected-security-pillar.pdf  (score 0.609)
+       "Understanding the balance of responsibilities between you and AWS helps you scope your threat modeling exercise to the mitigations that are under your control, ..."
+
+======================================================================
+
+you> you> What are the design principles for cost optimization in the Well-Architected Framework?
+
+[RAG · haiku4.5]
+Based on the search results, the cost optimization design principles in the AWS Well-Architected Framework include:
+
+1. **Implement cloud financial management**: Invest in Cloud Financial Management to achieve financial success and accelerate business value realization in the cloud. Your organization must dedicate necessary time and resources for building capability in this domain, similar to how you build Security or Operations capability through knowledge building, programs, resources, and processes.
+
+2. **Adopt a consumption model**: Pay only for the computing resources you consume, and increase or decrease usage depending on business requirements. For example, development and test environments typically used for eight hours a day during the work week can be stopped when not in use for potential cost savings of 75% (40 hours versus 168 hours).
+
+3. **Measure overall efficiency**: Measure the business output of the workload and the costs associated with delivery.
+
+These principles are designed to help you build and operate cost-aware workloads that achieve business outcomes while minimizing costs and maximizing your organization's return on investment.
+
+  Retrieved chunks (Retrieve API — ground truth for accuracy):
+    1. s3://bedrock-t2-ak/docs/wellarchitected-cost-optimization-pillar.pdf  (score 0.671)
+       "It demonstrates a way to consistently measure your architectures against best practices and identify areas for improvement. We believe that having well-architec..."
+    2. s3://bedrock-t2-ak/docs/wellarchitected-cost-optimization-pillar.pdf  (score 0.659)
+       "Amazon Web Services (AWS) Well- Architected Framework. It provides guidance to help customers apply best practices in the design, delivery, and maintenance of A..."
+    3. s3://bedrock-t2-ak/docs/wellarchitected-cost-optimization-pillar.pdf  (score 0.644)
+       "................. 146 Document revisions ..................................................................................................................... 1..."
+    4. s3://bedrock-t2-ak/docs/wellarchitected-cost-optimization-pillar.pdf  (score 0.634)
+       "This paper does not provide implementation details or architectural patterns, however, it does include references to appropriate resources.   Introduction 2Cost..."
+    5. s3://bedrock-t2-ak/docs/wellarchitected-cost-optimization-pillar.pdf  (score 0.632)
+       "...................................... 150   vCost Optimization Pillar AWS Well-Architected Framework   Cost Optimization Pillar - AWS Well-Architected Framewor..."
+
+======================================================================
+
+you> you> What are the perspectives of the AWS Cloud Adoption Framework, and what does each cover?
+
+[RAG · haiku4.5]
+Based on the search results, the AWS Cloud Adoption Framework includes the following perspectives:
+
+1. **Business perspective** - Focuses on business outcomes and transformation opportunities
+
+2. **People perspective** - Addresses organizational and human aspects of cloud adoption
+
+3. **Governance perspective** - Covers governance and compliance considerations
+
+4. **Platform perspective** - Focuses on accelerating delivery of cloud workloads via an enterprise-grade, scalable, hybrid cloud environment. It includes capabilities such as:
+   - Platform architecture
+   - Infrastructure and applications management
+
+5. **Security perspective** - Addresses security considerations for cloud adoption
+
+6. **Operations perspective** - Covers operational aspects of managing cloud environments
+
+The search results indicate these perspectives exist and are part of the AWS CAF framework, though detailed coverage information for each perspective is limited in the provided documents. The Platform perspective is the most detailed in the search results, emphasizing the establishment of guidelines, principles, patterns, and guardrails for cloud environments, as well as hybrid cloud use cases.
+
+  Retrieved chunks (Retrieve API — ground truth for accuracy):
+    1. s3://bedrock-t2-ak/docs/overview-aws-cloud-adoption-framework.pdf  (score 0.714)
+       "Identify and capture relevant technical and business metadata, including lineage. Leverage standard ontologies, business glossaries, and automation (including m..."
+    2. s3://bedrock-t2-ak/docs/overview-aws-cloud-adoption-framework.pdf  (score 0.705)
+       "action_code=ASSGB149080119000H&share_location=pdp&shareTest=TestShare        https://www.amazon.com/dp/B09X9DBL4V/ref=cm_sw_em_r_mt_dp_44NEN2KA1F5VN2AQCMCT     ..."
+    3. s3://bedrock-t2-ak/docs/overview-aws-cloud-adoption-framework.pdf  (score 0.669)
+       "AWS Whitepaper   An Overview of the AWS Cloud Adoption Framework   Copyright © 2026 Amazon Web Services, Inc. and/or its affiliates. All rights reserved.An Over..."
+    4. s3://bedrock-t2-ak/docs/overview-aws-cloud-adoption-framework.pdf  (score 0.667)
+       "To remediate operational issues more quickly and consistently, consider automating your runbooks.   32         https://aws.amazon.com/blogs/aws/new-aws-systems-..."
+    5. s3://bedrock-t2-ak/docs/overview-aws-cloud-adoption-framework.pdf  (score 0.637)
+       "All other trademarks not owned by Amazon are the property of their respective owners, who may or may not be affiliated with, connected to, or sponsored by Amazo..."
+
+======================================================================
+
+you> you> How does the Reliability pillar define reliability, and what are its design principles for building resilient workloads?
+
+[RAG · haiku4.5]
+Based on the search results provided:
+
+## Reliability Pillar Definition
+
+The reliability pillar includes the ability of a system to:
+- Recover from infrastructure or service disruptions
+- Dynamically acquire computing resources to meet demand
+- Mitigate disruptions such as misconfigurations or transient network issues
+
+## Three Best Practice Areas for Reliability
+
+1. **Foundations**
+2. **Change management**
+3. **Failure management
+
+## Key Design Principle
+
+To achieve reliability, a system must have:
+- A well-planned foundation and monitoring in place
+- Mechanisms for handling changes in demand, requirements, or potentially defending an unauthorized denial of service attack
+- Design to detect failure and, ideally, automatically heal itself
+
+## Context for Resilient Workloads
+
+The AWS Well-Architected Framework helps you learn architectural best practices for designing and operating reliable, secure, efficient, cost-effective, and sustainable workloads in the cloud. Achieving reliability can be challenging in traditional on-premises environments due to single points of failure, lack of automation, and lack of elasticity—challenges that cloud environments help address.
+
+  Retrieved chunks (Retrieve API — ground truth for accuracy):
+    1. s3://bedrock-t2-ak/docs/wellarchitected-reliability-pillar.pdf  (score 0.630)
+       "......................................................................................................................... 267   vReliability Pillar AWS Well-Arc..."
+    2. s3://bedrock-t2-ak/docs/wellarchitected-reliability-pillar.pdf  (score 0.613)
+       "............... 268   viReliability Pillar AWS Well-Architected Framework   Reliability Pillar - AWS Well-Architected Framework   Publication date: November 6, ..."
+    3. s3://bedrock-t2-ak/docs/wellarchitected-serverless-applications-lens.pdf  (score 0.596)
+       "pillar   The reliability pillar includes the ability of a system to recover from infrastructure or service disruptions, dynamically acquire computing resources ..."
+    4. s3://bedrock-t2-ak/docs/wellarchitected-reliability-pillar.pdf  (score 0.596)
+       "https://www.youtube.com/watch?v=kFGOkywu-rwReliability Pillar AWS Well-Architected Framework   • How to Monitor your AWS Applications   Related tools:   • AWS X..."
+    5. s3://bedrock-t2-ak/docs/wellarchitected-reliability-pillar.pdf  (score 0.595)
+       "AWS Well-Architected Framework   Reliability Pillar   Copyright © 2026 Amazon Web Services, Inc. and/or its affiliates. All rights reserved.Reliability Pillar A..."
+
+======================================================================
+
+you> you> What design considerations does the Agentic AI Lens describe for building agentic AI workloads on AWS?
+
+[RAG · haiku4.5]
+Based on the provided documents, here are the key design considerations for Agentic AI Lens AWS workloads:
+
+## What Makes Agentic AI Unique
+
+Agentic AI systems introduce architectural dimensions that require specialized design considerations:
+
+1. **Agents reason, not only respond**: A single user request might trigger multiple LLM inference calls, tool invocations, memory retrievals, and inter-agent communications. This creates iterative reasoning loops that add latency, cost, and failure surface—requiring different optimization approaches than traditional request-response patterns.
+
+2. **Agents act autonomously**: Agents invoke tools, modify data, and interact with external systems without explicit human instruction at each step. This autonomy demands purpose-built security controls, permission boundaries, and human oversight patterns.
+
+## Key Design Principles
+
+The lens covers the full spectrum of agentic AI architecture:
+
+- **Foundational infrastructure** supporting agent compute and memory
+- **Orchestration patterns** coordinating multi-agent workflows
+- **Operational practices** ensuring agents remain reliable, secure, and cost-effective in production
+
+## Use Cases
+
+The architectural principles apply across:
+- End users through conversational interfaces
+- Internal workflow automation
+- Production infrastructure operations alongside human engineers
+
+The AWS Well-Architected Agentic AI Lens provides guidance from agent prototypes through production-grade agent systems, addressing reliability, security, and cost-effectiveness at scale.
+
+  Retrieved chunks (Retrieve API — ground truth for accuracy):
+    1. s3://bedrock-t2-ak/docs/agentic-ai-lens.pdf  (score 0.745)
+       "The AWS Well-Architected Agentic AI Lens answers this question by extending the AWS Well-Architected Framework with best practices specific to the design, deplo..."
+    2. s3://bedrock-t2-ak/docs/agentic-ai-lens.pdf  (score 0.713)
+       "The goal isn't to remove human judgment but to apply it where it matters most.   ? Cost and sustainability require intentional design: The token-based cost mode..."
+    3. s3://bedrock-t2-ak/docs/agentic-ai-lens.pdf  (score 0.690)
+       "AWS Well-Architected Framework   Agentic AI Lens   Copyright © 2026 Amazon Web Services, Inc. and/or its affiliates. All rights reserved.Agentic AI Lens AWS Wel..."
+    4. s3://bedrock-t2-ak/docs/agentic-ai-lens.pdf  (score 0.683)
+       "Chris Lamont-Smith, Senior AIML Security Specialist SA, Amazon Web Services   ? Ram Ramani, Principal Security Solutions Architect, Amazon Web Services   ? Rigg..."
+    5. s3://bedrock-t2-ak/docs/agentic-ai-lens.pdf  (score 0.680)
+       "Agentic AI patterns and workflows on AWS   ? Security for agentic AI on AWS   ? Building serverless architectures for agentic AI on AWS   ? Building multi-tenan..."
+
+======================================================================
+
+you> you> What is the default maximum number of S3 buckets allowed per AWS account?
+
+[RAG · haiku4.5]
+I don't know based on the provided documents.
+
+The search results discuss Amazon S3 features and storage classes, but they do not contain information about the default maximum number of S3 buckets per AWS account.
+
+  Retrieved chunks (Retrieve API — ground truth for accuracy):
+    1. s3://bedrock-t2-ak/docs/wellarchitected-cost-optimization-pillar.pdf  (score 0.439)
+       "You can model your organizational hierarchy by grouping AWS accounts in organizational unit (OU) structure and creating multiple AWS accounts under each OU. To ..."
+    2. s3://bedrock-t2-ak/docs/wellarchitected-reliability-pillar.pdf  (score 0.430)
+       "The default service quotas per service are also in the AWS documentation per respective service (for example, see Amazon VPC Quotas).   Some service limits, lik..."
+    3. s3://bedrock-t2-ak/docs/aws-overview.pdf  (score 0.429)
+       "Amazon Simple Storage Service   Amazon Simple Storage Service (Amazon S3) is an object storage service that offers industry- leading scalability, data availabil..."
+    4. s3://bedrock-t2-ak/docs/wellarchitected-reliability-pillar.pdf  (score 0.427)
+       ".   • Use API Gateway with native service integrations to Amazon SQS or Kinesis to buffer requests.   REL05-BP02 Throttle requests 90         https://aws.amazon..."
+    5. s3://bedrock-t2-ak/docs/wellarchitected-security-pillar.pdf  (score 0.427)
+       "This provides a comprehensive view, and allows you to deploy AWS Config Rules across accounts to detect publicly accessible resources.   • Configure AWS Identit..."
+
+======================================================================
+
+you> you> What is our company's employee data retention policy?
+
+[RAG · haiku4.5]
+Sorry, I am unable to assist you with this request.
+
+  Retrieved chunks (Retrieve API — ground truth for accuracy):
+    1. s3://bedrock-t2-ak/docs/agentic-ai-lens.pdf  (score 0.431)
+       "Trace ID   ? Agent ID   ? Session ID   ? Operation type   AGENTOPS05-BP03 Implement structured logging and comprehensive audit trails 94Agentic AI Lens AWS Well..."
+    2. s3://bedrock-t2-ak/docs/wellarchitected-security-pillar.pdf  (score 0.418)
+       "We recommend you separate data into different AWS accounts, using service control policies (SCPs) to restrict services and actions allowed for each data sensiti..."
+    3. s3://bedrock-t2-ak/docs/overview-aws-cloud-adoption-framework.pdf  (score 0.417)
+       "Use hardened operating system images and physically secure any hybrid cloud infrastructure on- premises and at the edge.   • Data protection – Maintain visibili..."
+    4. s3://bedrock-t2-ak/docs/wellarchitected-security-pillar.pdf  (score 0.415)
+       "These controls govern considerations such as who is allowed to access the data and for what purpose, where the data is stored, the encryption policy for that da..."
+    5. s3://bedrock-t2-ak/docs/wellarchitected-sustainability-pillar.pdf  (score 0.412)
+       "Level of risk exposed if this best practice is not established: Medium   Implementation guidance   Datasets usually have different retention and access requirem..."
+
+======================================================================
+
+you> you> What's a good recipe for chocolate chip cookies?
+
+[RAG · haiku4.5]
+Sorry, I am unable to assist you with this request.
+
+  Retrieved chunks (Retrieve API — ground truth for accuracy):
+    1. s3://bedrock-t2-ak/docs/wellarchitected-reliability-pillar.pdf  (score 0.369)
+       "The result is improved mean time to recovery (MTTR).   These best practices prevent failures and improve mean time between failures (MTBF).   Best practices   •..."
+    2. s3://bedrock-t2-ak/docs/wellarchitected-sustainability-pillar.pdf  (score 0.366)
+       "Be aware of the devices your customers use to access your services, and implement patterns to minimize the need for device upgrades.   Best practices   • SUS03-..."
+    3. s3://bedrock-t2-ak/docs/wellarchitected-operational-excellence-pillar.pdf  (score 0.365)
+       "Wherever possible, provide pre-approval and risk classification for processes and procedures from a change approval board (CAB).   3. Make process and procedure..."
+    4. s3://bedrock-t2-ak/docs/wellarchitected-operational-excellence-pillar.pdf  (score 0.365)
+       ".   • New team members become effective more quickly.   • Reduced time to mitigate incidents.   • Different team members (and teams) can use the same processes ..."
+    5. s3://bedrock-t2-ak/docs/agentic-ai-lens.pdf  (score 0.363)
+       "Common anti-patterns:   ? Allowing agents to discover and invoke any available tool or MCP server without prior security review and registry approval.   ? Maint..."
+
+======================================================================
+
+you> you> Who is the current CEO of AWS?
+
+[RAG · haiku4.5]
+I don't know based on the provided documents.
+
+The search results do not contain information about the current CEO of AWS. They only mention that a CEO is a common stakeholder in the Business perspective of the AWS Cloud Adoption Framework, but do not identify who currently holds that position.
+
+  Retrieved chunks (Retrieve API — ground truth for accuracy):
+    1. s3://bedrock-t2-ak/docs/wellarchitected-security-pillar.pdf  (score 0.445)
+       "Security Solutions Architect, Amazon Web Services   • Luis Pastor, Senior Security Solutions Architect, Amazon Web Services   • Colin Igbokwe, Senior Security S..."
+    2. s3://bedrock-t2-ak/docs/aws-overview.pdf  (score 0.441)
+       "New services can be provisioned quickly, without the upfront fixed expense. This allows enterprises, start-ups, small and medium-sized businesses, and customers..."
+    3. s3://bedrock-t2-ak/docs/overview-aws-cloud-adoption-framework.pdf  (score 0.441)
+       "Each perspective comprises a set of capabilities that functionally related stakeholders own or manage in your cloud transformation journey.   AWS CAF perspectiv..."
+    4. s3://bedrock-t2-ak/docs/wellarchitected-security-pillar.pdf  (score 0.439)
+       "Web Services   • Pat Gaw, Principal Security Consultant, Amazon Web Services   227Security Pillar AWS Well-Architected Framework   • Jason Garman, Principal Sec..."
+    5. s3://bedrock-t2-ak/docs/agentic-ai-lens.pdf  (score 0.434)
+       "Dan Ferguson, Senior GenAI Specialist Solution Architect, Amazon Web Services   ? Rosa Elena Lorenzana, ISV SA Leader, Amazon Web Services   ? Gopi Krishnamurth..."
+
+======================================================================
+
+you> you> What is the exact hourly price of a t3.medium EC2 instance in the us-east-1 Region?
+
+[RAG · haiku4.5]
+I don't know based on the provided documents.
+
+The search results discuss Amazon EC2 pricing models and instance types in general terms, but they do not contain the specific hourly price for a t3.medium instance in the us-east-1 region.
+
+  Retrieved chunks (Retrieve API — ground truth for accuracy):
+    1. s3://bedrock-t2-ak/docs/aws-overview.pdf  (score 0.502)
+       "You pay a very low rate for the compute capacity you actually consume. For a more detailed description, refer to Amazon EC2 pricing.   Amazon EC2 instance types..."
+    2. s3://bedrock-t2-ak/docs/aws-overview.pdf  (score 0.481)
+       ".   • R7g Instances — R7g Instances, powered by the latest generation AWS Graviton3 processors, provide the best price performance in Amazon EC2 for memory-inte..."
+    3. s3://bedrock-t2-ak/docs/wellarchitected-cost-optimization-pillar.pdf  (score 0.479)
+       "Perform an analysis on the workload using the recommendations in cost management tools and apply business rules to those recommendations to achieve high returns..."
+    4. s3://bedrock-t2-ak/docs/wellarchitected-performance-efficiency-pillar.pdf  (score 0.468)
+       ".    • Memory-optimized instances deliver large amounts of memory to support memory intensive workloads.   • Storage-optimized instances are designed for worklo..."
+    5. s3://bedrock-t2-ak/docs/aws-overview.pdf  (score 0.465)
+       "secure, resizable compute capacity in the cloud. It is designed to make web-scale computing easier for developers.   The simple web interface of Amazon EC2 allo..."
+
+======================================================================
+
+you> you> /compare When was the Security Pillar of AWS Well Architected Framework published?
+
+[RAG · haiku4.5]
+Based on the search results, the Security Pillar AWS Well-Architected Framework publication date is **November 6, 2024**.
+
+  Retrieved chunks (Retrieve API — ground truth for accuracy):
+    1. s3://bedrock-t2-ak/docs/wellarchitected-security-pillar.pdf  (score 0.756)
+       "AWS Well-Architected Framework   Security Pillar   Copyright © 2026 Amazon Web Services, Inc. and/or its affiliates. All rights reserved.Security Pillar AWS Wel..."
+    2. s3://bedrock-t2-ak/docs/wellarchitected-security-pillar.pdf  (score 0.752)
+       ".................................... 230 Notices .................................................................................................................."
+    3. s3://bedrock-t2-ak/docs/wellarchitected-security-pillar.pdf  (score 0.752)
+       ".................................. 216 Implementation guidance ...................................................................................................."
+    4. s3://bedrock-t2-ak/docs/wellarchitected-security-pillar.pdf  (score 0.746)
+       "........................ 234   viSecurity Pillar AWS Well-Architected Framework   Security Pillar - AWS Well-Architected Framework   Publication date: November ..."
+    5. s3://bedrock-t2-ak/docs/wellarchitected-security-pillar.pdf  (score 0.675)
+       ".................................................................................................................. 9 Resources ...................................."
+
+[DIRECT · haiku4.5 · no KB]
+# AWS Well-Architected Framework - Security Pillar
+
+The **Security Pillar** was part of the original **AWS Well-Architected Framework**, which was first published in **2015**.
+
+However, it's worth noting that AWS has continued to update and evolve the framework over time:
+
+- **2015**: Original framework with 5 pillars (including Security)
+- **2018**: Framework was updated and refined
+- **2021**: Additional updates and enhancements were made
+
+The Security Pillar has remained a core component throughout, focusing on protecting information, systems, and assets while delivering business value through risk assessments and mitigation strategies.
+
+If you're looking for information about a specific version or update to the Security Pillar, I'd recommend checking the [AWS Well-Architected Framework documentation](https://aws.amazon.com/architecture/well-architected/) for the most current details.
+
+======================================================================
+
+you> you> What is AWS Lambda and when should I use it?
+
+[RAG · haiku4.5]
+Based on the provided documents:
+
+**What is AWS Lambda:**
+
+AWS Lambda is a managed serverless compute service that lets you run code without provisioning or managing servers. You pay only for the compute time you consume—there is no charge when your code is not running. Lambda takes care of everything required to run and scale your code with high availability.
+
+**When to use it:**
+
+According to the search results, you should use AWS Lambda for:
+
+- Running code for virtually any type of application or backend service
+- Backend services for web and mobile applications
+- Event and data processing
+- Logging and monitoring
+- Internet of Things (IoT) applications
+- Building stateless serverless applications that support microservice architectures
+- Integrating with Amazon API Gateway to run fully managed REST APIs
+- Handling interactions with third-party services or other AWS services for custom workflows
+
+The documents also note that Lambda works well when you can set up your code to automatically run from other AWS services, or call it directly from web or mobile apps. For long-running executions that exceed Lambda's limits, you can use AWS Step Functions to orchestrate workflows across multiple Lambda functions or other compute resources.
+
+  Retrieved chunks (Retrieve API — ground truth for accuracy):
+    1. s3://bedrock-t2-ak/docs/wellarchitected-serverless-applications-lens.pdf  (score 0.566)
+       "Your business logic will be deployed and started by the runtime environment that it contains.   AWS Lambda lets you run stateless serverless applications on a m..."
+    2. s3://bedrock-t2-ak/docs/aws-overview.pdf  (score 0.530)
+       "You pay only for the compute time you consume—there is no charge when your code is not running. With Lambda, you can run code for virtually any type of applicat..."
+    3. s3://bedrock-t2-ak/docs/wellarchitected-serverless-applications-lens.pdf  (score 0.509)
+       "Amazon DynamoDB provides persistent storage for your mobile application, including mechanisms to expire unwanted data from inactive mobile users through a Time ..."
+    4. s3://bedrock-t2-ak/docs/wellarchitected-serverless-applications-lens.pdf  (score 0.506)
+       "If you are using AWS CDK you can still support Lambda Event filtering by using Escape Hatches to extend some functionality not directly available in CDK constru..."
+    5. s3://bedrock-t2-ak/docs/wellarchitected-serverless-applications-lens.pdf  (score 0.496)
+       "Compute Optimizer continuously monitors Lambda functions, using historical performance metrics to improve recommendations over time.   In addition, consider con..."
+
+======================================================================
+
+you> you> Which AWS compute services should I use if I need to run containers without managing servers, and how does that differ from Lambda?
+
+[RAG · haiku4.5]
+Based on the search results, here are the AWS compute services for running containers without managing servers:
+
+**AWS Fargate** — Serverless compute for containers. With Fargate launch type, you only need to:
+- Package your application in containers
+- Specify CPU and memory requirements
+- Define networking and IAM policies
+- Launch the application
+
+You do not need to provision, patch, or scale the underlying infrastructure.
+
+**AWS App Runner** — Build and run containerized applications on a fully managed service.
+
+**Comparison to AWS Lambda:**
+
+AWS Lambda lets you run code without provisioning or managing servers, and you pay only for the compute time you consume with no charge when your code is not running. Lambda supports microservices and event-driven applications.
+
+The key difference is that Fargate and App Runner are specifically designed for containerized applications, while Lambda is for running code functions in response to events without managing servers.
+
+  Retrieved chunks (Retrieve API — ground truth for accuracy):
+    1. s3://bedrock-t2-ak/docs/aws-overview.pdf  (score 0.575)
+       "Amazon ECS has two modes: Fargate launch type and EC2 launch type. With Fargate launch type, all you have to do is package your application in containers, speci..."
+    2. s3://bedrock-t2-ak/docs/wellarchitected-performance-efficiency-pillar.pdf  (score 0.562)
+       "icmpid=docs_homepage_featuredsvcs        https://aws.amazon.com/ecs/        https://aws.amazon.com/eks/        https://aws.amazon.com/batch/        https://docs..."
+    3. s3://bedrock-t2-ak/docs/wellarchitected-serverless-applications-lens.pdf  (score 0.556)
+       "Your business logic will be deployed and started by the runtime environment that it contains.   AWS Lambda lets you run stateless serverless applications on a m..."
+    4. s3://bedrock-t2-ak/docs/aws-overview.pdf  (score 0.552)
+       "Beanstalk   • AWS Fargate   • AWS Lambda   Compute 31         https://docs.aws.amazon.com/decision-guides/latest/compute-on-aws-how-to-choose/choosing-aws-compu..."
+    5. s3://bedrock-t2-ak/docs/wellarchitected-performance-efficiency-pillar.pdf  (score 0.551)
+       ".   • Learn about different AWS compute services for your workload. For more information, see PERF01-BP01 Learn about and understand available cloud services an..."
+
+======================================================================
+
+you> you> Compare Lambda, Fargate, ECS and EKS
+
+[RAG · haiku4.5]
+Sorry, I am unable to assist you with this request.
+
+  Retrieved chunks (Retrieve API — ground truth for accuracy):
+    1. s3://bedrock-t2-ak/docs/aws-overview.pdf  (score 0.539)
+       "Amazon ECS has two modes: Fargate launch type and EC2 launch type. With Fargate launch type, all you have to do is package your application in containers, speci..."
+    2. s3://bedrock-t2-ak/docs/aws-overview.pdf  (score 0.538)
+       "You can simply upload your code, and AWS Elastic Beanstalk automatically handles the deployment, from capacity provisioning, load balancing, and auto scaling to..."
+    3. s3://bedrock-t2-ak/docs/aws-overview.pdf  (score 0.502)
+       "managed batch processing at any scale   Containers • Amazon Elastic Container Service (Amazon ECS) — Highly secure, reliable, and scalable way to run containers..."
+    4. s3://bedrock-t2-ak/docs/wellarchitected-performance-efficiency-pillar.pdf  (score 0.482)
+       "icmpid=docs_homepage_featuredsvcs        https://aws.amazon.com/ecs/        https://aws.amazon.com/eks/        https://aws.amazon.com/batch/        https://docs..."
+    5. s3://bedrock-t2-ak/docs/wellarchitected-reliability-pillar.pdf  (score 0.467)
+       "Amazon Elastic Container Service (Amazon ECS), and Amazon Elastic Kubernetes Service (Amazon EKS) can help you get started faster with containers.   • Manage wo..."
+
+======================================================================
+
+
+======================================================================
+Session 2026-08-31 19:05:37  (model=haiku4.5)
+======================================================================
+RAG chatbot ready. Region=us-east-1  KB=XL69XTCTJL  Model=haiku4.5
+Type a question, or /models, /model <key>, /direct, /compare, /reset, /quit.
+
+======================================================================
+
+you> you> According to the Reliability pillar, how do the foundational requirements, change management, and failure management best-practice areas work together to achieve reliability, and what specific design principles support each area?
+
+[RAG · haiku4.5]
+I don't know based on the provided documents.
+
+The search results contain information about foundational requirements and mention that the Reliability pillar includes best practices for design, delivery, and maintenance of AWS environments. However, the documents do not provide a comprehensive explanation of how foundational requirements, change management, and failure management work together as best-practice areas, nor do they detail the specific design principles that support each of these areas.
+
+To answer your question accurately, I would need search results that explicitly discuss the relationships between these three areas and their supporting design principles.
+
+  Retrieved chunks (Retrieve API — ground truth for accuracy):
+    1. s3://bedrock-t2-ak/docs/wellarchitected-reliability-pillar.pdf  (score 0.533)
+       "Understanding availability needs 14Reliability Pillar AWS Well-Architected Framework   Foundations   Foundational requirements are those whose scope extends bey..."
+    2. s3://bedrock-t2-ak/docs/wellarchitected-reliability-pillar.pdf  (score 0.533)
+       "......................................................................................................................... 267   vReliability Pillar AWS Well-Arc..."
+    3. s3://bedrock-t2-ak/docs/wellarchitected-reliability-pillar.pdf  (score 0.531)
+       "............... 268   viReliability Pillar AWS Well-Architected Framework   Reliability Pillar - AWS Well-Architected Framework   Publication date: November 6, ..."
+    4. s3://bedrock-t2-ak/docs/wellarchitected-reliability-pillar.pdf  (score 0.530)
+       "https://docs.aws.amazon.com/wellarchitected/latest/reliability-pillar/back-up-data.html        https://docs.aws.amazon.com/wellarchitected/latest/reliability-pi..."
+    5. s3://bedrock-t2-ak/docs/wellarchitected-reliability-pillar.pdf  (score 0.528)
+       "........................................................... 210 REL12-BP03 Test scalability and performance requirements .........................................."
+
+======================================================================
+
+you> bye

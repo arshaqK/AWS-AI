@@ -35,6 +35,16 @@ ORDERS = {
     "1003": "Order 1003: Delivered 2026-09-01 via UPS (tracking 1Z999AA10123456784). Items: AcmeBuds (2).",
 }
 
+# Mock return policy (the "new Lambda" for the Returns sub-agent).
+RETURN_POLICY = {
+    "acmephone x": "AcmePhone X: returnable within 14 days of delivery if undamaged. "
+                   "10% restocking fee if opened. Refund to original payment in 5-7 business days.",
+    "acmebook pro": "AcmeBook Pro: 30-day return window for a full refund in original condition "
+                    "with all accessories. No restocking fee. Refund in 5-7 business days.",
+    "acmebuds": "AcmeBuds: returnable within 30 days ONLY if unopened/sealed (hygiene item). "
+                "Opened earbuds are not returnable except for a warranty defect.",
+}
+
 @tool
 def get_order_status(order_id: str) -> str:
     """Look up the status of a customer's order by its order ID.
@@ -63,6 +73,103 @@ def get_product_faq(product_name: str) -> str:
     return "\n\n".join(chunks) if chunks else "No FAQ entry found for that product."
 tools.append(get_product_faq)
 
+@tool
+def get_return_policy(product_name: str) -> str:
+    """Return the return-eligibility and refund policy for an Acme product.
+
+    Args:
+        product_name: e.g. 'AcmePhone X', 'AcmeBook Pro', 'AcmeBuds'.
+    """
+    key = product_name.strip().lower()
+    for name, policy in RETURN_POLICY.items():
+        if name in key or key in name:
+            return policy
+    return ("No specific return policy found for that product. General policy: "
+            "most items are returnable within 30 days in original condition.")
+
+
+# ---------------------------------------------------------------------------
+# Sub-agents, exposed to the supervisor AS TOOLS.
+# The docstrings below are what the supervisor reads to decide routing, so they
+# are written to describe each sub-agent's domain crisply.
+# ---------------------------------------------------------------------------
+
+ORDER_PROMPT = (
+    "You are the Order sub-agent for Acme. You handle order status and shipping "
+    "questions only. Use get_order_status when an order ID is provided. "
+    "Do not answer returns/refund questions."
+)
+
+RETURNS_PROMPT = (
+    "You are the Returns sub-agent for Acme. You handle return eligibility and "
+    "refund questions only. "
+    "If the customer names a product, call get_return_policy with that product "
+    "name directly — do NOT ask for an order number, you do not need one. "
+    "Only if the customer gives an order ID but NOT a product should you call "
+    "get_order_status first to find the product, then get_return_policy. "
+    "Do not answer order-tracking questions."
+)
+
+@tool
+def order_agent(query: str) -> str:
+    """Handle ORDER STATUS and SHIPPING questions: where an order is, whether it
+    has shipped, tracking numbers, estimated delivery. Use for anything about the
+    progress or location of a purchase the customer has already placed.
+
+    Args:
+        query: the customer's order/shipping question, verbatim.
+    """
+    agent = Agent(model=load_model(), system_prompt=ORDER_PROMPT, tools=[get_order_status])
+    return str(agent(query))
+
+
+@tool
+def returns_agent(query: str) -> str:
+    """Handle RETURN ELIGIBILITY and REFUND questions: whether an item can be
+    returned, return windows, restocking fees, refund timing and method. Use for
+    anything about sending an item back or getting money back.
+
+    Args:
+        query: the customer's return/refund question, verbatim.
+    """
+    agent = Agent(model=load_model(), system_prompt=RETURNS_PROMPT, tools=[get_return_policy])
+    return str(agent(query))
+
+# ---------------------------------------------------------------------------
+# Supervisor: routes, or declines when unsure.
+# ---------------------------------------------------------------------------
+
+SUPERVISOR_PROMPT = """
+You are a customer-support orchestrator for Acme. You do not answer questions
+yourself and you do not ask the customer for information you can look up. You
+have two specialists available as tools:
+
+- order_agent: order status and shipping (tracking, delivery, "where is my
+  order"), and looking up the details of an order by its order ID (including
+  which products are in it).
+- returns_agent: return eligibility and refunds (whether an item can be sent
+  back, return windows, restocking fees, refund rules and timing).
+
+How to handle a message:
+1. Judge by the customer's INTENT, not just keywords. A message that mentions an
+   order number but asks to send the item back is a RETURNS request.
+2. If it clearly fits ONLY orders/shipping, call order_agent and return its answer.
+3. If it clearly fits ONLY returns/refunds AND the customer already named the
+   product, call returns_agent and return its answer.
+4. If it is a returns/refund request that references an ORDER ID but NOT a
+   product name, you MUST resolve it in two steps: FIRST call order_agent to look
+   up that order and identify the product(s) in it, THEN call returns_agent,
+   passing the product name(s) you learned so it can give the return policy. Do
+   NOT ask the customer which product it is — look it up yourself.
+5. You may call more than one specialist when a request needs information from
+   both. Feed the result of the first call into the next call as needed.
+6. Only if the message is genuinely ambiguous about intent (could be either an
+   order-tracking OR a returns request), or fits neither, DO NOT call any tool.
+   Instead reply: "I'm not sure whether this is an order or a returns question.
+   Could you clarify, or I can connect you with a support agent." Never guess.
+
+Return the specialist's final answer to the customer.
+"""
 
 
 # Add MCP client to tools if available
@@ -89,14 +196,14 @@ def agent_factory():
             cache.popitem(last=False)
         cache[session_id] = Agent(
             model=load_model(),
-            system_prompt=DEFAULT_SYSTEM_PROMPT,
-            tools=tools,
+            system_prompt=SUPERVISOR_PROMPT,
+            tools=[order_agent, returns_agent, get_product_faq],
             conversation_manager=_make_conversation_manager(),
             hooks=[
             ],
         )
         return cache[session_id]
-    return get_or_create_agent
+    return get_or_create_agent  
 get_or_create_agent = agent_factory()
 
 

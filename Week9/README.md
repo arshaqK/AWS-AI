@@ -1,4 +1,4 @@
-# Bedrock AgentCore — Customer Support Agent (Tasks 1 & 2)
+# Bedrock AgentCore — Customer Support Agent 
 
 Customer-support agents built on **Amazon Bedrock AgentCore** (Bedrock Agents Classic is closed to new accounts), using code-based Strands agents, an S3 Vectors knowledge base, and a Bedrock guardrail. Region: `us-west-2`.
 

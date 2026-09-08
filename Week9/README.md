@@ -2,8 +2,6 @@
 
 Customer-support agents built on **Amazon Bedrock AgentCore** (Bedrock Agents Classic is closed to new accounts), using code-based Strands agents, an S3 Vectors knowledge base, and a Bedrock guardrail. Region: `us-west-2`.
 
-> Screenshots are referenced as `.png` in the same folder as this README — adjust the path/extension if yours differ.
-
 ---
 
 ## Task 1 — Single Agent: Customer Support Bot

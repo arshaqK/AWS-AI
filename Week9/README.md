@@ -8,6 +8,8 @@ Customer-support agents built on **Amazon Bedrock AgentCore** (Bedrock Agents Cl
 
 ## Task 1 — Single Agent: Customer Support Bot
 
+![Task 1 architecture](screenshots/task1.png)
+
 A single agent with real tool use, a knowledge base, and a content-safety guardrail.
 
 - **Tools:** `get_order_status` (mock order data) and `get_product_faq` (retrieves from the S3 Vectors knowledge base).
@@ -40,6 +42,8 @@ Deployed agent invoked from the CLI.
 ---
 
 ## Task 2 — Multi-Agent: Supervisor Routing System
+
+![Task 2 architecture](screenshots/task2.png)
 
 Extends Task 1 into a supervisor that routes each message to the right specialist sub-agent, using the Strands "agents as tools" pattern.
 

@@ -1,0 +1,52 @@
+{
+  "dataset": "orders",
+  "description": "Weekly orders export from Trailhead Outfitters (fictional e-commerce vendor). Contract taken from the hand-written golden ETL of Phase 1.4.",
+  "primary_key": ["order_id"],
+  "raw_key": ["order_id"],
+  "columns": [
+    {"name": "order_id", "type": "string", "description": "Order identifier, e.g. ORD-100001."},
+    {"name": "order_date", "type": "date", "description": "Date the order was placed; null when unknown."},
+    {"name": "customer_id", "type": "string", "description": "Buyer identifier, e.g. CUST-10001."},
+    {"name": "email_is_valid", "type": "boolean", "description": "Whether the buyer's email has the form name@domain.tld."},
+    {"name": "email_sha256", "type": "string", "description": "SHA-256 of the trimmed, lower-cased email (PII masked)."},
+    {"name": "ship_country", "type": "string", "description": "Destination country, ISO 3166-1 alpha-2."},
+    {"name": "phone_sha256", "type": "string", "description": "SHA-256 of the phone in E.164 form (PII masked)."},
+    {"name": "product_sku", "type": "string", "description": "Product code."},
+    {"name": "quantity", "type": "int", "description": "Units ordered."},
+    {"name": "unit_price", "type": "decimal(10,2)", "description": "Price per unit in the order currency."},
+    {"name": "currency", "type": "string", "description": "ISO 4217 currency code."},
+    {"name": "discount_code", "type": "string", "description": "Promo code; usually empty by design."},
+    {"name": "order_status", "type": "string", "description": "Lifecycle state, one of 5 canonical values."},
+    {"name": "notes", "type": "string", "description": "Free-text delivery notes."}
+  ],
+  "partition": {"name": "order_month", "type": "string", "rule": "'YYYY-MM' from order_date, or 'unknown' when order_date is null"},
+  "pii": [
+    {"column": "customer_email", "treatment": "hash", "output": "email_sha256", "note": "trim + lower-case, then SHA-256"},
+    {"column": "phone", "treatment": "hash", "output": "phone_sha256", "note": "normalise to E.164, then SHA-256"},
+    {"column": "customer_name", "treatment": "drop", "output": null, "note": "customer_id already identifies the buyer"}
+  ],
+  "cleaning_rules": [
+    "order_date: Python date. Parse every layout the profile shows.",
+    "order_status: lower-case, one of: delivered, shipped, pending, cancelled, returned. Map spelling variants onto these.",
+    "ship_country: ISO 3166-1 alpha-2, upper-case. currency: ISO 4217, upper-case.",
+    "unit_price: decimal.Decimal quantized to 0.01; strip currency symbols and thousands separators.",
+    "quantity: integer (\"2.0\" -> 2); a fractional quantity raises ValueError. Use pandas Int64.",
+    "customer_email: trim + lower-case. email_is_valid = matches name@domain.tld. email_sha256 = SHA-256 hex of the normalised email (null if no email).",
+    "phone: normalise to E.164 (+<calling code><digits>), using the calling code of the row's ship_country when the number has no '+'. phone_sha256 = SHA-256 hex (null if no phone).",
+    "customer_name: drop it (customer_id identifies the buyer).",
+    "discount_code: upper-case. customer_id, product_sku, notes: trimmed text."
+  ],
+  "rules": [
+    {"id": "R4_valid_dates", "type": "date_range", "column": "order_date", "min": "2000-01-01", "max": "today"},
+    {"id": "R5_statuses", "type": "allowed_values", "column": "order_status", "values": ["delivered", "shipped", "pending", "cancelled", "returned"]},
+    {"id": "R6_countries", "type": "matches", "column": "ship_country", "pattern": "^[A-Z]{2}$", "description": "a 2-letter upper-case ISO code"},
+    {"id": "R7_pii_hashed", "type": "hashed", "columns": ["email_sha256", "phone_sha256"]}
+  ],
+  "info": [
+    {"name": "null_order_dates", "type": "null_count", "column": "order_date"},
+    {"name": "null_unit_prices", "type": "null_count", "column": "unit_price"},
+    {"name": "invalid_emails", "type": "false_count", "column": "email_is_valid"},
+    {"name": "distinct_countries", "type": "distinct_count", "column": "ship_country"},
+    {"name": "distinct_statuses", "type": "distinct_count", "column": "order_status"}
+  ]
+}

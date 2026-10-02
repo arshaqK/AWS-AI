@@ -1,0 +1,120 @@
+{
+  "dataset": "orders_export.csv",
+  "description": "Raw weekly orders export from Trailhead Outfitters (fictional e-commerce vendor)",
+  "seed": 42,
+  "vendor_conventions": {
+    "slash_dates": "DD/MM/YYYY (vendor is EU-hosted); ambiguous days like 03/04/2025 mean 3 April",
+    "sentinel_dates": "1900-01-01 is the vendor system's placeholder for 'unknown' - treat as invalid"
+  },
+  "counts": {
+    "ambiguous_slash_dates_day_le_12": 50,
+    "currency_lowercase": 60,
+    "email_malformed": 3,
+    "email_padded_whitespace": 38,
+    "email_uppercase": 33,
+    "quantity_float_formatted": 35,
+    "sentinel_dates_1900": 3,
+    "unit_price_with_symbol_or_comma": 79
+  },
+  "date_formats": {
+    "DD/MM/YYYY": 129,
+    "YYYY-MM-DD": 302,
+    "ISO-8601 datetime (UTC)": 66,
+    "sentinel 1900-01-01": 3
+  },
+  "null_tokens": {
+    "phone": {
+      "null": 15,
+      "-": 15,
+      "N/A": 9,
+      "<empty>": 8
+    },
+    "unit_price": {
+      "<empty>": 8,
+      "null": 7,
+      "N/A": 9,
+      "-": 2
+    },
+    "discount_code": {
+      "<empty>": 257,
+      "null": 79,
+      "N/A": 72
+    }
+  },
+  "country_raw_to_iso": {
+    "CA": "CA",
+    "Canada": "CA",
+    "DE": "DE",
+    "Deutschland": "DE",
+    "FR": "FR",
+    "France": "FR",
+    "GB": "GB",
+    "Germany": "DE",
+    "U.S.": "US",
+    "UK": "GB",
+    "US": "US",
+    "USA": "US",
+    "United Kingdom": "GB",
+    "United States": "US",
+    "canada": "CA",
+    "gb": "GB",
+    "us": "US"
+  },
+  "status_raw_to_canonical": {
+    "Canceled": "cancelled",
+    "Cancelled": "cancelled",
+    "DELIVERED": "delivered",
+    "Delivered": "delivered",
+    "Pending": "pending",
+    "Returned": "returned",
+    "SHIPPED": "shipped",
+    "Shipped": "shipped",
+    "canceled": "cancelled",
+    "cancelled": "cancelled",
+    "delivered": "delivered",
+    "pending": "pending",
+    "returned": "returned",
+    "shipped": "shipped"
+  },
+  "rows_in_file": 508,
+  "unique_orders": 500,
+  "exact_duplicate_rows": 8,
+  "duplicated_order_ids": [
+    "ORD-100007",
+    "ORD-100031",
+    "ORD-100039",
+    "ORD-100040",
+    "ORD-100109",
+    "ORD-100254",
+    "ORD-100356",
+    "ORD-100498"
+  ],
+  "columns": [
+    "order_id",
+    "order_date",
+    "customer_id",
+    "customer_name",
+    "customer_email",
+    "phone",
+    "ship_country",
+    "product_sku",
+    "quantity",
+    "unit_price",
+    "currency",
+    "discount_code",
+    "order_status",
+    "notes"
+  ],
+  "pii_columns": [
+    "customer_name",
+    "customer_email",
+    "phone"
+  ],
+  "expected_clean_output": {
+    "rows_after_dedup": 500,
+    "rows_with_invalid_order_date": 3,
+    "rows_with_unparseable_unit_price": 26,
+    "distinct_ship_country_after_normalizing": 5,
+    "distinct_order_status_after_normalizing": 5
+  }
+}

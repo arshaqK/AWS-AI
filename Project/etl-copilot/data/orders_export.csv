@@ -1,0 +1,509 @@
+order_id,order_date,customer_id,customer_name,customer_email,phone,ship_country,product_sku,quantity,unit_price,currency,discount_code,order_status,notes
+ORD-100001,24/03/2025,CUST-10069,Olivia O'Neil,olivia.oneil37@proton.me,+1 (288) 485-8385,Canada,SKU-MAT-UL,1,99.95,CAD,,pending,
+ORD-100002,2025-05-23,CUST-10071,Aisha García,aisha.garcia12@icloud.com,287.447.7658,USA,SKU-PLS-CF,1,"$1,149.00",USD,,shipped,"Customer said ""urgent"" on phone"
+ORD-100003,2025-03-30,CUST-10136,Mateo Lee,mateo.lee55@yahoo.com,+1 (538) 560-8434,Canada,SKU-JKT-RN,1,129.00,CAD,,delivered,
+ORD-100004,2025-06-02,CUST-10135,Lucas Ali,  lucas.ali16@proton.me ,398.503.4727,United States,SKU-TNT-2P,2,249.00,USD,,shipped,
+ORD-100005,2025-05-27,CUST-10004,James Lee,james.lee26@proton.me,+1 (548) 388-1841,us,SKU-BAG-20F,2,189.50,USD,TRAIL20,Delivered,
+ORD-100006,2025-06-05,CUST-10107,Chloé Ali,chloe.ali41@icloud.com,+447355898381,United Kingdom,SKU-MAT-UL,4,$84.96,GBP,WELCOME15,shipped,Replacement for order damaged in transit
+ORD-100007,2025-02-10,CUST-10021,Fatima Kowalski,fatima.kowalski75@icloud.com,360.202.7693,U.S.,SKU-PLS-CF,1,1149.00,USD,,Pending,Gift wrap - birthday present
+ORD-100008,2025-05-20,CUST-10030,Olivia Silva,olivia.silva98@outlook.com,null,United Kingdom,SKU-PLS-CF,1,1034.10,GBP,,shipped,"Paid via gift card, balance remaining"
+ORD-100009,2025-06-04,CUST-10083,Sofia Dubois,  sofia.dubois43@yahoo.com ,+18907891339,United States,SKU-MAT-UL,1,89.95,USD,null,delivered,
+ORD-100010,2025-03-31,CUST-10121,Zoë Johnson,zoe.johnson80@proton.me,307.364.6403,Canada,SKU-BTL-1L,1,,CAD,N/A,Cancelled,Replacement for order damaged in transit
+ORD-100011,2025-04-29,CUST-10139,Björn O'Neil,bjorn.oneil79@proton.me,5708379167,US,SKU-JKT-RN,1,129.00,USD,WELCOME15,pending,"Deliver after 5pm, ring twice"
+ORD-100012,2025-05-22,CUST-10004,James Lee,james.lee26@proton.me,3166722924,USA,SKU-PLS-CF,3,1149.00,USD,N/A,shipped,
+ORD-100013,04/02/2025,CUST-10131,Mateo Müller,mateo.muller78@proton.me,+44 (624) 548-9318,GB,SKU-BTL-1L,2,29.71,GBP,FREESHIP,DELIVERED,"Deliver after 5pm, ring twice"
+ORD-100014,2025-04-27T06:44:15Z,CUST-10097,Zoë Rossi,zoe.rossi66@icloud.com,-,us,SKU-HLP-400,4,42.50,usd,null,Delivered,"Customer said ""urgent"" on phone"
+ORD-100015,2025-05-15T00:46:09Z,CUST-10026,James Wang,james.wang88@proton.me,870.358.2225,Germany,SKU-STV-MC,1,64.00,EUR,N/A,returned,"Deliver after 5pm, ring twice"
+ORD-100016,2025-06-08,CUST-10010,Ethan Silva,ethan.silva74@outlook.com,494.432.2480,GB,SKU-BAG-20F,1,,GBP,,delivered,"Café delivery, ask for Zoë"
+ORD-100017,2025-02-13,CUST-10047,Olivia Kowalski,olivia.kowalski24@yahoo.com,591.834.4945,U.S.,SKU-PCK-45L,1,143.99,usd,,Shipped,
+ORD-100018,2025-03-30T09:40:27Z,CUST-10114,Chloé Andersson,chloe.andersson54@gmail.com,+16675094263,us,SKU-BAG-20F,1,161.07,USD,FREESHIP,DELIVERED,Replacement for order damaged in transit
+ORD-100019,05/06/2025,CUST-10013,Mateo Müller,mateo.muller48@yahoo.com,4939944770,United States,SKU-JKT-RN,1,129.00,USD,,Pending,"Café delivery, ask for Zoë"
+ORD-100020,2025-02-03,CUST-10094,Hannah Müller,hannah.muller79@proton.me,+1 (965) 625-3877,U.S.,SKU-STV-MC,1,64.00,USD,,pending,
+ORD-100021,2025-01-20,CUST-10120,James Dubois,james.dubois44@icloud.com,+18929417511,U.S.,SKU-STV-MC,1,64.00,USD,,SHIPPED,"Leave at back door, please"
+ORD-100022,2025-06-22,CUST-10028,James O'Neil,JAMES.ONEIL65@OUTLOOK.COM,7745354626,us,SKU-BTL-1L,1,34.95,USD,,DELIVERED,
+ORD-100023,2025-04-27,CUST-10100,Noah Rossi,noah.rossi19@gmail.com,913.753.7866,UK,SKU-HLP-400,1,36.12,GBP,TRAIL20,delivered,
+ORD-100024,2025-01-26T11:34:57Z,CUST-10093,Lucas Lee,lucas.lee17@outlook.com,+1 (567) 262-7523,US,SKU-PLS-CF,1,976.65,usd,,Pending,
+ORD-100025,2025-05-31,CUST-10054,Maria Novak,maria.novak95@proton.me,5369923417,U.S.,SKU-TNT-2P,1,249.00,USD,SPRING10,delivered,
+ORD-100026,2025-01-05,CUST-10083,Sofia Dubois,SOFIA.DUBOIS43@YAHOO.COM,+1 (959) 631-9619,US,SKU-PLS-CF,1,$976.65,USD,,pending,"Customer said ""urgent"" on phone"
+ORD-100027,2025-01-16T12:27:43Z,CUST-10008,Mateo Ali,  mateo.ali34@gmail.com ,+19296542204,United States,SKU-MAT-UL,1,84.96,USD,null,shipped,"Deliver after 5pm, ring twice"
+ORD-100028,26/01/2025,CUST-10111,Ahmed Nguyen,  ahmed.nguyen31@yahoo.com ,870.866.4522,USA,SKU-HLP-400,1,38.25,USD,,Delivered,Replacement for order damaged in transit
+ORD-100029,2025-01-18,CUST-10122,Hannah Novak,  hannah.novak73@gmail.com ,+16422987105,U.S.,SKU-TNT-2P,1,249.00,USD,N/A,Cancelled,
+ORD-100030,2025-04-01,CUST-10080,Emma Kowalski,emma.kowalski86@outlook.com,+1 (358) 872-8900,US,SKU-STV-MC,2,64.00,USD,null,SHIPPED,"Deliver after 5pm, ring twice"
+ORD-100031,2025-06-05T22:17:01Z,CUST-10007,Emma Wang,emma.wang12@icloud.com,+19199806062,United States,SKU-TNT-2P,1,$224.10,USD,,Pending,Gift wrap - birthday present
+ORD-100032,2025-04-27,CUST-10108,Björn Kowalski,bjorn.kowalski71@icloud.com,+449385322391,UK,SKU-PCK-45L,2.0,159.99,GBP,N/A,Delivered,"Deliver after 5pm, ring twice"
+ORD-100033,2025-03-30,CUST-10030,Olivia Silva,olivia.silva98@outlook.com,894.807.8972,United Kingdom,SKU-TNT-2P,1,null,GBP,,Delivered,
+ORD-100034,2025-04-21,CUST-10128,Maria Smith,maria.smith32@,920.435.9196,canada,SKU-STV-MC,1,64.00,CAD,TRAIL20,SHIPPED,Gift wrap - birthday present
+ORD-100035,2025-03-16,CUST-10107,Chloé Ali,CHLOE.ALI41@ICLOUD.COM,+445323758538,United Kingdom,SKU-BAG-20F,1,170.55,GBP,,Pending,"Leave at back door, please"
+ORD-100036,2025-01-20,CUST-10044,Ravi Silva,  ravi.silva55@icloud.com ,722.398.6724,USA,SKU-JKT-RN,1,129.00,USD,,returned,"Customer said ""urgent"" on phone"
+ORD-100037,2025-06-24T18:41:40Z,CUST-10115,Ravi Dubois,ravi.dubois99@proton.me,+1 (530) 842-6179,US,SKU-PLS-CF,1,1149.00,USD,FREESHIP,Delivered,"Leave at back door, please"
+ORD-100038,20/01/2025,CUST-10074,Ravi Lee,ravi.lee2@gmail.com,292.829.9307,GB,SKU-PLS-CF,3,1149.00,GBP,SPRING10,delivered,"Paid via gift card, balance remaining"
+ORD-100039,10/05/2025,CUST-10022,Olivia Hernández,OLIVIA.HERNANDEZ64@GMAIL.COM,924.648.8199,U.S.,SKU-PCK-45L,1,143.99,USD,,Delivered,"Deliver after 5pm, ring twice"
+ORD-100040,2025-03-14,CUST-10099,Ethan Patel,ethan.patel12@outlook.com,N/A,United Kingdom,SKU-BTL-1L,3,$31.46,GBP,FREESHIP,shipped,
+ORD-100041,24/01/2025,CUST-10135,Lucas Ali,lucas.ali16@proton.me,+1 (570) 218-6940,USA,SKU-STV-MC,3,64.00,USD,,SHIPPED,"Paid via gift card, balance remaining"
+ORD-100042,10/01/2025,CUST-10135,Lucas Ali,lucas.ali16@proton.me,+1 (832) 334-7172,USA,SKU-MAT-UL,2,null,USD,N/A,SHIPPED,"Customer said ""urgent"" on phone"
+ORD-100043,2025-05-17,CUST-10060,Fatima Novak,fatima.novak67@yahoo.com,6803987026,U.S.,SKU-PLS-CF,1,1034.10,USD,WELCOME15,cancelled,
+ORD-100044,2025-06-14,CUST-10014,Aisha Khan,aisha.khan78@outlook.com,+13059289452,United States,SKU-BAG-20F,2,$161.07,USD,,Canceled,
+ORD-100045,2025-01-14,CUST-10107,Chloé Ali,chloe.ali41@icloud.com,+44 (595) 283-7142,United Kingdom,SKU-BAG-20F,2,$189.50,GBP,,pending,"Customer said ""urgent"" on phone"
+ORD-100046,2025-01-21,CUST-10002,Chen Lee,chen.lee12@proton.me,353.761.9647,United States,SKU-JKT-RN,1.0,116.10,USD,FREESHIP,Shipped,Replacement for order damaged in transit
+ORD-100047,2025-05-28,CUST-10132,Chen Müller,chen.muller40@gmail.com,+33 (639) 201-6780,France,SKU-PCK-45L,1,$159.99,EUR,null,shipped,"Customer said ""urgent"" on phone"
+ORD-100048,2025-06-12,CUST-10012,Noah Wang,noah.wang49@yahoo.com,9652166850,France,SKU-JKT-RN,2,109.65,EUR,TRAIL20,cancelled,Replacement for order damaged in transit
+ORD-100049,2025-06-28,CUST-10119,Noah Taylor,noah.taylor29@yahoo.com,N/A,CA,SKU-JKT-RN,2,129.00,CAD,,DELIVERED,
+ORD-100050,02/04/2025,CUST-10074,Ravi Lee,RAVI.LEE2@GMAIL.COM,+44 (871) 539-5476,United Kingdom,SKU-HLP-400,2,38.25,GBP,,returned,
+ORD-100051,2025-01-21,CUST-10109,José Andersson,jose.andersson34@outlook.com,+49 (384) 758-5813,DE,SKU-STV-MC,1,54.40,EUR,N/A,delivered,"Café delivery, ask for Zoë"
+ORD-100052,12/03/2025,CUST-10112,Chloé Khan,chloe.khan18@outlook.com,258.276.7655,USA,SKU-TNT-2P,1,,USD,,DELIVERED,
+ORD-100053,2025-06-23,CUST-10040,Maria Brown,maria.brown9@gmail.com,654.981.2259,U.S.,SKU-STV-MC,1,64.00,usd,null,DELIVERED,
+ORD-100007,2025-02-10,CUST-10021,Fatima Kowalski,fatima.kowalski75@icloud.com,360.202.7693,U.S.,SKU-PLS-CF,1,1149.00,USD,,Pending,Gift wrap - birthday present
+ORD-100054,08/03/2025,CUST-10068,Olivia O'Neil,olivia.oneil15@gmail.com,+33 (826) 492-9047,FR,SKU-BAG-20F,1,170.55,EUR,,SHIPPED,
+ORD-100055,2025-03-16T05:45:45Z,CUST-10139,Björn O'Neil,bjorn.oneil79@proton.me,853.378.6922,US,SKU-JKT-RN,2,null,USD,,Shipped,
+ORD-100056,2025-04-12T23:30:33Z,CUST-10080,Emma Kowalski,emma.kowalski86@outlook.com,+1 (619) 788-2208,United States,SKU-BAG-20F,1,$189.50,USD,null,Delivered,Gift wrap - birthday present
+ORD-100057,15/01/2025,CUST-10129,Ethan Johnson,ethan.johnson31@outlook.com,+49 (511) 368-3653,Deutschland,SKU-JKT-RN,1,129.00,EUR,null,DELIVERED,
+ORD-100058,1900-01-01,CUST-10137,Emma Smith,emma.smith54@icloud.com,7943573804,U.S.,SKU-STV-MC,2,$64.00,USD,,SHIPPED,Gift wrap - birthday present
+ORD-100059,2025-05-08T17:18:41Z,CUST-10008,Mateo Ali,mateo.ali34@gmail.com,+1 (694) 450-7653,US,SKU-TNT-2P,1,224.10,USD,,pending,Gift wrap - birthday present
+ORD-100060,2025-04-05,CUST-10034,Chloé Johnson,  chloe.johnson17@icloud.com ,+1 (447) 677-3007,CA,SKU-PCK-45L,1,143.99,CAD,,Canceled,
+ORD-100061,2025-05-08T14:31:56Z,CUST-10041,Ahmed Hernández,ahmed.hernandez31@yahoo.com,223.292.7442,DE,SKU-JKT-RN,1.0,129.00,EUR,N/A,Delivered,
+ORD-100062,2025-02-04T23:23:48Z,CUST-10111,Ahmed Nguyen,ahmed.nguyen31@yahoo.com,246.610.1838,USA,SKU-STV-MC,1,54.40,USD,null,Shipped,
+ORD-100063,2025-04-11,CUST-10025,Zoë Hernández,zoe.hernandez33@proton.me,+1 (771) 574-3363,U.S.,SKU-HLP-400,1.0,42.50,USD,,SHIPPED,
+ORD-100064,2025-06-06,CUST-10084,Aisha Silva,aisha.silva83@proton.me,831.957.5902,Deutschland,SKU-SCK-MW,1,22.00,eur,,returned,"Paid via gift card, balance remaining"
+ORD-100065,2025-06-02,CUST-10007,Emma Wang,emma.wang12@icloud.com,7927914728,U.S.,SKU-PLS-CF,1,976.65,USD,,DELIVERED,
+ORD-100066,2025-01-05,CUST-10049,Chloé Smith,chloe.smith12@outlook.com,622.907.4340,U.S.,SKU-PLS-CF,2,1149.00,USD,N/A,shipped,
+ORD-100067,2025-05-17,CUST-10118,Ravi Lee,ravi.lee96@proton.me,9388975331,DE,SKU-JKT-RN,1,129.00,EUR,N/A,delivered,"Deliver after 5pm, ring twice"
+ORD-100068,2025-03-15,CUST-10071,Aisha García,aisha.garcia12@icloud.com,+15886046654,USA,SKU-BTL-1L,1,34.95,USD,N/A,DELIVERED,
+ORD-100069,2025-02-05,CUST-10070,Emma Rossi,emma.rossi88@yahoo.com,4454481831,U.S.,SKU-JKT-RN,1.0,116.10,USD,,DELIVERED,
+ORD-100070,2025-06-17T15:30:41Z,CUST-10105,Björn Andersson,bjorn.andersson7@proton.me,4945285676,CA,SKU-MAT-UL,1,99.95,CAD,,Returned,Gift wrap - birthday present
+ORD-100071,2025-02-17T09:56:02Z,CUST-10127,Mateo Brown,MATEO.BROWN84@GMAIL.COM,+17818172758,United States,SKU-BTL-1L,1,29.71,USD,N/A,Delivered,"Leave at back door, please"
+ORD-100072,28/04/2025,CUST-10042,Sofia Lee,sofia.lee17@proton.me,2149546523,UK,SKU-PCK-45L,1,143.99,GBP,SPRING10,Delivered,"Customer said ""urgent"" on phone"
+ORD-100073,2025-03-05,CUST-10083,Sofia Dubois,sofia.dubois43@yahoo.com,+16579715374,United States,SKU-MAT-UL,2.0,99.95,usd,TRAIL20,DELIVERED,"Deliver after 5pm, ring twice"
+ORD-100074,2025-06-26,CUST-10080,Emma Kowalski,emma.kowalski86@outlook.com,+1 (502) 576-4618,USA,SKU-PLS-CF,1,976.65,USD,null,cancelled,
+ORD-100075,2025-05-15,CUST-10021,Fatima Kowalski,fatima.kowalski75@icloud.com,N/A,U.S.,SKU-SCK-MW,1,18.70,USD,N/A,DELIVERED,"Customer said ""urgent"" on phone"
+ORD-100076,2025-04-27,CUST-10015,Noah Müller,noah.muller60@icloud.com,7772598575,United States,SKU-TNT-2P,1,249.00,usd,,Shipped,
+ORD-100077,2025-01-09,CUST-10121,Zoë Johnson,zoe.johnson80@proton.me,338.984.7887,Canada,SKU-PLS-CF,2,"$1,034.10",CAD,,shipped,
+ORD-100078,2025-05-18,CUST-10046,Chen Brown,  chen.brown25@outlook.com ,+14282031372,Canada,SKU-SCK-MW,1,22.00,CAD,,DELIVERED,Gift wrap - birthday present
+ORD-100079,2025-03-03,CUST-10005,Zoë Novak,  zoe.novak36@gmail.com ,+1 (234) 657-1797,US,SKU-HLP-400,1,$42.50,USD,null,DELIVERED,Replacement for order damaged in transit
+ORD-100080,2025-03-02,CUST-10083,Sofia Dubois,sofia.dubois43@yahoo.com,876.733.4621,United States,SKU-TNT-2P,1,249.00,USD,,returned,"Deliver after 5pm, ring twice"
+ORD-100081,2025-06-28,CUST-10082,Zoë Silva,zoe.silva40@outlook.com,585.388.9813,USA,SKU-BTL-1L,2,31.46,USD,null,shipped,
+ORD-100082,2025-02-22,CUST-10066,Chloé Nguyen,CHLOE.NGUYEN79@PROTON.ME,660.579.2514,USA,SKU-TNT-2P,1,,USD,null,Delivered,"Leave at back door, please"
+ORD-100083,2025-01-04,CUST-10078,Mateo Lee,mateo.lee53@proton.me,+449593208846,UK,SKU-HLP-400,3,42.50,GBP,,delivered,"Customer said ""urgent"" on phone"
+ORD-100084,01/05/2025,CUST-10026,James Wang,james.wang88@proton.me,408.579.6126,Deutschland,SKU-JKT-RN,2.0,109.65,EUR,,Delivered,Gift wrap - birthday present
+ORD-100085,2025-05-08,CUST-10063,Ethan Novak,ethan.novak13@gmail.com,+15454639005,us,SKU-PLS-CF,1,"$1,149.00",USD,null,Returned,"Deliver after 5pm, ring twice"
+ORD-100086,2025-01-20T21:03:48Z,CUST-10009,Chloé Wang,CHLOE.WANG49@GMAIL.COM,N/A,CA,SKU-JKT-RN,1,109.65,CAD,N/A,DELIVERED,"Deliver after 5pm, ring twice"
+ORD-100087,2025-01-04,CUST-10106,Chen Andersson,chen.andersson18@icloud.com,748.493.1280,us,SKU-PCK-45L,1,159.99,USD,,delivered,
+ORD-100088,2025-04-14,CUST-10096,Fatima Ali,fatima.ali84@yahoo.com,9134315914,US,SKU-TNT-2P,1,211.65,USD,,delivered,Replacement for order damaged in transit
+ORD-100089,2025-05-25T03:57:33Z,CUST-10085,Chloé Patel,chloe.patel4@gmail.com,+1 (435) 416-8790,US,SKU-BTL-1L,2,$34.95,USD,WELCOME15,SHIPPED,Gift wrap - birthday present
+ORD-100090,2025-03-18,CUST-10020,Olivia Brown,olivia.brown96@proton.me,+1 (598) 893-9856,USA,SKU-BAG-20F,1,$189.50,USD,FREESHIP,returned,
+ORD-100091,2025-04-26,CUST-10070,Emma Rossi,emma.rossi88@yahoo.com,5846424043,us,SKU-BAG-20F,2,189.50,usd,WELCOME15,pending,"Leave at back door, please"
+ORD-100092,2025-01-24,CUST-10028,James O'Neil,james.oneil65@outlook.com,+1 (568) 979-5419,US,SKU-PCK-45L,1,135.99,usd,,shipped,Gift wrap - birthday present
+ORD-100093,2025-03-16,CUST-10004,James Lee,james.lee26@proton.me,942.772.4977,USA,SKU-HLP-400,1,42.50,usd,N/A,Delivered,"Leave at back door, please"
+ORD-100094,05/03/2025,CUST-10065,Noah Silva,noah.silva37@outlook.com,+49 (831) 400-8501,Germany,SKU-TNT-2P,3,211.65,EUR,N/A,cancelled,
+ORD-100095,2025-06-04T06:30:20Z,CUST-10083,Sofia Dubois,sofia.dubois43@yahoo.com,6075265775,us,SKU-MAT-UL,2,99.95,USD,WELCOME15,SHIPPED,
+ORD-100096,2025-04-29T06:28:51Z,CUST-10007,Emma Wang,emma.wang12@icloud.com,9092707703,USA,SKU-BTL-1L,1,31.46,usd,N/A,SHIPPED,"Deliver after 5pm, ring twice"
+ORD-100031,2025-06-05T22:17:01Z,CUST-10007,Emma Wang,emma.wang12@icloud.com,+19199806062,United States,SKU-TNT-2P,1,$224.10,USD,,Pending,Gift wrap - birthday present
+ORD-100097,2025-05-20,CUST-10108,Björn Kowalski,bjorn.kowalski71@icloud.com,+44 (918) 749-2392,UK,SKU-STV-MC,1,54.40,GBP,,returned,
+ORD-100098,2025-01-26,CUST-10003,James Khan,james.khan28@outlook.com,731.771.4621,us,SKU-PLS-CF,2,$976.65,USD,,Delivered,
+ORD-100099,2025-03-31,CUST-10037,Hannah Silva,hannah.silva57@proton.me,+1 (411) 733-8912,CA,SKU-PLS-CF,2,1149.00,CAD,TRAIL20,SHIPPED,
+ORD-100100,2025-05-13,CUST-10063,Ethan Novak,ethan.novak13@gmail.com,+1 (773) 636-8570,us,SKU-PCK-45L,1,N/A,USD,,Pending,
+ORD-100101,2025-05-28,CUST-10017,Maria Brown,maria.brown5@yahoo.com,+49 (391) 574-6340,DE,SKU-BTL-1L,1,34.95,EUR,,delivered,"Café delivery, ask for Zoë"
+ORD-100102,22/06/2025,CUST-10045,Maria Wang,maria.wang8@icloud.com,8298042388,United States,SKU-BAG-20F,1,189.50,USD,,shipped,
+ORD-100103,2025-06-12,CUST-10125,Hannah O'Neil,hannah.oneil97@icloud.com,377.768.3733,USA,SKU-PCK-45L,1,159.99,USD,,canceled,Gift wrap - birthday present
+ORD-100104,17/04/2025,CUST-10126,Ahmed Taylor,ahmed.taylor3@proton.me,3712841505,USA,SKU-BTL-1L,1,$34.95,USD,N/A,Shipped,"Café delivery, ask for Zoë"
+ORD-100105,10/03/2025,CUST-10030,Olivia Silva,olivia.silva98@outlook.com,5757551681,gb,SKU-SCK-MW,1,22.00,GBP,,Cancelled,"Customer said ""urgent"" on phone"
+ORD-100106,2025-03-02,CUST-10031,Björn Smith,bjorn.smith77@yahoo.com,+1 (905) 559-8015,USA,SKU-JKT-RN,2,109.65,USD,,returned,
+ORD-100107,2025-05-12T21:52:06Z,CUST-10069,Olivia O'Neil,  olivia.oneil37@proton.me ,+19686211971,canada,SKU-PCK-45L,2,159.99,CAD,N/A,DELIVERED,Replacement for order damaged in transit
+ORD-100108,2025-06-10,CUST-10069,Olivia O'Neil,olivia.oneil37@proton.me,848.987.2525,canada,SKU-BTL-1L,1,31.46,CAD,SPRING10,pending,Replacement for order damaged in transit
+ORD-100109,17/01/2025,CUST-10092,Lucas Hernández,lucas.hernandez40@icloud.com,+1 (639) 416-9105,Canada,SKU-STV-MC,1,57.60,CAD,,delivered,
+ORD-100110,2025-02-10,CUST-10032,Chen Silva,CHEN.SILVA40@OUTLOOK.COM,+16384073161,United States,SKU-PCK-45L,2,159.99,USD,,DELIVERED,
+ORD-100040,2025-03-14,CUST-10099,Ethan Patel,ethan.patel12@outlook.com,N/A,United Kingdom,SKU-BTL-1L,3,$31.46,GBP,FREESHIP,shipped,
+ORD-100111,20/04/2025,CUST-10060,Fatima Novak,fatima.novak67@yahoo.com,N/A,U.S.,SKU-PLS-CF,1,1149.00,USD,SPRING10,Delivered,"Paid via gift card, balance remaining"
+ORD-100112,2025-01-27,CUST-10027,Emma Wang,emma.wang38@icloud.com,3405913181,canada,SKU-PCK-45L,1,135.99,CAD,,canceled,
+ORD-100113,2025-01-26,CUST-10023,Chen Johnson,  chen.johnson81@outlook.com ,+19475936759,Canada,SKU-PCK-45L,1,159.99,CAD,,Canceled,
+ORD-100114,2025-06-05,CUST-10133,Lucas Novak,lucas.novak87@icloud.com,5028611894,UK,SKU-PLS-CF,1,$976.65,GBP,TRAIL20,Returned,Gift wrap - birthday present
+ORD-100115,2025-04-04,CUST-10108,Björn Kowalski,bjorn.kowalski71@icloud.com,,GB,SKU-BTL-1L,1,31.46,GBP,N/A,delivered,
+ORD-100116,18/05/2025,CUST-10138,Mateo Andersson,mateo.andersson91@outlook.com,+15172809377,USA,SKU-SCK-MW,1,22.00,USD,,Delivered,Gift wrap - birthday present
+ORD-100117,27/04/2025,CUST-10030,Olivia Silva,OLIVIA.SILVA98@OUTLOOK.COM,+44 (882) 959-3877,UK,SKU-TNT-2P,1,211.65,GBP,,delivered,"Paid via gift card, balance remaining"
+ORD-100118,2025-01-08,CUST-10031,Björn Smith,bjorn.smith77@yahoo.com,7362655308,U.S.,SKU-BAG-20F,1,189.50,USD,,Pending,
+ORD-100119,2025-01-01,CUST-10131,Mateo Müller,mateo.muller78@proton.me,450.247.8729,UK,SKU-PCK-45L,3,135.99,GBP,,delivered,"Paid via gift card, balance remaining"
+ORD-100120,11/03/2025,CUST-10082,Zoë Silva,zoe.silva40@outlook.com,+1 (322) 714-1862,U.S.,SKU-TNT-2P,3,224.10,USD,,Shipped,"Leave at back door, please"
+ORD-100121,2025-03-16,CUST-10052,Zoë Nguyen,zoe.nguyen55@proton.me,837.448.8600,us,SKU-JKT-RN,2,$129.00,USD,TRAIL20,SHIPPED,
+ORD-100122,01/01/2025,CUST-10086,Aisha Müller,aisha.muller75@yahoo.com,+49 (955) 944-6038,Deutschland,SKU-JKT-RN,1,129.00,eur,null,delivered,"Customer said ""urgent"" on phone"
+ORD-100123,2025-05-29,CUST-10022,Olivia Hernández,  olivia.hernandez64@gmail.com ,603.276.2020,USA,SKU-JKT-RN,1,116.10,USD,,Delivered,
+ORD-100124,2025-02-09,CUST-10028,James O'Neil,james.oneil65@outlook.com,521.616.2978,USA,SKU-PLS-CF,1,"$1,149.00",USD,null,delivered,
+ORD-100125,2025-03-05T12:32:03Z,CUST-10024,Ravi Ali,ravi.ali9@icloud.com,+14663781509,Canada,SKU-SCK-MW,2,$19.80,CAD,SPRING10,cancelled,
+ORD-100126,2025-04-13,CUST-10051,Liam Dubois,liam.dubois1@icloud.com,+498602865240,DE,SKU-TNT-2P,4,224.10,eur,,delivered,
+ORD-100127,2025-05-27,CUST-10044,Ravi Silva,ravi.silva55@icloud.com,7082307270,USA,SKU-STV-MC,1,64.00,USD,null,delivered,"Customer said ""urgent"" on phone"
+ORD-100128,2025-05-21,CUST-10106,Chen Andersson,  chen.andersson18@icloud.com ,+1 (592) 340-7868,U.S.,SKU-JKT-RN,1,129.00,USD,null,pending,"Café delivery, ask for Zoë"
+ORD-100129,2025-03-24,CUST-10129,Ethan Johnson,ethan.johnson31@outlook.com,null,DE,SKU-PLS-CF,1,1149.00,EUR,,SHIPPED,
+ORD-100130,28/05/2025,CUST-10057,Liam Khan,liam.khan77@gmail.com,+1 (563) 377-3885,United States,SKU-STV-MC,3.0,64.00,USD,,canceled,"Deliver after 5pm, ring twice"
+ORD-100131,2025-02-14,CUST-10080,Emma Kowalski,  emma.kowalski86@outlook.com ,-,US,SKU-STV-MC,3,64.00,USD,,Delivered,"Café delivery, ask for Zoë"
+ORD-100132,29/01/2025,CUST-10037,Hannah Silva,hannah.silva57@proton.me,274.582.7481,Canada,SKU-BTL-1L,1,31.46,CAD,,pending,
+ORD-100133,2025-04-07,CUST-10045,Maria Wang,maria.wang8@icloud.com,+13303811029,U.S.,SKU-HLP-400,2,null,USD,,Shipped,"Customer said ""urgent"" on phone"
+ORD-100134,26/03/2025,CUST-10037,Hannah Silva,hannah.silva57@proton.me,+15273712453,canada,SKU-STV-MC,1,64.00,CAD,,delivered,"Paid via gift card, balance remaining"
+ORD-100135,2025-02-12T15:56:24Z,CUST-10108,Björn Kowalski,bjorn.kowalski71@icloud.com,5843038855,UK,SKU-PCK-45L,1,159.99,GBP,,delivered,
+ORD-100136,2025-05-21T02:21:38Z,CUST-10020,Olivia Brown,olivia.brown96@proton.me,694.921.1507,USA,SKU-MAT-UL,2,99.95,USD,null,pending,Replacement for order damaged in transit
+ORD-100137,2025-03-18,CUST-10073,Aisha Müller,AISHA.MULLER95@ICLOUD.COM,+44 (785) 762-9043,United Kingdom,SKU-TNT-2P,1,211.65,gbp,,returned,
+ORD-100138,2025-04-12,CUST-10079,Noah Müller,noah.muller23@icloud.com,471.293.9914,Canada,SKU-HLP-400,1,42.50,CAD,null,DELIVERED,Replacement for order damaged in transit
+ORD-100139,22/01/2025,CUST-10025,Zoë Hernández,zoe.hernandez33@proton.me,623.974.4727,us,SKU-SCK-MW,1,19.80,USD,N/A,Cancelled,"Deliver after 5pm, ring twice"
+ORD-100140,27/05/2025,CUST-10133,Lucas Novak,lucas.novak87@icloud.com,+44 (323) 975-8357,UK,SKU-JKT-RN,2,$116.10,GBP,,Canceled,"Leave at back door, please"
+ORD-100141,2025-01-23,CUST-10018,Ahmed Rossi,ahmed.rossi73@yahoo.com,533.482.9514,US,SKU-MAT-UL,1,99.95,USD,,Returned,
+ORD-100142,30/03/2025,CUST-10138,Mateo Andersson,mateo.andersson91@outlook.com,null,us,SKU-PCK-45L,1,null,USD,FREESHIP,returned,
+ORD-100143,2025-03-19,CUST-10087,Ethan Kowalski,ethan.kowalski45@yahoo.com,+19129012609,USA,SKU-PCK-45L,1,159.99,USD,,delivered,"Paid via gift card, balance remaining"
+ORD-100144,13/05/2025,CUST-10125,Hannah O'Neil,hannah.oneil97@icloud.com,+1 (727) 362-2075,U.S.,SKU-HLP-400,1,N/A,USD,,delivered,
+ORD-100145,2025-06-30,CUST-10093,Lucas Lee,lucas.lee17@outlook.com,6757177503,US,SKU-TNT-2P,1,$224.10,USD,,delivered,"Paid via gift card, balance remaining"
+ORD-100146,2025-03-14,CUST-10024,Ravi Ali,RAVI.ALI9@,+17859984511,canada,SKU-JKT-RN,1,116.10,CAD,,Delivered,Replacement for order damaged in transit
+ORD-100147,03/06/2025,CUST-10045,Maria Wang,maria.wang8@icloud.com,822.512.5511,us,SKU-STV-MC,1,64.00,USD,,DELIVERED,"Leave at back door, please"
+ORD-100148,18/03/2025,CUST-10073,Aisha Müller,aisha.muller95@icloud.com,+445444836327,United Kingdom,SKU-BTL-1L,1,34.95,GBP,null,delivered,Replacement for order damaged in transit
+ORD-100149,07/01/2025,CUST-10036,Sofia Lee,sofia.lee97@outlook.com,465.628.7628,US,SKU-MAT-UL,2,99.95,USD,N/A,Canceled,"Deliver after 5pm, ring twice"
+ORD-100150,13/02/2025,CUST-10077,Maria Silva,maria.silva27@outlook.com,385.500.2599,United States,SKU-SCK-MW,2,22.00,USD,,delivered,"Leave at back door, please"
+ORD-100151,2025-05-30,CUST-10067,Chloé Nguyen,chloe.nguyen85@gmail.com,681.254.2166,USA,SKU-SCK-MW,1,18.70,usd,,returned,Gift wrap - birthday present
+ORD-100152,2025-02-06,CUST-10118,Ravi Lee,ravi.lee96@proton.me,2826996449,DE,SKU-STV-MC,1.0,64.00,EUR,,Delivered,
+ORD-100153,2025-06-12,CUST-10112,Chloé Khan,chloe.khan18@outlook.com,N/A,United States,SKU-TNT-2P,2,$211.65,USD,,delivered,
+ORD-100154,2025-01-27,CUST-10034,Chloé Johnson,chloe.johnson17@icloud.com,+1 (371) 266-1749,Canada,SKU-PLS-CF,2,1149.00,CAD,FREESHIP,Delivered,
+ORD-100155,2025-01-05,CUST-10104,Chen Kowalski,chen.kowalski29@outlook.com,334.416.1359,DE,SKU-BAG-20F,1,189.50,EUR,null,Delivered,Replacement for order damaged in transit
+ORD-100156,17/06/2025,CUST-10028,James O'Neil,JAMES.ONEIL65@OUTLOOK.COM,318.626.8279,U.S.,SKU-BTL-1L,1,34.95,USD,,SHIPPED,
+ORD-100157,2025-01-27,CUST-10108,Björn Kowalski,bjorn.kowalski71@icloud.com,489.316.2741,UK,SKU-BTL-1L,2,34.95,GBP,FREESHIP,canceled,"Leave at back door, please"
+ORD-100158,2025-01-01,CUST-10061,Sofia Patel,  sofia.patel31@yahoo.com ,+33 (313) 787-9095,FR,SKU-SCK-MW,1,22.00,EUR,,Delivered,
+ORD-100159,2025-03-16,CUST-10011,Maria Brown,maria.brown99@yahoo.com,,CA,SKU-PCK-45L,1,159.99,CAD,,delivered,
+ORD-100160,2025-04-13,CUST-10030,Olivia Silva,olivia.silva98@outlook.com,5949068835,UK,SKU-BAG-20F,1,$189.50,GBP,null,Shipped,"Café delivery, ask for Zoë"
+ORD-100161,02/04/2025,CUST-10098,Liam Khan,liam.khan37@proton.me,+19443338914,CA,SKU-HLP-400,1,N/A,CAD,,SHIPPED,"Paid via gift card, balance remaining"
+ORD-100162,21/04/2025,CUST-10025,Zoë Hernández,zoe.hernandez33@proton.me,+1 (554) 879-7305,U.S.,SKU-MAT-UL,1,99.95,USD,,delivered,"Leave at back door, please"
+ORD-100163,2025-03-26T01:32:14Z,CUST-10062,Lucas Andersson,lucas.andersson41@gmail.com,-,U.S.,SKU-PLS-CF,1,"$1,149.00",USD,,Delivered,"Deliver after 5pm, ring twice"
+ORD-100164,24/01/2025,CUST-10001,James O'Neil,james.oneil32@outlook.com,852.511.9328,gb,SKU-STV-MC,1.0,64.00,GBP,null,DELIVERED,"Leave at back door, please"
+ORD-100165,2025-01-30,CUST-10116,James Novak,james.novak49@icloud.com,+332025496818,France,SKU-SCK-MW,1,22.00,EUR,N/A,DELIVERED,
+ORD-100166,2025-01-31T12:13:29Z,CUST-10049,Chloé Smith,chloe.smith12@outlook.com,+1 (395) 933-6536,us,SKU-TNT-2P,3,$211.65,USD,null,Returned,"Customer said ""urgent"" on phone"
+ORD-100167,16/05/2025,CUST-10002,Chen Lee,chen.lee12@proton.me,+16437998912,USA,SKU-MAT-UL,1,99.95,USD,null,canceled,"Café delivery, ask for Zoë"
+ORD-100168,2025-03-12,CUST-10064,Björn O'Neil,bjorn.oneil17@yahoo.com,+1 (501) 663-3185,U.S.,SKU-SCK-MW,1,22.00,USD,,DELIVERED,
+ORD-100169,2025-06-22,CUST-10089,Maria Kowalski,maria.kowalski1@proton.me,3827159888,United States,SKU-BAG-20F,2,161.07,USD,null,delivered,
+ORD-100170,2025-01-28,CUST-10134,Sofia Khan,sofia.khan76@outlook.com,+1 (886) 257-4275,USA,SKU-BTL-1L,1,34.95,USD,,delivered,
+ORD-100171,2025-06-15,CUST-10058,Noah Dubois,noah.dubois16@proton.me,+449124941769,gb,SKU-HLP-400,3,42.50,gbp,,shipped,
+ORD-100172,2025-05-31,CUST-10095,Chloé Smith,chloe.smith39@yahoo.com,942.398.5819,US,SKU-PCK-45L,3,159.99,USD,,delivered,
+ORD-100173,30/04/2025,CUST-10085,Chloé Patel,chloe.patel4@gmail.com,3575301833,U.S.,SKU-BTL-1L,1,$34.95,USD,,SHIPPED,
+ORD-100174,2025-05-20,CUST-10107,Chloé Ali,  chloe.ali41@icloud.com ,+44 (426) 418-6437,United Kingdom,SKU-JKT-RN,3,116.10,GBP,,delivered,"Customer said ""urgent"" on phone"
+ORD-100175,14/06/2025,CUST-10062,Lucas Andersson,lucas.andersson41@gmail.com,240.898.6258,US,SKU-HLP-400,1,42.50,USD,null,Delivered,
+ORD-100176,2025-03-24,CUST-10050,José Taylor,jose.taylor28@icloud.com,371.991.9814,US,SKU-JKT-RN,1,116.10,USD,N/A,Shipped,"Paid via gift card, balance remaining"
+ORD-100177,2025-01-07,CUST-10040,Maria Brown,maria.brown9@gmail.com,+1 (289) 275-1889,United States,SKU-SCK-MW,1,22.00,USD,,DELIVERED,
+ORD-100178,02/01/2025,CUST-10137,Emma Smith,emma.smith54@icloud.com,9749631745,US,SKU-STV-MC,3,64.00,USD,N/A,DELIVERED,
+ORD-100179,2025-02-10,CUST-10122,Hannah Novak,  hannah.novak73@gmail.com ,+16007585832,USA,SKU-BTL-1L,1,34.95,usd,,Delivered,"Café delivery, ask for Zoë"
+ORD-100180,2025-05-18,CUST-10101,José Ali,  jose.ali99@gmail.com ,+1 (415) 966-6633,U.S.,SKU-PCK-45L,1,$159.99,USD,,canceled,Replacement for order damaged in transit
+ORD-100181,16/03/2025,CUST-10019,José Dubois,jose.dubois83@icloud.com,+14029438982,United States,SKU-PCK-45L,1,159.99,USD,N/A,DELIVERED,
+ORD-100182,2025-05-25,CUST-10040,Maria Brown,maria.brown9@gmail.com,+1 (638) 372-1079,USA,SKU-HLP-400,1,42.50,USD,,Delivered,
+ORD-100183,13/03/2025,CUST-10021,Fatima Kowalski,fatima.kowalski75@icloud.com,7514015312,US,SKU-BAG-20F,2,189.50,USD,,Canceled,"Deliver after 5pm, ring twice"
+ORD-100184,01/05/2025,CUST-10139,Björn O'Neil,bjorn.oneil79@proton.me,+1 (601) 428-5767,U.S.,SKU-SCK-MW,1,22.00,USD,null,SHIPPED,
+ORD-100185,2025-02-10,CUST-10115,Ravi Dubois,ravi.dubois99@proton.me,+18753498921,US,SKU-JKT-RN,2,129.00,usd,,delivered,
+ORD-100186,2025-06-16,CUST-10011,Maria Brown,maria.brown99@yahoo.com,+17338485480,Canada,SKU-MAT-UL,1,89.95,CAD,null,Delivered,"Deliver after 5pm, ring twice"
+ORD-100187,01/04/2025,CUST-10104,Chen Kowalski,chen.kowalski29@outlook.com,693.818.1108,DE,SKU-PLS-CF,1,1149.00,EUR,,shipped,"Leave at back door, please"
+ORD-100188,04/05/2025,CUST-10030,Olivia Silva,olivia.silva98@outlook.com,,UK,SKU-MAT-UL,1,N/A,gbp,,shipped,"Café delivery, ask for Zoë"
+ORD-100189,19/06/2025,CUST-10005,Zoë Novak,zoe.novak36@gmail.com,+14216598723,USA,SKU-JKT-RN,2,109.65,USD,,DELIVERED,"Leave at back door, please"
+ORD-100190,2025-06-02,CUST-10117,Mateo Nguyen,mateo.nguyen97@icloud.com,-,USA,SKU-MAT-UL,1,84.96,USD,,DELIVERED,
+ORD-100191,2025-01-01T21:41:27Z,CUST-10139,Björn O'Neil,bjorn.oneil79@proton.me,579.244.9680,us,SKU-HLP-400,1,$36.12,USD,,Cancelled,
+ORD-100192,2025-04-15,CUST-10140,Zoë Kowalski,ZOE.KOWALSKI94@PROTON.ME,+1 (961) 207-9561,CA,SKU-HLP-400,1,42.50,CAD,null,DELIVERED,Gift wrap - birthday present
+ORD-100193,2025-06-06,CUST-10094,Hannah Müller,hannah.muller79@proton.me,973.408.7770,U.S.,SKU-PLS-CF,1,1034.10,USD,N/A,Pending,"Paid via gift card, balance remaining"
+ORD-100194,25/04/2025,CUST-10059,Ethan García,ethan.garcia80@gmail.com,302.419.9328,United States,SKU-SCK-MW,1,$22.00,USD,SPRING10,canceled,"Café delivery, ask for Zoë"
+ORD-100195,2025-01-23,CUST-10112,Chloé Khan,chloe.khan18@outlook.com,2818231618,us,SKU-MAT-UL,1,$84.96,USD,FREESHIP,Delivered,Replacement for order damaged in transit
+ORD-100196,2025-03-15,CUST-10133,Lucas Novak,lucas.novak87@icloud.com,7227284795,GB,SKU-STV-MC,1.0,$64.00,GBP,N/A,Delivered,"Deliver after 5pm, ring twice"
+ORD-100254,2025-03-27,CUST-10023,Chen Johnson,CHEN.JOHNSON81@OUTLOOK.COM,null,canada,SKU-JKT-RN,1,129.00,CAD,,delivered,
+ORD-100197,2025-06-30,CUST-10004,James Lee,  james.lee26@proton.me ,+1 (491) 943-6703,United States,SKU-JKT-RN,1,116.10,USD,,SHIPPED,
+ORD-100198,30/01/2025,CUST-10088,Björn Wang,bjorn.wang50@proton.me,7507885098,us,SKU-MAT-UL,1,99.95,USD,null,canceled,
+ORD-100199,2025-01-18,CUST-10067,Chloé Nguyen,chloe.nguyen85@gmail.com,+14258934767,us,SKU-STV-MC,1.0,64.00,usd,,Delivered,"Customer said ""urgent"" on phone"
+ORD-100200,2025-04-01,CUST-10081,Chen Dubois,chen.dubois5@icloud.com,387.964.4115,USA,SKU-JKT-RN,2,129.00,USD,,Delivered,
+ORD-100201,2025-06-23T15:39:00Z,CUST-10021,Fatima Kowalski,fatima.kowalski75@icloud.com,754.243.8901,United States,SKU-PLS-CF,2,976.65,USD,null,Delivered,"Café delivery, ask for Zoë"
+ORD-100202,2025-01-14,CUST-10033,Fatima Khan,fatima.khan11@icloud.com,+1 (753) 233-9232,USA,SKU-PLS-CF,4,1034.10,usd,N/A,shipped,"Leave at back door, please"
+ORD-100203,2025-02-17,CUST-10067,Chloé Nguyen,chloe.nguyen85@gmail.com,682.827.6621,us,SKU-HLP-400,1,42.50,USD,null,DELIVERED,Replacement for order damaged in transit
+ORD-100204,26/01/2025,CUST-10059,Ethan García,ethan.garcia80@gmail.com,+1 (768) 642-7240,USA,SKU-PLS-CF,2,"$1,034.10",USD,null,pending,
+ORD-100205,24/05/2025,CUST-10065,Noah Silva,NOAH.SILVA37@OUTLOOK.COM,null,Germany,SKU-BAG-20F,1,189.50,EUR,,Delivered,"Leave at back door, please"
+ORD-100206,2025-05-28,CUST-10051,Liam Dubois,liam.dubois1@icloud.com,378.999.5663,Deutschland,SKU-SCK-MW,1,22.00,EUR,,Canceled,Gift wrap - birthday present
+ORD-100207,2025-01-19,CUST-10104,Chen Kowalski,chen.kowalski29@outlook.com,5215245773,Deutschland,SKU-HLP-400,1,42.50,EUR,,Delivered,
+ORD-100208,2025-06-19,CUST-10061,Sofia Patel,sofia.patel31@yahoo.com,+33 (967) 281-4450,FR,SKU-BAG-20F,1,$161.07,EUR,,DELIVERED,
+ORD-100209,2025-06-17T12:19:14Z,CUST-10022,Olivia Hernández,olivia.hernandez64@gmail.com,+1 (490) 653-3071,USA,SKU-TNT-2P,1,249.00,USD,,Shipped,"Paid via gift card, balance remaining"
+ORD-100210,2025-02-15,CUST-10139,Björn O'Neil,bjorn.oneil79@proton.me,966.851.8126,U.S.,SKU-BTL-1L,3,34.95,USD,,Delivered,
+ORD-100211,2025-02-04,CUST-10134,Sofia Khan,sofia.khan76@outlook.com,+12089049059,us,SKU-BTL-1L,1,34.95,USD,,DELIVERED,Gift wrap - birthday present
+ORD-100212,1900-01-01,CUST-10102,Fatima Rossi,fatima.rossi92@icloud.com,+1 (599) 587-4614,us,SKU-JKT-RN,1,109.65,USD,null,canceled,
+ORD-100213,2025-02-16,CUST-10018,Ahmed Rossi,  ahmed.rossi73@yahoo.com ,+1 (666) 832-8418,U.S.,SKU-PLS-CF,1.0,1149.00,usd,,DELIVERED,"Customer said ""urgent"" on phone"
+ORD-100214,2025-03-01,CUST-10003,James Khan,JAMES.KHAN28@OUTLOOK.COM,+1 (422) 550-7885,us,SKU-STV-MC,1,$64.00,USD,TRAIL20,Pending,"Deliver after 5pm, ring twice"
+ORD-100215,2025-02-16,CUST-10121,Zoë Johnson,zoe.johnson80@proton.me,+15902122998,canada,SKU-JKT-RN,1,129.00,cad,,Shipped,"Customer said ""urgent"" on phone"
+ORD-100216,2025-06-24T10:10:40Z,CUST-10100,Noah Rossi,noah.rossi19@gmail.com,+44 (962) 762-9534,gb,SKU-BTL-1L,1,34.95,GBP,,delivered,"Café delivery, ask for Zoë"
+ORD-100217,12/04/2025,CUST-10031,Björn Smith,BJORN.SMITH77@YAHOO.COM,2437958786,USA,SKU-STV-MC,2,$57.60,USD,,DELIVERED,
+ORD-100218,2025-01-28,CUST-10138,Mateo Andersson,mateo.andersson91@outlook.com,+17718606690,us,SKU-JKT-RN,1,129.00,usd,null,DELIVERED,"Customer said ""urgent"" on phone"
+ORD-100219,2025-05-26,CUST-10049,Chloé Smith,chloe.smith12@outlook.com,+19496795510,U.S.,SKU-SCK-MW,1,19.80,USD,,pending,"Paid via gift card, balance remaining"
+ORD-100220,05/01/2025,CUST-10048,Ahmed Andersson,ahmed.andersson71@gmail.com,8354446254,U.S.,SKU-HLP-400,1,$36.12,USD,,DELIVERED,Replacement for order damaged in transit
+ORD-100221,12/01/2025,CUST-10018,Ahmed Rossi,  ahmed.rossi73@yahoo.com ,232.406.2753,US,SKU-TNT-2P,1,224.10,USD,,DELIVERED,
+ORD-100222,23/02/2025,CUST-10004,James Lee,james.lee26@proton.me,281.679.1994,us,SKU-STV-MC,2.0,54.40,usd,TRAIL20,Delivered,"Deliver after 5pm, ring twice"
+ORD-100223,26/01/2025,CUST-10025,Zoë Hernández,zoe.hernandez33@proton.me,3943979621,U.S.,SKU-PCK-45L,1,159.99,USD,N/A,cancelled,
+ORD-100224,2025-05-10,CUST-10103,Noah Johnson,noah.johnson84@gmail.com,+18146536772,U.S.,SKU-STV-MC,2,57.60,USD,null,DELIVERED,"Paid via gift card, balance remaining"
+ORD-100225,2025-04-03T14:25:00Z,CUST-10066,Chloé Nguyen,chloe.nguyen79@proton.me,491.810.1267,United States,SKU-TNT-2P,1,null,USD,null,Returned,
+ORD-100226,2025-04-28,CUST-10010,Ethan Silva,  ethan.silva74@outlook.com ,+44 (575) 796-5093,United Kingdom,SKU-BAG-20F,1,189.50,GBP,,DELIVERED,"Paid via gift card, balance remaining"
+ORD-100227,02/06/2025,CUST-10025,Zoë Hernández,ZOE.HERNANDEZ33@PROTON.ME,7905902285,United States,SKU-STV-MC,2,64.00,USD,null,returned,
+ORD-100228,2025-05-15,CUST-10079,Noah Müller,noah.muller23@icloud.com,3535349231,CA,SKU-TNT-2P,1,224.10,CAD,FREESHIP,delivered,
+ORD-100229,2025-03-28,CUST-10034,Chloé Johnson,chloe.johnson17@icloud.com,+1 (250) 761-7540,Canada,SKU-SCK-MW,1,22.00,CAD,null,DELIVERED,"Paid via gift card, balance remaining"
+ORD-100230,2025-03-05,CUST-10135,Lucas Ali,lucas.ali16@proton.me,+1 (640) 531-2467,us,SKU-HLP-400,1,42.50,usd,,shipped,"Café delivery, ask for Zoë"
+ORD-100231,2025-04-23,CUST-10038,Noah Brown,noah.brown9@yahoo.com,+1 (404) 901-7124,US,SKU-BAG-20F,2,161.07,USD,,Delivered,
+ORD-100232,2025-05-01,CUST-10116,James Novak,james.novak49@icloud.com,750.416.4339,France,SKU-SCK-MW,1,22.00,EUR,null,Delivered,
+ORD-100233,21/02/2025,CUST-10073,Aisha Müller,aisha.muller95@icloud.com,null,United Kingdom,SKU-BAG-20F,1,170.55,GBP,,canceled,"Café delivery, ask for Zoë"
+ORD-100234,2025-01-23,CUST-10137,Emma Smith,emma.smith54@icloud.com,null,United States,SKU-PLS-CF,1,1149.00,USD,null,Delivered,Replacement for order damaged in transit
+ORD-100235,2025-04-10T00:35:17Z,CUST-10066,Chloé Nguyen,chloe.nguyen79@proton.me,-,U.S.,SKU-MAT-UL,2,89.95,USD,null,DELIVERED,
+ORD-100236,2025-06-17,CUST-10053,José Johnson,jose.johnson25@yahoo.com,4073416062,UK,SKU-HLP-400,4,42.50,GBP,SPRING10,SHIPPED,
+ORD-100237,23/03/2025,CUST-10048,Ahmed Andersson,ahmed.andersson71@gmail.com,+12309836221,us,SKU-HLP-400,1,$42.50,USD,SPRING10,pending,"Café delivery, ask for Zoë"
+ORD-100238,2025-06-02,CUST-10060,Fatima Novak,fatima.novak67@yahoo.com,+1 (567) 281-8808,U.S.,SKU-PLS-CF,2,1034.10,USD,,Delivered,
+ORD-100039,10/05/2025,CUST-10022,Olivia Hernández,OLIVIA.HERNANDEZ64@GMAIL.COM,924.648.8199,U.S.,SKU-PCK-45L,1,143.99,USD,,Delivered,"Deliver after 5pm, ring twice"
+ORD-100239,26/02/2025,CUST-10106,Chen Andersson,chen.andersson18@icloud.com,+1 (975) 409-2083,us,SKU-MAT-UL,1,89.95,USD,null,pending,"Paid via gift card, balance remaining"
+ORD-100240,11/04/2025,CUST-10081,Chen Dubois,chen.dubois5@icloud.com,8087499605,US,SKU-SCK-MW,1,22.00,USD,,SHIPPED,Replacement for order damaged in transit
+ORD-100241,2025-02-18,CUST-10013,Mateo Müller,mateo.muller48@yahoo.com,511.992.5684,us,SKU-BTL-1L,1.0,29.71,USD,,Pending,
+ORD-100242,2025-02-04,CUST-10140,Zoë Kowalski,zoe.kowalski94@proton.me,225.383.8433,canada,SKU-JKT-RN,2,129.00,CAD,,DELIVERED,"Customer said ""urgent"" on phone"
+ORD-100243,2025-01-22,CUST-10093,Lucas Lee,lucas.lee17@outlook.com,723.826.3619,us,SKU-TNT-2P,2,211.65,USD,WELCOME15,DELIVERED,
+ORD-100244,2025-03-20,CUST-10108,Björn Kowalski,bjorn.kowalski71@icloud.com,+44 (656) 495-3960,UK,SKU-JKT-RN,1,129.00,GBP,,shipped,
+ORD-100245,31/05/2025,CUST-10056,Björn Müller,bjorn.muller8@proton.me,+1 (652) 281-1107,U.S.,SKU-BTL-1L,1,N/A,usd,,Canceled,"Leave at back door, please"
+ORD-100109,17/01/2025,CUST-10092,Lucas Hernández,lucas.hernandez40@icloud.com,+1 (639) 416-9105,Canada,SKU-STV-MC,1,57.60,CAD,,delivered,
+ORD-100246,2025-01-13,CUST-10023,Chen Johnson,chen.johnson81@outlook.com,3658885659,canada,SKU-MAT-UL,1,89.95,CAD,TRAIL20,delivered,
+ORD-100247,2025-05-21,CUST-10110,Aisha Hernández,aisha.hernandez63@outlook.com,+49 (324) 911-5496,Germany,SKU-SCK-MW,1,$22.00,EUR,,DELIVERED,"Café delivery, ask for Zoë"
+ORD-100248,20/04/2025,CUST-10074,Ravi Lee,ravi.lee2@gmail.com,+447387886797,gb,SKU-SCK-MW,2,22.00,GBP,,Delivered,"Customer said ""urgent"" on phone"
+ORD-100249,23/02/2025,CUST-10031,Björn Smith,bjorn.smith77@yahoo.com,+1 (623) 246-6468,USA,SKU-TNT-2P,1,249.00,USD,,Pending,Replacement for order damaged in transit
+ORD-100250,2025-03-29,CUST-10086,Aisha Müller,aisha.muller75@yahoo.com,+49 (229) 379-4178,Germany,SKU-PLS-CF,3,1149.00,EUR,null,canceled,Gift wrap - birthday present
+ORD-100251,2025-05-14,CUST-10015,Noah Müller,noah.muller60@icloud.com,null,United States,SKU-BAG-20F,3,189.50,USD,,shipped,
+ORD-100252,20/03/2025,CUST-10030,Olivia Silva,olivia.silva98@outlook.com,N/A,United Kingdom,SKU-PLS-CF,2,976.65,GBP,,canceled,"Deliver after 5pm, ring twice"
+ORD-100253,2025-05-04T04:12:21Z,CUST-10007,Emma Wang,emma.wang12@icloud.com,9507366084,USA,SKU-BAG-20F,2,189.50,usd,null,delivered,
+ORD-100254,2025-03-27,CUST-10023,Chen Johnson,CHEN.JOHNSON81@OUTLOOK.COM,null,canada,SKU-JKT-RN,1,129.00,CAD,,delivered,
+ORD-100255,2025-06-09,CUST-10004,James Lee,  james.lee26@proton.me ,+1 (755) 558-6218,United States,SKU-MAT-UL,1,84.96,USD,SPRING10,DELIVERED,
+ORD-100256,2025-04-09,CUST-10028,James O'Neil,james.oneil65@outlook.com,3839218304,United States,SKU-STV-MC,2,$54.40,USD,null,DELIVERED,"Customer said ""urgent"" on phone"
+ORD-100257,2025-04-27,CUST-10025,Zoë Hernández,zoe.hernandez33@proton.me,+1 (984) 676-8709,USA,SKU-PCK-45L,2,159.99,USD,,Delivered,
+ORD-100258,2025-01-29,CUST-10122,Hannah Novak,hannah.novak73@gmail.com,3744896711,USA,SKU-SCK-MW,1,22.00,USD,null,DELIVERED,Gift wrap - birthday present
+ORD-100259,2025-06-08,CUST-10062,Lucas Andersson,lucas.andersson41@gmail.com,+1 (693) 593-2082,U.S.,SKU-HLP-400,2,42.50,USD,,pending,
+ORD-100260,2025-03-25,CUST-10119,Noah Taylor,noah.taylor29@yahoo.com,,canada,SKU-MAT-UL,2,89.95,cad,,Cancelled,
+ORD-100261,2025-04-26,CUST-10039,Chloé Brown,chloe.brown76@outlook.com,+1 (791) 657-4205,United States,SKU-BTL-1L,1,34.95,USD,,Returned,"Café delivery, ask for Zoë"
+ORD-100262,14/04/2025,CUST-10131,Mateo Müller,mateo.muller78@proton.me,+442635789992,GB,SKU-SCK-MW,2,22.00,GBP,N/A,SHIPPED,Gift wrap - birthday present
+ORD-100263,2025-04-08,CUST-10104,Chen Kowalski,chen.kowalski29@outlook.com,+49 (377) 686-3278,Germany,SKU-STV-MC,2,$64.00,eur,FREESHIP,Shipped,
+ORD-100264,14/06/2025,CUST-10036,Sofia Lee,sofia.lee97@outlook.com,9128187974,us,SKU-SCK-MW,1,19.80,USD,null,DELIVERED,
+ORD-100265,2025-03-10,CUST-10129,Ethan Johnson,ethan.johnson31@outlook.com,575.234.1620,Deutschland,SKU-STV-MC,1,$64.00,EUR,,Delivered,"Deliver after 5pm, ring twice"
+ORD-100266,2025-03-04,CUST-10023,Chen Johnson,chen.johnson81@outlook.com,8842799834,Canada,SKU-MAT-UL,1,99.95,CAD,,delivered,
+ORD-100267,10/01/2025,CUST-10043,Noah Taylor,noah.taylor53@outlook.com,-,UK,SKU-MAT-UL,1,-,gbp,,DELIVERED,
+ORD-100268,2025-03-07,CUST-10071,Aisha García,  aisha.garcia12@icloud.com ,3788053476,United States,SKU-PCK-45L,1,$143.99,USD,SPRING10,Returned,"Customer said ""urgent"" on phone"
+ORD-100269,2025-04-09,CUST-10106,Chen Andersson,chen.andersson18@icloud.com,852.371.4454,United States,SKU-TNT-2P,1,$249.00,USD,N/A,Pending,Gift wrap - birthday present
+ORD-100270,2025-05-02,CUST-10100,Noah Rossi,noah.rossi19@gmail.com,+446452125731,gb,SKU-HLP-400,1,$42.50,GBP,N/A,SHIPPED,
+ORD-100271,2025-03-11,CUST-10086,Aisha Müller,  aisha.muller75@yahoo.com ,870.798.7408,Deutschland,SKU-JKT-RN,2,129.00,EUR,,SHIPPED,
+ORD-100272,2025-01-04,CUST-10018,Ahmed Rossi,ahmed.rossi73@yahoo.com,+1 (901) 656-6759,United States,SKU-BTL-1L,1.0,$34.95,USD,,Returned,"Paid via gift card, balance remaining"
+ORD-100273,23/01/2025,CUST-10031,Björn Smith,  bjorn.smith77@yahoo.com ,+18729824027,USA,SKU-BTL-1L,1,34.95,USD,N/A,SHIPPED,"Leave at back door, please"
+ORD-100274,11/02/2025,CUST-10066,Chloé Nguyen,chloe.nguyen79@proton.me,+1 (263) 591-7366,US,SKU-BTL-1L,3,$31.46,USD,N/A,delivered,
+ORD-100275,19/05/2025,CUST-10037,Hannah Silva,hannah.silva57@proton.me,8583088234,CA,SKU-TNT-2P,1,249.00,cad,,returned,
+ORD-100276,2025-06-29,CUST-10039,Chloé Brown,chloe.brown76@outlook.com,203.727.9039,us,SKU-BAG-20F,1.0,$170.55,USD,,shipped,
+ORD-100277,2025-04-04,CUST-10024,Ravi Ali,ravi.ali9@icloud.com,2826705750,CA,SKU-SCK-MW,1,22.00,CAD,TRAIL20,DELIVERED,"Customer said ""urgent"" on phone"
+ORD-100278,2025-02-05,CUST-10049,Chloé Smith,CHLOE.SMITH12@OUTLOOK.COM,807.444.9015,U.S.,SKU-BTL-1L,1,31.46,usd,,Pending,Gift wrap - birthday present
+ORD-100279,24/02/2025,CUST-10031,Björn Smith,bjorn.smith77@yahoo.com,+1 (669) 894-9791,U.S.,SKU-JKT-RN,3.0,129.00,usd,null,DELIVERED,Replacement for order damaged in transit
+ORD-100280,2025-01-04,CUST-10034,Chloé Johnson,CHLOE.JOHNSON17@ICLOUD.COM,5142998474,canada,SKU-BAG-20F,2,170.55,CAD,WELCOME15,DELIVERED,Replacement for order damaged in transit
+ORD-100281,2025-03-25,CUST-10103,Noah Johnson,noah.johnson84@gmail.com,+17583406268,USA,SKU-TNT-2P,1,249.00,USD,TRAIL20,shipped,
+ORD-100282,2025-02-04,CUST-10011,Maria Brown,maria.brown99@yahoo.com,-,CA,SKU-TNT-2P,1,211.65,CAD,N/A,Shipped,
+ORD-100283,2025-05-14,CUST-10070,Emma Rossi,emma.rossi88@yahoo.com,378.825.1616,us,SKU-MAT-UL,3,99.95,usd,,Returned,"Café delivery, ask for Zoë"
+ORD-100284,2025-05-19,CUST-10093,Lucas Lee,lucas.lee17@outlook.com,+1 (841) 875-4409,USA,SKU-BAG-20F,2,170.55,USD,,shipped,
+ORD-100285,2025-03-06,CUST-10112,Chloé Khan,chloe.khan18@outlook.com,+1 (976) 664-1709,US,SKU-SCK-MW,1,19.80,usd,N/A,shipped,Gift wrap - birthday present
+ORD-100286,2025-06-23T07:49:07Z,CUST-10051,Liam Dubois,liam.dubois1@icloud.com,+493004427759,Germany,SKU-JKT-RN,1,129.00,EUR,N/A,delivered,
+ORD-100287,19/02/2025,CUST-10118,Ravi Lee,ravi.lee96@proton.me,,Germany,SKU-PCK-45L,1,$143.99,EUR,null,DELIVERED,"Café delivery, ask for Zoë"
+ORD-100288,2025-05-28T07:05:26Z,CUST-10044,Ravi Silva,ravi.silva55@icloud.com,+17004218757,United States,SKU-TNT-2P,2,249.00,USD,null,Returned,Gift wrap - birthday present
+ORD-100289,2025-01-11T23:49:32Z,CUST-10012,Noah Wang,NOAH.WANG49@YAHOO.COM,+337436038852,FR,SKU-PLS-CF,1,1149.00,EUR,,DELIVERED,
+ORD-100290,03/05/2025,CUST-10005,Zoë Novak,zoe.novak36@gmail.com,+16707841399,us,SKU-PCK-45L,2,159.99,USD,SPRING10,DELIVERED,"Leave at back door, please"
+ORD-100291,2025-01-09,CUST-10136,Mateo Lee,mateo.lee55@yahoo.com,914.827.9887,CA,SKU-BAG-20F,1,189.50,CAD,,delivered,"Customer said ""urgent"" on phone"
+ORD-100292,2025-04-04,CUST-10011,Maria Brown,maria.brown99@yahoo.com,+1 (921) 268-4354,Canada,SKU-JKT-RN,1,109.65,CAD,,delivered,"Deliver after 5pm, ring twice"
+ORD-100293,2025-03-12,CUST-10109,José Andersson,jose.andersson34@outlook.com,663.697.9215,DE,SKU-PLS-CF,2,976.65,EUR,,delivered,
+ORD-100294,2025-04-11T09:04:06Z,CUST-10021,Fatima Kowalski,fatima.kowalski75@icloud.com,314.913.3424,USA,SKU-SCK-MW,3.0,19.80,USD,TRAIL20,DELIVERED,Replacement for order damaged in transit
+ORD-100295,2025-03-16,CUST-10006,Liam Kowalski,LIAM.KOWALSKI44@YAHOO.COM,437.732.6503,Canada,SKU-STV-MC,1,54.40,CAD,,Canceled,
+ORD-100296,2025-02-28,CUST-10067,Chloé Nguyen,chloe.nguyen85@gmail.com,988.248.3430,us,SKU-PCK-45L,1,135.99,USD,,Delivered,
+ORD-100297,2025-05-28,CUST-10082,Zoë Silva,zoe.silva40@outlook.com,3884101568,United States,SKU-PCK-45L,1,159.99,USD,FREESHIP,pending,"Leave at back door, please"
+ORD-100298,2025-01-02T17:32:21Z,CUST-10040,Maria Brown,maria.brown9@gmail.com,+15026855748,U.S.,SKU-PCK-45L,2,143.99,USD,,DELIVERED,
+ORD-100299,2025-01-07,CUST-10079,Noah Müller,noah.muller23@icloud.com,+1 (656) 565-2515,canada,SKU-JKT-RN,1,$129.00,cad,,returned,
+ORD-100300,23/03/2025,CUST-10126,Ahmed Taylor,ahmed.taylor3@proton.me,257.882.6915,us,SKU-STV-MC,1.0,64.00,USD,,delivered,"Paid via gift card, balance remaining"
+ORD-100301,2025-04-24,CUST-10107,Chloé Ali,chloe.ali41@icloud.com,+44 (634) 946-7786,GB,SKU-PCK-45L,1,135.99,gbp,N/A,delivered,Replacement for order damaged in transit
+ORD-100302,2025-04-17,CUST-10070,Emma Rossi,emma.rossi88@yahoo.com,+1 (781) 973-3243,us,SKU-BTL-1L,1.0,34.95,USD,N/A,Delivered,
+ORD-100303,2025-03-18T20:30:07Z,CUST-10068,Olivia O'Neil,olivia.oneil15@gmail.com,494.627.3938,FR,SKU-TNT-2P,1,249.00,EUR,N/A,canceled,"Paid via gift card, balance remaining"
+ORD-100304,2025-04-06,CUST-10031,Björn Smith,bjorn.smith77@yahoo.com,+1 (465) 366-1958,us,SKU-PCK-45L,1.0,159.99,USD,,DELIVERED,
+ORD-100305,19/02/2025,CUST-10132,Chen Müller,chen.muller40@gmail.com,296.813.3738,France,SKU-BTL-1L,1,$34.95,EUR,,delivered,"Leave at back door, please"
+ORD-100306,2025-04-16,CUST-10125,Hannah O'Neil,hannah.oneil97@icloud.com,304.423.3532,USA,SKU-SCK-MW,1,18.70,USD,,Delivered,
+ORD-100307,2025-01-05,CUST-10034,Chloé Johnson,chloe.johnson17@icloud.com,+15713428240,canada,SKU-SCK-MW,2,,CAD,,shipped,
+ORD-100308,2025-02-03T13:44:48Z,CUST-10054,Maria Novak,maria.novak95@proton.me,2792198934,US,SKU-JKT-RN,1,109.65,USD,,DELIVERED,
+ORD-100309,2025-02-01T06:37:57Z,CUST-10025,Zoë Hernández,zoe.hernandez33@proton.me,null,U.S.,SKU-STV-MC,1,54.40,USD,SPRING10,SHIPPED,
+ORD-100310,2025-02-13T17:00:46Z,CUST-10073,Aisha Müller,  aisha.muller95@icloud.com ,419.716.8777,UK,SKU-PLS-CF,1,1149.00,GBP,N/A,delivered,
+ORD-100311,2025-01-29,CUST-10120,James Dubois,james.dubois44@icloud.com,569.921.5723,US,SKU-BAG-20F,1,189.50,USD,N/A,delivered,
+ORD-100312,18/02/2025,CUST-10110,Aisha Hernández,aisha.hernandez63@outlook.com,+49 (687) 895-7020,Deutschland,SKU-PLS-CF,1,976.65,eur,FREESHIP,Shipped,"Paid via gift card, balance remaining"
+ORD-100313,2025-01-17,CUST-10044,Ravi Silva,ravi.silva55@icloud.com,+1 (405) 809-7623,us,SKU-PLS-CF,1,976.65,USD,N/A,DELIVERED,"Café delivery, ask for Zoë"
+ORD-100314,2025-05-05,CUST-10104,Chen Kowalski,chen.kowalski29@outlook.com,+49 (665) 310-3001,Germany,SKU-JKT-RN,1,129.00,EUR,,returned,"Café delivery, ask for Zoë"
+ORD-100315,2025-02-09,CUST-10084,Aisha Silva,aisha.silva83@proton.me,9782789518,Germany,SKU-JKT-RN,1,109.65,EUR,null,Delivered,Gift wrap - birthday present
+ORD-100316,2025-04-09,CUST-10031,Björn Smith,bjorn.smith77@yahoo.com,null,USA,SKU-PLS-CF,1,1034.10,USD,null,SHIPPED,"Customer said ""urgent"" on phone"
+ORD-100317,24/05/2025,CUST-10122,Hannah Novak,hannah.novak73@gmail.com,600.469.9105,us,SKU-MAT-UL,1,99.95,usd,TRAIL20,DELIVERED,"Café delivery, ask for Zoë"
+ORD-100318,2025-06-10,CUST-10007,Emma Wang,  emma.wang12@icloud.com ,553.565.7749,USA,SKU-JKT-RN,1,129.00,usd,,DELIVERED,"Leave at back door, please"
+ORD-100319,28/04/2025,CUST-10010,Ethan Silva,ethan.silva74@outlook.com,-,GB,SKU-STV-MC,1,$54.40,GBP,,DELIVERED,Replacement for order damaged in transit
+ORD-100320,12/02/2025,CUST-10087,Ethan Kowalski,ethan.kowalski45@yahoo.com,6464069142,US,SKU-SCK-MW,1,22.00,USD,,Pending,"Café delivery, ask for Zoë"
+ORD-100321,2025-03-11,CUST-10087,Ethan Kowalski,ethan.kowalski45@yahoo.com,+1 (686) 637-4436,US,SKU-BTL-1L,1,29.71,USD,null,DELIVERED,
+ORD-100322,10/06/2025,CUST-10005,Zoë Novak,zoe.novak36@gmail.com,7907114489,us,SKU-BTL-1L,3,29.71,USD,,shipped,"Customer said ""urgent"" on phone"
+ORD-100323,2025-03-03,CUST-10038,Noah Brown,noah.brown9@yahoo.com,+1 (507) 645-7721,US,SKU-JKT-RN,2,129.00,USD,N/A,Delivered,
+ORD-100324,04/03/2025,CUST-10008,Mateo Ali,mateo.ali34@gmail.com,697.773.8145,US,SKU-JKT-RN,1,129.00,USD,,returned,
+ORD-100325,2025-01-22,CUST-10015,Noah Müller,noah.muller60@icloud.com,2656166954,US,SKU-HLP-400,3,42.50,USD,,SHIPPED,"Deliver after 5pm, ring twice"
+ORD-100326,2025-05-08T07:38:07Z,CUST-10065,Noah Silva,noah.silva37@outlook.com,+495205377388,Deutschland,SKU-JKT-RN,3,$129.00,EUR,,Cancelled,"Customer said ""urgent"" on phone"
+ORD-100327,06/04/2025,CUST-10137,Emma Smith,  emma.smith54@icloud.com ,7586338780,United States,SKU-PCK-45L,1,,USD,,SHIPPED,
+ORD-100328,2025-05-22,CUST-10065,Noah Silva,noah.silva37@outlook.com,917.571.2999,DE,SKU-PLS-CF,1,1034.10,EUR,,Delivered,"Customer said ""urgent"" on phone"
+ORD-100329,2025-06-14,CUST-10082,Zoë Silva,ZOE.SILVA40@OUTLOOK.COM,282.998.9055,us,SKU-STV-MC,2,64.00,USD,,DELIVERED,"Deliver after 5pm, ring twice"
+ORD-100330,27/04/2025,CUST-10084,Aisha Silva,aisha.silva83@proton.me,8568564010,Deutschland,SKU-PCK-45L,1,159.99,eur,WELCOME15,canceled,"Leave at back door, please"
+ORD-100331,03/05/2025,CUST-10116,James Novak,  james.novak49@icloud.com ,3779036367,FR,SKU-BAG-20F,1,170.55,EUR,,Returned,
+ORD-100332,2025-02-20,CUST-10119,Noah Taylor,noah.taylor29@yahoo.com,2506108027,CA,SKU-BAG-20F,3,$161.07,CAD,N/A,canceled,
+ORD-100333,2025-02-22,CUST-10058,Noah Dubois,noah.dubois16@proton.me,472.494.9096,gb,SKU-JKT-RN,1,129.00,GBP,,delivered,
+ORD-100334,2025-03-05,CUST-10116,James Novak,james.novak49@icloud.com,669.287.1169,France,SKU-HLP-400,1,38.25,EUR,SPRING10,Delivered,"Customer said ""urgent"" on phone"
+ORD-100335,2025-06-05T19:45:47Z,CUST-10091,Emma Ali,emma.ali41@gmail.com,2054599266,United States,SKU-HLP-400,1,N/A,USD,,cancelled,
+ORD-100336,2025-05-16,CUST-10082,Zoë Silva,zoe.silva40@outlook.com,520.245.3095,United States,SKU-STV-MC,3,64.00,USD,,Delivered,"Leave at back door, please"
+ORD-100337,2025-02-08,CUST-10126,Ahmed Taylor,ahmed.taylor3@proton.me,+1 (851) 650-1871,US,SKU-JKT-RN,1,129.00,USD,N/A,delivered,"Paid via gift card, balance remaining"
+ORD-100338,2025-04-28,CUST-10125,Hannah O'Neil,hannah.oneil97@icloud.com,null,USA,SKU-PCK-45L,2,135.99,USD,,SHIPPED,
+ORD-100339,2025-01-20,CUST-10107,Chloé Ali,chloe.ali41@icloud.com,+44 (296) 536-1425,GB,SKU-HLP-400,1,42.50,GBP,FREESHIP,delivered,"Café delivery, ask for Zoë"
+ORD-100340,2025-03-26T20:39:28Z,CUST-10002,Chen Lee,chen.lee12@proton.me,+1 (949) 951-3118,US,SKU-BTL-1L,1.0,34.95,USD,TRAIL20,delivered,
+ORD-100341,2025-02-23,CUST-10006,Liam Kowalski,liam.kowalski44@yahoo.com,+1 (491) 862-3525,Canada,SKU-HLP-400,2,$36.12,CAD,null,delivered,Gift wrap - birthday present
+ORD-100342,2025-03-10,CUST-10122,Hannah Novak,hannah.novak73@gmail.com,9746327033,us,SKU-HLP-400,1,38.25,USD,N/A,SHIPPED,"Deliver after 5pm, ring twice"
+ORD-100343,2025-03-16,CUST-10022,Olivia Hernández,OLIVIA.HERNANDEZ64@GMAIL.COM,+16895073434,United States,SKU-JKT-RN,1,129.00,USD,null,Delivered,"Customer said ""urgent"" on phone"
+ORD-100356,24/06/2025,CUST-10103,Noah Johnson,noah.johnson84@gmail.com,+19389606139,US,SKU-BTL-1L,3,34.95,USD,null,SHIPPED,Replacement for order damaged in transit
+ORD-100344,2025-04-01,CUST-10065,Noah Silva,  noah.silva37@outlook.com ,7152162866,Germany,SKU-PCK-45L,2,$159.99,EUR,null,pending,"Café delivery, ask for Zoë"
+ORD-100345,2025-03-29T05:13:11Z,CUST-10068,Olivia O'Neil,OLIVIA.ONEIL15@GMAIL.COM,818.465.2742,FR,SKU-TNT-2P,1.0,224.10,EUR,null,pending,"Café delivery, ask for Zoë"
+ORD-100346,26/06/2025,CUST-10093,Lucas Lee,lucas.lee17@outlook.com,+1 (604) 509-2435,US,SKU-JKT-RN,1.0,129.00,USD,,DELIVERED,"Deliver after 5pm, ring twice"
+ORD-100347,2025-01-23,CUST-10049,Chloé Smith,chloe.smith12@outlook.com,+1 (685) 632-1357,USA,SKU-PLS-CF,3,1034.10,USD,N/A,Delivered,
+ORD-100348,17/04/2025,CUST-10111,Ahmed Nguyen,ahmed.nguyen31@yahoo.com,-,us,SKU-SCK-MW,1,19.80,usd,TRAIL20,shipped,Replacement for order damaged in transit
+ORD-100349,2025-05-02,CUST-10107,Chloé Ali,chloe.ali41@icloud.com,8615558345,GB,SKU-PCK-45L,1,159.99,GBP,,returned,
+ORD-100350,2025-04-10T21:41:47Z,CUST-10076,Olivia Kowalski,olivia.kowalski17@gmail.com,+44 (683) 365-4394,GB,SKU-PLS-CF,1,976.65,GBP,N/A,Delivered,"Deliver after 5pm, ring twice"
+ORD-100351,2025-01-05,CUST-10013,Mateo Müller,mateo.muller48@yahoo.com,+18933623862,U.S.,SKU-TNT-2P,2,249.00,USD,,returned,
+ORD-100352,08/02/2025,CUST-10069,Olivia O'Neil,olivia.oneil37@proton.me,8188852706,Canada,SKU-PLS-CF,3,1149.00,CAD,,Cancelled,"Deliver after 5pm, ring twice"
+ORD-100353,12/02/2025,CUST-10027,Emma Wang,emma.wang38@icloud.com,5703605786,canada,SKU-PLS-CF,2,1149.00,CAD,N/A,Returned,
+ORD-100354,2025-03-29,CUST-10122,Hannah Novak,hannah.novak73@gmail.com,472.581.7799,USA,SKU-PCK-45L,2,$159.99,USD,N/A,returned,
+ORD-100355,07/02/2025,CUST-10114,Chloé Andersson,chloe.andersson54@gmail.com,+1 (729) 271-2389,us,SKU-PCK-45L,1,159.99,USD,,returned,Gift wrap - birthday present
+ORD-100356,24/06/2025,CUST-10103,Noah Johnson,noah.johnson84@gmail.com,+19389606139,US,SKU-BTL-1L,3,34.95,USD,null,SHIPPED,Replacement for order damaged in transit
+ORD-100357,2025-06-28,CUST-10114,Chloé Andersson,chloe.andersson54@gmail.com,+18646144232,US,SKU-TNT-2P,1,249.00,USD,null,SHIPPED,"Leave at back door, please"
+ORD-100358,2025-01-06,CUST-10041,Ahmed Hernández,ahmed.hernandez31@yahoo.com,+498064644954,Germany,SKU-HLP-400,4,42.50,EUR,,DELIVERED,
+ORD-100359,2025-03-18,CUST-10115,Ravi Dubois,RAVI.DUBOIS99@PROTON.ME,+15474419737,USA,SKU-STV-MC,1,54.40,USD,,DELIVERED,"Café delivery, ask for Zoë"
+ORD-100360,2025-04-03,CUST-10050,José Taylor,jose.taylor28@icloud.com,-,USA,SKU-PLS-CF,1,976.65,USD,,SHIPPED,Gift wrap - birthday present
+ORD-100361,2025-06-26T15:46:26Z,CUST-10113,Olivia Rossi,olivia.rossi9@icloud.com,347.717.3082,us,SKU-PCK-45L,3,$135.99,USD,,returned,
+ORD-100362,2025-01-29,CUST-10105,Björn Andersson,bjorn.andersson7@proton.me,+1 (241) 735-3511,Canada,SKU-STV-MC,1,$64.00,CAD,TRAIL20,cancelled,
+ORD-100363,2025-01-01,CUST-10126,Ahmed Taylor,ahmed.taylor3@proton.me,245.627.8883,U.S.,SKU-PLS-CF,3,1034.10,USD,WELCOME15,shipped,"Customer said ""urgent"" on phone"
+ORD-100364,08/02/2025,CUST-10115,Ravi Dubois,ravi.dubois99@proton.me,839.880.7711,us,SKU-STV-MC,1,57.60,USD,,SHIPPED,
+ORD-100365,2025-06-14,CUST-10032,Chen Silva,chen.silva40@outlook.com,+18337541866,U.S.,SKU-JKT-RN,2,$129.00,USD,SPRING10,Delivered,
+ORD-100366,22/01/2025,CUST-10114,Chloé Andersson,chloe.andersson54@gmail.com,611.803.1737,US,SKU-STV-MC,1,54.40,USD,SPRING10,shipped,
+ORD-100367,07/03/2025,CUST-10047,Olivia Kowalski,olivia.kowalski24@yahoo.com,null,USA,SKU-TNT-2P,2,249.00,USD,N/A,Returned,
+ORD-100368,03/03/2025,CUST-10052,Zoë Nguyen,zoe.nguyen55@proton.me,704.720.9264,US,SKU-BTL-1L,1,$31.46,usd,,DELIVERED,Replacement for order damaged in transit
+ORD-100369,05/03/2025,CUST-10026,James Wang,james.wang88@proton.me,328.511.7664,Deutschland,SKU-SCK-MW,1,22.00,EUR,N/A,returned,
+ORD-100370,2025-04-29T19:18:41Z,CUST-10001,James O'Neil,james.oneil32@outlook.com,+44 (200) 261-8900,United Kingdom,SKU-HLP-400,4,42.50,GBP,SPRING10,delivered,"Paid via gift card, balance remaining"
+ORD-100371,05/02/2025,CUST-10032,Chen Silva,chen.silva40@outlook.com,+16424159270,United States,SKU-STV-MC,1,57.60,USD,,DELIVERED,"Leave at back door, please"
+ORD-100372,2025-06-27,CUST-10005,Zoë Novak,zoe.novak36@gmail.com,+18236871070,USA,SKU-HLP-400,1,38.25,USD,,SHIPPED,"Customer said ""urgent"" on phone"
+ORD-100373,2025-04-01T12:52:38Z,CUST-10032,Chen Silva,chen.silva40@outlook.com,+1 (381) 986-1138,United States,SKU-JKT-RN,1,129.00,USD,,DELIVERED,Replacement for order damaged in transit
+ORD-100374,2025-02-26,CUST-10078,Mateo Lee,mateo.lee53@proton.me,571.237.5599,UK,SKU-TNT-2P,1,$224.10,GBP,,SHIPPED,"Paid via gift card, balance remaining"
+ORD-100375,2025-01-17,CUST-10045,Maria Wang,maria.wang8@icloud.com,+13304654734,United States,SKU-JKT-RN,2.0,109.65,USD,,Returned,"Leave at back door, please"
+ORD-100376,2025-04-15,CUST-10111,Ahmed Nguyen,ahmed.nguyen31@yahoo.com,677.707.6922,US,SKU-JKT-RN,1,109.65,usd,,Cancelled,"Paid via gift card, balance remaining"
+ORD-100377,2025-06-26,CUST-10058,Noah Dubois,NOAH.DUBOIS16@PROTON.ME,+44 (455) 401-3694,GB,SKU-BAG-20F,1,189.50,GBP,,delivered,
+ORD-100378,14/01/2025,CUST-10088,Björn Wang,bjorn.wang50@proton.me,4422748184,us,SKU-MAT-UL,1,99.95,USD,,delivered,
+ORD-100379,06/06/2025,CUST-10078,Mateo Lee,MATEO.LEE53@PROTON.ME,+44 (893) 257-1855,gb,SKU-HLP-400,1,42.50,GBP,N/A,delivered,"Café delivery, ask for Zoë"
+ORD-100380,28/03/2025,CUST-10026,James Wang,james.wang88@proton.me,+49 (226) 664-9474,DE,SKU-BAG-20F,1,189.50,EUR,,shipped,"Leave at back door, please"
+ORD-100381,04/05/2025,CUST-10108,Björn Kowalski,bjorn.kowalski71@icloud.com,null,gb,SKU-SCK-MW,3,22.00,GBP,FREESHIP,delivered,
+ORD-100382,2025-01-03,CUST-10095,Chloé Smith,chloe.smith39@yahoo.com,348.258.4889,U.S.,SKU-TNT-2P,1,249.00,USD,WELCOME15,SHIPPED,"Paid via gift card, balance remaining"
+ORD-100383,03/06/2025,CUST-10120,James Dubois,james.dubois44@icloud.com,779.543.5909,USA,SKU-BAG-20F,1,189.50,USD,,Delivered,
+ORD-100384,26/03/2025,CUST-10124,Hannah Patel,hannah.patel28@icloud.com,609.388.1110,US,SKU-STV-MC,1,64.00,USD,,Delivered,
+ORD-100385,2025-03-14,CUST-10051,Liam Dubois,liam.dubois1@icloud.com,+499363786567,DE,SKU-PCK-45L,1,159.99,eur,N/A,Shipped,"Leave at back door, please"
+ORD-100386,2025-03-20,CUST-10054,Maria Novak,maria.novak95@proton.me,+15818763807,U.S.,SKU-HLP-400,2,42.50,USD,null,delivered,"Leave at back door, please"
+ORD-100387,2025-06-12,CUST-10110,Aisha Hernández,AISHA.HERNANDEZ63@OUTLOOK.COM,+498308014098,Germany,SKU-PCK-45L,1.0,159.99,EUR,N/A,Delivered,"Customer said ""urgent"" on phone"
+ORD-100388,2025-02-12,CUST-10017,Maria Brown,maria.brown5@yahoo.com,860.969.9342,Deutschland,SKU-PLS-CF,1,976.65,EUR,,SHIPPED,"Café delivery, ask for Zoë"
+ORD-100389,2025-02-23,CUST-10010,Ethan Silva,ethan.silva74@outlook.com,+44 (440) 605-4581,gb,SKU-MAT-UL,1,99.95,GBP,FREESHIP,Shipped,"Café delivery, ask for Zoë"
+ORD-100390,1900-01-01,CUST-10011,Maria Brown,maria.brown99@yahoo.com,661.678.8086,Canada,SKU-STV-MC,1.0,57.60,CAD,,DELIVERED,"Deliver after 5pm, ring twice"
+ORD-100391,2025-06-14,CUST-10140,Zoë Kowalski,zoe.kowalski94@proton.me,,canada,SKU-JKT-RN,1,129.00,CAD,,DELIVERED,
+ORD-100392,2025-03-08,CUST-10140,Zoë Kowalski,zoe.kowalski94@proton.me,+15546137647,canada,SKU-TNT-2P,1,249.00,CAD,,DELIVERED,"Café delivery, ask for Zoë"
+ORD-100393,2025-04-29,CUST-10120,James Dubois,  james.dubois44@icloud.com ,+1 (392) 639-7843,us,SKU-SCK-MW,1,22.00,USD,,delivered,Gift wrap - birthday present
+ORD-100394,2025-06-26,CUST-10104,Chen Kowalski,chen.kowalski29@outlook.com,+492237811527,DE,SKU-STV-MC,1,54.40,EUR,N/A,delivered,
+ORD-100395,2025-01-28,CUST-10122,Hannah Novak,hannah.novak73@gmail.com,+1 (854) 511-2527,U.S.,SKU-PCK-45L,1,N/A,usd,,delivered,Replacement for order damaged in transit
+ORD-100396,2025-01-18,CUST-10135,Lucas Ali,lucas.ali16@proton.me,+12113756353,us,SKU-HLP-400,1,36.12,USD,,Delivered,
+ORD-100397,2025-06-20,CUST-10111,Ahmed Nguyen,ahmed.nguyen31@yahoo.com,517.801.4325,us,SKU-BTL-1L,1,$31.46,USD,null,DELIVERED,"Customer said ""urgent"" on phone"
+ORD-100398,2025-04-29,CUST-10118,Ravi Lee,ravi.lee96@proton.me,+49 (494) 861-8476,Deutschland,SKU-BTL-1L,1,34.95,EUR,N/A,DELIVERED,
+ORD-100399,11/04/2025,CUST-10025,Zoë Hernández,ZOE.HERNANDEZ33@PROTON.ME,+1 (361) 480-9810,US,SKU-JKT-RN,3,$109.65,USD,null,pending,Gift wrap - birthday present
+ORD-100400,2025-02-12,CUST-10116,James Novak,james.novak49@icloud.com,6732272199,France,SKU-HLP-400,1,42.50,eur,WELCOME15,DELIVERED,"Customer said ""urgent"" on phone"
+ORD-100401,2025-04-29,CUST-10125,Hannah O'Neil,hannah.oneil97@icloud.com,+1 (448) 930-8171,United States,SKU-PCK-45L,1.0,$159.99,USD,,Delivered,Replacement for order damaged in transit
+ORD-100402,2025-02-09,CUST-10070,Emma Rossi,emma.rossi88@yahoo.com,+1 (931) 235-9721,US,SKU-SCK-MW,1,22.00,USD,SPRING10,delivered,
+ORD-100403,2025-04-06T06:05:01Z,CUST-10064,Björn O'Neil,bjorn.oneil17@,2145454148,US,SKU-JKT-RN,3,129.00,usd,,DELIVERED,
+ORD-100404,2025-05-19,CUST-10054,Maria Novak,maria.novak95@proton.me,437.418.2734,USA,SKU-TNT-2P,1,224.10,USD,,shipped,
+ORD-100405,2025-02-25,CUST-10018,Ahmed Rossi,ahmed.rossi73@yahoo.com,7113049784,U.S.,SKU-PCK-45L,1,159.99,USD,,DELIVERED,"Paid via gift card, balance remaining"
+ORD-100406,2025-06-20,CUST-10082,Zoë Silva,zoe.silva40@outlook.com,823.799.8354,USA,SKU-SCK-MW,1,,USD,,Shipped,
+ORD-100407,2025-05-08,CUST-10096,Fatima Ali,fatima.ali84@yahoo.com,+1 (409) 857-1621,U.S.,SKU-PLS-CF,2,1149.00,USD,FREESHIP,shipped,
+ORD-100408,2025-03-26,CUST-10059,Ethan García,ethan.garcia80@gmail.com,+12558805068,USA,SKU-MAT-UL,2,99.95,usd,,Returned,Replacement for order damaged in transit
+ORD-100409,2025-02-22,CUST-10037,Hannah Silva,hannah.silva57@proton.me,762.409.4871,Canada,SKU-PLS-CF,1,1149.00,CAD,null,DELIVERED,
+ORD-100410,2025-05-04,CUST-10070,Emma Rossi,emma.rossi88@yahoo.com,607.586.3748,us,SKU-SCK-MW,1,22.00,USD,FREESHIP,Delivered,
+ORD-100411,2025-02-09,CUST-10138,Mateo Andersson,mateo.andersson91@outlook.com,589.674.6011,us,SKU-SCK-MW,1,22.00,USD,,DELIVERED,"Paid via gift card, balance remaining"
+ORD-100412,2025-05-06,CUST-10096,Fatima Ali,fatima.ali84@yahoo.com,604.960.7113,United States,SKU-MAT-UL,1,99.95,USD,N/A,returned,"Deliver after 5pm, ring twice"
+ORD-100413,12/06/2025,CUST-10126,Ahmed Taylor,ahmed.taylor3@proton.me,8665947947,USA,SKU-PLS-CF,1,1149.00,USD,N/A,Returned,
+ORD-100414,2025-06-04,CUST-10064,Björn O'Neil,bjorn.oneil17@yahoo.com,3652122912,us,SKU-HLP-400,2,42.50,USD,N/A,delivered,"Deliver after 5pm, ring twice"
+ORD-100415,2025-06-18T18:19:46Z,CUST-10137,Emma Smith,emma.smith54@icloud.com,9452912790,United States,SKU-PCK-45L,1,143.99,usd,FREESHIP,Delivered,"Paid via gift card, balance remaining"
+ORD-100416,2025-05-15,CUST-10107,Chloé Ali,chloe.ali41@icloud.com,641.374.3890,UK,SKU-JKT-RN,1,129.00,GBP,,Pending,
+ORD-100498,2025-06-14T03:53:23Z,CUST-10127,Mateo Brown,mateo.brown84@gmail.com,,USA,SKU-BAG-20F,4,170.55,usd,,Cancelled,"Paid via gift card, balance remaining"
+ORD-100417,23/04/2025,CUST-10105,Björn Andersson,bjorn.andersson7@proton.me,+1 (851) 370-2307,Canada,SKU-BAG-20F,1,161.07,CAD,,Delivered,Replacement for order damaged in transit
+ORD-100418,2025-01-25,CUST-10011,Maria Brown,maria.brown99@yahoo.com,+15848179520,Canada,SKU-PLS-CF,1,1034.10,CAD,,Canceled,Replacement for order damaged in transit
+ORD-100419,07/04/2025,CUST-10103,Noah Johnson,noah.johnson84@gmail.com,538.302.1050,us,SKU-PCK-45L,1,135.99,USD,,DELIVERED,Replacement for order damaged in transit
+ORD-100420,2025-05-12,CUST-10122,Hannah Novak,hannah.novak73@gmail.com,8535291272,US,SKU-STV-MC,1,57.60,USD,FREESHIP,returned,Replacement for order damaged in transit
+ORD-100421,2025-04-09,CUST-10026,James Wang,james.wang88@proton.me,-,DE,SKU-BTL-1L,2,$31.46,EUR,WELCOME15,Delivered,Replacement for order damaged in transit
+ORD-100422,2025-01-28,CUST-10023,Chen Johnson,chen.johnson81@outlook.com,3645347283,CA,SKU-BTL-1L,1,34.95,CAD,N/A,DELIVERED,"Leave at back door, please"
+ORD-100423,28/05/2025,CUST-10058,Noah Dubois,noah.dubois16@proton.me,+448595517176,gb,SKU-SCK-MW,3,22.00,GBP,SPRING10,DELIVERED,
+ORD-100424,2025-05-27,CUST-10030,Olivia Silva,olivia.silva98@outlook.com,+44 (589) 790-1027,UK,SKU-HLP-400,4,42.50,GBP,WELCOME15,Delivered,"Deliver after 5pm, ring twice"
+ORD-100425,2025-03-22,CUST-10118,Ravi Lee,ravi.lee96@proton.me,+49 (424) 711-8467,Germany,SKU-PCK-45L,2,159.99,EUR,,DELIVERED,"Café delivery, ask for Zoë"
+ORD-100426,11/06/2025,CUST-10123,Ravi Johnson,ravi.johnson60@outlook.com,+19215851963,United States,SKU-PCK-45L,2,159.99,usd,,canceled,
+ORD-100427,2025-01-06,CUST-10041,Ahmed Hernández,ahmed.hernandez31@yahoo.com,8946846706,Germany,SKU-BAG-20F,1,189.50,EUR,TRAIL20,Pending,"Paid via gift card, balance remaining"
+ORD-100428,28/04/2025,CUST-10078,Mateo Lee,mateo.lee53@proton.me,+44 (652) 912-8904,UK,SKU-JKT-RN,1,129.00,GBP,WELCOME15,delivered,Replacement for order damaged in transit
+ORD-100429,2025-01-15,CUST-10044,Ravi Silva,ravi.silva55@icloud.com,+13832532922,United States,SKU-MAT-UL,1,89.95,USD,,Shipped,Replacement for order damaged in transit
+ORD-100430,2025-06-27T21:42:05Z,CUST-10097,Zoë Rossi,zoe.rossi66@icloud.com,8655915509,us,SKU-STV-MC,1,64.00,USD,,SHIPPED,"Customer said ""urgent"" on phone"
+ORD-100431,27/06/2025,CUST-10071,Aisha García,aisha.garcia12@icloud.com,+13855938932,us,SKU-BTL-1L,1,34.95,USD,N/A,Cancelled,Gift wrap - birthday present
+ORD-100432,2025-05-16,CUST-10138,Mateo Andersson,mateo.andersson91@outlook.com,7987513033,USA,SKU-BAG-20F,1,-,USD,WELCOME15,SHIPPED,
+ORD-100433,2025-05-24,CUST-10023,Chen Johnson,chen.johnson81@outlook.com,+1 (286) 327-9292,canada,SKU-PCK-45L,1,159.99,cad,,shipped,
+ORD-100434,2025-06-27,CUST-10126,Ahmed Taylor,ahmed.taylor3@proton.me,560.820.9818,US,SKU-TNT-2P,1,249.00,USD,WELCOME15,shipped,
+ORD-100435,2025-01-20,CUST-10109,José Andersson,jose.andersson34@outlook.com,865.367.7554,Germany,SKU-HLP-400,3,$42.50,EUR,,Pending,Gift wrap - birthday present
+ORD-100436,2025-03-22T13:24:01Z,CUST-10040,Maria Brown,maria.brown9@gmail.com,+1 (453) 279-5425,US,SKU-SCK-MW,1,22.00,USD,,Delivered,Gift wrap - birthday present
+ORD-100437,2025-04-07T03:11:33Z,CUST-10057,Liam Khan,liam.khan77@gmail.com,null,U.S.,SKU-BTL-1L,1,$34.95,USD,,canceled,"Customer said ""urgent"" on phone"
+ORD-100438,2025-03-08,CUST-10033,Fatima Khan,fatima.khan11@icloud.com,+1 (359) 873-3070,U.S.,SKU-BTL-1L,1,34.95,USD,N/A,delivered,"Customer said ""urgent"" on phone"
+ORD-100439,2025-03-15,CUST-10129,Ethan Johnson,ethan.johnson31@outlook.com,9354346000,DE,SKU-BTL-1L,1,34.95,eur,,Delivered,
+ORD-100440,2025-05-22T00:27:43Z,CUST-10074,Ravi Lee,ravi.lee2@gmail.com,948.339.8858,GB,SKU-HLP-400,1,42.50,GBP,,Returned,"Café delivery, ask for Zoë"
+ORD-100441,13/02/2025,CUST-10115,Ravi Dubois,ravi.dubois99@proton.me,N/A,U.S.,SKU-STV-MC,3,$57.60,USD,,Cancelled,
+ORD-100442,2025-05-04,CUST-10077,Maria Silva,maria.silva27@outlook.com,+1 (955) 846-7449,United States,SKU-SCK-MW,2.0,19.80,USD,SPRING10,shipped,
+ORD-100443,2025-01-28,CUST-10091,Emma Ali,emma.ali41@gmail.com,-,us,SKU-JKT-RN,1,129.00,USD,TRAIL20,delivered,"Leave at back door, please"
+ORD-100444,2025-04-04,CUST-10077,Maria Silva,maria.silva27@outlook.com,4753118185,us,SKU-PCK-45L,1,159.99,USD,,Delivered,Gift wrap - birthday present
+ORD-100445,2025-03-26T05:42:12Z,CUST-10108,Björn Kowalski,bjorn.kowalski71@icloud.com,881.472.2946,gb,SKU-PCK-45L,1,143.99,GBP,N/A,Delivered,
+ORD-100446,2025-02-09,CUST-10033,Fatima Khan,FATIMA.KHAN11@ICLOUD.COM,9004421852,United States,SKU-HLP-400,4,38.25,USD,FREESHIP,Delivered,"Paid via gift card, balance remaining"
+ORD-100447,2025-02-17,CUST-10131,Mateo Müller,mateo.muller78@proton.me,4699175052,gb,SKU-JKT-RN,1,129.00,GBP,null,Shipped,
+ORD-100448,2025-02-03,CUST-10031,Björn Smith,bjorn.smith77@yahoo.com,N/A,US,SKU-TNT-2P,1,249.00,USD,FREESHIP,shipped,
+ORD-100449,2025-04-04,CUST-10069,Olivia O'Neil,olivia.oneil37@proton.me,+16284526240,CA,SKU-TNT-2P,1,249.00,CAD,,delivered,"Customer said ""urgent"" on phone"
+ORD-100450,2025-03-27,CUST-10094,Hannah Müller,  hannah.muller79@proton.me ,+1 (213) 899-3134,United States,SKU-MAT-UL,1,99.95,USD,,SHIPPED,
+ORD-100451,2025-05-31T20:52:12Z,CUST-10011,Maria Brown,maria.brown99@yahoo.com,+16563012226,canada,SKU-STV-MC,1,64.00,CAD,FREESHIP,shipped,"Deliver after 5pm, ring twice"
+ORD-100452,2025-04-04,CUST-10089,Maria Kowalski,maria.kowalski1@proton.me,646.269.8910,U.S.,SKU-TNT-2P,1,249.00,USD,WELCOME15,pending,"Customer said ""urgent"" on phone"
+ORD-100453,2025-05-12T05:28:48Z,CUST-10137,Emma Smith,emma.smith54@icloud.com,775.998.7393,United States,SKU-JKT-RN,1,129.00,usd,null,DELIVERED,"Paid via gift card, balance remaining"
+ORD-100454,2025-03-08,CUST-10135,Lucas Ali,lucas.ali16@proton.me,+1 (925) 474-2951,US,SKU-SCK-MW,1.0,22.00,USD,SPRING10,Shipped,
+ORD-100455,2025-01-30,CUST-10137,Emma Smith,emma.smith54@icloud.com,null,USA,SKU-HLP-400,2,42.50,usd,,Delivered,"Deliver after 5pm, ring twice"
+ORD-100456,2025-06-26,CUST-10028,James O'Neil,james.oneil65@outlook.com,+18418494377,USA,SKU-STV-MC,1,$57.60,USD,,delivered,
+ORD-100457,2025-02-16,CUST-10127,Mateo Brown,mateo.brown84@gmail.com,+13803939036,USA,SKU-BTL-1L,1,34.95,USD,,Delivered,"Customer said ""urgent"" on phone"
+ORD-100458,26/01/2025,CUST-10104,Chen Kowalski,  chen.kowalski29@outlook.com ,968.212.2633,DE,SKU-BAG-20F,2,$189.50,EUR,null,Delivered,
+ORD-100459,28/03/2025,CUST-10139,Björn O'Neil,  bjorn.oneil79@proton.me ,+13426918279,United States,SKU-STV-MC,1,54.40,USD,SPRING10,delivered,
+ORD-100460,2025-04-17,CUST-10131,Mateo Müller,mateo.muller78@proton.me,224.432.7998,United Kingdom,SKU-BTL-1L,1,31.46,GBP,N/A,Delivered,
+ORD-100461,2025-03-14,CUST-10027,Emma Wang,emma.wang38@icloud.com,+13215692389,canada,SKU-PCK-45L,1,$135.99,CAD,,shipped,"Leave at back door, please"
+ORD-100462,2025-03-11T21:23:59Z,CUST-10027,Emma Wang,emma.wang38@icloud.com,+19282781035,CA,SKU-PCK-45L,1,143.99,CAD,,delivered,
+ORD-100463,2025-04-09,CUST-10047,Olivia Kowalski,olivia.kowalski24@yahoo.com,6929107782,United States,SKU-PCK-45L,2,159.99,USD,N/A,Shipped,Gift wrap - birthday present
+ORD-100464,29/05/2025,CUST-10022,Olivia Hernández,olivia.hernandez64@gmail.com,9109664593,USA,SKU-STV-MC,1,64.00,USD,SPRING10,delivered,"Leave at back door, please"
+ORD-100465,2025-03-17,CUST-10036,Sofia Lee,sofia.lee97@outlook.com,+1 (764) 631-4973,USA,SKU-TNT-2P,2,249.00,usd,,Delivered,Replacement for order damaged in transit
+ORD-100466,03/05/2025,CUST-10019,José Dubois,jose.dubois83@icloud.com,+1 (230) 350-6984,USA,SKU-BAG-20F,1,$170.55,USD,null,shipped,"Customer said ""urgent"" on phone"
+ORD-100467,2025-03-28,CUST-10106,Chen Andersson,chen.andersson18@icloud.com,+1 (213) 493-2822,US,SKU-MAT-UL,2,99.95,USD,N/A,shipped,"Café delivery, ask for Zoë"
+ORD-100468,20/03/2025,CUST-10129,Ethan Johnson,ethan.johnson31@outlook.com,360.478.2506,DE,SKU-JKT-RN,1.0,$116.10,EUR,,canceled,"Customer said ""urgent"" on phone"
+ORD-100469,17/06/2025,CUST-10081,Chen Dubois,chen.dubois5@icloud.com,3682557086,USA,SKU-BTL-1L,1,29.71,USD,,Shipped,
+ORD-100470,2025-03-21,CUST-10003,James Khan,james.khan28@outlook.com,,U.S.,SKU-PLS-CF,1,null,USD,null,delivered,"Paid via gift card, balance remaining"
+ORD-100471,03/02/2025,CUST-10092,Lucas Hernández,  lucas.hernandez40@icloud.com ,+1 (617) 959-9250,CA,SKU-TNT-2P,1,211.65,cad,FREESHIP,DELIVERED,
+ORD-100472,25/02/2025,CUST-10060,Fatima Novak,fatima.novak67@yahoo.com,+19879353638,U.S.,SKU-SCK-MW,4,18.70,USD,,DELIVERED,Gift wrap - birthday present
+ORD-100473,2025-06-24,CUST-10011,Maria Brown,maria.brown99@yahoo.com,+18258212228,canada,SKU-PLS-CF,1.0,1149.00,CAD,,delivered,"Leave at back door, please"
+ORD-100474,2025-03-17,CUST-10044,Ravi Silva,ravi.silva55@icloud.com,-,United States,SKU-PLS-CF,4,1034.10,USD,FREESHIP,delivered,Gift wrap - birthday present
+ORD-100475,2025-06-08T04:28:23Z,CUST-10105,Björn Andersson,bjorn.andersson7@proton.me,-,canada,SKU-PLS-CF,1,1149.00,CAD,,SHIPPED,
+ORD-100476,2025-01-27,CUST-10040,Maria Brown,maria.brown9@gmail.com,608.274.4654,us,SKU-BAG-20F,1,161.07,USD,SPRING10,canceled,Gift wrap - birthday present
+ORD-100477,2025-04-13,CUST-10052,Zoë Nguyen,zoe.nguyen55@proton.me,8186974483,us,SKU-BAG-20F,1.0,189.50,USD,null,DELIVERED,Gift wrap - birthday present
+ORD-100478,03/04/2025,CUST-10016,Chloé Brown,chloe.brown88@yahoo.com,+14182554465,us,SKU-BTL-1L,1,$34.95,USD,N/A,cancelled,Replacement for order damaged in transit
+ORD-100479,17/02/2025,CUST-10067,Chloé Nguyen,  chloe.nguyen85@gmail.com ,+1 (638) 550-5864,United States,SKU-HLP-400,1,42.50,USD,null,Delivered,"Deliver after 5pm, ring twice"
+ORD-100480,20/01/2025,CUST-10051,Liam Dubois,liam.dubois1@icloud.com,-,DE,SKU-PLS-CF,2,1034.10,EUR,,SHIPPED,"Café delivery, ask for Zoë"
+ORD-100481,2025-01-10,CUST-10025,Zoë Hernández,zoe.hernandez33@proton.me,6309139947,U.S.,SKU-HLP-400,1,42.50,USD,TRAIL20,delivered,"Deliver after 5pm, ring twice"
+ORD-100482,2025-06-29,CUST-10032,Chen Silva,chen.silva40@outlook.com,623.620.6762,U.S.,SKU-HLP-400,1,42.50,USD,null,SHIPPED,Gift wrap - birthday present
+ORD-100483,14/03/2025,CUST-10098,Liam Khan,liam.khan37@proton.me,6478495640,CA,SKU-BAG-20F,2,189.50,CAD,null,Returned,Replacement for order damaged in transit
+ORD-100484,2025-05-09,CUST-10114,Chloé Andersson,CHLOE.ANDERSSON54@GMAIL.COM,+1 (496) 630-4471,us,SKU-SCK-MW,1,19.80,USD,N/A,DELIVERED,"Paid via gift card, balance remaining"
+ORD-100485,2025-01-02T07:32:18Z,CUST-10102,Fatima Rossi,fatima.rossi92@icloud.com,+18744706036,us,SKU-JKT-RN,1,N/A,USD,null,Canceled,"Leave at back door, please"
+ORD-100486,2025-05-27T07:35:25Z,CUST-10044,Ravi Silva,ravi.silva55@icloud.com,+18596021845,U.S.,SKU-HLP-400,1,42.50,USD,WELCOME15,Delivered,"Deliver after 5pm, ring twice"
+ORD-100487,2025-06-11,CUST-10031,Björn Smith,bjorn.smith77@yahoo.com,+19808425263,USA,SKU-STV-MC,1,N/A,usd,,Shipped,"Paid via gift card, balance remaining"
+ORD-100488,27/04/2025,CUST-10034,Chloé Johnson,chloe.johnson17@icloud.com,+1 (391) 445-4633,canada,SKU-JKT-RN,2,116.10,CAD,,SHIPPED,"Café delivery, ask for Zoë"
+ORD-100489,2025-01-29,CUST-10027,Emma Wang,emma.wang38@icloud.com,+1 (309) 345-5627,CA,SKU-BAG-20F,1,189.50,CAD,SPRING10,DELIVERED,
+ORD-100490,2025-06-25,CUST-10054,Maria Novak,maria.novak95@proton.me,+1 (848) 661-3639,US,SKU-PCK-45L,1,$159.99,USD,null,Shipped,
+ORD-100491,2025-03-07T06:38:01Z,CUST-10134,Sofia Khan,sofia.khan76@outlook.com,+1 (730) 724-3496,United States,SKU-BAG-20F,2.0,189.50,USD,,Delivered,
+ORD-100492,22/05/2025,CUST-10090,Chloé Rossi,chloe.rossi47@icloud.com,+337076469399,FR,SKU-BTL-1L,1,34.95,EUR,null,Delivered,"Paid via gift card, balance remaining"
+ORD-100493,2025-04-21T13:38:47Z,CUST-10125,Hannah O'Neil,hannah.oneil97@icloud.com,5268372762,us,SKU-JKT-RN,1,129.00,USD,,shipped,"Café delivery, ask for Zoë"
+ORD-100494,2025-04-01,CUST-10136,Mateo Lee,  mateo.lee55@yahoo.com ,530.639.4046,CA,SKU-JKT-RN,1,$129.00,CAD,TRAIL20,DELIVERED,"Leave at back door, please"
+ORD-100495,2025-05-24,CUST-10060,Fatima Novak,fatima.novak67@yahoo.com,+1 (417) 739-4562,United States,SKU-MAT-UL,3,99.95,USD,N/A,delivered,
+ORD-100496,13/01/2025,CUST-10051,Liam Dubois,liam.dubois1@icloud.com,+49 (481) 631-2953,DE,SKU-MAT-UL,1,,EUR,,Canceled,
+ORD-100497,2025-01-10T16:02:21Z,CUST-10104,Chen Kowalski,chen.kowalski29@outlook.com,+492716812558,Germany,SKU-BTL-1L,1,$31.46,EUR,,DELIVERED,"Customer said ""urgent"" on phone"
+ORD-100498,2025-06-14T03:53:23Z,CUST-10127,Mateo Brown,mateo.brown84@gmail.com,,USA,SKU-BAG-20F,4,170.55,usd,,Cancelled,"Paid via gift card, balance remaining"
+ORD-100499,2025-03-08T01:07:03Z,CUST-10014,Aisha Khan,aisha.khan78@outlook.com,2764706395,us,SKU-BTL-1L,1,29.71,USD,null,canceled,Replacement for order damaged in transit
+ORD-100500,2025-06-21,CUST-10115,Ravi Dubois,ravi.dubois99@proton.me,+17916899029,United States,SKU-PLS-CF,1,1149.00,USD,,SHIPPED,

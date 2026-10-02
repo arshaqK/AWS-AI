@@ -1,0 +1,58 @@
+# ETL Copilot - what stays out of git.
+# Commit: source code, tests, the sample dataset and its answer key, agentcore/CDK
+# config, lock files, docs. Everything below is generated, local or secret.
+
+# ---- Secrets and local settings (never commit) ----
+.env
+.env.*
+!.env.example
+**/agentcore/.env.local
+*.pem
+*.key
+credentials
+.aws/
+
+# ---- Python ----
+__pycache__/
+*.py[cod]
+*.so
+.venv/
+venv/
+env/
+*.egg-info/
+build/
+dist/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# ---- AgentCore CLI: local state, logs and traces ----
+# .cli/traces holds local OpenTelemetry traces: full prompts, tool calls and sample
+# rows from the data. .cli/logs holds dev-server and deploy logs.
+**/agentcore/.cli/*
+!**/agentcore/.cli/deployed-state.json
+# .cache/ is the deployment bundle the CLI stages (~60 MB of Linux wheels)
+**/agentcore/.cache/
+
+# ---- CDK / Node build output ----
+node_modules/
+cdk.out/
+.cdk.staging/
+**/agentcore/cdk/dist/
+
+# ---- Logs and scratch ----
+*.log
+logs/
+tmp/
+
+# ---- IDE / OS ----
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
+desktop.ini

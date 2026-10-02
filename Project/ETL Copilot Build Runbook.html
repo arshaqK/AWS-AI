@@ -1,0 +1,606 @@
+<title>ETL Copilot Runbook</title>
+<meta name="description" content="A step-by-step, test-gated build plan for ETL Copilot, a CSV-cleaning agent for data engineers, on Bedrock AgentCore + Strands. Pipeline first, chat-driven UI last.">
+<style>
+:root{
+  --bg:#eceff3; --card:#ffffff; --card2:#f5f7f9;
+  --ink:#15212b; --muted:#5a6b78; --faint:#8496a2;
+  --line:#d5dee5; --line2:#e4eaef;
+  --accent:#0b7a8c; --accent-bg:#e0f0f2; --accent-ink:#075863;
+  --gate:#2f7d5b; --gate-bg:#e3f2ea; --gate-ink:#1f6045; --gate-line:#8ecbad;
+  --guard:#9a6a12; --guard-bg:#f8efd6; --guard-ink:#7a5209; --guard-line:#e0c483;
+  --danger:#a13a2f; --danger-bg:#fbe6e2;
+  --chip:#eef2f5;
+  --ag-sup:#0b7a8c; --ag-prof:#3f6bb0; --ag-script:#9a6a12; --ag-exec:#a13a2f; --ag-val:#2f7d5b; --ag-doc:#6b4a9c;
+  --mono:"IBM Plex Mono",ui-monospace,SFMono-Regular,Menlo,monospace;
+}
+@media (prefers-color-scheme:dark){
+  :root:not([data-theme="light"]){
+    --bg:#0e181f; --card:#16242e; --card2:#1a2b36;
+    --ink:#e6eef3; --muted:#9db2bf; --faint:#728896;
+    --line:#2a3d49; --line2:#22333d;
+    --accent:#4dbecb; --accent-bg:#12343a; --accent-ink:#7ad4de;
+    --gate:#63c395; --gate-bg:#123026; --gate-ink:#8fdcb4; --gate-line:#2f6b52;
+    --guard:#e0c065; --guard-bg:#332a12; --guard-ink:#e6cf83; --guard-line:#6b5626;
+    --danger:#e08a7d; --danger-bg:#3a201c;
+    --chip:#1d2f3a;
+    --ag-sup:#4dbecb; --ag-prof:#84a9e0; --ag-script:#e0c065; --ag-exec:#e08a7d; --ag-val:#63c395; --ag-doc:#b79ae0;
+  }
+}
+:root[data-theme="dark"]{
+  --bg:#0e181f; --card:#16242e; --card2:#1a2b36;
+  --ink:#e6eef3; --muted:#9db2bf; --faint:#728896;
+  --line:#2a3d49; --line2:#22333d;
+  --accent:#4dbecb; --accent-bg:#12343a; --accent-ink:#7ad4de;
+  --gate:#63c395; --gate-bg:#123026; --gate-ink:#8fdcb4; --gate-line:#2f6b52;
+  --guard:#e0c065; --guard-bg:#332a12; --guard-ink:#e6cf83; --guard-line:#6b5626;
+  --danger:#e08a7d; --danger-bg:#3a201c;
+  --chip:#1d2f3a;
+  --ag-sup:#4dbecb; --ag-prof:#84a9e0; --ag-script:#e0c065; --ag-exec:#e08a7d; --ag-val:#63c395; --ag-doc:#b79ae0;
+}
+*{box-sizing:border-box}
+html{scroll-padding-top:64px}
+body{margin:0;background:var(--bg);color:var(--ink);
+  font-family:"IBM Plex Sans",system-ui,-apple-system,sans-serif;font-size:16px;line-height:1.6;-webkit-font-smoothing:antialiased}
+.wrap{max-width:900px;margin:0 auto;padding:0 20px}
+h1,h2,h3,h4{font-family:"Bricolage Grotesque","IBM Plex Sans",system-ui,sans-serif;line-height:1.15;margin:0;text-wrap:balance}
+a{color:var(--accent-ink)}
+.mono{font-family:var(--mono)}
+code{font-family:var(--mono);font-size:.88em;background:var(--chip);padding:.12em .4em;border-radius:4px;border:1px solid var(--line2)}
+
+header{padding:44px 0 22px}
+.eyebrow{font-family:var(--mono);font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:var(--accent-ink);font-weight:600}
+h1{font-size:clamp(30px,5.2vw,46px);font-weight:700;letter-spacing:-.02em;margin:12px 0 0}
+.lede{color:var(--muted);max-width:64ch;margin:14px 0 0;font-size:17px}
+
+.chips{display:flex;flex-wrap:wrap;gap:8px;margin-top:22px}
+.chip{font-family:var(--mono);font-size:12.5px;font-weight:500;color:var(--ink);
+  background:var(--card);border:1px solid var(--line);border-radius:999px;padding:6px 12px;display:inline-flex;gap:7px;align-items:center}
+.chip b{color:var(--accent-ink);font-weight:600}
+.chip.warn{background:var(--guard-bg);border-color:var(--guard-line);color:var(--guard-ink)}
+
+nav{position:sticky;top:0;z-index:10;background:color-mix(in srgb,var(--bg) 88%,transparent);
+  backdrop-filter:blur(8px);border-bottom:1px solid var(--line);padding:10px 0;margin-top:26px}
+nav .wrap{display:flex;gap:6px;flex-wrap:wrap}
+nav a{font-family:var(--mono);font-size:12.5px;font-weight:500;text-decoration:none;color:var(--muted);
+  padding:5px 10px;border-radius:6px;border:1px solid transparent}
+nav a:hover{color:var(--ink);border-color:var(--line);background:var(--card)}
+
+section{padding:38px 0 4px;scroll-margin-top:64px}
+.sec-head{display:flex;align-items:baseline;gap:12px;margin-bottom:6px}
+.sec-head h2{font-size:clamp(21px,3.2vw,28px);font-weight:700}
+.sec-kicker{font-family:var(--mono);font-size:12px;color:var(--faint);letter-spacing:.08em;text-transform:uppercase}
+.sec-intro{color:var(--muted);max-width:68ch;margin:2px 0 18px}
+
+.howto{display:flex;gap:14px;align-items:flex-start;background:var(--accent-bg);border:1px solid var(--line);
+  border-left:4px solid var(--accent);border-radius:8px;padding:14px 16px;margin-top:20px}
+.howto .k{font-family:var(--mono);font-size:11px;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:var(--accent-ink);white-space:nowrap;padding-top:2px}
+.howto p{margin:0;font-size:14.5px}
+
+.flow{display:grid;grid-template-columns:1fr 1.5fr 1fr;gap:16px;margin-top:8px}
+.fcol{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:15px}
+.fcol h4{font-family:var(--mono);font-size:12px;letter-spacing:.1em;text-transform:uppercase;color:var(--accent-ink);margin-bottom:10px;padding-bottom:8px;border-bottom:1px solid var(--line2)}
+.fcol ul{margin:0;padding-left:16px;font-size:13.5px;color:var(--ink)}
+.fcol li{margin:0 0 7px}
+.fcol li .t{font-family:var(--mono);font-size:12.5px;color:var(--accent-ink)}
+.gate-mid{background:var(--guard-bg);border-color:var(--guard-line)}
+.gate-mid h4{color:var(--guard-ink);border-color:var(--guard-line)}
+
+table{width:100%;border-collapse:collapse;margin-top:18px;font-size:14px}
+th,td{text-align:left;padding:10px 12px;border-bottom:1px solid var(--line2);vertical-align:top}
+th{font-family:var(--mono);font-size:11.5px;letter-spacing:.06em;text-transform:uppercase;color:var(--faint);font-weight:600}
+td b{color:var(--ink)}
+td .role{font-family:var(--mono);font-size:12px;color:var(--accent-ink)}
+.tag{font-family:var(--mono);font-size:11px;padding:2px 7px;border-radius:5px;border:1px solid var(--line);background:var(--chip);color:var(--muted);white-space:nowrap}
+.tag.core{background:var(--accent-bg);border-color:var(--accent);color:var(--accent-ink)}
+.tag.stretch{background:var(--card2)}
+
+.phase{margin-top:8px}
+.steps{list-style:none;margin:18px 0 0;padding:0;position:relative}
+.step{position:relative;padding:0 0 22px 52px}
+.step::before{content:"";position:absolute;left:17px;top:30px;bottom:-4px;width:2px;background:var(--line)}
+.step:last-child::before{display:none}
+.num{position:absolute;left:0;top:0;width:36px;height:36px;border-radius:9px;background:var(--card);
+  border:1px solid var(--line);display:grid;place-items:center;font-family:var(--mono);font-weight:600;font-size:14px;color:var(--accent-ink)}
+.step h4{font-size:16.5px;font-weight:600;margin:6px 0 0}
+.step > p{margin:7px 0 0;font-size:14.5px;color:var(--muted)}
+.step ul{margin:9px 0 0;padding-left:18px;font-size:14px}
+.step ul li{margin:0 0 5px}
+
+pre{margin:11px 0 0;background:var(--card2);border:1px solid var(--line2);border-radius:8px;
+  padding:12px 14px;overflow-x:auto;font-family:var(--mono);font-size:12.5px;line-height:1.65;color:var(--ink)}
+pre .c{color:var(--faint)}
+pre .k{color:var(--accent-ink)}
+
+.gate,.guard{margin-top:11px;border-radius:8px;padding:11px 14px;font-size:13.8px;display:flex;gap:11px;align-items:flex-start}
+.gate{background:var(--gate-bg);border:1px solid var(--gate-line);border-left:4px solid var(--gate)}
+.guard{background:var(--guard-bg);border:1px solid var(--guard-line);border-left:4px solid var(--guard)}
+.gate .lab,.guard .lab{font-family:var(--mono);font-size:11px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;white-space:nowrap;padding-top:2px}
+.gate .lab{color:var(--gate-ink)}
+.guard .lab{color:var(--guard-ink)}
+.gate p,.guard p{margin:0}
+.gate .lab::before{content:"✓ "}
+
+.deliv{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:16px}
+.dcard{background:var(--card);border:1px solid var(--line);border-radius:9px;padding:14px 16px}
+.dcard h4{font-size:14.5px;margin-bottom:4px}
+.dcard p{margin:0;font-size:13.5px;color:var(--muted)}
+.dcard .n{font-family:var(--mono);font-size:11px;color:var(--faint)}
+
+footer{margin-top:44px;padding:22px 0 48px;border-top:1px solid var(--line);color:var(--faint);font-size:13px}
+
+/* ---- Copilot Console (static mockup + spec) ---- */
+.con-sub{font-size:18px;font-weight:700;margin:28px 0 0}
+.console{margin-top:16px;border:1px solid var(--line);border-radius:12px;overflow:hidden;background:var(--card)}
+.con-bar{display:flex;align-items:center;gap:10px;padding:9px 14px;background:var(--card2);border-bottom:1px solid var(--line)}
+.con-dots{display:flex;gap:6px}.con-dots i{width:10px;height:10px;border-radius:50%;background:var(--line)}
+.con-name{font-family:var(--mono);font-size:12.5px;color:var(--muted)}
+.con-live{margin-left:auto;display:inline-flex;align-items:center;gap:7px;font-family:var(--mono);font-size:11.5px;color:var(--accent-ink)}
+.con-live .dot{width:8px;height:8px;border-radius:50%;background:var(--accent);animation:pulse 1.3s infinite}
+@keyframes pulse{0%,100%{opacity:.3}50%{opacity:1}}
+.con-tag{font-family:var(--mono);font-size:10px;letter-spacing:.08em;text-transform:uppercase;color:var(--faint);border:1px solid var(--line);border-radius:5px;padding:2px 7px}
+.con-body{display:grid;grid-template-columns:170px 1fr;min-height:440px}
+.con-rail{border-right:1px solid var(--line2);padding:14px 12px;background:var(--card2);display:flex;flex-direction:column;gap:16px}
+.rail-h{font-family:var(--mono);font-size:10px;letter-spacing:.09em;text-transform:uppercase;color:var(--faint);margin-bottom:8px}
+.con-rail ol{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:3px}
+.con-rail li{display:flex;gap:9px;align-items:center;padding:6px;border-radius:7px;font-size:12.5px;color:var(--faint);font-family:var(--mono)}
+.con-rail li .d{width:15px;height:15px;border-radius:50%;border:2px solid var(--line);flex:none;position:relative}
+.con-rail li.pending .d{border-style:dashed}
+.con-rail li.active{color:var(--ink)}
+.con-rail li.active .d{border-color:var(--accent);border-top-color:transparent;animation:spin .9s linear infinite}
+@keyframes spin{to{transform:rotate(360deg)}}
+.con-rail li.done{color:var(--gate-ink)}
+.con-rail li.done .d{border-color:var(--gate);background:var(--gate)}
+.con-rail li.done .d::after{content:"✓";position:absolute;inset:0;display:grid;place-items:center;color:#fff;font-size:9px;font-weight:700}
+.rail-pref .pchip{display:flex;align-items:center;gap:6px;font-family:var(--mono);font-size:10.5px;background:var(--accent-bg);color:var(--accent-ink);border:1px solid var(--accent);border-radius:6px;padding:4px 7px;margin-bottom:6px}
+
+.con-main{display:flex;flex-direction:column;min-width:0}
+.feed{flex:1;overflow-y:auto;padding:16px 18px;display:flex;flex-direction:column;gap:12px}
+.msg{display:flex;gap:9px;max-width:100%}
+.msg .av{width:26px;height:26px;border-radius:7px;flex:none;display:grid;place-items:center;font-family:var(--mono);font-size:12px;font-weight:700;color:#fff;background:var(--c,var(--accent))}
+.msg .bubble{background:var(--card2);border:1px solid var(--line2);border-radius:10px;padding:10px 12px;font-size:13.5px;min-width:0;max-width:88%}
+.msg .agent-label{font-family:var(--mono);font-size:11px;font-weight:600;margin-bottom:3px}
+.msg .bubble p{margin:0}
+.msg.user{flex-direction:row-reverse}
+.msg.user .av{background:var(--ink)}
+.msg.user .bubble{background:var(--accent-bg);border-color:var(--accent)}
+.bubble details{margin-top:7px}
+.bubble summary{cursor:pointer;font-family:var(--mono);font-size:11.5px;color:var(--accent-ink)}
+.route{font-family:var(--mono);font-size:10.5px;color:var(--faint);margin:-4px 0 0 35px}
+.bul{margin:8px 0 0;padding-left:16px;font-size:12.8px;line-height:1.55}
+.bul li{margin:0 0 4px}
+.bul .hl{color:var(--guard-ink);font-family:var(--mono);font-size:11.5px}
+.script-box{margin-top:8px;background:var(--card);border:1px solid var(--line2);border-radius:8px;padding:10px 12px;font-family:var(--mono);font-size:11px;line-height:1.6;overflow-x:auto;color:var(--ink);white-space:pre}
+.diff{font-family:var(--mono);font-size:11.5px;margin-top:8px;border-radius:7px;overflow:hidden;border:1px solid var(--line2)}
+.diff div{padding:4px 9px}
+.diff .rm{background:var(--danger-bg);color:var(--danger)}
+.diff .ad{background:var(--gate-bg);color:var(--gate-ink)}
+.approve-card{margin-top:9px;border:1px solid var(--gate-line);background:var(--gate-bg);border-radius:9px;padding:11px 13px}
+.approve-card h5{margin:0 0 6px;font-size:13px}
+.btn{font:inherit;font-size:12px;font-weight:600;padding:6px 12px;border-radius:8px;border:1px solid var(--line);background:var(--card);color:var(--ink)}
+.btn.pri{background:var(--gate);border-color:var(--gate);color:#fff}
+.btn.dng{color:var(--danger);border-color:var(--danger)}
+.gate-btns{display:flex;gap:8px;flex-wrap:wrap;margin-top:11px}
+.composer{border-top:1px solid var(--line2);padding:10px 12px;background:var(--card)}
+.quickrow{display:flex;gap:7px;flex-wrap:wrap;margin-bottom:8px}
+.quickrow span{font-family:var(--mono);font-size:11.5px;background:var(--card2);border:1px solid var(--line);border-radius:999px;padding:5px 10px;color:var(--muted)}
+.composer-in{display:flex;gap:8px}
+.composer-in .fake{flex:1;font-size:13.5px;padding:9px 12px;border:1px solid var(--line);border-radius:9px;background:var(--card);color:var(--faint)}
+@media (prefers-reduced-motion:reduce){.con-live .dot,.con-rail li.active .d{animation:none}}
+
+.uigrid{display:grid;grid-template-columns:1fr 1fr;gap:11px;margin-top:14px}
+.uicard{background:var(--card);border:1px solid var(--line);border-radius:9px;padding:13px 15px}
+.uicard .ic{font-family:var(--mono);font-size:11px;color:var(--accent-ink);letter-spacing:.04em}
+.uicard h4{font-size:14px;margin:5px 0 3px}
+.uicard p{margin:0;font-size:13px;color:var(--muted)}
+.usecase{background:var(--card);border:1px solid var(--line);border-left:4px solid var(--accent);border-radius:9px;padding:16px 18px;margin-top:14px}
+.usecase p{margin:0 0 10px;font-size:14.5px}.usecase p:last-child{margin-bottom:0}
+.usecase .who{font-family:var(--mono);font-size:12px;color:var(--accent-ink);letter-spacing:.03em}
+.imp{display:flex;gap:12px;margin-top:13px}
+.imp .n{font-family:var(--mono);font-size:12px;font-weight:600;color:var(--accent-ink);flex:none;width:26px;height:26px;border-radius:7px;background:var(--accent-bg);border:1px solid var(--accent);display:grid;place-items:center}
+.imp h4{font-size:14.5px;margin:2px 0 2px}
+.imp p{margin:0;font-size:13.5px;color:var(--muted)}
+
+@media (max-width:720px){
+  .flow{grid-template-columns:1fr}
+  .deliv{grid-template-columns:1fr}
+  .step{padding-left:46px}
+  .con-body{grid-template-columns:1fr}
+  .con-rail{border-right:none;border-bottom:1px solid var(--line2)}
+  .con-rail ol{flex-direction:row;flex-wrap:wrap;gap:6px}
+  .msg .bubble{max-width:100%}
+  .uigrid{grid-template-columns:1fr}
+}
+</style>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@600;700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@500;600&display=swap">
+
+<header><div class="wrap">
+  <div class="eyebrow">AWS AI Capstone · Cloudelligent · Final Week</div>
+  <h1>ETL Copilot</h1>
+  <p class="lede">A test-gated build runbook for an agent that helps <b>data engineers</b> get a clean dataset: it profiles a raw <b>CSV</b>, drafts a Glue ETL job, gets the engineer's sign-off, runs and validates it, then writes the docs. Built from scratch on Strands + Bedrock AgentCore.</p>
+  <div class="chips">
+    <span class="chip"><b>Scope</b> CSV only — no PDF/JSON</span>
+    <span class="chip"><b>ETL</b> Glue Python Shell (not Spark)</span>
+    <span class="chip"><b>Data</b> 2–3 quirky datasets</span>
+    <span class="chip"><b>Rules</b> 3–5 quality checks</span>
+    <span class="chip warn">Pipeline first · UI last</span>
+    <span class="chip"><b>Region</b> us-west-2</span>
+  </div>
+</div></header>
+
+<nav><div class="wrap">
+  <a href="#arch">Architecture</a>
+  <a href="#console">Console UI</a>
+  <a href="#p0">Phase 0 · Setup</a>
+  <a href="#p1">Phase 1 · Plumbing</a>
+  <a href="#p2">Phase 2 · IAM</a>
+  <a href="#p3">Phase 3 · Agent</a>
+  <a href="#p4">Phase 4 · Scale</a>
+  <a href="#p5">Phase 5 · UI</a>
+  <a href="#done">Done</a>
+</div></nav>
+
+<main class="wrap">
+
+<div class="howto">
+  <span class="k">Rule&nbsp;of&nbsp;the&nbsp;runbook</span>
+  <p>Do the steps in order and <b>do not advance past a step until its Test Gate passes</b>. The internal pipeline (Phases 0–4) is built and proven end-to-end <em>first</em>; the Console UI (Phase 5) is layered on last, once the pipeline works completely on its own.</p>
+</div>
+
+<section id="arch">
+  <div class="sec-head"><span class="sec-kicker">Reference</span><h2>Architecture &amp; who does what</h2></div>
+  <p class="sec-intro">Data flows left to right; the only place it stops is the human gate. Everything that costs money or moves data sits behind one agent with one narrow IAM role — that boundary is your primary safety control.</p>
+
+  <div class="flow">
+    <div class="fcol">
+      <h4>Input</h4>
+      <ul>
+        <li><span class="t">CSV</span> lands in the S3 <span class="t">landing/</span> prefix (later: uploaded via the Console)</li>
+        <li>2–3 datasets, each with a deliberate quirk: mixed date formats, ragged nulls, a PII column, mixed types in one field</li>
+        <li>Fixed target rules: no nulls in key columns, valid date range, no duplicate IDs</li>
+      </ul>
+    </div>
+    <div class="fcol gate-mid">
+      <h4>Process · autonomous, human-gated</h4>
+      <ul>
+        <li>Supervisor sequences the run itself — no manual step-by-step driving</li>
+        <li>Profiler summarizes the mess; Script Writer drafts a Python Shell ETL script</li>
+        <li><b>Draft is proposed, not run</b> → human approves before any write</li>
+        <li>Execution Agent runs the job → polls status → Athena validation</li>
+        <li>Fail → revise → re-approve → re-run (loop)</li>
+        <li>User can steer by chat; Supervisor routes the note to the right agent</li>
+      </ul>
+    </div>
+    <div class="fcol">
+      <h4>Output</h4>
+      <ul>
+        <li>Cleaned, partitioned <span class="t">Parquet</span> in <span class="t">staging/</span></li>
+        <li>The approved ETL script, versioned</li>
+        <li>Markdown data dictionary + quality report</li>
+        <li>First-run success rate across the 2–3 datasets</li>
+      </ul>
+    </div>
+  </div>
+
+  <table>
+    <tr><th>Agent</th><th>Job</th><th>Build priority</th></tr>
+    <tr><td><span class="role">Supervisor</span></td><td>Receives the run, sequences the others, holds run state, and <b>routes the user's chat preferences</b> to the right sub-agent. Profiling &amp; documentation live here as steps at first.</td><td><span class="tag core">Core</span></td></tr>
+    <tr><td><span class="role">Script&nbsp;Writer</span></td><td>Drafts &amp; revises the ETL script from the profile; reads Memory for conventions learned this run.</td><td><span class="tag core">Core</span></td></tr>
+    <tr><td><span class="role">Execution&nbsp;Agent</span></td><td><b>The only agent with AWS tools</b> — <code>start_glue_job</code>, <code>get_job_status</code>, <code>run_athena_validation</code>. Enforces the approval gate.</td><td><span class="tag core">Core</span></td></tr>
+    <tr><td><span class="role">Profiler</span></td><td>Turns crawler + Data Quality output into a plain-language summary. Promote from a Supervisor step to its own agent once the loop works.</td><td><span class="tag stretch">Promote later</span></td></tr>
+    <tr><td><span class="role">Documenter</span></td><td>Writes the data dictionary &amp; quality report from the final schema. Promote last.</td><td><span class="tag stretch">Promote later</span></td></tr>
+  </table>
+  <div class="guard"><span class="lab">Safety</span><p>Start with the 3 <b>Core</b> agents (Supervisor + Script Writer + Execution Agent) using the Strands agents-as-tools pattern (sub-agents wrapped as <code>@tool</code>s). Add Profiler and Documenter as separate agents only if Phase 3 finishes early — a 5-agent split is more than the timeline needs to prove the idea.</p></div>
+</section>
+
+<section id="console">
+  <div class="sec-head"><span class="sec-kicker">Design target · built in Phase 5</span><h2>The Copilot Console</h2></div>
+  <p class="sec-intro">Not a wizard — a conversation. The user's only job is to upload one CSV; the agents then run the pipeline autonomously and narrate each step in plain bullets. A chat box stays open the whole time, so the user can set or change preferences — "that's a SKU, not PII" — and the Supervisor routes the note to the right agent and revises before the next step. The <em>only</em> thing that ever waits for a human is the approval gate before data is written.</p>
+
+  <div class="guard"><span class="lab">Not yet</span><p>This is the design target, not a build task for now. The UI is the <b>last</b> thing built (Phase 5) — only once the internal pipeline runs end-to-end on its own. The mockup below is a static illustration of the intended interface, not a working front-end.</p></div>
+
+  <div class="console" aria-label="Static mockup of the Copilot Console">
+    <div class="con-bar">
+      <span class="con-dots"><i></i><i></i><i></i></span>
+      <span class="con-name">etl-copilot · customers.csv</span>
+      <span class="con-tag">mockup</span>
+      <span class="con-live"><span class="dot"></span>Awaiting approval</span>
+    </div>
+    <div class="con-body">
+      <div class="con-rail">
+        <div>
+          <div class="rail-h">Run status</div>
+          <ol>
+            <li class="done"><span class="d"></span>Profile</li>
+            <li class="done"><span class="d"></span>Draft ETL</li>
+            <li class="active"><span class="d"></span>Approval</li>
+            <li class="pending"><span class="d"></span>Run</li>
+            <li class="pending"><span class="d"></span>Validate</li>
+            <li class="pending"><span class="d"></span>Document</li>
+          </ol>
+        </div>
+        <div class="rail-pref">
+          <div class="rail-h">Active preferences</div>
+          <div class="pchip">email = non-PII (SKU)</div>
+        </div>
+      </div>
+      <div class="con-main">
+        <div class="feed">
+          <div class="msg user"><div class="av">U</div><div class="bubble"><p>Uploaded customers.csv · 412 rows</p></div></div>
+
+          <div class="msg"><div class="av" style="--c:var(--ag-sup)">S</div><div class="bubble"><div class="agent-label" style="color:var(--ag-sup)">Supervisor</div><p>On it. I'll profile the file, draft the cleaning, and pause for your approval before anything runs. Talk to me any time — I'll reroute to the right agent.</p></div></div>
+
+          <div class="msg"><div class="av" style="--c:var(--ag-prof)">P</div><div class="bubble"><div class="agent-label" style="color:var(--ag-prof)">Profiler</div><p>Scanned <b>customers.csv</b>: 412 rows, 5 columns. What stood out:</p><ul class="bul"><li><span class="hl">email</span> — looks like PII, will mask unless told otherwise</li><li><span class="hl">signup_date</span> — two formats (DD/MM/YYYY + ISO)</li><li><span class="hl">country</span> — 11% nulls</li></ul></div></div>
+          <div class="route">Supervisor → Profiler</div>
+
+          <div class="msg"><div class="av" style="--c:var(--ag-script)">W</div><div class="bubble"><div class="agent-label" style="color:var(--ag-script)">Script Writer</div><p>Here's the cleaning plan I'll propose:</p><ul class="bul"><li>Parse signup_date from both formats to DATE</li><li>Hash <span class="hl">email</span> with SHA-256 (PII)</li><li>Fill null country with "UNKNOWN"</li></ul><details><summary>Show generated script</summary><div class="script-box">df["signup_date"] = pd.to_datetime(
+    df["signup_date"], format="mixed")
+df["email"] = df["email"].map(sha256)</div></details></div></div>
+          <div class="route">Supervisor → Script Writer</div>
+
+          <div class="msg user"><div class="av">U</div><div class="bubble"><p>that's a SKU, not PII</p></div></div>
+
+          <div class="msg"><div class="av" style="--c:var(--ag-script)">W</div><div class="bubble"><div class="agent-label" style="color:var(--ag-script)">Script Writer</div><p>Got it — treating <span class="hl">email</span> as a product SKU, not PII. Dropping the mask.</p><div class="diff"><div class="rm">− Hash email with SHA-256 (PII)</div><div class="ad">+ Keep email as-is</div></div></div></div>
+          <div class="route">Supervisor → Script Writer</div>
+
+          <div class="msg"><div class="av" style="--c:var(--ag-sup)">S</div><div class="bubble"><div class="agent-label" style="color:var(--ag-sup)">Supervisor</div><div class="approve-card"><h5>Ready for your approval</h5><p style="font-size:12.8px;margin:0 0 4px">I will:</p><ul class="bul"><li>Parse signup_date to DATE</li><li>Keep email as-is (your note)</li><li>Fill null country with "UNKNOWN"</li></ul><p style="font-size:12.5px;margin:8px 0 0"><b>Guardrails:</b> writes only to <span class="hl">staging/customers/</span> · landing untouched · no rows dropped.</p><div class="gate-btns"><button class="btn pri">Approve &amp; run</button><button class="btn">Request changes</button><button class="btn dng">Reject</button></div></div></div></div>
+        </div>
+        <div class="composer">
+          <div class="quickrow"><span>email is a SKU, not PII</span><span>use DD/MM for dates</span></div>
+          <div class="composer-in"><div class="fake">Type a preference… e.g. "use DD/MM for dates"</div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <h3 class="con-sub">What the person actually does</h3>
+  <div class="uigrid">
+    <div class="uicard"><span class="ic">01 · UPLOAD</span><h4>Drop a CSV — that's it</h4><p>The only manual action. CSV-only at the door; the run drives itself from there, no step buttons to press.</p></div>
+    <div class="uicard"><span class="ic">02 · WATCH</span><h4>Read the narration</h4><p>After each step, the responsible agent posts a plain-language bullet summary of what it just did — legible work, not a spinner.</p></div>
+    <div class="uicard"><span class="ic">03 · STEER</span><h4>Chat to set preferences</h4><p>Type a correction any time; the Supervisor routes it to the right agent and revises the plan before the next step.</p></div>
+    <div class="uicard"><span class="ic">04 · CLARIFY</span><h4>Answer in one tap</h4><p>When the agent is unsure it flags it with quick-select options — it never guesses silently or blocks waiting for free text.</p></div>
+    <div class="uicard"><span class="ic">05 · DECIDE</span><h4>Approve one plan</h4><p>The single gate: a plain-English summary (full script collapsed) that already reflects your preferences.</p></div>
+    <div class="uicard"><span class="ic">06 · KEEP</span><h4>Collect the outputs</h4><p>Data dictionary, quality report, and the staging location of the cleaned Parquet — with a recorded approval.</p></div>
+  </div>
+
+  <h3 class="con-sub">A useful use case</h3>
+  <div class="usecase">
+    <p class="who">Persona · Maya, a data engineer onboarding a new vendor feed</p>
+    <p>Every week a new SaaS vendor drops a <code>customers.csv</code> export into a shared bucket. The dates come in two formats, one column is raw PII, and about one row in ten is missing a country. Today Maya hand-writes a cleaning script, runs it, eyeballs the output, and hopes she caught everything — an hour she can't easily hand off or audit later.</p>
+    <p>With the Console she drops the file and does nothing else. The Supervisor profiles it, flags the email as likely PII, and drafts the fix — narrating each step in bullets. Mid-run she realizes that "email" column is actually a hashed partner ID, so she types <b>"that's a SKU, not PII."</b> The Supervisor reroutes to the Script Writer, shows a diff dropping the mask, and the approval card updates to reflect her note. She approves once; it runs, validates, and documents itself.</p>
+    <p>The payoff is the audit trail: she approves something she watched get built, <b>including her own correction</b>, and walks away with clean partitioned Parquet plus a generated data dictionary in minutes. For PII-bearing data, "a named person reviewed and approved this exact transform, and here's the report" beats "an agent cleaned it" every time.</p>
+  </div>
+
+  <h3 class="con-sub">Improvements I'd make to the workflow</h3>
+  <div class="imp"><span class="n">1</span><div><h4>Interrupt mid-step, don't only pause between</h4><p>Let a chat message cut in while an agent is working: finish the current tool call, then re-plan — with a visible "steering applied" marker. Pause-only-between-steps is the safe MVP; true interruption is the better feel.</p></div></div>
+  <div class="imp"><span class="n">2</span><div><h4>Turn corrections into durable preferences</h4><p>Every correction becomes a chip in the rail <em>and</em> a row in AgentCore Memory — so next week's file from the same vendor starts with "email = non-PII" already applied, not re-asked.</p></div></div>
+  <div class="imp"><span class="n">3</span><div><h4>Always show a diff when a preference changes the plan</h4><p>Prove the correction changed the output — a before/after on the transform list. If a note can't produce a diff, it was decorative; don't present it as interactive.</p></div></div>
+  <div class="imp"><span class="n">4</span><div><h4>Tag inferences with confidence, ask before drafting</h4><p>Mark low-confidence guesses ("email looks like PII — medium confidence") and raise the quick-select question <em>before</em> the script is written, so a wrong guess never reaches the gate.</p></div></div>
+  <div class="imp"><span class="n">5</span><div><h4>Make the approval card decision-grade</h4><p>Add an impact preview — rows affected, rows dropped/quarantined, DPU/cost estimate — plus an explicit "what it won't do." That's what keeps approval from decaying into a rubber stamp.</p></div></div>
+  <div class="imp"><span class="n">6</span><div><h4>Keep a graceful fallback mode</h4><p>Live steering is the highest-uncertainty part. Ship an "answer a few questions upfront, then run" mode first so there's always a working path if the interactive layer runs long.</p></div></div>
+</section>
+
+<section id="p0">
+  <div class="sec-head"><span class="sec-kicker">Phase 0</span><h2>Setup &amp; scaffold</h2></div>
+  <p class="sec-intro">Get the account, tools, and an empty deployable agent working before touching data. Ends when a "hello" agent runs locally and answers.</p>
+  <ol class="steps phase">
+    <li class="step"><span class="num">0.1</span>
+      <h4>Confirm the toolbox &amp; model access</h4>
+      <p>Local tooling plus access to the AWS data services.</p>
+      <ul>
+        <li>AWS creds for <code>us-west-2</code>; <code>uv</code>, Node 20+, <code>agentcore</code> CLI installed</li>
+        <li>Bedrock model access enabled for your Claude model (the one <code>model/load.py</code> loads)</li>
+        <li>Permissions to create Glue, Athena, S3, and IAM resources</li>
+      </ul>
+      <div class="gate"><span class="lab">Test gate</span><p><code>aws sts get-caller-identity</code> returns your account; <code>agentcore --version</code> works; Bedrock console shows the model as <em>Access granted</em>.</p></div>
+    </li>
+    <li class="step"><span class="num">0.2</span>
+      <h4>Scaffold a fresh AgentCore project</h4>
+      <p>A clean project from the AgentCore CLI; nothing is copied from earlier weeks. <code>--skip-git</code> because <code>Project/</code> already lives inside a git repo.</p>
+      <pre>agentcore create --project-name EtlCopilot --name EtlCopilot   --framework Strands --model-provider Bedrock --build CodeZip   --language Python --protocol HTTP --memory none --skip-git</pre>
+      <ul>
+        <li>Pin <code>region_name="us-west-2"</code> in <code>model/load.py</code>; the template sets none and falls back to the CLI default</li>
+        <li>Model: <code>us.anthropic.claude-sonnet-4-6</code>, overridable via <code>ETL_COPILOT_MODEL_ID</code></li>
+        <li>Fill <code>aws-targets.json</code> (it is generated empty) and set <code>runtimeVersion</code> to <code>PYTHON_3_12</code> to match the local venv</li>
+        <li>Remove the template's third-party MCP client (<code>mcp.exa.ai</code> web search)</li>
+      </ul>
+      <div class="gate"><span class="lab">Test gate</span><p><code>agentcore validate</code> prints <code>Valid</code>.</p></div>
+    </li>
+    <li class="step"><span class="num">0.3</span>
+      <h4>Prove the empty agent answers</h4>
+      <p>Run it locally before adding complexity. <code>agentcore dev</code> deploys to AWS before starting unless you pass <code>--skip-deploy</code>, and <code>agentcore invoke</code> only targets a <em>deployed</em> agent.</p>
+      <pre>agentcore dev --port 8081 --logs --skip-deploy    <span class="c"># terminal 1</span>
+agentcore dev --port 8081 "hello"                 <span class="c"># terminal 2</span></pre>
+      <div class="guard"><span class="lab">Windows</span><p>Pass <code>callback_handler=None</code> to the <code>Agent</code>: the default handler prints every token to a cp1252 console and crashes on emoji. Hot-reload can also miss edits, so restart the server after code changes and make sure port 8081 is free after stopping it.</p></div>
+      <div class="gate"><span class="lab">Test gate</span><p>The prompt returns a streamed reply from Sonnet 4.6, including non-ASCII characters, with no errors in the dev log.</p></div>
+    </li>
+  </ol>
+</section>
+
+<section id="p1">
+  <div class="sec-head"><span class="sec-kicker">Phase 1</span><h2>The data plumbing — no agent yet</h2></div>
+  <p class="sec-intro">Build and run the whole pipeline by hand on <b>dataset 1</b>. You must know exactly what "correct" looks like before any LLM writes a line of ETL. Every piece here becomes a tool the agent calls later.</p>
+  <ol class="steps phase">
+    <li class="step"><span class="num">1.1</span>
+      <h4>S3 bucket + landing/staging prefixes + dataset 1</h4>
+      <p>Separate prefixes so the agent never writes over raw input.</p>
+      <pre>aws s3 mb s3://&lt;acct&gt;-etl-copilot-uswest2 --region us-west-2
+<span class="c"># prefixes: landing/  staging/  scripts/  reports/</span>
+aws s3 cp dataset1.csv s3://&lt;acct&gt;-etl-copilot-uswest2/landing/dataset1/</pre>
+      <ul><li>Dataset 1 = small (≈50–500 rows) but with one real quirk, e.g. dates as both <code>DD/MM/YYYY</code> and <code>YYYY-MM-DD</code></li></ul>
+      <div class="gate"><span class="lab">Test gate</span><p><code>aws s3 ls s3://…/landing/dataset1/</code> shows the CSV.</p></div>
+    </li>
+    <li class="step"><span class="num">1.2</span>
+      <h4>Glue crawler → Data Catalog (CSV-locked)</h4>
+      <p>Point a crawler at <code>landing/</code>. Pin a <b>CSV classifier</b> so the pipeline is CSV-only by construction — this is where your "no PDF/JSON" scope becomes a hard guarantee, not a hope.</p>
+      <div class="gate"><span class="lab">Test gate</span><p><code>aws glue get-table</code> shows the inferred columns and types for dataset 1.</p></div>
+    </li>
+    <li class="step"><span class="num">1.3</span>
+      <h4>Glue Data Quality — initial profile</h4>
+      <p>Run a Data Quality profile / rule recommendation on the catalog table to get null rates, types, and cardinality.</p>
+      <div class="gate"><span class="lab">Test gate</span><p>You can pull the DQ result (nulls %, distinct counts) as JSON — this is the exact payload the Profiler will later read.</p></div>
+    </li>
+    <li class="step"><span class="num">1.4</span>
+      <h4>Hand-write ONE Python Shell ETL script</h4>
+      <p>You write this, not the LLM. pandas-based: parse the mixed dates, coerce nulls, mask the PII column, write partitioned Parquet to <code>staging/</code>.</p>
+      <pre>aws glue create-job --name etl-copilot-job \
+  --command '{"Name":"pythonshell","PythonVersion":"3.9",
+    "ScriptLocation":"s3://…/scripts/etl.py"}' \
+  --default-arguments '{"--additional-python-modules":"pandas,pyarrow"}' \
+  --role &lt;glue-role-arn&gt;
+aws glue start-job-run --job-name etl-copilot-job</pre>
+      <div class="gate"><span class="lab">Test gate</span><p><code>staging/</code> holds Parquet; you can read it back and the dates are uniform, nulls handled, PII masked. This output is your <b>golden reference</b>.</p></div>
+    </li>
+    <li class="step"><span class="num">1.5</span>
+      <h4>Athena validation query</h4>
+      <p>One workgroup, one query that encodes your 3–5 rules against the staging output and returns a pass/fail row you can read.</p>
+      <pre><span class="c">-- e.g. must all be 0</span>
+<span class="k">SELECT</span>
+  count_if(id <span class="k">IS NULL</span>)                     <span class="k">AS</span> null_ids,
+  count(*) - count(<span class="k">DISTINCT</span> id)            <span class="k">AS</span> dup_ids,
+  count_if(event_date &lt; <span class="k">DATE</span> '2000-01-01') <span class="k">AS</span> bad_dates
+<span class="k">FROM</span> staging_dataset1;</pre>
+      <div class="gate"><span class="lab">Test gate</span><p>The query runs and returns all-zero (pass) on your golden output. <b>Phase 1 done: the manual pipeline works end to end.</b></p></div>
+    </li>
+  </ol>
+</section>
+
+<section id="p2">
+  <div class="sec-head"><span class="sec-kicker">Phase 2</span><h2>IAM &amp; the tool boundary</h2></div>
+  <p class="sec-intro">Before the agent can touch any of this, lock down what it's allowed to do. This is a one-step phase, but it's the difference between a demo and something you'd trust — and, as your V2 analysis argues, it's the <em>real</em> safety control, not the human's code-reading.</p>
+  <ol class="steps phase">
+    <li class="step"><span class="num">2.1</span>
+      <h4>Least-privilege role for the Execution Agent</h4>
+      <p>The Execution Agent's role should do four things and nothing else.</p>
+      <ul>
+        <li>Start / read runs of the <b>one named</b> Glue job (<code>etl-copilot-job</code>)</li>
+        <li>Query the <b>one named</b> Athena workgroup</li>
+        <li>Read <code>landing/</code>, read+write <code>staging/</code>/<code>scripts/</code>/<code>reports/</code> — nothing outside this bucket</li>
+        <li>Read the Data Catalog table</li>
+      </ul>
+      <div class="guard"><span class="lab">Deny test</span><p>Assume the role and confirm it <b>cannot</b> start a different Glue job or read another bucket. Even a rubber-stamped approval is safe when the blast radius is this small — a careful review is a weak substitute for a role that makes damage impossible.</p></div>
+      <div class="gate"><span class="lab">Test gate</span><p>Under the role: <code>start-job-run</code> on <code>etl-copilot-job</code> succeeds; the same call on any other job is denied.</p></div>
+    </li>
+  </ol>
+</section>
+
+<section id="p3">
+  <div class="sec-head"><span class="sec-kicker">Phase 3</span><h2>The agent, built one loop at a time</h2></div>
+  <p class="sec-intro">Now wrap the proven plumbing in Strands. Test each tool as a plain Python function <em>before</em> letting the LLM call it, then assemble the loop on dataset 1 only. No UI yet — everything here is driven from <code>agentcore invoke</code>.</p>
+  <ol class="steps phase">
+    <li class="step"><span class="num">3.1</span>
+      <h4>Wrap the AWS actions as <code>@tool</code>s</h4>
+      <p>boto3 inside <code>@tool</code> functions, each does one thing and returns a string the agent can read.</p>
+      <pre><span class="k">@tool</span>
+<span class="k">def</span> start_glue_job(job_name: str) -> str: ...
+<span class="k">@tool</span>
+<span class="k">def</span> get_job_status(run_id: str) -> str: ...
+<span class="k">@tool</span>
+<span class="k">def</span> run_athena_validation(table: str) -> str: ...
+<span class="k">@tool</span>
+<span class="k">def</span> get_dataset_profile(table: str) -> str: ...</pre>
+      <div class="gate"><span class="lab">Test gate</span><p>Call each function directly in Python (no LLM). Each returns correct real output against the resources from Phases 1–2.</p></div>
+    </li>
+    <li class="step"><span class="num">3.2</span>
+      <h4>Script Writer drafts from the profile</h4>
+      <p>A sub-agent that takes the Profiler summary and produces ETL script text. Draft with Code Interpreter if you want it to self-check syntax; otherwise plain generation is fine to start.</p>
+      <div class="gate"><span class="lab">Test gate</span><p>Feed it dataset 1's profile; the generated script is close to your Phase 1.4 golden script (reads CSV, fixes the same dates/nulls/PII).</p></div>
+    </li>
+    <li class="step"><span class="num">3.3</span>
+      <h4>The human approval gate</h4>
+      <p>The Execution Agent presents the draft and <b>blocks</b> until an explicit human approval before calling <code>start_glue_job</code>. Make it two-layer: a plain-English summary is the real decision surface, with the full script collapsed for spot-checks — nobody reviews generated code line-by-line every run, so treating that as the gate makes it a rubber stamp. For now, "approval" is just a follow-up message to <code>agentcore invoke</code>; the UI wraps this later.</p>
+      <div class="guard"><span class="lab">Critical</span><p>Prove the negative first: with no approval, verify the job <b>never</b> starts. Then prove a "deny" halts the run cleanly. Only then test that "approve" lets it run.</p></div>
+      <div class="gate"><span class="lab">Test gate</span><p>No approval → no <code>start-job-run</code> in CloudTrail. Approve → job runs. Deny → run stops.</p></div>
+    </li>
+    <li class="step"><span class="num">3.4</span>
+      <h4>The run → validate → revise loop</h4>
+      <p>On validation fail, feed the <em>specific failing rule</em> back to Script Writer, revise, <b>re-approve</b>, re-run. Seed dataset 1 with a quirk that fails first pass so the loop has to work.</p>
+      <div class="gate"><span class="lab">Test gate</span><p>A deliberately-hard dataset 1 fails validation once, the agent revises, you re-approve, and the second run passes — with re-approval required each cycle.</p></div>
+    </li>
+    <li class="step"><span class="num">3.5</span>
+      <h4>Supervisor wires it together</h4>
+      <p>Supervisor holds run state and calls the sub-agents-as-tools (one Agent cached per session, as the template's <code>agent_factory</code> does), with profiling as a step it runs itself for now. This is also where preference-routing will live when the UI arrives — but for now it just sequences the run.</p>
+      <div class="gate"><span class="lab">Test gate</span><p>One <code>agentcore invoke</code> pointing at dataset 1 drives profile → draft → approve → run → validate → pass, end to end, locally. <b>The internal pipeline is now complete for one dataset.</b></p></div>
+    </li>
+  </ol>
+</section>
+
+<section id="p4">
+  <div class="sec-head"><span class="sec-kicker">Phase 4</span><h2>Memory, breadth &amp; evidence</h2></div>
+  <p class="sec-intro">Harden the pipeline: add memory, prove it generalizes beyond dataset 1, produce the docs, and deploy. When this phase is green the whole system works on its own — that is the prerequisite for building any UI.</p>
+  <ol class="steps phase">
+    <li class="step"><span class="num">4.1</span>
+      <h4>Add AgentCore Memory</h4>
+      <p>Store conventions learned this run ("this file's dates are DD/MM"; "email is a SKU, not PII") so the Script Writer reuses them across revisions — and across future runs of the same source — instead of re-deriving.</p>
+      <pre>agentcore add memory --name EtlCopilotMem   <span class="c"># SEMANTIC / SUMMARIZATION strategy</span></pre>
+      <div class="gate"><span class="lab">Test gate</span><p>Within a run, a convention learned in the first draft is visibly reused in a later revision (check the trace / logs).</p></div>
+    </li>
+    <li class="step"><span class="num">4.2</span>
+      <h4>Run datasets 2 and 3</h4>
+      <p>Different quirks each (a stray <code>"N/A"</code> in a numeric field; a column that's sometimes a list, sometimes a scalar). Record <b>first-run success rate</b>.</p>
+      <div class="gate"><span class="lab">Test gate</span><p>Both run through the same pipeline unchanged; you have a real success/fail number and a note on <em>why</em> anything failed.</p></div>
+    </li>
+    <li class="step"><span class="num">4.3</span>
+      <h4>Documenter — dictionary + quality report</h4>
+      <p>From the final schema and profile: a Markdown data dictionary (columns, types, null rates, samples) and a quality report (rules, pass/fail, row counts before/after).</p>
+      <div class="gate"><span class="lab">Test gate</span><p>Both artifacts land in <code>reports/</code> and match the actual final output for each dataset.</p></div>
+    </li>
+    <li class="step"><span class="num">4.4</span>
+      <h4>Deploy &amp; capture evidence</h4>
+      <p>Ship it to Runtime and run the real thing — still headless, via the CLI.</p>
+      <pre>agentcore deploy
+agentcore invoke '{"prompt":"onboard s3://…/landing/dataset2/"}'
+agentcore traces list   <span class="c"># grab traces + logs for the writeup</span></pre>
+      <div class="gate"><span class="lab">Test gate</span><p>A deployed run succeeds end to end on all datasets from the CLI. <b>Pipeline complete — only now do you start the UI.</b></p></div>
+    </li>
+  </ol>
+</section>
+
+<section id="p5">
+  <div class="sec-head"><span class="sec-kicker">Phase 5 · last</span><h2>The Console UI</h2></div>
+  <p class="sec-intro">Only start this once Phase 4 is green and the whole pipeline runs end-to-end from a plain <code>agentcore invoke</code>. The UI adds <em>no</em> data-correctness — it's purely the human surface described in the <a href="#console">Console</a> design target above: upload-only, autonomous, chat-steerable. Build it in this order; each layer is optional on top of the last.</p>
+  <ol class="steps phase">
+    <li class="step"><span class="num">5.1</span>
+      <h4>Upload → trigger</h4>
+      <p>A CSV-only file input that does a presigned <code>PUT</code> to <code>landing/</code>; the S3 write triggers the run (the same trigger the pipeline already uses). Reject non-CSV on both the client and the presign Lambda.</p>
+      <div class="gate"><span class="lab">Test gate</span><p>Uploading a CSV in the browser starts a run you can see in logs; a non-CSV file is refused before it reaches S3.</p></div>
+    </li>
+    <li class="step"><span class="num">5.2</span>
+      <h4>Live narration — the activity feed</h4>
+      <p>Open a stream (WebSocket or poll) to the run and render each agent turn as a plain-language bullet summary <em>as it completes</em>. No step buttons — the user watches, they don't drive.</p>
+      <div class="gate"><span class="lab">Test gate</span><p>A browser upload shows the run self-progressing profile → draft → gate, with per-step bullets that match the trace.</p></div>
+    </li>
+    <li class="step"><span class="num">5.3</span>
+      <h4>Chat preferences + Supervisor routing</h4>
+      <p>A persistent chat box; messages go to the Supervisor, which routes to the right sub-agent and revises before the next step. This needs the agent to check for new input <em>between</em> turns — the highest-uncertainty part of the whole build.</p>
+      <div class="guard"><span class="lab">Highest risk</span><p>Build a fallback "answer a few questions upfront, then run" mode first, so you always have a working demo if live steering takes longer than expected.</p></div>
+      <div class="gate"><span class="lab">Test gate</span><p>Sending "email is a SKU, not PII" mid-run visibly reroutes and the next proposal <b>provably changes</b> (a diff). A note that changes nothing is not shown as "applied".</p></div>
+    </li>
+    <li class="step"><span class="num">5.4</span>
+      <h4>The approval gate, in the UI</h4>
+      <p>The two-layer card (plain-English summary + collapsed script) that already reflects the conversation. Approve / Request changes / Reject post back on the <em>same</em> <code>session_id</code> — the entrypoint's <code>_extract_prompt</code> + per-session agent cache in <code>app/EtlCopilot/main.py</code> resume the run.</p>
+      <div class="gate"><span class="lab">Test gate</span><p>From the browser: no approval → no <code>start-job-run</code>; approve → runs; reject → stops. Matches the Phase 3.3 behavior exactly.</p></div>
+    </li>
+    <li class="step"><span class="num">5.5</span>
+      <h4>Host &amp; record the approver</h4>
+      <p>Host on S3 + CloudFront (or Amplify); add Cognito so each approval carries a named identity, written into the quality report for the audit trail.</p>
+      <div class="gate"><span class="lab">Test gate</span><p>A deployed URL runs a full onboarding; the generated report shows <em>who</em> approved and when.</p></div>
+    </li>
+  </ol>
+</section>
+
+<section id="done">
+  <div class="sec-head"><span class="sec-kicker">Definition of done</span><h2>What you hand in</h2></div>
+  <div class="deliv">
+    <div class="dcard"><span class="n">01</span><h4>Working pipeline</h4><p>Deployed on AgentCore Runtime, driving the full profile → approve → run → validate → revise loop on CSV input — usable headless from the CLI.</p></div>
+    <div class="dcard"><span class="n">02</span><h4>Cleaned data + versioned script</h4><p>Partitioned Parquet in <code>staging/</code> and the approved ETL script for each dataset.</p></div>
+    <div class="dcard"><span class="n">03</span><h4>Docs per dataset</h4><p>Markdown data dictionary and quality report generated by the Documenter.</p></div>
+    <div class="dcard"><span class="n">04</span><h4>The metric + writeup</h4><p>First-run success rate across the 2–3 datasets, with an honest note on what failed and why.</p></div>
+    <div class="dcard"><span class="n">05</span><h4>Governance</h4><p>Least-privilege IAM role plus a recorded human approval for every run — the audit trail that makes it trustworthy.</p></div>
+    <div class="dcard"><span class="n">06</span><h4>Copilot Console (stretch)</h4><p>The chat-driven UI from Phase 5: upload a CSV, watch it self-run, steer by chat, approve one plan. Built only after 01–05 are solid.</p></div>
+  </div>
+  <div class="guard"><span class="lab">If time is short</span><p>Cut in this order: drop the whole Console UI (the pipeline stands on its own via the CLI), drop the Documenter to a hand-written report, keep Profiler as a Supervisor step, run 2 datasets instead of 3. Never cut: the human approval gate, the least-privilege role, and the run/validate/revise loop — those are the parts that make this a real system.</p></div>
+</section>
+
+</main>
+
+<footer><div class="wrap">Verify current Glue Data Quality APIs, Python Shell job limits, and AgentCore Memory / approval-gate patterns against the AWS docs before building each phase — this runbook is grounded in the project brief and the verified Phase&nbsp;0 setup, not a tested end-to-end setup.</div></footer>

@@ -10,6 +10,7 @@ Output is deterministic for a given SEED.
 """
 import csv
 import json
+import os
 import random
 import unicodedata
 from collections import Counter
@@ -19,7 +20,8 @@ from pathlib import Path
 SEED = 42
 N_ORDERS = 500
 N_DUPLICATES = 8  # exact re-sent rows
-OUT_DIR = Path(__file__).resolve().parent
+# DATA_OUT_DIR lets tests regenerate into a scratch folder without touching these files
+OUT_DIR = Path(os.environ.get("DATA_OUT_DIR") or Path(__file__).resolve().parent)
 CSV_PATH = OUT_DIR / "orders_export.csv"
 KEY_PATH = OUT_DIR / "orders_export.expected.json"
 

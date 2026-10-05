@@ -1,0 +1,24 @@
+{
+  "Version": "2012-10-17",
+  "Statement": [
+    {
+      "Sid": "ToolsRunAsExecutionRole",
+      "Effect": "Allow",
+      "Action": "sts:AssumeRole",
+      "Resource": "arn:aws:iam::481719141347:role/EtlCopilotExecutionRole"
+    },
+    {
+      "Sid": "EngineerApprovals",
+      "Effect": "Allow",
+      "Action": ["s3:GetObject", "s3:PutObject", "s3:DeleteObject"],
+      "Resource": "arn:aws:s3:::etl-copilot-ak/approvals/*"
+    },
+    {
+      "Sid": "ListApprovals",
+      "Effect": "Allow",
+      "Action": "s3:ListBucket",
+      "Resource": "arn:aws:s3:::etl-copilot-ak",
+      "Condition": {"StringLike": {"s3:prefix": "approvals/*"}}
+    }
+  ]
+}

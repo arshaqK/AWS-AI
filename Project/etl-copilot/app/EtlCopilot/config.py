@@ -19,6 +19,7 @@ DRAFTS_PREFIX = "scripts/drafts/"                   # LLM script drafts, named <
 CONTRACTS_PREFIX = "scripts/contracts/"             # approved dataset specs, <dataset>.json
 SPEC_DRAFTS_PREFIX = "scripts/contracts/drafts/"    # proposed dataset specs, <spec_id>.json
 REPORTS_PREFIX = "reports/"
+APPROVALS_PREFIX = "approvals/"                     # engineer approvals, <draft_id>.json (never the Execution role)
 
 # Glue
 JOB_NAME = "etl-copilot-job"

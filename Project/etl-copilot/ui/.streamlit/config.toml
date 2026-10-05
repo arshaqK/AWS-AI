@@ -1,0 +1,15 @@
+# Colours from the Copilot Console design in the build runbook (its dark theme).
+[theme]
+base = "dark"
+primaryColor = "#4dbecb"
+backgroundColor = "#0e181f"
+secondaryBackgroundColor = "#16242e"
+textColor = "#e6eef3"
+borderColor = "#2a3d49"
+codeBackgroundColor = "#1a2b36"
+
+[client]
+toolbarMode = "minimal"
+
+[server]
+maxUploadSize = 50

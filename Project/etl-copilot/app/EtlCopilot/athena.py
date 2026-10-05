@@ -18,6 +18,24 @@ def run_query(sql: str, database: str, timeout_s: int = 90) -> List[Dict[str, Op
     All values come back as strings (Athena's wire format); SQL NULL becomes None.
     """
     athena = execution_session().client("athena")
+    query_id = run_to_completion(sql, database, timeout_s)
+
+    header: Optional[List[str]] = None
+    rows: List[Dict[str, Optional[str]]] = []
+    for page in athena.get_paginator("get_query_results").paginate(QueryExecutionId=query_id):
+        for row in page["ResultSet"]["Rows"]:
+            values = [cell.get("VarCharValue") for cell in row["Data"]]
+            if header is None:  # the first row of a SELECT result is the column names
+                header = values
+                continue
+            rows.append(dict(zip(header, values)))
+    return rows
+
+
+def run_to_completion(sql: str, database: str, timeout_s: int = 90) -> str:
+    """Start `sql` in the workgroup, wait for it, and return the query id (its result CSV
+    sits at the query's OutputLocation)."""
+    athena = execution_session().client("athena")
     query_id = athena.start_query_execution(
         QueryString=sql,
         QueryExecutionContext={"Database": database},
@@ -37,14 +55,4 @@ def run_query(sql: str, database: str, timeout_s: int = 90) -> List[Dict[str, Op
             athena.stop_query_execution(QueryExecutionId=query_id)
             raise AthenaQueryError(f"timed out after {timeout_s}s (query {query_id})")
         time.sleep(POLL_INTERVAL_S)
-
-    header: Optional[List[str]] = None
-    rows: List[Dict[str, Optional[str]]] = []
-    for page in athena.get_paginator("get_query_results").paginate(QueryExecutionId=query_id):
-        for row in page["ResultSet"]["Rows"]:
-            values = [cell.get("VarCharValue") for cell in row["Data"]]
-            if header is None:  # the first row of a SELECT result is the column names
-                header = values
-                continue
-            rows.append(dict(zip(header, values)))
-    return rows
+    return query_id

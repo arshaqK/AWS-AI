@@ -1,3 +1,23 @@
 {
-  "targets": {}
+  "targets": {
+    "dev": {
+      "resources": {
+        "runtimes": {
+          "EtlCopilot": {
+            "runtimeId": "EtlCopilot_EtlCopilot-agiQ51AyLD",
+            "runtimeArn": "arn:aws:bedrock-agentcore:us-west-2:481719141347:runtime/EtlCopilot_EtlCopilot-agiQ51AyLD",
+            "roleArn": "arn:aws:iam::481719141347:role/AgentCore-EtlCopilot-dev-ApplicationAgentEtlCopilot-ItNUmMjqGOk1"
+          }
+        },
+        "memories": {
+          "EtlCopilotMemory": {
+            "memoryId": "EtlCopilot_EtlCopilotMemory-dSb2wB9zb4",
+            "memoryArn": "arn:aws:bedrock-agentcore:us-west-2:481719141347:memory/EtlCopilot_EtlCopilotMemory-dSb2wB9zb4"
+          }
+        },
+        "stackName": "AgentCore-EtlCopilot-dev",
+        "deployHash": "d38dd207f2a873a4"
+      }
+    }
+  }
 }

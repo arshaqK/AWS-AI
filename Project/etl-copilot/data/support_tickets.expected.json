@@ -1,0 +1,124 @@
+{
+  "dataset": "support_tickets.csv",
+  "description": "Support-ticket export from Trailhead Outfitters' helpdesk tool (fictional)",
+  "seed": 11,
+  "primary_key": [
+    "ticket_id"
+  ],
+  "vendor_conventions": {
+    "naive_timestamps": "timestamps without a zone are UTC",
+    "priority": "P1=urgent, P2=high, P3=normal, P4=low; 'Medium' means normal",
+    "status": "'resolved' is the same as closed",
+    "order_ref": "the number after ORD / # is the order id; canonical form is ORD-<number>"
+  },
+  "counts": {
+    "email_uppercase": 39,
+    "messages_with_email": 61,
+    "messages_with_phone": 43
+  },
+  "created_at_formats": {
+    "UTC with Z": 197,
+    "explicit offset": 114,
+    "naive (vendor: UTC)": 89
+  },
+  "order_ref_formats": {
+    "#N": 40,
+    "N": 56,
+    "ORD-N": 157,
+    "ORDN": 68
+  },
+  "null_tokens": {
+    "order_ref": {
+      "<empty>": 43,
+      "N/A": 16,
+      "-": 20
+    },
+    "satisfaction": {
+      "<empty> (not closed)": 262,
+      "N/A": 4,
+      "<empty>": 5
+    },
+    "resolved_at": {
+      "<empty>": 182,
+      "-": 80
+    }
+  },
+  "satisfaction_formats": {
+    "N": 86,
+    "N stars": 20,
+    "N/5": 23
+  },
+  "channel_raw_to_canonical": {
+    "Chat": "chat",
+    "EMAIL": "email",
+    "Email": "email",
+    "Live Chat": "chat",
+    "Phone": "phone",
+    "Phone call": "phone",
+    "WEB": "web",
+    "Web": "web",
+    "chat": "chat",
+    "email": "email",
+    "phone": "phone",
+    "web form": "web"
+  },
+  "priority_raw_to_canonical": {
+    "HIGH": "high",
+    "High": "high",
+    "Low": "low",
+    "Medium": "normal",
+    "Normal": "normal",
+    "P1": "urgent",
+    "P2": "high",
+    "P3": "normal",
+    "P4": "low",
+    "Urgent": "urgent",
+    "low": "low",
+    "normal": "normal",
+    "urgent": "urgent"
+  },
+  "status_raw_to_canonical": {
+    "Closed": "closed",
+    "OPEN": "open",
+    "Open": "open",
+    "Pending": "pending",
+    "RESOLVED": "closed",
+    "Resolved": "closed",
+    "closed": "closed",
+    "open": "open",
+    "pending": "pending",
+    "resolved": "closed"
+  },
+  "rows_in_file": 405,
+  "unique_rows": 400,
+  "exact_duplicate_rows": 5,
+  "columns": [
+    "ticket_id",
+    "created_at",
+    "order_ref",
+    "customer_email",
+    "channel",
+    "priority",
+    "status",
+    "subject",
+    "message",
+    "agent",
+    "resolved_at",
+    "satisfaction"
+  ],
+  "pii_columns": [
+    "customer_email",
+    "message (free text: emails, phones, first names)"
+  ],
+  "expected_clean_output": {
+    "rows_after_dedup": 400,
+    "null_order_ref": 79,
+    "distinct_channels": 4,
+    "distinct_priorities": 4,
+    "distinct_statuses": 3,
+    "closed_tickets": 138,
+    "null_satisfaction": 271,
+    "messages_needing_redaction": 96,
+    "emails_or_phones_left_in_messages": 0
+  }
+}

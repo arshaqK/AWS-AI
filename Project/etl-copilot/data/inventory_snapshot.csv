@@ -1,0 +1,244 @@
+snapshot_date,warehouse,sku,product_name,on_hand,reserved,weight,last_counted_at,tags,is_active
+2025-06-30,DAL1,SKU-TNT-2P,Ridgeline 2P Tent,338,25,2.35kg,28/06/2025 09:30,tent;2p,Yes
+2025-06-30,CVG1,SKU-TNT-2P,Ridgeline 2P Tent,77,4,2350g,2025-06-09T11:03:00Z,[],TRUE
+2025-06-30,TOR1,SKU-TNT-2P,Ridgeline 2P Tent,71,13,2.35 kg,2025-06-21T05:54:00Z,"[""tent"", ""2p""]",TRUE
+2025-06-30,SEA1,SKU-BAG-20F,Summit 20F Sleeping Bag,378,74,1100 g,1749837000000,"[""sleeping-bag""]",Y
+2025-06-30,DAL1,SKU-BAG-20F,Summit 20F Sleeping Bag,72,8,2.43lb,2025-06-05T19:23:00Z,"[""sleeping-bag""]",Y
+2025-06-30,CVG1,SKU-BAG-20F,Summit 20F Sleeping Bag,,0,1100g,14/06/2025 14:33,sleeping-bag,1
+2025-06-30,TOR1,SKU-BAG-20F,Summit 20F Sleeping Bag,213,4,1100 g,09/06/2025 12:40,sleeping-bag,yes
+2025-06-30,SEA1,SKU-PCK-45L,Trailblazer 45L Pack,70,1,1450 g,2025-06-25T08:17:00Z,"[""pack"", ""45l""]",true
+2025-06-30,DAL1,SKU-PCK-45L,Trailblazer 45L Pack,283,24,1450 g,2025-06-27T15:12:00Z,"[""pack"", ""45l""]",Y
+2025-06-30,CVG1,SKU-PCK-45L,Trailblazer 45L Pack,386,33,1450g,1749383460000,"[""pack"", ""45l""]",N
+2025-06-30,TOR1,SKU-PCK-45L,Trailblazer 45L Pack,8,0,1.45kg,03/06/2025 18:51,"[""pack"", ""45l""]",1
+2025-06-30,SEA1,SKU-JKT-RN,Stormshell Rain Jacket,22,0,0.38 kg,1750767720000,"[""jacket"", ""rain""]",TRUE
+2025-06-30,RNO2,SKU-JKT-RN,Stormshell Rain Jacket,177,2,N/A,2025-06-14T06:48:00Z,"[""jacket"", ""rain""]",true
+2025-06-30,DAL1,SKU-JKT-RN,Stormshell Rain Jacket,201,13,0.38 kg,2025-06-18T11:09:00Z,"[""jacket"", ""rain""]",yes
+2025-06-30,CVG1,SKU-JKT-RN,Stormshell Rain Jacket,28,4,0.38 kg,2025-06-08T13:00:00Z,"[""jacket"", ""rain""]",no
+2025-06-30,RNO2,SKU-BTL-1L,Insulated Bottle 1L,-,0,null,2025-06-28T06:48:00Z,bottle,Yes
+2025-06-30,DAL1,SKU-BTL-1L,Insulated Bottle 1L,45,6,-,1749567840000,"[""bottle""]",FALSE
+2025-06-30,TOR1,SKU-BTL-1L,Insulated Bottle 1L,391,19,420 g,1751175000,"[""bottle""]",Yes
+2025-06-30,RNO2,SKU-STV-MC,MicroCook Stove,265,45,0.20 lb,2025-06-28T21:57:00Z,"[""stove"", ""cooking""]",No
+2025-06-30,DAL1,SKU-STV-MC,MicroCook Stove,277,31,90 g,1749275400,"[""stove"", ""cooking""]",Y
+2025-06-30,CVG1,SKU-STV-MC,MicroCook Stove,504,96,0.20lb,2025-06-15T09:57:00Z,"[""stove"", ""cooking""]",No
+2025-06-30,TOR1,SKU-STV-MC,MicroCook Stove,803,77,0.09kg,2025-06-29T06:26:00Z,"[""stove"", ""cooking""]",Yes
+2025-06-30,RNO2,SKU-HLP-400,Beacon 400 Headlamp,"2,108",102,0.08kg,30/06/2025 13:07,headlamp,TRUE
+2025-06-30,DAL1,SKU-HLP-400,Beacon 400 Headlamp,-2,0,0.08kg,2025-06-02T19:10:00Z,headlamp,yes
+2025-06-30,CVG1,SKU-HLP-400,Beacon 400 Headlamp,"2,213",213,0.08kg,2025-06-30T11:56:00Z,"[""headlamp""]",true
+2025-06-30,SEA1,SKU-PLS-CF,Carbon Trekking Poles,-7,0,460g,1748985720000,"[""poles"", ""carbon""]",Y
+2025-06-30,RNO2,SKU-PLS-CF,Carbon Trekking Poles,136,24,16.2 oz,1749086880,poles;carbon,TRUE
+2025-06-30,CVG1,SKU-PLS-CF,Carbon Trekking Poles,385,62,16.2 oz,2025-06-25T06:53:00Z,"[""poles"", ""carbon""]",1
+2025-06-30,TOR1,SKU-PLS-CF,Carbon Trekking Poles,335,50,460 g,1750744500,"[""poles"", ""carbon""]",true
+2025-06-30,RNO2,SKU-SCK-MW,Merino Hiking Socks,"2,443",46,0.07 kg,2025-06-02T22:19:00Z,"[""socks"", ""merino""]",true
+2025-06-30,DAL1,SKU-SCK-MW,Merino Hiking Socks,454,46,70 g,2025-06-28T13:45:00Z,"[""socks"", ""merino""]",true
+2025-06-30,SEA1,SKU-MAT-UL,UltraLite Sleeping Pad,16,3,400 g,2025-06-18T04:59:00Z,sleeping-pad,true
+2025-06-30,RNO2,SKU-MAT-UL,UltraLite Sleeping Pad,349,58,0.88 lb,1749148980,sleeping-pad,Y
+2025-06-30,DAL1,SKU-MAT-UL,UltraLite Sleeping Pad,325,12,400 g,2025-06-18T14:06:00Z,"[""sleeping-pad""]",TRUE
+2025-06-30,CVG1,SKU-MAT-UL,UltraLite Sleeping Pad,161,30,400 g,2025-06-17T00:50:00Z,"[""sleeping-pad""]",Y
+2025-06-30,TOR1,SKU-MAT-UL,UltraLite Sleeping Pad,116,7,0.88lb,1750290180000,"[""sleeping-pad""]",Y
+2025-06-30,SEA1,SKU-TNT-FJO84,Fjord Tent,102,7,1.81kg,1750988580000,"[""tent"", ""ultralight""]",yes
+2025-06-30,RNO2,SKU-TNT-FJO84,Fjord Tent,304,13,N/A,2025-06-17T21:14:00Z,"[""tent"", ""ultralight""]",yes
+2025-06-30,SEA1,SKU-TNT-CAS37,Cascade Tent,94,14,3.88lb,2025-06-04T10:15:00Z,,true
+2025-06-30,RNO2,SKU-TNT-CAS37,Cascade Tent,215,13,3.88lb,2025-06-04T08:15:00Z,"[""tent"", ""waterproof""]",No
+2025-06-30,DAL1,SKU-TNT-CAS37,Cascade Tent,186,26,1760g,1751191860000,tent;waterproof,N
+2025-06-30,CVG1,SKU-TNT-CAS37,Cascade Tent,310,61,1.76kg,1748784960000,"[""tent"", ""waterproof""]",Yes
+2025-06-30,SEA1,SKU-TNT-DRI63,Drift Tent,119,14,1.84kg,01/06/2025 08:20,"[""tent"", ""kids""]",yes
+2025-06-30,TOR1,SKU-TNT-DRI63,Drift Tent,167,5,1.84 kg,2025-06-23T09:05:00Z,tent;kids,N
+2025-06-30,SEA1,SKU-TNT-ION80,Ion Tent,53,1,2630g,1750863660,"[""tent""]",true
+2025-06-30,CVG1,SKU-TNT-ION80,Ion Tent,150,11,2.63kg,2025-06-23T16:40:00Z,tent,yes
+2025-06-30,TOR1,SKU-TNT-ION80,Ion Tent,128,7,2.63kg,1751225460000,tent,no
+2025-06-30,SEA1,SKU-TNT-ALP25,Alpine Tent,-10,0,3.8 kg,16/06/2025 02:25,"[""tent"", ""waterproof""]",Yes
+2025-06-30,RNO2,SKU-TNT-ALP25,Alpine Tent,-,0,3.8 kg,1749076620,"[""tent"", ""waterproof""]",true
+2025-06-30,DAL1,SKU-TNT-ALP25,Alpine Tent,253,6,8.38 lb,2025-06-10T04:47:00Z,"[""tent"", ""waterproof""]",no
+2025-06-30,TOR1,SKU-TNT-ALP25,Alpine Tent,26,2,3.8kg,2025-06-10T16:17:00Z,[],true
+2025-06-30,SEA1,SKU-TNT-ECH17,Echo Tent,46,7,2.97 kg,2025-06-13T18:09:00Z,"[""tent"", ""waterproof""]",true
+2025-06-30,RNO2,SKU-TNT-ECH17,Echo Tent,74,2,2.97kg,06/06/2025 16:16,tent;waterproof,Y
+2025-06-30,CVG1,SKU-TNT-ECH17,Echo Tent,364,20,6.55lbs,1749658740,"[""tent"", ""waterproof""]",yes
+2025-06-30,TOR1,SKU-TNT-ECH17,Echo Tent,183,12,2970 g,2025-06-09T11:57:00Z,"[""tent"", ""waterproof""]",FALSE
+2025-06-30,SEA1,SKU-TNT-HOR16,Horizon Tent,157,23,3870 g,2025-06-30T01:53:00Z,"[""tent"", ""kids""]",true
+2025-06-30,RNO2,SKU-TNT-HOR16,Horizon Tent,91,2,3870 g,2025-06-05T07:55:00Z,tent;kids,Yes
+2025-06-30,TOR1,SKU-TNT-HOR16,Horizon Tent,27,5,3.87 kg,2025-06-10T23:22:00Z,"[""tent"", ""kids""]",yes
+2025-06-30,TOR1,SKU-TNT-GRA81,Granite Tent,179,20,3.6kg,2025-06-26T14:20:00Z,"[""tent""]",true
+2025-06-30,SEA1,SKU-BAG-ECH84,Echo Sleeping Bag,18,2,3.02 lbs,2025-06-05T13:59:00Z,"[""sleeping-bag""]",FALSE
+2025-06-30,RNO2,SKU-BAG-ECH84,Echo Sleeping Bag,266,6,1370g,1749291600,"[""sleeping-bag""]",1
+2025-06-30,DAL1,SKU-BAG-ECH84,Echo Sleeping Bag,90,9,1.37kg,2025-06-07T22:57:00Z,sleeping-bag,yes
+2025-06-30,CVG1,SKU-BAG-ECH84,Echo Sleeping Bag,24,0,,2025-06-12T10:54:00Z,"[""sleeping-bag""]",TRUE
+2025-06-30,TOR1,SKU-BAG-ECH84,Echo Sleeping Bag,104,5,48.3 oz,1749405300,"[""sleeping-bag""]",Y
+2025-06-30,SEA1,SKU-BAG-GRA57,Granite Sleeping Bag,135,26,0.88kg,2025-06-11T05:20:00Z,[],yes
+2025-06-30,RNO2,SKU-BAG-GRA57,Granite Sleeping Bag,207,6,N/A,1750928040,sleeping-bag,TRUE
+2025-06-30,DAL1,SKU-BAG-GRA57,Granite Sleeping Bag,260,3,1.94lb,1749357480,"[""sleeping-bag""]",false
+2025-06-30,CVG1,SKU-BAG-GRA57,Granite Sleeping Bag,115,20,0.88kg,1749417180,"[""sleeping-bag""]",TRUE
+2025-06-30,SEA1,SKU-BAG-BAS82,Basecamp Sleeping Bag,111,5,0.84 kg,2025-06-25T11:51:00Z,"[""sleeping-bag""]",true
+2025-06-30,RNO2,SKU-BAG-BAS82,Basecamp Sleeping Bag,354,68,1.85 lbs,2025-06-03T22:06:00Z,"[""sleeping-bag""]",Yes
+2025-06-30,DAL1,SKU-BAG-BAS82,Basecamp Sleeping Bag,-3,0,840 g,2025-06-19T18:10:00Z,"[""sleeping-bag""]",Y
+2025-06-30,SEA1,SKU-BAG-ION73,Ion Sleeping Bag,302,52,3.28lb,2025-06-27T14:36:00Z,"[""sleeping-bag""]",Y
+2025-06-30,DAL1,SKU-BAG-ION73,Ion Sleeping Bag,384,12,3.28 lb,2025-06-21T12:07:00Z,sleeping-bag,1
+2025-06-30,TOR1,SKU-BAG-ION73,Ion Sleeping Bag,164,30,1490 g,1749113700000,"[""sleeping-bag""]",FALSE
+2025-06-30,SEA1,SKU-BAG-ALP50,Alpine Sleeping Bag,110,18,1.26 kg,2025-06-14T16:07:00Z,"[""sleeping-bag"", ""kids""]",Y
+2025-06-30,DAL1,SKU-BAG-ALP50,Alpine Sleeping Bag,253,32,44.4oz,2025-06-04T15:41:00Z,"[""sleeping-bag"", ""kids""]",yes
+2025-06-30,CVG1,SKU-BAG-ALP50,Alpine Sleeping Bag,356,41,1260g,2025-06-02T20:04:00Z,"[""sleeping-bag"", ""kids""]",Yes
+2025-06-30,SEA1,SKU-BAG-CAS56,Cascade Sleeping Bag,194,29,1090 g,1750302540000,"[""sleeping-bag"", ""kids""]",yes
+2025-06-30,RNO2,SKU-BAG-CAS56,Cascade Sleeping Bag,237,37,1.09 kg,1749918480000,"[""sleeping-bag"", ""kids""]",Yes
+2025-06-30,TOR1,SKU-PCK-FJO63,Fjord Pack,252,9,0.76 kg,2025-06-13T02:33:00Z,"[""pack"", ""kids""]",Y
+2025-06-30,TOR1,SKU-BAG-CAS56,Cascade Sleeping Bag,178,12,38.4 oz,2025-06-25T00:33:00Z,"[""sleeping-bag"", ""kids""]",false
+2025-06-30,SEA1,SKU-BAG-DRI99,Drift Sleeping Bag,140,3,3.51lbs,1751236500,"[""sleeping-bag""]",true
+2025-06-30,RNO2,SKU-BAG-DRI99,Drift Sleeping Bag,72,0,56.1oz,2025-06-08T03:25:00Z,"[""sleeping-bag""]",Yes
+2025-06-30,DAL1,SKU-BAG-FJO83,Fjord Sleeping Bag,232,44,1090g,2025-06-08T01:31:00Z,,true
+2025-06-30,CVG1,SKU-BAG-FJO83,Fjord Sleeping Bag,338,41,1.09kg,2025-06-01T19:23:00Z,"[""sleeping-bag""]",FALSE
+2025-06-30,TOR1,SKU-BAG-FJO83,Fjord Sleeping Bag,178,34,1090 g,1749550980,"[""sleeping-bag""]",true
+2025-06-30,SEA1,SKU-PCK-HOR53,Horizon Pack,263,39,0.87kg,2025-06-18T09:22:00Z,"[""pack""]",N
+2025-06-30,RNO2,SKU-PCK-HOR53,Horizon Pack,135,12,870 g,2025-06-05T09:38:00Z,"[""pack""]",yes
+2025-06-30,DAL1,SKU-PCK-HOR53,Horizon Pack,240,9,870g,2025-06-16T12:58:00Z,pack,Yes
+2025-06-30,TOR1,SKU-PCK-HOR53,Horizon Pack,192,11,1.92lbs,2025-06-19T14:39:00Z,"[""pack""]",1
+2025-06-30,RNO2,SKU-PCK-FJO63,Fjord Pack,155,20,0.76kg,2025-06-10T03:08:00Z,"[""pack"", ""kids""]",N
+2025-06-30,DAL1,SKU-PCK-FJO63,Fjord Pack,296,49,1.68 lb,1748855760,"[""pack"", ""kids""]",yes
+2025-06-30,CVG1,SKU-PCK-FJO63,Fjord Pack,280,12,0.76 kg,1749283320,"[""pack"", ""kids""]",Y
+2025-06-30,TOR1,SKU-PCK-FJO63,Fjord Pack,252,9,0.76 kg,2025-06-13T02:33:00Z,"[""pack"", ""kids""]",Y
+2025-06-30,SEA1,SKU-PCK-ION81,Ion Pack,151,13,2.80 lb,2025-06-10T10:42:00Z,"[""pack""]",Y
+2025-06-30,CVG1,SKU-PCK-ION81,Ion Pack,247,2,1270 g,2025-06-20T19:47:00Z,"[""pack""]",1
+2025-06-30,SEA1,SKU-PCK-DRI53,Drift Pack,175,18,3.06lbs,2025-06-20T05:49:00Z,"[""pack"", ""ultralight""]",TRUE
+2025-06-30,RNO2,SKU-PCK-DRI53,Drift Pack,98,18,1.39 kg,1750219500,pack;ultralight,TRUE
+2025-06-30,DAL1,SKU-PCK-DRI53,Drift Pack,243,32,1390 g,1749513660000,pack;ultralight,TRUE
+2025-06-30,CVG1,SKU-PCK-DRI53,Drift Pack,320,23,1390 g,1748738280000,"[""pack"", ""ultralight""]",no
+2025-06-30,TOR1,SKU-PCK-DRI53,Drift Pack,,0,1390 g,2025-06-06T08:38:00Z,,true
+2025-06-30,SEA1,SKU-PCK-CAS73,Cascade Pack,337,52,1.28kg,2025-06-24T17:50:00Z,pack;waterproof,true
+2025-06-30,DAL1,SKU-PCK-CAS73,Cascade Pack,62,-,1280 g,1748812680,"[""pack"", ""waterproof""]",Yes
+2025-06-30,CVG1,SKU-PCK-CAS73,Cascade Pack,321,32,1.28 kg,1751316960,"[""pack"", ""waterproof""]",No
+2025-06-30,TOR1,SKU-PCK-CAS73,Cascade Pack,307,31,1.28kg,2025-06-14T23:54:00Z,"[""pack"", ""waterproof""]",Y
+2025-06-30,SEA1,SKU-PCK-ALP18,Alpine Pack,197,17,1530g,1750625760,"[""pack"", ""kids""]",Yes
+2025-06-30,RNO2,SKU-PCK-ALP18,Alpine Pack,7,1,54.0 oz,1750240020000,"[""pack"", ""kids""]",TRUE
+2025-06-30,CVG1,SKU-PCK-ALP18,Alpine Pack,137,26,3.37lb,2025-06-04T18:12:00Z,"[""pack"", ""kids""]",TRUE
+2025-06-30,TOR1,SKU-PCK-ALP18,Alpine Pack,397,10,1530g,1750777260,"[""pack"", ""kids""]",Y
+2025-06-30,SEA1,SKU-PCK-GRA70,Granite Pack,null,0,1.39 kg,1750670700000,"[""pack"", ""ultralight""]",1
+2025-06-30,RNO2,SKU-PCK-GRA70,Granite Pack,96,9,1390g,2025-06-06T05:21:00Z,"[""pack"", ""ultralight""]",yes
+2025-06-30,DAL1,SKU-PCK-GRA70,Granite Pack,323,40,1.39 kg,2025-06-27T21:52:00Z,"[""pack"", ""ultralight""]",TRUE
+2025-06-30,TOR1,SKU-PCK-GRA70,Granite Pack,228,8,1.39 kg,2025-06-25T10:06:00Z,"[""pack"", ""ultralight""]",N
+2025-06-30,SEA1,SKU-PCK-BAS17,Basecamp Pack,32,0,1.42kg,1749740580,"[""pack""]",Yes
+2025-06-30,RNO2,SKU-PCK-BAS17,Basecamp Pack,120,1,50.1 oz,2025-06-02T04:08:00Z,"[""pack""]",Y
+2025-06-30,CVG1,SKU-PCK-BAS17,Basecamp Pack,51,3,1.42kg,2025-06-06T00:44:00Z,pack,0
+2025-06-30,TOR1,SKU-PCK-BAS17,Basecamp Pack,225,43,1420 g,2025-06-05T21:47:00Z,pack,yes
+2025-06-30,TOR1,SKU-JKT-ECH31,Echo Jacket,11,1,0.54 kg,1749551460,"[""jacket"", ""ultralight""]",yes
+2025-06-30,RNO2,SKU-JKT-HOR17,Horizon Jacket,76,4,-,2025-06-20T17:17:00Z,jacket;kids,Y
+2025-06-30,CVG1,SKU-JKT-HOR17,Horizon Jacket,342,36,0.86lb,2025-06-17T14:05:00Z,"[""jacket"", ""kids""]",yes
+2025-06-30,TOR1,SKU-JKT-HOR17,Horizon Jacket,371,2,390 g,2025-06-16T22:57:00Z,jacket;kids,TRUE
+2025-06-30,RNO2,SKU-BAG-BAS82,Basecamp Sleeping Bag,354,68,1.85 lbs,2025-06-03T22:06:00Z,"[""sleeping-bag""]",Yes
+2025-06-30,SEA1,SKU-JKT-CAS26,Cascade Jacket,141,5,0.6 kg,1750732200000,"[""jacket"", ""ultralight""]",N
+2025-06-30,RNO2,SKU-JKT-CAS26,Cascade Jacket,70,12,0.6 kg,1751066580000,"[""jacket"", ""ultralight""]",true
+2025-06-30,DAL1,SKU-JKT-CAS26,Cascade Jacket,144,15,600g,1750897080,jacket;ultralight,yes
+2025-06-30,TOR1,SKU-JKT-CAS26,Cascade Jacket,2,0,1.32lb,2025-06-06T09:59:00Z,"[""jacket"", ""ultralight""]",Y
+2025-06-30,SEA1,SKU-JKT-FJO60,Fjord Jacket,13,0,0.67 kg,1750879800000,[],TRUE
+2025-06-30,CVG1,SKU-JKT-FJO60,Fjord Jacket,306,15,0.67 kg,2025-06-08T16:54:00Z,"[""jacket"", ""kids""]",N
+2025-06-30,TOR1,SKU-JKT-FJO60,Fjord Jacket,62,9,0.67kg,07/06/2025 09:28,"[""jacket"", ""kids""]",Y
+2025-06-30,RNO2,SKU-JKT-DRI20,Drift Jacket,202,23,0.37kg,1749370080000,"[""jacket"", ""kids""]",TRUE
+2025-06-30,CVG1,SKU-JKT-DRI20,Drift Jacket,264,22,370 g,2025-06-19T19:17:00Z,"[""jacket"", ""kids""]",Y
+2025-06-30,TOR1,SKU-JKT-DRI20,Drift Jacket,215,29,0.82 lbs,1751159220,"[""jacket"", ""kids""]",Yes
+2025-06-30,SEA1,SKU-JKT-GRA80,Granite Jacket,51,6,0.41 kg,2025-06-21T11:09:00Z,"[""jacket"", ""kids""]",Y
+2025-06-30,DAL1,SKU-JKT-GRA80,Granite Jacket,302,7,0.90lbs,2025-06-12T13:10:00Z,"[""jacket"", ""kids""]",Yes
+2025-06-30,CVG1,SKU-JKT-GRA80,Granite Jacket,291,35,410g,2025-06-11T06:42:00Z,jacket;kids,1
+2025-06-30,TOR1,SKU-JKT-GRA80,Granite Jacket,299,10,0.41kg,2025-06-15T13:48:00Z,jacket;kids,yes
+2025-06-30,SEA1,SKU-JKT-ALP65,Alpine Jacket,178,24,0.65 kg,1749914340,jacket,Yes
+2025-06-30,RNO2,SKU-JKT-ALP65,Alpine Jacket,345,35,650g,2025-06-22T01:29:00Z,jacket,Yes
+2025-06-30,CVG1,SKU-JKT-ALP65,Alpine Jacket,254,9,1.43 lb,1750232040,jacket,1
+2025-06-30,TOR1,SKU-JKT-ALP65,Alpine Jacket,196,-,650g,2025-06-21T16:43:00Z,jacket,yes
+2025-06-30,RNO2,SKU-JKT-BAS63,Basecamp Jacket,311,13,1.52 lbs,2025-06-30T21:23:00Z,"[""jacket"", ""ultralight""]",true
+2025-06-30,DAL1,SKU-JKT-BAS63,Basecamp Jacket,223,43,690 g,1749599760,jacket;ultralight,Y
+2025-06-30,CVG1,SKU-JKT-BAS63,Basecamp Jacket,205,9,24.3oz,2025-06-18T07:59:00Z,"[""jacket"", ""ultralight""]",TRUE
+2025-06-30,TOR1,SKU-JKT-BAS63,Basecamp Jacket,162,19,0.69kg,1749381420000,jacket;ultralight,TRUE
+2025-06-30,SEA1,SKU-BTL-GRA72,Granite Bottle,261,26,440 g,1750303980,bottle,Yes
+2025-06-30,RNO2,SKU-BTL-GRA72,Granite Bottle,363,,0.44 kg,1749506400000,"[""bottle""]",true
+2025-06-30,CVG1,SKU-BTL-GRA72,Granite Bottle,73,1,440 g,2025-06-30T19:35:00Z,bottle,FALSE
+2025-06-30,DAL1,SKU-BTL-DRI43,Drift Bottle,73,2,290 g,2025-06-19T16:28:00Z,bottle,true
+2025-06-30,TOR1,SKU-BTL-DRI43,Drift Bottle,27,0,290 g,2025-06-20T22:48:00Z,"[""bottle""]",true
+2025-06-30,SEA1,SKU-BTL-BAS63,Basecamp Bottle,34,5,360g,2025-06-02T06:28:00Z,bottle,no
+2025-06-30,RNO2,SKU-BTL-BAS63,Basecamp Bottle,148,10,0.36kg,1749588360000,bottle,true
+2025-06-30,DAL1,SKU-BTL-BAS63,Basecamp Bottle,145,8,0.36 kg,1750703700,"[""bottle""]",0
+2025-06-30,CVG1,SKU-BTL-BAS63,Basecamp Bottle,122,23,360 g,1750488360000,"[""bottle""]",yes
+2025-06-30,SEA1,SKU-BTL-ALP82,Alpine Bottle,225,15,300 g,1748976540,"[""bottle"", ""waterproof""]",Y
+2025-06-30,RNO2,SKU-BTL-ALP82,Alpine Bottle,336,1,0.3 kg,1749222360000,"[""bottle"", ""waterproof""]",Yes
+2025-06-30,TOR1,SKU-BTL-ALP82,Alpine Bottle,367,16,0.3kg,1750230540000,"[""bottle"", ""waterproof""]",Yes
+2025-06-30,SEA1,SKU-BTL-ION98,Ion Bottle,347,52,null,2025-06-23T09:20:00Z,bottle,Yes
+2025-06-30,RNO2,SKU-BTL-ION98,Ion Bottle,112,1,450g,2025-06-26T10:01:00Z,bottle,TRUE
+2025-06-30,CVG1,SKU-BTL-ION98,Ion Bottle,366,73,0.45kg,1748899980,bottle,TRUE
+2025-06-30,TOR1,SKU-BTL-ION98,Ion Bottle,163,5,0.99 lb,2025-06-22T05:01:00Z,"[""bottle""]",false
+2025-06-30,DAL1,SKU-BTL-ECH93,Echo Bottle,-12,0,0.4kg,2025-06-25T04:21:00Z,"[""bottle"", ""waterproof""]",Yes
+2025-06-30,CVG1,SKU-BTL-ECH93,Echo Bottle,177,19,0.88lb,2025-06-09T06:32:00Z,bottle;waterproof,yes
+2025-06-30,TOR1,SKU-BTL-ECH93,Echo Bottle,357,18,0.4 kg,1749803460,"[""bottle"", ""waterproof""]",yes
+2025-06-30,RNO2,SKU-BTL-FJO68,Fjord Bottle,105,11,0.46kg,2025-06-21T16:17:00Z,bottle,0
+2025-06-30,DAL1,SKU-BTL-FJO68,Fjord Bottle,185,2,null,2025-06-28T11:41:00Z,"[""bottle""]",TRUE
+2025-06-30,CVG1,SKU-BTL-FJO68,Fjord Bottle,278,5,460g,2025-06-10T14:37:00Z,"[""bottle""]",No
+2025-06-30,TOR1,SKU-BTL-FJO68,Fjord Bottle,95,5,1.01lb,1749261420,bottle,yes
+2025-06-30,SEA1,SKU-BTL-CAS60,Cascade Bottle,189,3,320g,2025-06-02T21:17:00Z,"[""bottle"", ""waterproof""]",true
+2025-06-30,RNO2,SKU-BTL-CAS60,Cascade Bottle,320,20,320g,2025-06-28T21:39:00Z,bottle;waterproof,true
+2025-06-30,SEA1,SKU-GLV-GRA66,Granite Gloves,-1,0,0.09 kg,2025-06-09T16:59:00Z,,yes
+2025-06-30,RNO2,SKU-GLV-GRA66,Granite Gloves,"2,120",273,0.20lbs,1749606660,"[""gloves""]",N
+2025-06-30,DAL1,SKU-GLV-GRA66,Granite Gloves,"1,924",153,90 g,2025-06-03T16:34:00Z,"[""gloves""]",Yes
+2025-06-30,CVG1,SKU-GLV-GRA66,Granite Gloves,"2,578",451,0.09 kg,2025-06-02T16:05:00Z,"[""gloves""]",Y
+2025-06-30,TOR1,SKU-GLV-GRA66,Granite Gloves,"1,230",138,0.09 kg,2025-06-03T09:05:00Z,"[""gloves""]",true
+2025-06-30,DAL1,SKU-GLV-BAS86,Basecamp Gloves,2310,87,0.08kg,2025-06-06T19:50:00Z,"[""gloves"", ""ultralight""]",TRUE
+2025-06-30,CVG1,SKU-GLV-BAS86,Basecamp Gloves,"1,072",22,0.18 lbs,1748775240000,"[""gloves"", ""ultralight""]",Yes
+2025-06-30,TOR1,SKU-GLV-BAS86,Basecamp Gloves,"1,247",242,80g,2025-06-27T10:52:00Z,"[""gloves"", ""ultralight""]",TRUE
+2025-06-30,SEA1,SKU-GLV-DRI82,Drift Gloves,991,-,0.20lb,2025-06-27T20:29:00Z,"[""gloves""]",yes
+2025-06-30,CVG1,SKU-GLV-DRI82,Drift Gloves,1225,242,0.09 kg,1749966780000,[],Y
+2025-06-30,TOR1,SKU-GLV-DRI82,Drift Gloves,1807,229,0.20 lbs,1750333560000,gloves,1
+2025-06-30,SEA1,SKU-GLV-FJO56,Fjord Gloves,"1,678",181,0.13kg,1750432560000,"[""gloves""]",false
+2025-06-30,DAL1,SKU-GLV-FJO56,Fjord Gloves,"1,774",291,130 g,1749419460000,"[""gloves""]",Y
+2025-06-30,CVG1,SKU-GLV-FJO56,Fjord Gloves,1686,72,0.13kg,2025-06-07T10:38:00Z,"[""gloves""]",Yes
+2025-06-30,TOR1,SKU-GLV-FJO56,Fjord Gloves,1581,257,0.13 kg,1750355520000,gloves,Y
+2025-06-30,SEA1,SKU-GLV-ION36,Ion Gloves,"1,438",157,130g,1751128260,gloves,Y
+2025-06-30,RNO2,SKU-GLV-ION36,Ion Gloves,1954,163,0.13kg,2025-06-13T22:13:00Z,gloves,Yes
+2025-06-30,DAL1,SKU-GLV-ION36,Ion Gloves,"1,020",25,0.29 lb,2025-06-11T21:21:00Z,gloves,FALSE
+2025-06-30,CVG1,SKU-GLV-ION36,Ion Gloves,261,13,0.29 lbs,1749536700000,"[""gloves""]",Yes
+2025-06-30,SEA1,SKU-GLV-ALP91,Alpine Gloves,1570,237,0.1kg,2025-06-12T00:41:00Z,"[""gloves""]",Y
+2025-06-30,RNO2,SKU-GLV-ALP91,Alpine Gloves,276,49,0.1kg,1750158960000,"[""gloves""]",TRUE
+2025-06-30,DAL1,SKU-GLV-ALP91,Alpine Gloves,"1,142",195,100g,13/06/2025 13:31,gloves,TRUE
+2025-06-30,CVG1,SKU-GLV-ALP91,Alpine Gloves,1684,46,100 g,1751171280000,"[""gloves""]",TRUE
+2025-06-30,TOR1,SKU-GLV-ECH87,Echo Gloves,"1,636",255,3.9oz,2025-06-16T15:46:00Z,gloves;ultralight,Y
+2025-06-30,SEA1,SKU-GLV-CAS24,Cascade Gloves,"1,845",192,5.3 oz,2025-06-30T14:25:00Z,gloves,No
+2025-06-30,DAL1,SKU-GLV-CAS24,Cascade Gloves,"1,422",80,5.3oz,2025-06-06T18:21:00Z,[],1
+2025-06-30,CVG1,SKU-GLV-CAS24,Cascade Gloves,"2,055",376,0.33lb,1750839000,gloves,1
+2025-06-30,SEA1,SKU-HAT-HOR71,Horizon Beanie,1439,86,0.1kg,2025-06-20T01:05:00Z,"[""hat"", ""ultralight""]",Yes
+2025-06-30,RNO2,SKU-HAT-HOR71,Horizon Beanie,1024,129,100 g,2025-06-07T22:20:00Z,"[""hat"", ""ultralight""]",0
+2025-06-30,CVG1,SKU-HAT-HOR71,Horizon Beanie,210,9,100 g,2025-06-14T10:56:00Z,"[""hat"", ""ultralight""]",Y
+2025-06-30,RNO2,SKU-HAT-ION76,Ion Beanie,-,0,0.05kg,1750631940,"[""hat""]",Y
+2025-06-30,RNO2,SKU-HAT-DRI56,Drift Beanie,"1,503",197,0.13 lbs,1750644960,"[""hat"", ""waterproof""]",1
+2025-06-30,TOR1,SKU-HAT-DRI56,Drift Beanie,337,41,60g,1750043820,"[""hat"", ""waterproof""]",No
+2025-06-30,SEA1,SKU-HAT-CAS13,Cascade Beanie,1756,193,0.1kg,2025-06-11T00:30:00Z,"[""hat"", ""waterproof""]",1
+2025-06-30,CVG1,SKU-HAT-CAS13,Cascade Beanie,"2,138",292,0.1kg,2025-06-14T16:01:00Z,"[""hat"", ""waterproof""]",1
+2025-06-30,TOR1,SKU-HAT-CAS13,Cascade Beanie,377,54,0.1kg,1750275000000,"[""hat"", ""waterproof""]",Yes
+2025-06-30,SEA1,SKU-HAT-ALP92,Alpine Beanie,"1,820",324,0.22 lb,1751240820,"[""hat"", ""ultralight""]",true
+2025-06-30,RNO2,SKU-HAT-ALP92,Alpine Beanie,"1,761",,0.1kg,1748779020000,"[""hat"", ""ultralight""]",1
+2025-06-30,CVG1,SKU-HAT-ALP92,Alpine Beanie,"1,933",22,0.1 kg,1749387360,"[""hat"", ""ultralight""]",true
+2025-06-30,TOR1,SKU-HAT-ALP92,Alpine Beanie,2570,381,0.1 kg,2025-06-28T07:48:00Z,"[""hat"", ""ultralight""]",TRUE
+2025-06-30,RNO2,SKU-HAT-BAS76,Basecamp Beanie,"2,508",212,0.07 kg,1750065960000,[],TRUE
+2025-06-30,CVG1,SKU-HAT-BAS76,Basecamp Beanie,366,42,0.15 lb,1751124480000,hat;ultralight,TRUE
+2025-06-30,SEA1,SKU-HAT-ECH55,Echo Beanie,425,42,0.1kg,1749006300000,hat,true
+2025-06-30,RNO2,SKU-HAT-ECH55,Echo Beanie,"2,322",266,0.1kg,1749473340000,hat,TRUE
+2025-06-30,DAL1,SKU-HAT-ECH55,Echo Beanie,1757,103,0.1kg,1748761800,"[""hat""]",Yes
+2025-06-30,CVG1,SKU-HAT-ECH55,Echo Beanie,2477,N/A,100g,2025-06-29T13:40:00Z,"[""hat""]",true
+2025-06-30,TOR1,SKU-HAT-ECH55,Echo Beanie,2062,104,100 g,1751221200000,hat,Y
+2025-06-30,DAL1,SKU-HAT-GRA79,Granite Beanie,1104,54,0.1 kg,1749929640000,"[""hat"", ""waterproof""]",yes
+2025-06-30,TOR1,SKU-HAT-GRA79,Granite Beanie,"2,012",356,0.1kg,1750518240,"[""hat"", ""waterproof""]",1
+2025-06-30,SEA1,SKU-LAN-FJO76,Fjord Lantern,280,51,0.3 kg,2025-06-20T10:02:00Z,lantern,1
+2025-06-30,RNO2,SKU-LAN-FJO76,Fjord Lantern,372,51,0.66 lbs,1749484140,lantern,TRUE
+2025-06-30,CVG1,SKU-LAN-FJO76,Fjord Lantern,47,4,300 g,1750788840,"[""lantern""]",yes
+2025-06-30,TOR1,SKU-LAN-FJO76,Fjord Lantern,0,0,0.3kg,2025-06-15T14:34:00Z,lantern,1
+2025-06-30,SEA1,SKU-LAN-DRI13,Drift Lantern,286,7,370g,2025-06-29T21:51:00Z,lantern,FALSE
+2025-06-30,RNO2,SKU-LAN-DRI13,Drift Lantern,-12,0,0.82 lb,2025-06-20T22:50:00Z,lantern,true
+2025-06-30,DAL1,SKU-LAN-DRI13,Drift Lantern,78,3,0.37 kg,2025-06-14T14:16:00Z,"[""lantern""]",yes
+2025-06-30,SEA1,SKU-LAN-ECH43,Echo Lantern,122,N/A,0.51 lb,2025-06-08T15:11:00Z,lantern;kids,no
+2025-06-30,RNO2,SKU-LAN-ECH43,Echo Lantern,265,7,230 g,1750646460,"[""lantern"", ""kids""]",TRUE
+2025-06-30,DAL1,SKU-LAN-ECH43,Echo Lantern,N/A,0,0.51 lb,1751285400000,[],true
+2025-06-30,CVG1,SKU-LAN-ECH43,Echo Lantern,261,22,0.23 kg,09/06/2025 11:42,"[""lantern"", ""kids""]",Y
+2025-06-30,TOR1,SKU-GLV-DRI82,Drift Gloves,1807,229,0.20 lbs,1750333560000,gloves,1
+2025-06-30,TOR1,SKU-LAN-ECH43,Echo Lantern,398,77,0.23 kg,1748946720,"[""lantern"", ""kids""]",Y
+2025-06-30,RNO2,SKU-LAN-BAS54,Basecamp Lantern,395,38,0.64 lb,2025-06-17T09:50:00Z,"[""lantern"", ""waterproof""]",TRUE
+2025-06-30,CVG1,SKU-LAN-BAS54,Basecamp Lantern,400,29,290 g,1748844720000,"[""lantern"", ""waterproof""]",Yes
+2025-06-30,TOR1,SKU-LAN-BAS54,Basecamp Lantern,320,48,0.29kg,1749436920000,,true
+2025-06-30,SEA1,SKU-LAN-ION56,Ion Lantern,653,105,200g,1749829380000,"[""lantern"", ""ultralight""]",false
+2025-06-30,RNO2,SKU-LAN-ION56,Ion Lantern,1310,123,0.44 lb,18/06/2025 16:43,"[""lantern"", ""ultralight""]",1
+2025-06-30,CVG1,SKU-LAN-ION56,Ion Lantern,"1,815",310,0.44 lbs,2025-06-18T05:01:00Z,"[""lantern"", ""ultralight""]",no
+2025-06-30,RNO2,SKU-LAN-CAS36,Cascade Lantern,385,9,0.3kg,1750502340,"[""lantern"", ""ultralight""]",Yes
+2025-06-30,TOR1,SKU-LAN-CAS36,Cascade Lantern,186,-,0.3kg,1749187860,"[""lantern"", ""ultralight""]",Yes
+2025-06-30,SEA1,SKU-LAN-ALP10,Alpine Lantern,3,0,10.6 oz,18/06/2025 17:05,"[""lantern"", ""waterproof""]",Yes
+2025-06-30,DAL1,SKU-LAN-ALP10,Alpine Lantern,280,51,300g,2025-06-08T10:43:00Z,"[""lantern"", ""waterproof""]",1
+2025-06-30,CVG1,SKU-LAN-ALP10,Alpine Lantern,272,33,0.3kg,07/06/2025 05:14,"[""lantern"", ""waterproof""]",1
+2025-06-30,SEA1,SKU-TNT-ALP25,Alpine Tent,-10,0,3.8 kg,16/06/2025 02:25,"[""tent"", ""waterproof""]",Yes

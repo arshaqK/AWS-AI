@@ -10,10 +10,14 @@ from bedrock_agentcore.runtime import BedrockAgentCoreApp
 from model.load import load_model
 import json
 import approvals
+import memory
+import narration
 from strands import tool
+from agents.documenter import documenter
 from agents.execution_agent import execution_agent
 from agents.script_writer import script_writer
 from agents.spec_writer import spec_writer
+from tools.catalog import refresh_raw_tables
 from tools.profile import get_dataset_profile
 from tools.specs import list_datasets as _list_datasets
 
@@ -37,12 +41,17 @@ validated table etl_copilot_clean.<dataset>. You never write specs, ETL code or 
 ## Your tools
 - list_datasets: every dataset (a folder under landing/), and whether it has a raw table and
   an approved spec. Use it whenever you are not sure which dataset is meant.
+- refresh_raw_tables: runs the landing crawler (1-3 minutes) so a newly uploaded dataset gets
+  its raw table.
 - spec_writer(dataset, task): proposes or revises a dataset's spec - its contract (columns,
   types, key, PII handling, cleaning and validation rules). Returns SPEC_ID and a summary.
 - script_writer(dataset, task): drafts or revises the ETL script for a dataset with an approved
   spec (it profiles the data itself). Returns DRAFT_ID, what the script does, and assumptions.
 - execution_agent(draft_id): runs an APPROVED draft on Glue, waits, and validates the output.
+- documenter(dataset): writes the data dictionary and quality report after a passing run.
 - get_dataset_profile(dataset): only to answer the engineer's questions about raw data.
+- show_conventions(dataset): the conventions remembered for a dataset (read-only). The spec
+  writer and script writer already receive them; use this when the engineer asks.
 
 ## Rules that are never broken
 - Only the engineer can approve, by sending exactly "APPROVE SPEC <spec_id>" for a spec or
@@ -55,8 +64,9 @@ validated table etl_copilot_clean.<dataset>. You never write specs, ETL code or 
 - Always pass the dataset name exactly as list_datasets shows it.
 
 ## Flow
-0. Work out which dataset the engineer means (list_datasets if unclear). If it has no raw
-   table, tell the engineer to upload the CSV to landing/<dataset>/ and run the crawler.
+0. Work out which dataset the engineer means (list_datasets if unclear).
+   - It has a landing folder but no raw table: call refresh_raw_tables once, then continue.
+   - It has no landing folder: tell the engineer to upload the CSV to landing/<dataset>/.
 1. The engineer asks to onboard / clean a dataset:
    - It has no approved spec: call spec_writer with their request, present the spec
      (format S) and stop.
@@ -67,7 +77,7 @@ validated table etl_copilot_clean.<dataset>. You never write specs, ETL code or 
 3. A message says the engineer REJECTED spec X with a reason: revise via spec_writer (pass
    the spec id and the reason), present the new spec (format S) and stop.
 4. A message says the engineer APPROVED draft X: call execution_agent for draft X.
-   - Validation PASSED: report the result (format B). Done.
+   - Validation PASSED: call documenter for that dataset, then report the result (format B). Done.
    - The job failed or a rule failed: call script_writer to revise draft X, passing the
      execution report word for word. Present the new draft (format A, with what changed) and stop.
    - REFUSED or BUSY: report it as is. Do not retry.
@@ -77,6 +87,9 @@ validated table etl_copilot_clean.<dataset>. You never write specs, ETL code or 
    key, PII handling, validation rules), revise the spec via spec_writer (format S); otherwise
    revise the current draft via script_writer (format A).
 7. If three revisions in a row have failed, stop and ask the engineer how to proceed.
+8. When the engineer states a lasting fact about a dataset in conversation (a vendor convention),
+   suggest they make it permanent with: REMEMBER <dataset>: <the convention>. Only that exact
+   command saves it - you cannot. FORGET <dataset> <n> removes the n-th one (see show_conventions).
 
 ## Format S - a spec ready for review
 **Spec `<id>` for `<dataset>` ready for review**
@@ -100,6 +113,8 @@ Run: <run id> - <state>
 Rules: one line per rule (passed / failed - detail)
 Info: <the info counts>
 Output: s3://etl-copilot-ak/staging/<dataset>/ (table etl_copilot_clean.<dataset>)
+Run log: <the RUN_LOG line from the execution agent, with its attempt number>
+Docs: <the data_dictionary, quality_report and clean_csv locations from documenter, or why it could not document>
 
 Be concise and technical.
 """
@@ -112,10 +127,24 @@ def list_datasets() -> str:
     return json.dumps(_list_datasets())
 
 
+@tool
+def show_conventions(dataset: str) -> str:
+    """The conventions remembered for a dataset (confirmed by the engineer), numbered.
+
+    Args:
+        dataset: the dataset name (e.g. "orders").
+    """
+    if not memory.enabled():
+        return "Memory is not deployed yet, so nothing is remembered."
+    items = memory.conventions(dataset)
+    return "\n".join(f"{i}. {c}" for i, c in enumerate(items, 1)) or f"Nothing remembered for {dataset} yet."
+
+
 # The Supervisor's specialists. Only execution_agent can start a Glue job, and only for a
 # draft the engineer approved; only the engineer's APPROVE SPEC installs a spec (both
 # enforced in code by approvals.py, not by this prompt).
-tools = [list_datasets, spec_writer, script_writer, execution_agent, get_dataset_profile]
+tools = [list_datasets, refresh_raw_tables, spec_writer, script_writer, execution_agent,
+         documenter, get_dataset_profile, show_conventions]
 
 _INLINE_FUNCTION_NAMES = set()
 
@@ -226,14 +255,15 @@ def _is_inline_function_call(event: dict) -> bool:
 HEARTBEAT_S = 20
 
 
-async def _with_heartbeat(events):
+async def _with_heartbeat(events, queue: asyncio.Queue = None):
     """Pass events through, adding {"status": "working"} whenever none arrived for HEARTBEAT_S.
 
     A Glue run plus validation is minutes of silence, and HTTP clients drop a response that
     sends nothing for long enough (Node's fetch, used by `agentcore dev`, gives up at 300s).
     Clients ignore events without text, so the heartbeat never shows up in the reply.
+    Narration events posted to `queue` (from tool threads) come out in order with the rest.
     """
-    queue: asyncio.Queue = asyncio.Queue()
+    queue = queue or asyncio.Queue()
     done = object()
 
     async def pump():
@@ -279,18 +309,29 @@ async def invoke(payload, context):
         _progress.info("engineer: %s", prompt[:120])
 
 
-    async for event in _with_heartbeat(agent.stream_async(prompt)):
-        if not isinstance(event, dict):
-            continue
-        if "status" in event:  # heartbeat
+    # Narration: what each specialist did, built by code from real results (narration.py).
+    queue: asyncio.Queue = asyncio.Queue()
+    channel = narration.open_channel(asyncio.get_running_loop(), queue.put_nowait)
+    reply = []
+    try:
+        async for event in _with_heartbeat(agent.stream_async(prompt), queue):
+            if not isinstance(event, dict):
+                continue
+            if "status" in event or "narration" in event:  # heartbeat / narration
+                yield event
+                continue
+            if "event" not in event:
+                continue
+            cbs = event["event"].get("contentBlockStart")
+            if cbs is not None and not cbs.get("start"):
+                continue
+            text = event["event"].get("contentBlockDelta", {}).get("delta", {}).get("text")
+            if text:
+                reply.append(text)
             yield event
-            continue
-        if "event" not in event:
-            continue
-        cbs = event["event"].get("contentBlockStart")
-        if cbs is not None and not cbs.get("start"):
-            continue
-        yield event
+        yield {"narration": {"type": "final", "text": "".join(reply)}}
+    finally:
+        narration.close_channel(channel)
 
 
 if __name__ == "__main__":

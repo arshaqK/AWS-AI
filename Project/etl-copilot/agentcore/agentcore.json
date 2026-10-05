@@ -15,10 +15,23 @@
       "codeLocation": "app/EtlCopilot/",
       "runtimeVersion": "PYTHON_3_12",
       "networkMode": "PUBLIC",
-      "protocol": "HTTP"
+      "protocol": "HTTP",
+      "additionalPolicies": [
+        "iam/runtime-policy.json"
+      ],
+      "lifecycleConfiguration": {
+        "idleRuntimeSessionTimeout": 7200,
+        "maxLifetime": 28800
+      }
     }
   ],
-  "memories": [],
+  "memories": [
+    {
+      "name": "EtlCopilotMemory",
+      "eventExpiryDuration": 365,
+      "strategies": []
+    }
+  ],
   "knowledgeBases": [],
   "credentials": [],
   "evaluators": [],

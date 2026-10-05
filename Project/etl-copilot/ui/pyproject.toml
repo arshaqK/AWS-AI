@@ -1,0 +1,9 @@
+[project]
+name = "etl-copilot-console"
+version = "0.1.0"
+description = "Copilot Console: the Streamlit UI for ETL Copilot (Phase 5)"
+requires-python = ">=3.11"
+dependencies = [
+    "boto3>=1.43.108",
+    "streamlit>=1.50",
+]

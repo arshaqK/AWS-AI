@@ -120,6 +120,26 @@ def save_draft(dataset: str, script: str) -> dict:
             "lines": script.count("\n") + 1}
 
 
+def save_confirmations(draft_id: str, dataset: str, lines: List[str]) -> None:
+    """Keep a draft's NEEDS CONFIRMATION lines beside it, so APPROVE can confirm exactly them."""
+    body = json.dumps({"draft_id": draft_id, "dataset": dataset, "needs_confirmation": lines}, indent=1)
+    execution_session().client("s3").put_object(
+        Bucket=BUCKET, Key=f"{DRAFTS_PREFIX}{draft_id}.confirm.json", Body=body.encode("utf-8"),
+        ContentType="application/json")
+
+
+def read_confirmations(draft_id: str) -> dict:
+    """{'dataset', 'needs_confirmation': [...]} for a draft, or {} if none were recorded."""
+    if not DRAFT_ID_RE.match(draft_id or ""):
+        return {}
+    try:
+        body = execution_session().client("s3").get_object(
+            Bucket=BUCKET, Key=f"{DRAFTS_PREFIX}{draft_id}.confirm.json")["Body"].read()
+    except Exception:
+        return {}
+    return json.loads(body.decode("utf-8"))
+
+
 def read_draft(draft_id: str) -> str:
     if not DRAFT_ID_RE.match(draft_id or ""):
         raise ValueError(f"not a draft id: {draft_id!r}")

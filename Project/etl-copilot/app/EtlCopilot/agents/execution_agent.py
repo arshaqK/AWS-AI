@@ -7,12 +7,18 @@ the validation tool is bound to that dataset, so the agent cannot validate a run
 against the wrong spec.
 """
 import logging
+import time
 
 from strands import Agent, tool
 
+import narration
+from aws_session import execution_session
+from config import BUCKET, JOB_NAME
 from model.load import load_model
 from tools.drafts import DRAFT_ID_RE
-from tools.execution import draft_dataset, make_validation_tool, start_glue_job, wait_for_job
+from tools.execution import (LAST_VALIDATION, TERMINAL_STATES, draft_dataset, make_validation_tool,
+                             start_glue_job, validate_output, wait_for_job)
+from tools.runlog import RUNS_PREFIX, record_run
 
 progress = logging.getLogger("etl_copilot")
 
@@ -68,4 +74,43 @@ def execution_agent(draft_id: str, note: str = "") -> str:
     )
     progress.info("execution_agent: %s / %s started (a Glue run takes about 2-4 minutes)", draft_id, dataset)
     task = f"Run draft {draft_id} (dataset {dataset})." + (f" Note: {note}" if note else "")
-    return str(agent(task))
+    started, before = time.time(), _latest_run_id()
+    narration.speaking("execution")
+    narration.activity("execution", f"Execution is starting the Glue job for draft {draft_id}")
+    try:
+        reply = str(agent(task))
+    finally:
+        narration.speaking("supervisor")
+        narration.activity("supervisor", "Supervisor is reviewing the run")
+    return reply + _log_run(dataset, draft_id, before, started)
+
+
+def _latest_run_id() -> str:
+    runs = execution_session().client("glue").get_job_runs(JobName=JOB_NAME, MaxResults=1)["JobRuns"]
+    return runs[0]["Id"] if runs else ""
+
+
+def _log_run(dataset: str, draft_id: str, before: str, started: float) -> str:
+    """Record the run this call started, from what Glue and Athena report (not the agent's words)."""
+    try:
+        glue = execution_session().client("glue")
+        run = glue.get_job_runs(JobName=JOB_NAME, MaxResults=1)["JobRuns"][0]
+        if run["Id"] == before:
+            return ""  # refused or busy: nothing ran, nothing to record
+        if run["JobRunState"] not in TERMINAL_STATES:  # the agent stopped before the run ended
+            wait_for_job(run["Id"])
+            run = glue.get_job_run(JobName=JOB_NAME, RunId=run["Id"])["JobRun"]
+        validation = None
+        if run["JobRunState"] == "SUCCEEDED":
+            at, result = LAST_VALIDATION.get(dataset, (0.0, None))
+            validation = result if at >= started else validate_output(dataset)
+        record = record_run(dataset, draft_id, run["Id"], validation)
+        narration.post(narration.run_step(run, draft_id))
+        if validation:
+            narration.post(narration.validation_step(validation, record["attempt"]))
+        progress.info("run log: %s attempt %d %s", dataset, record["attempt"], record["outcome"])
+        return (f"\nRUN_LOG: s3://{BUCKET}/{RUNS_PREFIX}{dataset}/{run['Id']}.json "
+                f"(attempt {record['attempt']}, {record['outcome']})")
+    except Exception as e:  # a logging failure must never hide the run's result
+        progress.info("run log: could not record run: %s", e)
+        return f"\nRUN_LOG: not recorded ({e})"

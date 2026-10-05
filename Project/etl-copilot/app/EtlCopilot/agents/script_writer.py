@@ -7,16 +7,21 @@ NOT shown to the model: the drafts must come from the profile and the spec.
 """
 import json
 import logging
+import re
 import time
 
 from strands import Agent, tool
 from strands.models.bedrock import BedrockModel
 
+import approvals
+import memory
+import narration
 from config import CLEAN_DB
 from model.load import MODEL_ID, REGION
-from tools.drafts import ALLOWED_IMPORTS, make_save_draft_tool, read_draft_script
+from tools.drafts import (ALLOWED_IMPORTS, dataset_of_script, make_save_draft_tool, read_draft,
+                          read_draft_script, save_confirmations)
 from tools.profile import get_dataset_profile
-from tools.specs import SpecNotFound, load_spec, paths
+from tools.specs import SpecNotFound, load_spec, paths, spec_id_for
 
 progress = logging.getLogger("etl_copilot")
 
@@ -29,7 +34,9 @@ This task is for the dataset "{dataset}".
 
 ## How to work
 1. Call get_dataset_profile with dataset="{dataset}" and study it: null spellings, value
-   shapes (formats), and the distinct values of low-cardinality columns (spelling variants).
+   shapes (formats), the distinct values of low-cardinality columns (spelling variants), and
+   letter_tokens - EVERY unit, marker or prefix in a column (e.g. kg, lb, lbs, oz). The 10
+   sample rows are not complete: your parser must handle every token letter_tokens lists.
 2. If the task asks you to revise an earlier draft, call read_draft_script with its id
    and fix exactly what the task reports (a failed rule or a job error), keeping the rest.
 3. Write the complete script and call save_draft_script. If it returns problems, fix
@@ -85,11 +92,17 @@ so the engineer can confirm or reject it when approving the draft.
 ## Reply format
 DRAFT_ID: <id from save_draft_script>
 What the script does:
-- <one bullet per quirk handled, in plain English, with the column name>
+- `<column>`: <what happens to it>
 Assumptions:
 - <anything not stated by the engineer, or "none">
-- NEEDS CONFIRMATION: <column>: <exact value(s)> -> <what the script does>  (one per guessed fix)
-If this is a revision, add "Changed since <previous id>:" with what you changed and why.
+- NEEDS CONFIRMATION: `<column>`: <exact value(s)> -> <what the script does>  (one per guessed fix)
+If this is a revision, add "Changed since <previous id>:" with one bullet per change.
+
+The engineer reads these bullets on an approval card, so keep them scannable:
+- At most 8 bullets under "What the script does", each under 15 words. Group columns that
+  get the same treatment ("`email`, `phone`: trimmed, then SHA-256 hashed").
+- Say what happens, not how: no code, no regex, no function names, no reasoning.
+- Every NEEDS CONFIRMATION and "Changed since" bullet under 20 words.
 """
 
 
@@ -159,8 +172,45 @@ def script_writer(dataset: str, task: str) -> str:
         tools=[get_dataset_profile, read_draft_script, make_save_draft_tool(dataset)],
         callback_handler=None,  # no token printing (crashes on Windows cp1252)
     )
+    conventions = memory.as_prompt(dataset)
+    narration.post(narration.spec_reused_step(dataset, spec_id_for(spec), spec,
+                                              memory.conventions(dataset) if conventions else []))
     progress.info("script_writer: %s started (usually 1-2 minutes)", dataset)
     started = time.time()
-    reply = str(agent(task))
+    narration.speaking("script")
+    narration.activity("script", f"Script Writer is writing the ETL script for {dataset}")
+    try:
+        reply = str(agent(task + conventions + approvals.take_request("draft", dataset)))
+    finally:
+        narration.speaking("supervisor")
+        narration.activity("supervisor", "Supervisor is preparing the draft for your review")
     progress.info("script_writer: finished in %.0fs", time.time() - started)
+    kept = _keep_confirmations(dataset, reply)
+    if kept:  # only a saved draft of this dataset becomes a gate
+        draft_id, script, lines = kept
+        for event in narration.draft_step_and_gate(dataset, draft_id, script, reply, lines,
+                                                   paths(dataset), spec["primary_key"]):
+            narration.post(event)
     return reply
+
+
+def _keep_confirmations(dataset: str, reply: str):
+    """Store the reply's NEEDS CONFIRMATION lines beside the draft it names (code, not the model).
+
+    Returns (draft_id, script, lines), or None when the reply names no saved draft of this dataset.
+    """
+    match = re.search(r"DRAFT_ID:\W*([0-9a-f]{12})", reply)
+    if not match:
+        return None
+    draft_id = match.group(1)
+    try:
+        script = read_draft(draft_id)
+        if dataset_of_script(script) != dataset:
+            return None  # the reply names a draft of another dataset: record nothing
+    except Exception:
+        return None  # the named draft does not exist
+    lines = [memory.clean_confirmation(l) for l in reply.splitlines() if "NEEDS CONFIRMATION:" in l.upper()]
+    lines = [l for l in lines if l and l.lower() not in ("nothing", "none")]
+    save_confirmations(draft_id, dataset, lines)
+    progress.info("script_writer: draft %s has %d point(s) to confirm", draft_id, len(lines))
+    return draft_id, script, lines

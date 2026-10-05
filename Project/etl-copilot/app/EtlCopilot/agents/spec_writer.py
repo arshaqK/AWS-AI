@@ -11,10 +11,15 @@ import time
 from strands import Agent, tool
 from strands.models.bedrock import BedrockModel
 
+import approvals
+import memory
+import narration
+
 from model.load import MODEL_ID, REGION
 from tools.profile import get_dataset_profile
 from tools.specs import (CORE_RULES, INFO_TYPES, PII_TREATMENTS, RULE_TYPES, SpecNotFound, load_spec,
                          raw_table_exists, read_spec_draft, save_spec_draft)
+
 
 progress = logging.getLogger("etl_copilot")
 
@@ -67,7 +72,10 @@ writes the ETL against it, and the validation rules are run from it.
 
 ## How to work
 1. Call get_dataset_profile for the dataset and study every column: null spellings, value
-   shapes, low-cardinality values, sample rows.
+   shapes, low-cardinality values, letter_tokens, sample rows. letter_tokens lists EVERY
+   unit / marker / prefix that occurs in a column (e.g. kg, g, lb, lbs, oz): the sample rows
+   are only 10 rows, so never rely on them alone - a cleaning rule must handle every token.
+   "numeric" gives each numeric column's min, max and count of negatives over all rows.
 2. If the task asks you to revise a proposal, call read_spec with its id and change only
    what the task asks.
 3. Build the spec and call save_spec with it. If it returns problems, fix every one and
@@ -103,6 +111,12 @@ writes the ETL against it, and the validation rules are run from it.
 When the profile does not settle a choice (a key, a type, whether a column is PII, a date
 convention), make the safer choice and list it under NEEDS CONFIRMATION.
 
+## Rules must fit the data you saw
+A validation rule must accept every non-null value the profile shows, once cleaned. If the
+data contains values a rule would reject (e.g. negative counts, which can be backorders or
+refunds), do NOT add the rule: describe those values under NEEDS CONFIRMATION instead, so
+the engineer decides whether they are valid. A rule that fails on day one is a bug.
+
 ## Reply format
 SPEC_ID: <id from save_spec>
 Dataset: <name> - <description>
@@ -114,6 +128,11 @@ PII: <column -> treatment, one per line, or "none">
 Rules: <id: what it checks, one per line>
 NEEDS CONFIRMATION:
 - <each guess, or "nothing">
+
+The engineer reads the NEEDS CONFIRMATION bullets on an approval card: one guess per bullet,
+in the form `<column>`: <the guess> (under 20 words), no reasoning or alternatives.
+If this is a revision, end with "Changed since <previous spec id>:" and one bullet per change
+(under 20 words each) - one for every change the engineer asked for.
 """
 
 
@@ -121,7 +140,7 @@ def _model() -> BedrockModel:
     return BedrockModel(model_id=MODEL_ID, region_name=REGION, max_tokens=MAX_OUTPUT_TOKENS)
 
 
-def _make_tools(dataset: str):
+def _make_tools(dataset: str, saved: list = None):
     @tool
     def save_spec(spec: dict) -> str:
         """Check a proposed spec and, if it passes, save it as a proposal.
@@ -135,6 +154,8 @@ def _make_tools(dataset: str):
         if not isinstance(spec, dict) or spec.get("dataset") != dataset:
             return json.dumps({"saved": False, "problems": [f'"dataset" must be "{dataset}"']})
         result = save_spec_draft(spec)
+        if result["saved"] and saved is not None:
+            saved.append(result["spec_id"])
         progress.info("save_spec: %s", f"saved spec {result['spec_id']}" if result["saved"]
                       else f"rejected ({len(result['problems'])} problems)")
         return json.dumps(result)
@@ -179,14 +200,37 @@ def spec_writer(dataset: str, task: str) -> str:
                 "replaces it.)")
     except SpecNotFound:
         pass
+    saved: list = []
     agent = Agent(
         model=_model(),
         system_prompt=SYSTEM_PROMPT,
-        tools=[get_dataset_profile, *_make_tools(dataset)],
+        tools=[get_dataset_profile, *_make_tools(dataset, saved)],
         callback_handler=None,  # no token printing (crashes on Windows cp1252)
     )
     progress.info("spec_writer: %s started (usually 1-2 minutes)", dataset)
     started = time.time()
-    reply = str(agent(f'Dataset: "{dataset}". {task}'))
+    narration.speaking("spec")
+    narration.activity("spec", f"Spec Writer is writing the contract for {dataset}")
+    try:
+        reply = str(agent(f'Dataset: "{dataset}". {task}' + memory.as_prompt(dataset)
+                          + approvals.take_request("spec", dataset)))
+    finally:
+        narration.speaking("supervisor")
+        narration.activity("supervisor", "Supervisor is preparing the contract for your review")
     progress.info("spec_writer: finished in %.0fs", time.time() - started)
+    _narrate_gate(reply, saved)
     return reply + note
+
+
+def _narrate_gate(reply: str, saved: list) -> None:
+    """The spec gate, built from the proposal this call saved - not from the reply's wording."""
+    match = narration.SPEC_ID_RE.search(reply)
+    if not match or match.group(1) not in saved:
+        return  # the reply names no proposal this call saved: no gate to show
+    try:
+        spec = read_spec_draft(match.group(1))
+    except Exception:
+        return
+    points = [memory.clean_confirmation(p) for p in narration.section(reply, "NEEDS CONFIRMATION")]
+    points = [p for p in points if p and p.lower() not in ("nothing", "none")]
+    narration.post(narration.spec_gate(match.group(1), spec, points, narration.section(reply, "Changed since")))

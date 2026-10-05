@@ -14,6 +14,7 @@ from botocore.exceptions import ClientError
 from strands import tool
 
 import approvals
+import narration
 from athena import AthenaQueryError, run_query
 from aws_session import execution_session
 from config import BUCKET, CLEAN_DB, DRAFTS_PREFIX, JOB_NAME, JOB_SCRIPT_KEY, RAW_DB
@@ -93,6 +94,10 @@ def start_glue_job(draft_id: str) -> str:
         approvals.approve(draft_id)  # nothing ran, so give the approval back
         return "BUSY: a run of the ETL job started in the meantime. Wait for it, then ask again."
     progress.info("start_glue_job: draft %s (%s) started as %s", draft_id, dataset, run_id[:16] + "...")
+    narration.post({"type": "step", "agent": "execution", "phase": "run_started", "route": narration.route("execution"),
+                    "text": f"Started Glue run `{run_id[:16]}…` for draft `{draft_id}` ({dataset}). "
+                            "A run takes about 1-4 minutes."})
+    narration.activity("execution", f"The Glue job is cleaning {dataset} (usually 1-4 minutes)")
     return json.dumps({"started": True, "draft_id": draft_id, "dataset": dataset, "run_id": run_id})
 
 
@@ -254,6 +259,11 @@ def validate_output(dataset: str) -> dict:
     }
 
 
+# The latest validation result per dataset, as (time.time(), result): the Execution Agent's
+# wrapper reads it to write the run log without querying Athena a second time.
+LAST_VALIDATION: dict = {}
+
+
 def make_validation_tool(dataset: str):
     """run_athena_validation bound to one dataset, for the Execution Agent running its draft."""
 
@@ -267,7 +277,9 @@ def make_validation_tool(dataset: str):
         offending values for failed rules (never for PII rules), and info counts.
         """
         progress.info("run_athena_validation: checking %s.%s", CLEAN_DB, dataset)
+        narration.activity("execution", f"Execution is checking {dataset} against its contract with Athena")
         result = validate_output(dataset)
+        LAST_VALIDATION[dataset] = (time.time(), result)
         failed = [name for name, r in result["rules"].items() if not r["passed"]]
         progress.info("run_athena_validation: %s", "PASSED" if result["passed"] else "FAILED " + ", ".join(failed))
         return json.dumps(result)

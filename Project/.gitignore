@@ -11,6 +11,8 @@
 *.key
 credentials
 .aws/
+# Streamlit's secrets file (the console's .streamlit/config.toml IS committed)
+**/.streamlit/secrets.toml
 
 # ---- Python ----
 __pycache__/
@@ -41,6 +43,17 @@ node_modules/
 cdk.out/
 .cdk.staging/
 **/agentcore/cdk/dist/
+
+# ---- Demo copies of the sample data ----
+# Byte-identical copies of data/orders_export.csv, renamed to onboard it as a new dataset
+# from the console. The original, its generator and answer key are committed.
+etl-copilot/data/online_orders.csv
+etl-copilot/data/orders_demo.csv
+etl-copilot/data/orders_dummy.csv
+
+# ---- Browser test output (Playwright) ----
+test-results/
+playwright-report/
 
 # ---- Logs and scratch ----
 *.log

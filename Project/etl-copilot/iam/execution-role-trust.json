@@ -1,0 +1,19 @@
+{
+  "Version": "2012-10-17",
+  "Statement": [
+    {
+      "Sid": "OnlyEtlCopilotCallers",
+      "Effect": "Allow",
+      "Principal": {"AWS": "arn:aws:iam::481719141347:root"},
+      "Action": "sts:AssumeRole",
+      "Condition": {
+        "ArnLike": {
+          "aws:PrincipalArn": [
+            "arn:aws:iam::481719141347:role/aws-reserved/sso.amazonaws.com/AWSReservedSSO_AdministratorAccess_597a794977fc897e",
+            "arn:aws:iam::481719141347:role/AgentCore-EtlCopilot-dev-ApplicationAgentEtlCopilot-ItNUmMjqGOk1"
+          ]
+        }
+      }
+    }
+  ]
+}

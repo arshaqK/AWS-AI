@@ -1,0 +1,406 @@
+ticket_id,created_at,order_ref,customer_email,channel,priority,status,subject,message,agent,resolved_at,satisfaction
+TCK-20001,2025-04-29T03:10:00+05:00,ORD100105,liam.wang27@outlook.com,EMAIL,High,resolved,Cancel my order,"Liam here. Please cancel ORD100105, I ordered twice by mistake.",Kenji,2025-04-30T00:10:00Z,5
+TCK-20002,2025-05-22 15:26:00,100102,fatima.smith83@outlook.com,Phone,low,Pending,Damaged item on arrival,"The headlamp arrived with a broken zip, can I get a replacement?",Kenji,,
+TCK-20003,2025-06-22T11:56:00+05:00,ORD-100136,emma.lee54@yahoo.com,Chat,P2,Open,Change delivery address,"Please send ORD-100136 to my work address instead, thanks!",Grace,-,
+TCK-20004,2025-05-12T08:32:00Z,#100477,hannah.khan10@gmail.com,Chat,low,closed,Wrong size delivered,"I ordered a medium but got a large, how do I swap it? Or call +1 (413) 796-4981.",Priya,2025-05-15T09:32:00Z,4
+TCK-20005,2025-04-24T23:58:00Z,ORD100028,AHMED.NGUYEN41@OUTLOOK.COM,Web,low,Open,Change delivery address,"Please send ORD100028 to my work address instead, thanks!",Tomás,,
+TCK-20006,2025-06-20 22:26:00,ORD100438,sofia.patel44@icloud.com,EMAIL,urgent,Pending,Question about tent setup,Sofia here. How do I pitch the tent in wind? The guide isn't clear.,Kenji,-,
+TCK-20007,2025-06-06T15:05:00Z,ORD-100405,ravi.dubois7@yahoo.com,email,Urgent,OPEN,Question about tent setup,Ravi here. How do I pitch the tent in wind? The guide isn't clear.,Marcus,-,
+TCK-20008,2025-05-30T18:53:00Z,#100036,ethan.muller69@outlook.com,Chat,low,open,Question about tent setup,Ethan here. How do I pitch the tent in wind? The guide isn't clear.,Marcus,,
+TCK-20009,2025-05-23 10:02:00,,olivia.novak73@outlook.com,Email,P2,Pending,Cancel my order,"Please cancel my last order, I ordered twice by mistake. You can reach me at olivia.novak73@outlook.com.",Elena,,
+TCK-20010,2025-06-21T18:49:00Z,#100074,ethan.oneil82@proton.me,phone,High,closed,Refund not received,"Still waiting on the refund for #100074, it's been two weeks.",Marcus,2025-06-25T04:49:00Z,5 stars
+TCK-20011,2025-05-19T08:34:00-04:00,ORD-100500,james.oneil31@outlook.com,Live Chat,low,Open,Missing item in package,The box for ORD-100500 was missing the stove. You can reach me at james.oneil31@outlook.com.,Kenji,-,
+TCK-20012,2025-04-25T11:31:00Z,ORD-100341,fatima.smith83@outlook.com,EMAIL,High,OPEN,Refund not received,"Still waiting on the refund for ORD-100341, it's been two weeks. You can reach me at fatima.smith83@outlook.com.",Priya,,
+TCK-20013,2025-04-07T22:14:00+05:00,N/A,ahmed.silva47@gmail.com,Phone,P1,pending,Refund not received,"Still waiting on the refund for my last order, it's been two weeks.",Marcus,,
+TCK-20014,2025-05-13 00:27:00,#100002,bjorn.johnson82@proton.me,web form,normal,Resolved,Where is my order?,"Hi, my order #100002 hasn't arrived yet. Could you check the status?",Grace,2025-05-17T00:27:00Z,5
+TCK-20015,2025-04-11T00:54:00-04:00,100281,lucas.johnson87@proton.me,Web,low,OPEN,Warranty claim,My stove stopped working after a month - is that covered?,Priya,-,
+TCK-20016,2025-06-19 10:50:00,ORD-100312,zoe.wang27@gmail.com,Phone,low,pending,Damaged item on arrival,"The tent arrived with a broken zip, can I get a replacement?",Kenji,,
+TCK-20017,2025-04-14T07:26:00Z,ORD-100357,bjorn.johnson82@proton.me,Chat,P4,RESOLVED,Wrong size delivered,"I ordered a medium but got a large, how do I swap it?",Grace,2025-04-18T12:26:00Z,4
+TCK-20018,2025-05-04T09:05:00+05:00,,ethan.novak90@proton.me,Phone,P1,Open,Cancel my order,"Please cancel my last order, I ordered twice by mistake. You can reach me at ethan.novak90@proton.me.",Priya,,
+TCK-20019,2025-06-30T12:03:00-04:00,ORD100061,olivia.muller24@outlook.com,phone,High,Pending,Warranty claim,My sleeping bag stopped working after a month - is that covered? You can reach me at olivia.muller24@outlook.com.,Priya,-,
+TCK-20020,2025-05-22T11:30:00-04:00,#100202,liam.wang27@outlook.com,phone,High,pending,Wrong size delivered,"I ordered a medium but got a large, how do I swap it?",Grace,,
+TCK-20021,2025-05-14T00:20:00Z,ORD-100348,ethan.muller69@outlook.com,Phone call,P1,resolved,Change delivery address,"Please send ORD-100348 to my work address instead, thanks!",Grace,2025-05-16T03:20:00Z,4
+TCK-20022,2025-04-25T10:48:00Z,N/A,mateo.lee90@proton.me,WEB,P1,Pending,Missing item in package,The box for my last order was missing the tent.,Grace,-,
+TCK-20023,2025-04-28T12:14:00Z,ORD-100021,jose.muller88@proton.me,web form,High,Pending,Missing item in package,The box for ORD-100021 was missing the rain jacket.,Elena,-,
+TCK-20024,2025-05-31T15:16:00Z,ORD-100428,chen.silva57@outlook.com,phone,low,pending,Damaged item on arrival,"Chen here. The headlamp arrived with a broken zip, can I get a replacement?",Priya,-,
+TCK-20025,2025-05-14T23:44:00+01:00,#100035,olivia.khan46@yahoo.com,Chat,Urgent,OPEN,Discount code not working,"The code ""TRAIL20"" says it's expired but your email said it runs until July. Or call +1 (829) 933-9649.",Tomás,,
+TCK-20026,2025-04-26T21:38:00Z,#100082,mateo.wang91@proton.me,Web,HIGH,OPEN,Change delivery address,"Please send #100082 to my work address instead, thanks!",Grace,,
+TCK-20027,2025-06-23T05:53:00Z,#100187,noah.ali68@gmail.com,chat,Low,resolved,Missing item in package,Noah here. The box for #100187 was missing the trekking poles.,Elena,2025-06-24T23:53:00Z,5
+TCK-20028,2025-06-14T00:44:00-04:00,ORD100197,lucas.johnson70@proton.me,chat,P2,closed,Warranty claim,My rain jacket stopped working after a month - is that covered?,Tomás,2025-06-18T21:44:00Z,4 stars
+TCK-20029,2025-04-04 11:18:00,ORD-100140,noah.oneil86@yahoo.com,email,High,Open,Refund not received,"Still waiting on the refund for ORD-100140, it's been two weeks.",Priya,,
+TCK-20030,2025-05-15 22:18:00,ORD100041,lucas.lee11@yahoo.com,Live Chat,P3,Open,Refund not received,"Still waiting on the refund for ORD100041, it's been two weeks.",Marcus,,
+TCK-20031,2025-05-27T14:56:00+01:00,ORD-100147,bjorn.rossi10@icloud.com,phone,High,pending,Cancel my order,"Björn here. Please cancel ORD-100147, I ordered twice by mistake. You can reach me at bjorn.rossi10@icloud.com. Or call +1 (308) 224-1613.",Priya,-,
+TCK-20032,2025-04-11 06:21:00,ORD-100348,bjorn.rossi70@proton.me,Phone call,Urgent,Pending,Cancel my order,"Please cancel ORD-100348, I ordered twice by mistake.",Elena,,
+TCK-20033,2025-04-30T18:02:00Z,100105,olivia.muller24@outlook.com,Phone,HIGH,resolved,Wrong size delivered,"I ordered a medium but got a large, how do I swap it?",Kenji,2025-05-01T18:02:00Z,5
+TCK-20034,2025-06-25T11:39:00-04:00,ORD-100139,olivia.rossi99@outlook.com,Phone call,P2,OPEN,Damaged item on arrival,"The tent arrived with a broken zip, can I get a replacement? You can reach me at olivia.rossi99@outlook.com.",Priya,,
+TCK-20035,2025-06-22T08:25:00Z,ORD-100248,MATEO.WANG91@PROTON.ME,Phone,Medium,Pending,Wrong size delivered,"I ordered a medium but got a large, how do I swap it?",Marcus,,
+TCK-20036,2025-06-15T21:32:00Z,100129,sofia.kowalski97@outlook.com,Web,Urgent,RESOLVED,Wrong size delivered,"I ordered a medium but got a large, how do I swap it?",Tomás,2025-06-16T23:32:00Z,4
+TCK-20037,2025-04-14T19:12:00Z,ORD100159,OLIVIA.BROWN91@GMAIL.COM,Live Chat,P2,Pending,Where is my order?,"Hi, my order ORD100159 hasn't arrived yet. Could you check the status?",Marcus,-,
+TCK-20038,2025-05-30 18:59:00,#100097,james.taylor48@icloud.com,Phone,P1,open,Cancel my order,"James here. Please cancel #100097, I ordered twice by mistake.",Grace,,
+TCK-20039,2025-05-17T19:23:00Z,#100033,SOFIA.SMITH35@PROTON.ME,chat,Low,pending,Missing item in package,The box for #100033 was missing the stove.,Grace,,
+TCK-20040,2025-05-23T12:03:00Z,ORD-100371,lucas.johnson12@proton.me,Chat,Low,Pending,Damaged item on arrival,"The trekking poles arrived with a broken zip, can I get a replacement? Or call +1 (910) 849-1686.",Kenji,,
+TCK-20041,2025-04-05T07:28:00+01:00,ORD-100091,jose.lee92@gmail.com,Live Chat,High,open,Question about tent setup,How do I pitch the tent in wind? The guide isn't clear.,Grace,,
+TCK-20042,2025-06-20T03:26:00Z,,zoe.patel57@proton.me,Live Chat,P4,Pending,Wrong size delivered,"I ordered a medium but got a large, how do I swap it? You can reach me at zoe.patel57@proton.me.",Marcus,,
+TCK-20043,2025-06-30T01:31:00Z,ORD-100340,zoe.patel29@icloud.com,WEB,Normal,Resolved,Cancel my order,"Please cancel ORD-100340, I ordered twice by mistake.",Kenji,2025-07-02T12:31:00Z,4
+TCK-20044,2025-05-16T15:34:00Z,ORD-100294,noah.oneil86@yahoo.com,Phone call,P3,closed,Change delivery address,"Please send ORD-100294 to my work address instead, thanks!",Grace,2025-05-18T08:34:00Z,3
+TCK-20045,2025-05-07T14:23:00Z,#100386,emma.khan4@outlook.com,web form,P2,OPEN,Discount code not working,"The code ""TRAIL20"" says it's expired but your email said it runs until July. You can reach me at emma.khan4@outlook.com.",Elena,-,
+TCK-20046,2025-05-12T07:55:00Z,-,emma.dubois60@icloud.com,Chat,P2,OPEN,Missing item in package,The box for my last order was missing the stove. Or call +1 (727) 563-8046.,Priya,-,
+TCK-20047,2025-06-12 12:33:00,ORD-100092,SOFIA.SMITH35@PROTON.ME,chat,P3,pending,Warranty claim,My stove stopped working after a month - is that covered? You can reach me at sofia.smith35@proton.me.,Tomás,,
+TCK-20048,2025-06-29T23:01:00+01:00,#100373,lucas.brown79@outlook.com,Phone call,Urgent,resolved,Discount code not working,"The code ""TRAIL20"" says it's expired but your email said it runs until July.",Marcus,2025-06-30T20:01:00Z,5
+TCK-20049,2025-04-26T07:48:00Z,ORD100313,ahmed.nguyen41@outlook.com,email,HIGH,resolved,Discount code not working,"The code ""TRAIL20"" says it's expired but your email said it runs until July. Or call +1 (274) 277-8423.",Elena,2025-04-30T16:48:00Z,4
+TCK-20050,2025-05-17T02:26:00Z,-,chloe.silva95@gmail.com,Email,Urgent,OPEN,Missing item in package,The box for my last order was missing the sleeping bag.,Grace,,
+TCK-20051,2025-05-29T05:21:00Z,ORD100145,zoe.wang27@gmail.com,Live Chat,urgent,Closed,Where is my order?,"Hi, my order ORD100145 hasn't arrived yet. Could you check the status?",Tomás,2025-05-31T11:21:00Z,3
+TCK-20052,2025-04-10T16:58:00+05:00,ORD-100108,maria.patel14@outlook.com,chat,P3,Closed,Missing item in package,The box for ORD-100108 was missing the tent.,Kenji,2025-04-13T23:58:00Z,4 stars
+TCK-20053,2025-06-30T13:52:00+05:30,ORD100333,zoe.patel57@proton.me,email,low,pending,Cancel my order,"Zoë here. Please cancel ORD100333, I ordered twice by mistake.",Tomás,,
+TCK-20054,2025-04-01T07:52:00Z,100319,fatima.taylor74@outlook.com,phone,Low,open,Change delivery address,"Fatima here. Please send 100319 to my work address instead, thanks!",Elena,,
+TCK-20055,2025-05-22T06:42:00+05:00,ORD-100049,olivia.novak73@outlook.com,email,P2,closed,Cancel my order,"Please cancel ORD-100049, I ordered twice by mistake.",Grace,2025-05-24T06:42:00Z,4 stars
+TCK-20221,2025-05-03T11:02:00Z,,lucas.taylor93@yahoo.com,Live Chat,Urgent,Resolved,Wrong size delivered,"Lucas here. I ordered a medium but got a large, how do I swap it?",Kenji,2025-05-08T08:02:00Z,4/5
+TCK-20056,2025-05-12T02:43:00Z,,liam.garcia97@icloud.com,EMAIL,P2,RESOLVED,Wrong size delivered,"I ordered a medium but got a large, how do I swap it?",Priya,2025-05-14T07:43:00Z,5
+TCK-20057,2025-06-07T01:54:00+05:30,ORD100272,james.khan35@icloud.com,Phone call,Urgent,Pending,Damaged item on arrival,"The sleeping bag arrived with a broken zip, can I get a replacement? Or call +1 (656) 455-1990.",Elena,,
+TCK-20058,2025-05-30 12:44:00,ORD100071,zoe.wang81@proton.me,Email,normal,RESOLVED,Discount code not working,"The code ""TRAIL20"" says it's expired but your email said it runs until July.",Elena,2025-06-03T00:44:00Z,4
+TCK-20059,2025-04-29 07:43:00,-,ahmed.nguyen43@gmail.com,phone,urgent,pending,Change delivery address,"Please send my last order to my work address instead, thanks!",Tomás,-,
+TCK-20060,2025-05-04T23:45:00Z,ORD100004,lucas.johnson12@proton.me,Web,normal,OPEN,Warranty claim,My tent stopped working after a month - is that covered?,Elena,,
+TCK-20061,2025-04-20T09:58:00Z,#100408,chloe.rossi88@icloud.com,Live Chat,Urgent,closed,Damaged item on arrival,"The stove arrived with a broken zip, can I get a replacement?",Elena,2025-04-21T05:58:00Z,5/5
+TCK-20062,2025-04-26T16:52:00Z,ORD-100025,zoe.rossi5@proton.me,Web,urgent,Closed,Warranty claim,My rain jacket stopped working after a month - is that covered? You can reach me at zoe.rossi5@proton.me.,Kenji,2025-04-30T01:52:00Z,5 stars
+TCK-20063,2025-04-16T22:17:00+05:30,ORD-100072,hannah.khan10@gmail.com,phone,Low,closed,Damaged item on arrival,"Hannah here. The headlamp arrived with a broken zip, can I get a replacement?",Priya,2025-04-18T19:47:00Z,4 stars
+TCK-20064,2025-04-11 08:46:00,ORD-100213,hannah.silva44@yahoo.com,email,Normal,pending,Question about tent setup,How do I pitch the tent in wind? The guide isn't clear.,Tomás,,
+TCK-20065,2025-06-02T23:52:00+05:30,,fatima.patel10@outlook.com,chat,Urgent,OPEN,Change delivery address,"Please send my last order to my work address instead, thanks!",Grace,-,
+TCK-20066,2025-05-03T10:38:00-04:00,ORD-100203,bjorn.nguyen65@proton.me,WEB,normal,Resolved,Warranty claim,My tent stopped working after a month - is that covered? Or call +1 (567) 481-5448.,Tomás,2025-05-04T22:38:00Z,5
+TCK-20067,2025-04-07T04:01:00+05:30,ORD-100234,ethan.muller54@outlook.com,WEB,urgent,pending,Where is my order?,"Hi, my order ORD-100234 hasn't arrived yet. Could you check the status?",Tomás,,
+TCK-20068,2025-06-26 13:06:00,ORD-100155,zoe.wang27@gmail.com,web form,P3,open,Warranty claim,My sleeping bag stopped working after a month - is that covered?,Elena,,
+TCK-20069,2025-05-26 08:39:00,ORD-100136,maria.rossi20@outlook.com,WEB,normal,Pending,Cancel my order,"Maria here. Please cancel ORD-100136, I ordered twice by mistake. Or call +1 (212) 903-5654.",Elena,-,
+TCK-20070,2025-06-19T12:52:00Z,100279,aisha.kowalski94@yahoo.com,WEB,normal,Open,Change delivery address,"Please send 100279 to my work address instead, thanks!",Elena,,
+TCK-20071,2025-06-25T22:23:00+01:00,100179,MATEO.LEE90@PROTON.ME,EMAIL,Urgent,open,Warranty claim,My tent stopped working after a month - is that covered? You can reach me at mateo.lee90@proton.me.,Marcus,,
+TCK-20072,2025-05-31T12:13:00Z,,chloe.nguyen44@icloud.com,Email,P2,resolved,Warranty claim,Chloé here. My stove stopped working after a month - is that covered?,Marcus,2025-06-03T03:13:00Z,3/5
+TCK-20073,2025-05-21 18:02:00,ORD-100046,ravi.lee11@yahoo.com,chat,Medium,Closed,Question about tent setup,How do I pitch the tent in wind? The guide isn't clear. Or call +1 (522) 976-4762.,Grace,2025-05-25T10:02:00Z,4 stars
+TCK-20074,2025-06-24T22:42:00Z,#100081,MATEO.MULLER41@PROTON.ME,Email,P3,pending,Wrong size delivered,"I ordered a medium but got a large, how do I swap it?",Kenji,,
+TCK-20075,2025-05-04T18:57:00Z,ORD-100500,zoe.lee60@icloud.com,Live Chat,High,pending,Refund not received,"Still waiting on the refund for ORD-100500, it's been two weeks. You can reach me at zoe.lee60@icloud.com.",Grace,-,
+TCK-20076,2025-05-12T15:14:00+05:30,ORD-100077,sofia.ali48@gmail.com,Web,P2,RESOLVED,Discount code not working,"The code ""TRAIL20"" says it's expired but your email said it runs until July.",Marcus,2025-05-14T01:44:00Z,3
+TCK-20077,2025-06-07T12:10:00+05:00,ORD-100277,mateo.wang91@proton.me,Web,P2,pending,Change delivery address,"Please send ORD-100277 to my work address instead, thanks!",Tomás,,
+TCK-20078,2025-06-11T16:56:00-04:00,ORD-100405,ravi.taylor54@yahoo.com,Email,P1,pending,Question about tent setup,How do I pitch the tent in wind? The guide isn't clear.,Priya,,
+TCK-20079,2025-06-19T22:18:00Z,ORD-100164,james.nguyen77@gmail.com,WEB,P3,open,Wrong size delivered,"I ordered a medium but got a large, how do I swap it?",Kenji,,
+TCK-20080,2025-05-04T22:19:00+01:00,,bjorn.novak44@yahoo.com,Chat,P1,Pending,Wrong size delivered,"I ordered a medium but got a large, how do I swap it? You can reach me at bjorn.novak44@yahoo.com.",Grace,,
+TCK-20081,2025-04-24 19:57:00,,ZOE.PATEL29@ICLOUD.COM,Chat,P2,pending,Discount code not working,"The code ""TRAIL20"" says it's expired but your email said it runs until July.",Grace,,
+TCK-20082,2025-04-04T13:13:00Z,ORD-100348,ethan.novak90@proton.me,Phone,Urgent,open,Wrong size delivered,"Ethan here. I ordered a medium but got a large, how do I swap it?",Marcus,,
+TCK-20083,2025-05-26T22:51:00+05:30,N/A,LUCAS.LEE98@OUTLOOK.COM,chat,normal,RESOLVED,Change delivery address,"Please send my last order to my work address instead, thanks!",Elena,2025-05-27T12:21:00Z,5
+TCK-20084,2025-05-10T08:01:00+05:30,#100487,jose.muller64@proton.me,Web,Medium,resolved,Refund not received,"Still waiting on the refund for #100487, it's been two weeks.",Elena,2025-05-13T12:31:00Z,2/5
+TCK-20085,2025-05-14T20:55:00+05:30,ORD100410,fatima.garcia18@icloud.com,EMAIL,Low,Pending,Warranty claim,My trekking poles stopped working after a month - is that covered? Or call +1 (279) 983-2584.,Kenji,,
+TCK-20086,2025-05-29T08:56:00Z,-,SOFIA.JOHNSON54@ICLOUD.COM,chat,HIGH,pending,Discount code not working,"The code ""TRAIL20"" says it's expired but your email said it runs until July.",Grace,,
+TCK-20087,2025-05-15 14:09:00,100162,sofia.andersson34@gmail.com,chat,HIGH,Pending,Wrong size delivered,"I ordered a medium but got a large, how do I swap it?",Elena,,
+TCK-20088,2025-06-14T03:47:00Z,#100023,AHMED.SILVA18@ICLOUD.COM,Live Chat,low,OPEN,Wrong size delivered,"I ordered a medium but got a large, how do I swap it?",Elena,,
+TCK-20089,2025-06-03T05:35:00+01:00,ORD100319,olivia.dubois68@proton.me,Email,Low,OPEN,Discount code not working,"The code ""TRAIL20"" says it's expired but your email said it runs until July.",Elena,,
+TCK-20090,2025-06-20T10:14:00Z,ORD-100118,zoe.patel57@proton.me,EMAIL,HIGH,Pending,Missing item in package,The box for ORD-100118 was missing the headlamp. Or call +1 (400) 731-4828.,Priya,,
+TCK-20091,2025-06-24T09:18:00Z,N/A,mateo.wang91@proton.me,Email,Urgent,OPEN,Missing item in package,The box for my last order was missing the tent. You can reach me at mateo.wang91@proton.me.,Tomás,-,
+TCK-20092,2025-04-23T17:39:00Z,ORD-100187,zoe.patel29@icloud.com,Email,Urgent,Pending,Refund not received,"Still waiting on the refund for ORD-100187, it's been two weeks.",Priya,,
+TCK-20093,2025-05-10T09:52:00Z,ORD100323,lucas.smith2@outlook.com,Chat,P4,closed,Refund not received,"Still waiting on the refund for ORD100323, it's been two weeks. Or call +1 (799) 243-3565.",Grace,2025-05-11T20:52:00Z,5
+TCK-20094,2025-04-25T14:48:00+05:00,ORD-100234,sofia.wang18@outlook.com,phone,P3,closed,Where is my order?,"Hi, my order ORD-100234 hasn't arrived yet. Could you check the status?",Tomás,2025-04-28T01:48:00Z,4/5
+TCK-20095,2025-06-14T09:40:00+05:30,,chen.oneil33@yahoo.com,Phone call,Urgent,OPEN,Question about tent setup,How do I pitch the tent in wind? The guide isn't clear.,Marcus,-,
+TCK-20096,2025-06-29T20:25:00+01:00,ORD-100327,sofia.patel44@icloud.com,WEB,low,pending,Discount code not working,"The code ""TRAIL20"" says it's expired but your email said it runs until July.",Elena,-,
+TCK-20097,2025-04-19T15:11:00Z,ORD-100320,fatima.patel10@outlook.com,Email,low,Resolved,Question about tent setup,How do I pitch the tent in wind? The guide isn't clear.,Tomás,2025-04-24T09:11:00Z,5/5
+TCK-20098,2025-04-22T01:13:00+05:30,ORD-100335,emma.silva32@proton.me,EMAIL,Normal,Open,Change delivery address,"Please send ORD-100335 to my work address instead, thanks!",Tomás,,
+TCK-20099,2025-06-08 00:46:00,,fatima.smith83@outlook.com,phone,normal,Resolved,Discount code not working,"The code ""TRAIL20"" says it's expired but your email said it runs until July.",Priya,2025-06-08T18:46:00Z,5
+TCK-20100,2025-06-26T12:03:00Z,ORD100176,james.khan40@outlook.com,WEB,low,Pending,Question about tent setup,James here. How do I pitch the tent in wind? The guide isn't clear. Or call +1 (877) 818-2338.,Tomás,-,
+TCK-20101,2025-06-30T05:13:00Z,N/A,noah.brown63@proton.me,email,Urgent,Closed,Change delivery address,"Please send my last order to my work address instead, thanks!",Grace,2025-07-02T23:13:00Z,1
+TCK-20102,2025-05-07T19:50:00Z,100447,hannah.taylor31@yahoo.com,web form,P1,OPEN,Where is my order?,"Hannah here. Hi, my order 100447 hasn't arrived yet. Could you check the status? You can reach me at hannah.taylor31@yahoo.com. Or call +1 (777) 316-8505.",Grace,,
+TCK-20103,2025-06-14T12:54:00Z,100320,chloe.nguyen44@icloud.com,chat,low,pending,Missing item in package,The box for 100320 was missing the rain jacket.,Grace,,
+TCK-20104,2025-05-27T09:44:00Z,ORD-100472,chloe.lee62@yahoo.com,phone,HIGH,Closed,Missing item in package,The box for ORD-100472 was missing the headlamp.,Elena,2025-06-01T01:44:00Z,5
+TCK-20105,2025-04-21T19:43:00Z,ORD100436,SOFIA.JOHNSON54@ICLOUD.COM,email,P3,resolved,Missing item in package,The box for ORD100436 was missing the rain jacket.,Tomás,2025-04-21T22:43:00Z,5
+TCK-20106,2025-04-25T19:38:00Z,ORD-100348,emma.khan4@outlook.com,chat,Urgent,Open,Where is my order?,"Emma here. Hi, my order ORD-100348 hasn't arrived yet. Could you check the status?",Elena,,
+TCK-20107,2025-05-24T21:18:00Z,100084,jose.muller64@proton.me,Web,low,RESOLVED,Refund not received,"Still waiting on the refund for 100084, it's been two weeks.",Tomás,2025-05-27T17:18:00Z,4 stars
+TCK-20108,2025-04-26T22:38:00Z,ORD100017,ZOE.ANDERSSON26@GMAIL.COM,Phone call,High,Resolved,Change delivery address,"Please send ORD100017 to my work address instead, thanks! Or call +1 (585) 763-9235.",Marcus,2025-05-01T15:38:00Z,4/5
+TCK-20109,2025-04-07T18:29:00Z,ORD100172,ethan.garcia87@yahoo.com,chat,normal,OPEN,Damaged item on arrival,"The tent arrived with a broken zip, can I get a replacement?",Priya,,
+TCK-20110,2025-06-30 01:53:00,ORD100391,HANNAH.SILVA44@YAHOO.COM,web form,low,OPEN,Missing item in package,The box for ORD100391 was missing the sleeping bag.,Grace,-,
+TCK-20111,2025-04-02T14:59:00Z,ORD-100474,JAMES.TAYLOR48@ICLOUD.COM,Live Chat,HIGH,closed,Wrong size delivered,"I ordered a medium but got a large, how do I swap it? You can reach me at james.taylor48@icloud.com.",Marcus,2025-04-02T22:59:00Z,4/5
+TCK-20112,2025-06-11T23:57:00Z,,emma.silva11@icloud.com,Live Chat,High,closed,Warranty claim,My tent stopped working after a month - is that covered? Or call +1 (279) 627-1495.,Tomás,2025-06-16T16:57:00Z,5
+TCK-20113,2025-04-17T20:43:00Z,ORD-100019,liam.nguyen41@yahoo.com,WEB,P1,pending,Refund not received,"Still waiting on the refund for ORD-100019, it's been two weeks.",Kenji,-,
+TCK-20114,2025-05-28T04:34:00+01:00,ORD-100031,zoe.khan47@gmail.com,EMAIL,P3,open,Change delivery address,"Zoë here. Please send ORD-100031 to my work address instead, thanks!",Grace,-,
+TCK-20115,2025-04-17T10:01:00Z,,chloe.khan62@outlook.com,Phone,P1,closed,Wrong size delivered,"I ordered a medium but got a large, how do I swap it?",Tomás,2025-04-21T10:01:00Z,3
+TCK-20116,2025-05-02 22:11:00,,olivia.brown91@gmail.com,email,P4,OPEN,Where is my order?,"Hi, my order my last order hasn't arrived yet. Could you check the status?",Priya,-,
+TCK-20117,2025-04-21T22:23:00Z,ORD-100058,JAMES.KHAN35@ICLOUD.COM,web form,HIGH,Pending,Wrong size delivered,"I ordered a medium but got a large, how do I swap it?",Tomás,,
+TCK-20118,2025-06-29T17:33:00-04:00,ORD-100479,sofia.rossi7@icloud.com,Phone call,Medium,Open,Change delivery address,"Please send ORD-100479 to my work address instead, thanks! You can reach me at sofia.rossi7@icloud.com.",Elena,,
+TCK-20119,2025-06-08 06:53:00,,ahmed.kowalski5@outlook.com,Live Chat,urgent,OPEN,Question about tent setup,How do I pitch the tent in wind? The guide isn't clear.,Grace,-,
+TCK-20120,2025-06-30T22:19:00Z,#100139,ravi.dubois35@outlook.com,Phone call,P1,closed,Question about tent setup,How do I pitch the tent in wind? The guide isn't clear.,Grace,2025-07-03T00:19:00Z,3
+TCK-20121,2025-04-24T21:34:00Z,ORD-100311,ravi.lee11@yahoo.com,Web,P3,open,Where is my order?,"Hi, my order ORD-100311 hasn't arrived yet. Could you check the status?",Kenji,,
+TCK-20122,2025-05-10T02:04:00-04:00,100092,sofia.smith35@proton.me,Phone call,Normal,Open,Missing item in package,The box for 100092 was missing the rain jacket.,Marcus,,
+TCK-20123,2025-05-25T12:30:00Z,-,james.taylor48@icloud.com,WEB,P3,pending,Where is my order?,"Hi, my order my last order hasn't arrived yet. Could you check the status?",Grace,,
+TCK-20124,2025-06-25T15:31:00Z,ORD-100014,hannah.johnson43@proton.me,web form,HIGH,pending,Damaged item on arrival,"The rain jacket arrived with a broken zip, can I get a replacement?",Elena,-,
+TCK-20125,2025-06-06T07:28:00Z,ORD100327,zoe.khan47@gmail.com,Live Chat,Low,Resolved,Missing item in package,The box for ORD100327 was missing the sleeping bag. You can reach me at zoe.khan47@gmail.com.,Grace,2025-06-11T04:28:00Z,4
+TCK-20126,2025-05-20T01:20:00Z,ORD-100350,sofia.johnson54@icloud.com,chat,low,Resolved,Discount code not working,"The code ""TRAIL20"" says it's expired but your email said it runs until July.",Kenji,2025-05-22T15:20:00Z,N/A
+TCK-20127,2025-06-03T20:39:00Z,,ravi.khan73@outlook.com,phone,P2,Pending,Discount code not working,"The code ""TRAIL20"" says it's expired but your email said it runs until July.",Priya,,
+TCK-20128,2025-04-13T22:47:00Z,,liam.lee31@yahoo.com,web form,Normal,OPEN,Where is my order?,"Liam here. Hi, my order my last order hasn't arrived yet. Could you check the status?",Priya,,
+TCK-20129,2025-04-04 09:12:00,#100206,emma.khan4@outlook.com,web form,High,Pending,Discount code not working,"Emma here. The code ""TRAIL20"" says it's expired but your email said it runs until July.",Marcus,,
+TCK-20130,2025-04-17T10:35:00Z,#100463,ethan.muller54@outlook.com,web form,Medium,OPEN,Cancel my order,"Please cancel #100463, I ordered twice by mistake.",Marcus,,
+TCK-20131,2025-05-09 05:57:00,ORD-100115,lucas.oneil73@icloud.com,email,P2,Pending,Missing item in package,The box for ORD-100115 was missing the headlamp. You can reach me at lucas.oneil73@icloud.com. Or call +1 (941) 855-6433.,Grace,-,
+TCK-20132,2025-04-12T17:00:00Z,ORD100266,jose.johnson67@proton.me,Phone call,HIGH,Pending,Change delivery address,"Please send ORD100266 to my work address instead, thanks!",Elena,-,
+TCK-20133,2025-04-15 00:08:00,ORD-100330,zoe.dubois12@gmail.com,email,Normal,closed,Wrong size delivered,"I ordered a medium but got a large, how do I swap it?",Tomás,2025-04-16T05:08:00Z,
+TCK-20134,2025-06-12T20:43:00Z,ORD-100143,james.oneil31@outlook.com,WEB,Normal,open,Damaged item on arrival,"The stove arrived with a broken zip, can I get a replacement? You can reach me at james.oneil31@outlook.com.",Priya,,
+TCK-20135,2025-05-13T13:59:00+01:00,ORD-100265,ethan.oneil82@proton.me,Web,P1,pending,Wrong size delivered,"I ordered a medium but got a large, how do I swap it?",Grace,,
+TCK-20364,2025-05-13T14:03:00+01:00,ORD100141,jose.wang2@yahoo.com,Live Chat,Normal,Open,Cancel my order,"Please cancel ORD100141, I ordered twice by mistake.",Elena,,
+TCK-20136,2025-06-30T06:56:00Z,#100151,fatima.wang66@proton.me,Email,High,closed,Wrong size delivered,"I ordered a medium but got a large, how do I swap it?",Kenji,2025-07-05T01:56:00Z,5
+TCK-20137,2025-04-09 09:47:00,ORD-100442,olivia.brown78@gmail.com,chat,P4,pending,Warranty claim,My rain jacket stopped working after a month - is that covered?,Elena,,
+TCK-20138,2025-05-16T00:35:00+05:00,ORD-100109,zoe.lee60@icloud.com,Web,Medium,Pending,Where is my order?,"Hi, my order ORD-100109 hasn't arrived yet. Could you check the status? You can reach me at zoe.lee60@icloud.com.",Grace,,
+TCK-20139,2025-05-19T17:38:00+05:30,,ravi.silva1@icloud.com,Phone,High,Resolved,Wrong size delivered,"I ordered a medium but got a large, how do I swap it?",Marcus,2025-05-22T23:08:00Z,2
+TCK-20140,2025-06-22 22:15:00,100243,sofia.brown50@gmail.com,email,normal,Pending,Where is my order?,"Hi, my order 100243 hasn't arrived yet. Could you check the status?",Kenji,,
+TCK-20141,2025-06-03T12:11:00Z,-,ravi.silva1@icloud.com,EMAIL,Urgent,Closed,Change delivery address,"Ravi here. Please send my last order to my work address instead, thanks! You can reach me at ravi.silva1@icloud.com.",Marcus,2025-06-03T20:11:00Z,4/5
+TCK-20142,2025-05-01T14:58:00Z,,jose.wang2@yahoo.com,web form,P1,Open,Change delivery address,"Please send my last order to my work address instead, thanks!",Tomás,,
+TCK-20143,2025-04-09T02:39:00Z,#100135,SOFIA.ALI48@GMAIL.COM,Chat,P3,Open,Refund not received,"Still waiting on the refund for #100135, it's been two weeks. You can reach me at sofia.ali48@gmail.com.",Grace,-,
+TCK-20144,2025-04-19T13:17:00Z,ORD100415,SOFIA.WANG18@OUTLOOK.COM,Live Chat,Low,OPEN,Question about tent setup,How do I pitch the tent in wind? The guide isn't clear. You can reach me at sofia.wang18@outlook.com.,Elena,,
+TCK-20145,2025-05-16T12:00:00Z,-,emma.andersson42@outlook.com,Live Chat,normal,Open,Where is my order?,"Emma here. Hi, my order my last order hasn't arrived yet. Could you check the status?",Grace,,
+TCK-20146,2025-04-27T19:53:00-04:00,,liam.hernandez61@proton.me,EMAIL,Urgent,Open,Cancel my order,"Please cancel my last order, I ordered twice by mistake. You can reach me at liam.hernandez61@proton.me.",Grace,-,
+TCK-20147,2025-04-09T20:05:00Z,ORD-100258,hannah.johnson48@outlook.com,WEB,Normal,RESOLVED,Cancel my order,"Hannah here. Please cancel ORD-100258, I ordered twice by mistake.",Grace,2025-04-12T17:05:00Z,4 stars
+TCK-20148,2025-05-25T13:08:00Z,ORD100486,ahmed.nguyen43@gmail.com,chat,P4,resolved,Question about tent setup,How do I pitch the tent in wind? The guide isn't clear. You can reach me at ahmed.nguyen43@gmail.com.,Kenji,2025-05-29T17:08:00Z,5 stars
+TCK-20149,2025-06-04T13:35:00Z,#100302,bjorn.kowalski67@proton.me,Email,P4,pending,Damaged item on arrival,"Björn here. The rain jacket arrived with a broken zip, can I get a replacement?",Tomás,,
+TCK-20150,2025-05-21T12:24:00+05:00,ORD-100197,james.lee6@proton.me,phone,P3,RESOLVED,Refund not received,"Still waiting on the refund for ORD-100197, it's been two weeks.",Grace,2025-05-25T02:24:00Z,4 stars
+TCK-20151,2025-05-30T10:33:00Z,,bjorn.rossi70@proton.me,EMAIL,P2,open,Damaged item on arrival,"The headlamp arrived with a broken zip, can I get a replacement?",Kenji,-,
+TCK-20152,2025-04-12T16:36:00+01:00,ORD100309,noah.rossi32@proton.me,web form,Medium,open,Damaged item on arrival,"The tent arrived with a broken zip, can I get a replacement?",Elena,-,
+TCK-20153,2025-04-07 18:15:00,100381,OLIVIA.MULLER24@OUTLOOK.COM,EMAIL,P4,Resolved,Refund not received,"Olivia here. Still waiting on the refund for 100381, it's been two weeks.",Priya,2025-04-11T20:15:00Z,5/5
+TCK-20154,2025-05-13 01:48:00,-,chen.oneil33@yahoo.com,email,Urgent,open,Wrong size delivered,"I ordered a medium but got a large, how do I swap it?",Marcus,-,
+TCK-20155,2025-05-31 23:53:00,ORD-100375,zoe.patel57@proton.me,Email,Urgent,closed,Cancel my order,"Please cancel ORD-100375, I ordered twice by mistake.",Tomás,2025-06-03T10:53:00Z,5
+TCK-20156,2025-05-29T02:44:00Z,ORD-100188,CHLOE.LEE62@YAHOO.COM,Chat,Low,Closed,Where is my order?,"Hi, my order ORD-100188 hasn't arrived yet. Could you check the status?",Tomás,2025-06-01T21:44:00Z,1
+TCK-20157,2025-04-06 12:22:00,ORD-100141,emma.dubois60@icloud.com,Chat,low,open,Warranty claim,My rain jacket stopped working after a month - is that covered?,Kenji,,
+TCK-20158,2025-05-19T07:34:00Z,ORD-100269,olivia.brown95@outlook.com,Live Chat,low,resolved,Cancel my order,"Please cancel ORD-100269, I ordered twice by mistake. You can reach me at olivia.brown95@outlook.com.",Kenji,2025-05-22T12:34:00Z,3
+TCK-20159,2025-04-06T00:42:00Z,100050,liam.dubois27@outlook.com,WEB,urgent,Pending,Wrong size delivered,"I ordered a medium but got a large, how do I swap it?",Tomás,,
+TCK-20160,2025-06-06T22:14:00+01:00,,liam.dubois78@proton.me,Phone call,HIGH,resolved,Change delivery address,"Please send my last order to my work address instead, thanks!",Grace,2025-06-10T14:14:00Z,2/5
+TCK-20161,2025-05-24T05:28:00Z,100032,zoe.patel29@icloud.com,Phone call,P4,Pending,Where is my order?,"Hi, my order 100032 hasn't arrived yet. Could you check the status?",Priya,,
+TCK-20162,2025-06-03T20:42:00Z,ORD100431,fatima.patel27@outlook.com,Live Chat,normal,Open,Change delivery address,"Please send ORD100431 to my work address instead, thanks! You can reach me at fatima.patel27@outlook.com. Or call +1 (337) 708-6746.",Grace,,
+TCK-20163,2025-05-14T00:09:00Z,N/A,sofia.johnson54@icloud.com,Live Chat,P2,open,Wrong size delivered,"I ordered a medium but got a large, how do I swap it? You can reach me at sofia.johnson54@icloud.com.",Grace,,
+TCK-20164,2025-06-15T06:55:00Z,ORD-100238,ethan.muller69@outlook.com,email,P2,pending,Refund not received,"Still waiting on the refund for ORD-100238, it's been two weeks. You can reach me at ethan.muller69@outlook.com.",Marcus,-,
+TCK-20165,2025-04-05 16:08:00,ORD-100111,hannah.johnson48@outlook.com,email,P3,pending,Refund not received,"Still waiting on the refund for ORD-100111, it's been two weeks.",Elena,-,
+TCK-20166,2025-04-06T02:36:00Z,N/A,fatima.wang66@proton.me,email,Low,OPEN,Cancel my order,"Please cancel my last order, I ordered twice by mistake.",Kenji,,
+TCK-20167,2025-06-29T01:36:00Z,ORD-100145,zoe.andersson26@gmail.com,Live Chat,urgent,open,Missing item in package,The box for ORD-100145 was missing the trekking poles.,Kenji,,
+TCK-20168,2025-04-19 23:42:00,ORD-100242,hannah.silva44@yahoo.com,Phone call,urgent,open,Discount code not working,"The code ""TRAIL20"" says it's expired but your email said it runs until July. You can reach me at hannah.silva44@yahoo.com.",Grace,,
+TCK-20169,2025-04-28T16:08:00Z,ORD-100268,maria.taylor40@gmail.com,phone,low,Open,Change delivery address,"Please send ORD-100268 to my work address instead, thanks! You can reach me at maria.taylor40@gmail.com.",Marcus,,
+TCK-20170,2025-05-10T06:48:00+01:00,100452,jose.khan89@outlook.com,Chat,urgent,RESOLVED,Warranty claim,My sleeping bag stopped working after a month - is that covered?,Priya,2025-05-14T06:48:00Z,4/5
+TCK-20171,2025-06-17T16:30:00Z,ORD-100408,fatima.taylor74@outlook.com,phone,low,open,Damaged item on arrival,"Fatima here. The rain jacket arrived with a broken zip, can I get a replacement? You can reach me at fatima.taylor74@outlook.com.",Priya,-,
+TCK-20172,2025-06-18T21:47:00Z,ORD-100421,sofia.andersson34@gmail.com,email,High,pending,Wrong size delivered,"I ordered a medium but got a large, how do I swap it? You can reach me at sofia.andersson34@gmail.com.",Elena,,
+TCK-20173,2025-04-19T19:15:00Z,ORD-100211,lucas.taylor93@yahoo.com,phone,Urgent,resolved,Refund not received,"Still waiting on the refund for ORD-100211, it's been two weeks.",Elena,2025-04-23T17:15:00Z,4
+TCK-20174,2025-04-24T07:56:00-04:00,ORD-100178,fatima.smith83@outlook.com,Email,Urgent,closed,Where is my order?,"Fatima here. Hi, my order ORD-100178 hasn't arrived yet. Could you check the status?",Kenji,2025-04-25T06:56:00Z,5
+TCK-20175,2025-05-04 01:50:00,,emma.ali58@yahoo.com,WEB,HIGH,resolved,Damaged item on arrival,"The stove arrived with a broken zip, can I get a replacement?",Tomás,2025-05-08T16:50:00Z,3 stars
+TCK-20176,2025-04-03T12:34:00Z,,chloe.nguyen44@icloud.com,Chat,urgent,OPEN,Cancel my order,"Please cancel my last order, I ordered twice by mistake.",Priya,,
+TCK-20177,2025-05-23T07:28:00Z,ORD-100242,zoe.patel57@proton.me,EMAIL,HIGH,pending,Where is my order?,"Hi, my order ORD-100242 hasn't arrived yet. Could you check the status?",Grace,-,
+TCK-20178,2025-05-25T20:39:00+05:30,ORD-100073,fatima.khan13@outlook.com,Web,urgent,Pending,Cancel my order,"Please cancel ORD-100073, I ordered twice by mistake.",Kenji,-,
+TCK-20179,2025-04-17T20:36:00Z,-,lucas.lee11@yahoo.com,Chat,High,pending,Damaged item on arrival,"The tent arrived with a broken zip, can I get a replacement?",Marcus,,
+TCK-20180,2025-05-25 23:20:00,ORD100186,sofia.patel44@icloud.com,EMAIL,Urgent,Pending,Wrong size delivered,"I ordered a medium but got a large, how do I swap it?",Marcus,,
+TCK-20181,2025-04-16T07:35:00-04:00,ORD100046,maria.khan36@outlook.com,Web,urgent,pending,Change delivery address,"Maria here. Please send ORD100046 to my work address instead, thanks!",Grace,,
+TCK-20182,2025-04-01T13:15:00+05:30,#100489,emma.khan4@outlook.com,Chat,urgent,Open,Change delivery address,"Please send #100489 to my work address instead, thanks!",Marcus,,
+TCK-20183,2025-05-25 17:46:00,ORD-100327,emma.dubois60@icloud.com,web form,normal,Pending,Question about tent setup,How do I pitch the tent in wind? The guide isn't clear.,Grace,,
+TCK-20184,2025-06-19 04:48:00,ORD100217,jose.wang2@yahoo.com,Phone,P2,Closed,Damaged item on arrival,"José here. The headlamp arrived with a broken zip, can I get a replacement? Or call +1 (854) 838-1812.",Elena,2025-06-19T08:48:00Z,5 stars
+TCK-20185,2025-06-16T19:11:00Z,ORD-100168,BJORN.MULLER93@GMAIL.COM,Live Chat,low,Closed,Warranty claim,My tent stopped working after a month - is that covered?,Elena,2025-06-18T18:11:00Z,4
+TCK-20186,2025-05-14T22:52:00Z,100386,lucas.smith2@outlook.com,email,P2,Open,Cancel my order,"Please cancel 100386, I ordered twice by mistake.",Grace,,
+TCK-20187,2025-05-01T08:16:00Z,ORD100101,bjorn.nguyen4@gmail.com,EMAIL,P1,open,Where is my order?,"Hi, my order ORD100101 hasn't arrived yet. Could you check the status? You can reach me at bjorn.nguyen4@gmail.com.",Grace,,
+TCK-20188,2025-04-14T09:38:00Z,ORD100284,sofia.dubois81@gmail.com,WEB,low,open,Damaged item on arrival,"The sleeping bag arrived with a broken zip, can I get a replacement? You can reach me at sofia.dubois81@gmail.com.",Elena,,
+TCK-20189,2025-06-25T20:55:00Z,#100376,liam.hernandez61@proton.me,Email,Low,Open,Change delivery address,"Please send #100376 to my work address instead, thanks! Or call +1 (390) 296-8316.",Tomás,,
+TCK-20190,2025-04-01T15:37:00+01:00,ORD-100076,sofia.ali48@gmail.com,phone,High,RESOLVED,Question about tent setup,How do I pitch the tent in wind? The guide isn't clear.,Elena,2025-04-04T13:37:00Z,5
+TCK-20191,2025-04-24T06:07:00+05:30,ORD-100246,chloe.lee62@yahoo.com,Email,P2,closed,Wrong size delivered,"Chloé here. I ordered a medium but got a large, how do I swap it?",Kenji,2025-04-26T16:37:00Z,
+TCK-20192,2025-05-12T00:49:00Z,100393,liam.dubois78@proton.me,EMAIL,HIGH,Closed,Refund not received,"Still waiting on the refund for 100393, it's been two weeks.",Tomás,2025-05-14T11:49:00Z,4
+TCK-20193,2025-05-29T18:16:00Z,ORD100425,emma.rossi50@icloud.com,EMAIL,HIGH,open,Discount code not working,"The code ""TRAIL20"" says it's expired but your email said it runs until July.",Elena,,
+TCK-20194,2025-04-16T16:18:00Z,ORD-100454,emma.lee54@yahoo.com,phone,low,closed,Cancel my order,"Please cancel ORD-100454, I ordered twice by mistake.",Grace,2025-04-20T04:18:00Z,4
+TCK-20195,2025-05-09T00:46:00Z,ORD-100220,SOFIA.KOWALSKI69@GMAIL.COM,Chat,low,open,Damaged item on arrival,"The trekking poles arrived with a broken zip, can I get a replacement? Or call +1 (715) 205-7177.",Priya,,
+TCK-20196,2025-06-25T06:55:00-04:00,ORD-100463,fatima.garcia18@icloud.com,Phone call,Medium,Pending,Where is my order?,"Hi, my order ORD-100463 hasn't arrived yet. Could you check the status?",Tomás,,
+TCK-20197,2025-05-22T13:36:00-04:00,ORD100384,liam.dubois78@proton.me,Chat,P4,Pending,Refund not received,"Liam here. Still waiting on the refund for ORD100384, it's been two weeks.",Grace,-,
+TCK-20198,2025-04-24T02:13:00-04:00,ORD100181,sofia.kowalski69@gmail.com,chat,Urgent,OPEN,Cancel my order,"Please cancel ORD100181, I ordered twice by mistake.",Grace,,
+TCK-20199,2025-04-30T17:51:00Z,100179,hannah.taylor31@yahoo.com,Web,P4,OPEN,Damaged item on arrival,"The sleeping bag arrived with a broken zip, can I get a replacement?",Elena,,
+TCK-20200,2025-04-15T14:52:00Z,100149,ahmed.kowalski5@outlook.com,Web,P2,Resolved,Discount code not working,"The code ""TRAIL20"" says it's expired but your email said it runs until July.",Priya,2025-04-15T18:52:00Z,4
+TCK-20201,2025-05-03T17:19:00Z,100039,BJORN.JOHNSON82@PROTON.ME,EMAIL,P1,resolved,Refund not received,"Still waiting on the refund for 100039, it's been two weeks.",Tomás,2025-05-05T01:19:00Z,3
+TCK-20202,2025-05-02T17:08:00Z,,bjorn.rossi10@icloud.com,Phone,urgent,OPEN,Wrong size delivered,"I ordered a medium but got a large, how do I swap it?",Priya,,
+TCK-20203,2025-06-01T13:24:00-04:00,100473,LUCAS.TAYLOR1@GMAIL.COM,WEB,P4,Pending,Cancel my order,"Please cancel 100473, I ordered twice by mistake.",Kenji,,
+TCK-20204,2025-04-18 11:33:00,-,fatima.muller69@gmail.com,WEB,Urgent,Pending,Cancel my order,"Please cancel my last order, I ordered twice by mistake.",Marcus,-,
+TCK-20205,2025-05-11 08:05:00,ORD-100004,ethan.oneil82@proton.me,Phone call,normal,Open,Cancel my order,"Please cancel ORD-100004, I ordered twice by mistake.",Kenji,,
+TCK-20206,2025-06-27T14:04:00+01:00,ORD-100482,noah.oneil86@yahoo.com,EMAIL,low,Resolved,Damaged item on arrival,"The trekking poles arrived with a broken zip, can I get a replacement?",Tomás,2025-06-30T04:04:00Z,4
+TCK-20207,2025-06-04T02:16:00Z,#100086,jose.muller88@proton.me,Chat,Low,Pending,Where is my order?,"Hi, my order #100086 hasn't arrived yet. Could you check the status?",Kenji,,
+TCK-20208,2025-05-17T08:54:00+05:30,,fatima.taylor74@outlook.com,Phone call,Urgent,Open,Refund not received,"Still waiting on the refund for my last order, it's been two weeks. Or call +1 (595) 387-3525.",Tomás,-,
+TCK-20209,2025-05-14 02:26:00,ORD-100261,maria.khan36@outlook.com,Phone call,P4,Open,Where is my order?,"Hi, my order ORD-100261 hasn't arrived yet. Could you check the status? You can reach me at maria.khan36@outlook.com.",Kenji,,
+TCK-20210,2025-04-14 01:00:00,#100239,ethan.oneil82@proton.me,chat,P3,RESOLVED,Where is my order?,"Ethan here. Hi, my order #100239 hasn't arrived yet. Could you check the status? You can reach me at ethan.oneil82@proton.me.",Kenji,2025-04-17T09:00:00Z,3/5
+TCK-20211,2025-06-06T13:19:00+05:00,ORD-100196,emma.khan91@icloud.com,Web,Urgent,Closed,Question about tent setup,How do I pitch the tent in wind? The guide isn't clear. Or call +1 (783) 813-4128.,Elena,2025-06-10T20:19:00Z,1
+TCK-20212,2025-06-09T09:13:00Z,100235,zoe.andersson26@gmail.com,EMAIL,urgent,RESOLVED,Missing item in package,The box for 100235 was missing the rain jacket. Or call +1 (585) 763-9235.,Marcus,2025-06-12T19:13:00Z,5
+TCK-20213,2025-06-25T15:30:00Z,100254,aisha.brown6@proton.me,Email,low,RESOLVED,Cancel my order,"Please cancel 100254, I ordered twice by mistake. You can reach me at aisha.brown6@proton.me.",Marcus,2025-06-30T05:30:00Z,3
+TCK-20214,2025-05-21T06:00:00Z,100475,ravi.ali4@yahoo.com,web form,Normal,Open,Missing item in package,The box for 100475 was missing the sleeping bag.,Marcus,,
+TCK-20215,2025-05-26T09:10:00+05:00,ORD100225,liam.nguyen41@yahoo.com,WEB,HIGH,Pending,Change delivery address,"Please send ORD100225 to my work address instead, thanks!",Grace,,
+TCK-20216,2025-05-04T22:19:00-04:00,100259,bjorn.lee33@yahoo.com,Live Chat,P3,Pending,Wrong size delivered,"I ordered a medium but got a large, how do I swap it?",Tomás,-,
+TCK-20217,2025-05-15T19:11:00Z,ORD-100027,fatima.dubois25@proton.me,Live Chat,Urgent,Pending,Cancel my order,"Fatima here. Please cancel ORD-100027, I ordered twice by mistake.",Tomás,,
+TCK-20218,2025-04-26T22:03:00Z,ORD-100174,liam.nguyen41@yahoo.com,EMAIL,Urgent,OPEN,Cancel my order,"Please cancel ORD-100174, I ordered twice by mistake. You can reach me at liam.nguyen41@yahoo.com.",Marcus,-,
+TCK-20219,2025-05-22 13:02:00,ORD-100300,chen.brown70@yahoo.com,Chat,Urgent,open,Damaged item on arrival,"The tent arrived with a broken zip, can I get a replacement?",Grace,-,
+TCK-20220,2025-05-07T08:05:00Z,ORD100287,mateo.lee90@proton.me,Phone,P1,Pending,Where is my order?,"Hi, my order ORD100287 hasn't arrived yet. Could you check the status?",Priya,-,
+TCK-20221,2025-05-03T11:02:00Z,,lucas.taylor93@yahoo.com,Live Chat,Urgent,Resolved,Wrong size delivered,"Lucas here. I ordered a medium but got a large, how do I swap it?",Kenji,2025-05-08T08:02:00Z,4/5
+TCK-20222,2025-05-28T23:43:00Z,ORD-100096,sofia.andersson34@gmail.com,Chat,HIGH,open,Warranty claim,My sleeping bag stopped working after a month - is that covered? Or call +1 (824) 536-5854.,Elena,-,
+TCK-20223,2025-06-11T21:55:00Z,ORD100316,jose.lee92@gmail.com,Web,High,Open,Where is my order?,"Hi, my order ORD100316 hasn't arrived yet. Could you check the status? Or call +1 (383) 431-5462.",Elena,,
+TCK-20224,2025-06-28T03:11:00+05:00,ORD-100219,chen.silva57@outlook.com,email,P4,Open,Warranty claim,My stove stopped working after a month - is that covered?,Marcus,,
+TCK-20225,2025-05-03 03:57:00,ORD-100059,ethan.oneil82@proton.me,chat,Low,Open,Where is my order?,"Ethan here. Hi, my order ORD-100059 hasn't arrived yet. Could you check the status?",Grace,,
+TCK-20226,2025-06-03T00:58:00Z,-,hannah.johnson43@proton.me,Phone,normal,open,Where is my order?,"Hi, my order my last order hasn't arrived yet. Could you check the status?",Tomás,,
+TCK-20227,2025-04-20T00:17:00Z,ORD100255,sofia.wang18@outlook.com,EMAIL,Low,OPEN,Warranty claim,My stove stopped working after a month - is that covered?,Grace,,
+TCK-20228,2025-06-19 09:04:00,ORD100436,olivia.rossi99@outlook.com,email,P1,pending,Warranty claim,My stove stopped working after a month - is that covered?,Kenji,-,
+TCK-20229,2025-04-07 01:07:00,ORD-100315,chloe.rossi88@icloud.com,Live Chat,P2,closed,Discount code not working,"The code ""TRAIL20"" says it's expired but your email said it runs until July.",Elena,2025-04-07T14:07:00Z,5
+TCK-20230,2025-05-22T23:25:00+01:00,,zoe.dubois12@gmail.com,phone,urgent,Open,Change delivery address,"Zoë here. Please send my last order to my work address instead, thanks!",Grace,-,
+TCK-20231,2025-04-14T11:29:00Z,ORD100032,liam.wang27@outlook.com,WEB,High,open,Warranty claim,My headlamp stopped working after a month - is that covered? Or call +1 (361) 489-2560.,Grace,,
+TCK-20232,2025-04-09 07:26:00,,ravi.kowalski99@gmail.com,Chat,HIGH,open,Damaged item on arrival,"The trekking poles arrived with a broken zip, can I get a replacement?",Kenji,,
+TCK-20233,2025-06-16T22:23:00-04:00,ORD-100071,emma.ali58@yahoo.com,web form,P3,pending,Damaged item on arrival,"Emma here. The headlamp arrived with a broken zip, can I get a replacement?",Kenji,-,
+TCK-20234,2025-06-30T07:38:00-04:00,,AHMED.SILVA18@ICLOUD.COM,Phone,low,Pending,Change delivery address,"Please send my last order to my work address instead, thanks!",Marcus,,
+TCK-20235,2025-05-02T19:02:00Z,ORD100225,ethan.garcia87@yahoo.com,WEB,Normal,Pending,Damaged item on arrival,"The trekking poles arrived with a broken zip, can I get a replacement?",Elena,,
+TCK-20236,2025-05-02T12:16:00+05:00,ORD-100438,fatima.smith83@outlook.com,WEB,P1,open,Where is my order?,"Hi, my order ORD-100438 hasn't arrived yet. Could you check the status?",Priya,,
+TCK-20237,2025-04-03 11:43:00,ORD-100168,jose.muller88@proton.me,web form,High,pending,Wrong size delivered,"I ordered a medium but got a large, how do I swap it? Or call +1 (392) 658-9337.",Marcus,,
+TCK-20238,2025-06-30T12:40:00Z,ORD-100394,ravi.garcia14@gmail.com,WEB,Urgent,closed,Missing item in package,The box for ORD-100394 was missing the headlamp.,Marcus,2025-06-30T18:40:00Z,5
+TCK-20239,2025-06-21T04:35:00Z,ORD100408,hannah.wang38@icloud.com,EMAIL,normal,RESOLVED,Missing item in package,The box for ORD100408 was missing the stove. You can reach me at hannah.wang38@icloud.com.,Priya,2025-06-23T07:35:00Z,4
+TCK-20240,2025-06-06T07:20:00Z,-,emma.dubois60@icloud.com,Phone call,P2,Pending,Damaged item on arrival,"Emma here. The stove arrived with a broken zip, can I get a replacement?",Tomás,-,
+TCK-20241,2025-06-08T00:27:00+05:30,ORD100131,chloe.ali66@proton.me,Chat,High,Closed,Wrong size delivered,"I ordered a medium but got a large, how do I swap it?",Tomás,2025-06-11T15:57:00Z,5
+TCK-20242,2025-04-29T11:43:00Z,#100116,RAVI.KOWALSKI99@GMAIL.COM,WEB,Medium,open,Damaged item on arrival,"The headlamp arrived with a broken zip, can I get a replacement?",Tomás,,
+TCK-20243,2025-06-05T18:50:00Z,#100388,ahmed.silva18@icloud.com,phone,High,Open,Missing item in package,The box for #100388 was missing the trekking poles.,Elena,-,
+TCK-20244,2025-06-07 02:20:00,ORD-100032,bjorn.garcia98@outlook.com,Web,P1,open,Cancel my order,"Please cancel ORD-100032, I ordered twice by mistake.",Tomás,,
+TCK-20245,2025-04-05T10:48:00Z,ORD-100410,olivia.brown78@gmail.com,Phone call,urgent,Open,Change delivery address,"Please send ORD-100410 to my work address instead, thanks! You can reach me at olivia.brown78@gmail.com.",Priya,,
+TCK-20246,2025-04-05T20:44:00+01:00,ORD-100126,noah.brown63@proton.me,email,Medium,Resolved,Warranty claim,My trekking poles stopped working after a month - is that covered? Or call +1 (546) 983-8521.,Elena,2025-04-10T06:44:00Z,3
+TCK-20247,2025-06-29T13:56:00Z,-,sofia.brown50@gmail.com,Chat,P4,Pending,Change delivery address,"Please send my last order to my work address instead, thanks! Or call +1 (517) 749-6249.",Kenji,,
+TCK-20248,2025-04-24 11:46:00,,olivia.khan46@yahoo.com,Web,High,Closed,Change delivery address,"Please send my last order to my work address instead, thanks!",Grace,2025-04-27T23:46:00Z,1/5
+TCK-20249,2025-06-29T15:51:00+01:00,ORD100366,bjorn.nguyen4@gmail.com,Phone,Normal,Pending,Discount code not working,"The code ""TRAIL20"" says it's expired but your email said it runs until July.",Grace,,
+TCK-20250,2025-05-31T21:04:00Z,ORD100393,ZOE.MULLER36@ICLOUD.COM,email,P4,Open,Missing item in package,Zoë here. The box for ORD100393 was missing the tent. Or call +1 (376) 975-6107.,Marcus,-,
+TCK-20251,2025-05-21T06:16:00Z,100008,chloe.silva95@gmail.com,Phone,P3,RESOLVED,Change delivery address,"Please send 100008 to my work address instead, thanks!",Kenji,2025-05-21T11:16:00Z,4
+TCK-20252,2025-05-23T01:07:00Z,100334,aisha.brown6@proton.me,Phone call,P4,closed,Missing item in package,Aisha here. The box for 100334 was missing the tent.,Elena,2025-05-26T11:07:00Z,4
+TCK-20253,2025-04-12T14:59:00+05:00,100059,hannah.taylor31@yahoo.com,phone,low,closed,Change delivery address,"Please send 100059 to my work address instead, thanks!",Marcus,2025-04-13T10:59:00Z,3/5
+TCK-20254,2025-04-16T00:04:00+01:00,ORD-100082,sofia.ali48@gmail.com,Phone,P1,Pending,Damaged item on arrival,"The stove arrived with a broken zip, can I get a replacement?",Priya,,
+TCK-20255,2025-06-23T03:26:00+05:00,,ethan.muller54@outlook.com,phone,Low,pending,Missing item in package,The box for my last order was missing the sleeping bag. You can reach me at ethan.muller54@outlook.com. Or call +1 (529) 348-5250.,Elena,,
+TCK-20256,2025-05-05T09:14:00Z,100061,noah.rossi32@proton.me,Live Chat,low,closed,Damaged item on arrival,"The stove arrived with a broken zip, can I get a replacement?",Tomás,2025-05-09T02:14:00Z,4 stars
+TCK-20257,2025-06-15T07:19:00Z,ORD-100225,maria.smith35@yahoo.com,Phone,Low,resolved,Wrong size delivered,"I ordered a medium but got a large, how do I swap it?",Kenji,2025-06-19T19:19:00Z,5
+TCK-20258,2025-06-18T12:12:00+05:30,100299,fatima.patel27@outlook.com,chat,Normal,Pending,Discount code not working,"Fatima here. The code ""TRAIL20"" says it's expired but your email said it runs until July.",Elena,,
+TCK-20259,2025-05-15T11:48:00Z,ORD-100246,fatima.taylor74@outlook.com,email,Medium,RESOLVED,Question about tent setup,How do I pitch the tent in wind? The guide isn't clear.,Elena,2025-05-18T15:48:00Z,1
+TCK-20260,2025-04-23 18:21:00,N/A,olivia.novak73@outlook.com,EMAIL,P4,Resolved,Question about tent setup,How do I pitch the tent in wind? The guide isn't clear.,Grace,2025-04-26T11:21:00Z,
+TCK-20261,2025-04-30T05:07:00-04:00,ORD-100303,hannah.johnson48@outlook.com,Email,Medium,pending,Question about tent setup,How do I pitch the tent in wind? The guide isn't clear.,Tomás,-,
+TCK-20262,2025-06-01T10:30:00Z,ORD-100227,james.khan40@outlook.com,WEB,Normal,pending,Missing item in package,The box for ORD-100227 was missing the headlamp.,Grace,-,
+TCK-20263,2025-05-07 12:13:00,ORD-100246,OLIVIA.KHAN46@YAHOO.COM,email,Normal,closed,Wrong size delivered,"I ordered a medium but got a large, how do I swap it?",Grace,2025-05-11T14:13:00Z,5
+TCK-20264,2025-05-19T21:04:00+05:30,ORD100402,liam.nguyen41@yahoo.com,EMAIL,urgent,Closed,Wrong size delivered,"I ordered a medium but got a large, how do I swap it?",Grace,2025-05-23T21:34:00Z,4
+TCK-20265,2025-04-17T09:43:00+05:30,ORD100424,james.khan40@outlook.com,chat,P4,Open,Where is my order?,"Hi, my order ORD100424 hasn't arrived yet. Could you check the status? You can reach me at james.khan40@outlook.com.",Grace,,
+TCK-20266,2025-05-16 17:52:00,100129,ethan.novak90@proton.me,Web,P4,Resolved,Discount code not working,"The code ""TRAIL20"" says it's expired but your email said it runs until July. You can reach me at ethan.novak90@proton.me.",Kenji,2025-05-20T11:52:00Z,N/A
+TCK-20267,2025-04-22 01:11:00,100430,sofia.dubois81@gmail.com,Phone call,Medium,Open,Discount code not working,"The code ""TRAIL20"" says it's expired but your email said it runs until July.",Elena,,
+TCK-20268,2025-06-19T23:19:00Z,ORD-100266,maria.smith35@yahoo.com,WEB,Urgent,open,Damaged item on arrival,"The stove arrived with a broken zip, can I get a replacement?",Marcus,-,
+TCK-20269,2025-04-28 13:00:00,,MARIA.TAYLOR40@GMAIL.COM,web form,P4,pending,Discount code not working,"The code ""TRAIL20"" says it's expired but your email said it runs until July.",Tomás,,
+TCK-20270,2025-05-06 09:06:00,ORD-100017,lucas.taylor93@yahoo.com,Web,HIGH,RESOLVED,Damaged item on arrival,"The headlamp arrived with a broken zip, can I get a replacement?",Marcus,2025-05-07T16:06:00Z,
+TCK-20271,2025-06-26T10:19:00+05:30,ORD-100053,bjorn.kowalski3@icloud.com,Live Chat,High,OPEN,Change delivery address,"Please send ORD-100053 to my work address instead, thanks! Or call +1 (848) 623-9672.",Kenji,,
+TCK-20272,2025-04-27T20:33:00Z,ORD100475,AISHA.DUBOIS13@ICLOUD.COM,Phone,High,pending,Discount code not working,"The code ""TRAIL20"" says it's expired but your email said it runs until July. You can reach me at aisha.dubois13@icloud.com. Or call +1 (631) 756-3064.",Kenji,-,
+TCK-20273,2025-05-03T05:56:00+01:00,100118,liam.dubois78@proton.me,Chat,Normal,RESOLVED,Refund not received,"Liam here. Still waiting on the refund for 100118, it's been two weeks.",Elena,2025-05-04T16:56:00Z,4
+TCK-20274,2025-05-30T00:19:00Z,100006,CHLOE.NGUYEN44@ICLOUD.COM,EMAIL,HIGH,Pending,Discount code not working,"The code ""TRAIL20"" says it's expired but your email said it runs until July.",Kenji,,
+TCK-20275,2025-06-10 00:06:00,ORD-100052,chloe.ali66@proton.me,email,P4,Resolved,Discount code not working,"The code ""TRAIL20"" says it's expired but your email said it runs until July.",Elena,2025-06-12T08:06:00Z,5
+TCK-20276,2025-05-01T14:30:00Z,ORD100289,fatima.nguyen3@icloud.com,Phone call,Urgent,Pending,Damaged item on arrival,"The headlamp arrived with a broken zip, can I get a replacement? Or call +1 (265) 795-9959.",Priya,-,
+TCK-20277,2025-04-29 20:31:00,ORD-100391,fatima.wang66@proton.me,Live Chat,P1,open,Refund not received,"Still waiting on the refund for ORD-100391, it's been two weeks.",Priya,,
+TCK-20278,2025-05-20T03:36:00Z,ORD-100037,zoe.patel29@icloud.com,web form,low,Resolved,Damaged item on arrival,"The stove arrived with a broken zip, can I get a replacement?",Grace,2025-05-24T07:36:00Z,5
+TCK-20279,2025-04-07T12:00:00Z,#100005,hannah.taylor31@yahoo.com,Email,P2,pending,Warranty claim,My sleeping bag stopped working after a month - is that covered?,Grace,,
+TCK-20280,2025-06-13 07:58:00,#100007,emma.ali58@yahoo.com,EMAIL,P1,RESOLVED,Discount code not working,"The code ""TRAIL20"" says it's expired but your email said it runs until July.",Priya,2025-06-17T03:58:00Z,3/5
+TCK-20281,2025-06-12T15:24:00Z,100210,fatima.johnson76@gmail.com,Chat,High,Pending,Wrong size delivered,"Fatima here. I ordered a medium but got a large, how do I swap it?",Priya,,
+TCK-20282,2025-05-26T17:08:00+01:00,ORD100405,noah.brown63@proton.me,Web,Low,open,Wrong size delivered,"I ordered a medium but got a large, how do I swap it?",Kenji,,
+TCK-20283,2025-05-21T06:37:00+05:30,ORD-100418,emma.khan4@outlook.com,email,High,Open,Question about tent setup,How do I pitch the tent in wind? The guide isn't clear. You can reach me at emma.khan4@outlook.com.,Tomás,,
+TCK-20284,2025-06-15T13:36:00Z,ORD100079,fatima.khan13@outlook.com,EMAIL,HIGH,closed,Discount code not working,"The code ""TRAIL20"" says it's expired but your email said it runs until July.",Elena,2025-06-17T18:36:00Z,5 stars
+TCK-20285,2025-05-09T14:56:00Z,100145,james.oneil31@outlook.com,Live Chat,HIGH,pending,Missing item in package,The box for 100145 was missing the tent.,Elena,,
+TCK-20286,2025-06-08 03:50:00,100067,bjorn.kowalski67@proton.me,WEB,Urgent,Pending,Damaged item on arrival,"The tent arrived with a broken zip, can I get a replacement?",Tomás,,
+TCK-20287,2025-04-30 11:01:00,ORD100186,ethan.dubois58@proton.me,Chat,High,OPEN,Damaged item on arrival,"The trekking poles arrived with a broken zip, can I get a replacement? You can reach me at ethan.dubois58@proton.me.",Marcus,,
+TCK-20288,2025-06-24T16:45:00Z,#100320,fatima.ali88@yahoo.com,Email,P4,resolved,Where is my order?,"Hi, my order #100320 hasn't arrived yet. Could you check the status?",Marcus,2025-06-24T22:45:00Z,3 stars
+TCK-20289,2025-05-07T21:57:00+01:00,,emma.andersson42@outlook.com,phone,P3,resolved,Damaged item on arrival,"The headlamp arrived with a broken zip, can I get a replacement? You can reach me at emma.andersson42@outlook.com.",Priya,2025-05-12T16:57:00Z,4
+TCK-20290,2025-06-25T03:35:00Z,ORD100192,jose.khan89@outlook.com,email,High,resolved,Missing item in package,The box for ORD100192 was missing the tent.,Elena,2025-06-27T02:35:00Z,3
+TCK-20291,2025-06-05T22:41:00+01:00,100340,emma.kowalski61@proton.me,Email,Low,resolved,Cancel my order,"Please cancel 100340, I ordered twice by mistake.",Marcus,2025-06-09T22:41:00Z,5
+TCK-20292,2025-06-20T19:23:00Z,100419,chen.oneil33@yahoo.com,Email,normal,Pending,Damaged item on arrival,"The tent arrived with a broken zip, can I get a replacement?",Priya,,
+TCK-20293,2025-04-04 17:54:00,ORD-100120,ahmed.nguyen41@outlook.com,Live Chat,P1,Closed,Refund not received,"Still waiting on the refund for ORD-100120, it's been two weeks.",Priya,2025-04-07T12:54:00Z,N/A
+TCK-20294,2025-06-23 03:32:00,ORD-100021,chen.silva57@outlook.com,Phone,P4,Pending,Wrong size delivered,"I ordered a medium but got a large, how do I swap it?",Elena,-,
+TCK-20295,2025-04-06 11:25:00,,hannah.brown12@icloud.com,Web,Medium,Open,Change delivery address,"Please send my last order to my work address instead, thanks!",Grace,-,
+TCK-20296,2025-06-07T02:39:00Z,ORD-100291,sofia.rossi7@icloud.com,Chat,low,OPEN,Warranty claim,My stove stopped working after a month - is that covered?,Kenji,,
+TCK-20297,2025-04-16T04:46:00Z,ORD100224,ethan.garcia87@yahoo.com,chat,High,Closed,Damaged item on arrival,"The headlamp arrived with a broken zip, can I get a replacement?",Elena,2025-04-19T20:46:00Z,4
+TCK-20298,2025-06-01T02:08:00Z,-,james.oneil31@outlook.com,phone,low,Open,Refund not received,"James here. Still waiting on the refund for my last order, it's been two weeks.",Elena,,
+TCK-20299,2025-05-13T06:48:00-04:00,,chloe.ali79@gmail.com,Chat,normal,pending,Wrong size delivered,"I ordered a medium but got a large, how do I swap it?",Marcus,,
+TCK-20300,2025-04-07T08:39:00Z,ORD-100102,bjorn.novak44@yahoo.com,web form,P2,RESOLVED,Where is my order?,"Hi, my order ORD-100102 hasn't arrived yet. Could you check the status?",Priya,2025-04-11T09:39:00Z,2 stars
+TCK-20301,2025-05-29T08:16:00+05:00,N/A,ravi.dubois7@yahoo.com,web form,P1,resolved,Discount code not working,"The code ""TRAIL20"" says it's expired but your email said it runs until July.",Tomás,2025-05-29T09:16:00Z,3/5
+TCK-20302,2025-06-06 19:43:00,#100255,sofia.ali48@gmail.com,Phone,High,Resolved,Wrong size delivered,"I ordered a medium but got a large, how do I swap it?",Elena,2025-06-11T03:43:00Z,5
+TCK-20303,2025-06-30T03:44:00Z,ORD-100440,fatima.dubois25@proton.me,Phone,urgent,pending,Wrong size delivered,"Fatima here. I ordered a medium but got a large, how do I swap it?",Kenji,,
+TCK-20304,2025-05-03T07:46:00Z,ORD100133,lucas.johnson87@proton.me,web form,P4,Open,Refund not received,"Still waiting on the refund for ORD100133, it's been two weeks. Or call +1 (407) 730-3778.",Priya,-,
+TCK-20305,2025-06-16T17:48:00Z,100139,maria.johnson74@outlook.com,WEB,High,Closed,Where is my order?,"Hi, my order 100139 hasn't arrived yet. Could you check the status?",Elena,2025-06-20T13:48:00Z,2
+TCK-20306,2025-05-10T17:34:00Z,100476,liam.dubois27@outlook.com,web form,Medium,pending,Cancel my order,"Please cancel 100476, I ordered twice by mistake.",Marcus,,
+TCK-20307,2025-05-10 20:54:00,ORD-100074,ravi.garcia14@gmail.com,Live Chat,Low,pending,Where is my order?,"Hi, my order ORD-100074 hasn't arrived yet. Could you check the status?",Priya,-,
+TCK-20308,2025-04-23T11:05:00Z,ORD-100391,lucas.lee11@yahoo.com,Live Chat,P2,Closed,Wrong size delivered,"I ordered a medium but got a large, how do I swap it?",Priya,2025-04-25T01:05:00Z,1
+TCK-20309,2025-04-02 11:50:00,N/A,CHLOE.NGUYEN44@ICLOUD.COM,Chat,P3,Closed,Change delivery address,"Please send my last order to my work address instead, thanks!",Marcus,2025-04-06T07:50:00Z,5/5
+TCK-20310,2025-04-10T23:20:00Z,N/A,ethan.novak90@proton.me,phone,P2,open,Change delivery address,"Please send my last order to my work address instead, thanks!",Marcus,-,
+TCK-20311,2025-04-14T04:08:00Z,ORD-100257,EMMA.KOWALSKI80@GMAIL.COM,chat,low,Resolved,Damaged item on arrival,"The tent arrived with a broken zip, can I get a replacement? You can reach me at emma.kowalski80@gmail.com.",Elena,2025-04-17T18:08:00Z,3
+TCK-20312,2025-04-13T14:48:00+05:30,N/A,fatima.muller69@gmail.com,web form,low,Pending,Missing item in package,The box for my last order was missing the trekking poles.,Priya,-,
+TCK-20313,2025-05-27T11:02:00+05:00,100243,fatima.patel27@outlook.com,Phone call,HIGH,pending,Refund not received,"Still waiting on the refund for 100243, it's been two weeks.",Marcus,,
+TCK-20314,2025-05-01 12:09:00,ORD-100286,hannah.taylor31@yahoo.com,Phone,low,open,Wrong size delivered,"Hannah here. I ordered a medium but got a large, how do I swap it?",Marcus,,
+TCK-20315,2025-05-08T15:12:00Z,ORD-100107,SOFIA.MULLER53@ICLOUD.COM,phone,urgent,Resolved,Missing item in package,The box for ORD-100107 was missing the rain jacket.,Elena,2025-05-09T08:12:00Z,4
+TCK-20316,2025-06-06T09:03:00Z,ORD-100144,aisha.kowalski94@yahoo.com,Chat,P1,OPEN,Damaged item on arrival,"The stove arrived with a broken zip, can I get a replacement? You can reach me at aisha.kowalski94@yahoo.com. Or call +1 (597) 952-8499.",Kenji,,
+TCK-20317,2025-06-11T09:29:00Z,ORD-100205,fatima.muller69@gmail.com,Chat,Urgent,Open,Missing item in package,Fatima here. The box for ORD-100205 was missing the sleeping bag. Or call +1 (598) 727-9152.,Priya,-,
+TCK-20318,2025-05-29T11:17:00+01:00,ORD-100313,jose.muller88@proton.me,Phone call,normal,pending,Refund not received,"Still waiting on the refund for ORD-100313, it's been two weeks.",Tomás,,
+TCK-20319,2025-04-12T23:23:00Z,ORD100158,lucas.johnson70@proton.me,phone,P1,Pending,Cancel my order,"Please cancel ORD100158, I ordered twice by mistake.",Tomás,,
+TCK-20320,2025-06-13 23:28:00,-,emma.silva32@proton.me,email,High,OPEN,Cancel my order,"Please cancel my last order, I ordered twice by mistake.",Grace,,
+TCK-20321,2025-05-20 00:48:00,100355,james.nguyen77@gmail.com,Live Chat,Medium,closed,Warranty claim,James here. My trekking poles stopped working after a month - is that covered?,Tomás,2025-05-24T04:48:00Z,5/5
+TCK-20322,2025-05-17 01:36:00,ORD-100318,zoe.andersson26@gmail.com,web form,Medium,Pending,Change delivery address,"Zoë here. Please send ORD-100318 to my work address instead, thanks!",Priya,,
+TCK-20323,2025-06-09T06:19:00+05:30,100008,lucas.lee98@outlook.com,phone,P1,RESOLVED,Damaged item on arrival,"The tent arrived with a broken zip, can I get a replacement?",Grace,2025-06-10T17:49:00Z,5
+TCK-20324,2025-05-11T19:34:00Z,,lucas.smith29@proton.me,Phone,Low,Closed,Wrong size delivered,"I ordered a medium but got a large, how do I swap it?",Marcus,2025-05-14T01:34:00Z,5 stars
+TCK-20325,2025-05-21T04:51:00Z,,ahmed.nguyen41@outlook.com,WEB,P3,OPEN,Where is my order?,"Ahmed here. Hi, my order my last order hasn't arrived yet. Could you check the status? You can reach me at ahmed.nguyen41@outlook.com.",Marcus,,
+TCK-20326,2025-05-03 05:46:00,ORD-100257,sofia.brown50@gmail.com,EMAIL,Urgent,pending,Change delivery address,"Please send ORD-100257 to my work address instead, thanks!",Kenji,-,
+TCK-20327,2025-05-11T00:28:00Z,ORD-100256,hannah.taylor31@yahoo.com,WEB,Low,closed,Where is my order?,"Hi, my order ORD-100256 hasn't arrived yet. Could you check the status?",Grace,2025-05-13T02:28:00Z,5
+TCK-20328,2025-04-29T21:26:00+01:00,ORD-100112,AISHA.ROSSI26@ICLOUD.COM,Phone call,Medium,Pending,Damaged item on arrival,"The tent arrived with a broken zip, can I get a replacement?",Grace,,
+TCK-20329,2025-06-26T05:48:00Z,100234,MARIA.PATEL14@OUTLOOK.COM,Phone,HIGH,closed,Discount code not working,"The code ""TRAIL20"" says it's expired but your email said it runs until July.",Elena,2025-06-29T21:48:00Z,5
+TCK-20330,2025-05-20 18:14:00,ORD-100018,ahmed.kowalski5@outlook.com,Email,urgent,Resolved,Warranty claim,My headlamp stopped working after a month - is that covered?,Elena,2025-05-21T19:14:00Z,5
+TCK-20331,2025-04-29T12:09:00+05:00,ORD100364,fatima.patel10@outlook.com,email,P1,resolved,Damaged item on arrival,"Fatima here. The stove arrived with a broken zip, can I get a replacement?",Tomás,2025-05-01T06:09:00Z,5
+TCK-20134,2025-06-12T20:43:00Z,ORD-100143,james.oneil31@outlook.com,WEB,Normal,open,Damaged item on arrival,"The stove arrived with a broken zip, can I get a replacement? You can reach me at james.oneil31@outlook.com.",Priya,,
+TCK-20332,2025-04-13T02:45:00+05:00,ORD-100155,ravi.taylor54@yahoo.com,chat,Medium,pending,Question about tent setup,How do I pitch the tent in wind? The guide isn't clear.,Priya,,
+TCK-20333,2025-05-07T18:53:00Z,ORD100155,zoe.khan47@gmail.com,chat,low,Pending,Wrong size delivered,"I ordered a medium but got a large, how do I swap it?",Tomás,,
+TCK-20334,2025-05-17 20:34:00,ORD-100029,fatima.johnson76@gmail.com,web form,normal,open,Cancel my order,"Please cancel ORD-100029, I ordered twice by mistake.",Grace,,
+TCK-20335,2025-04-24T13:30:00Z,ORD-100063,aisha.brown6@proton.me,email,HIGH,Closed,Question about tent setup,How do I pitch the tent in wind? The guide isn't clear.,Elena,2025-04-26T03:30:00Z,3/5
+TCK-20336,2025-04-20T23:57:00+05:00,ORD-100233,ethan.dubois58@proton.me,WEB,P3,pending,Damaged item on arrival,"Ethan here. The stove arrived with a broken zip, can I get a replacement?",Marcus,,
+TCK-20337,2025-04-03 16:09:00,-,sofia.kowalski97@outlook.com,Phone,Medium,Closed,Cancel my order,"Please cancel my last order, I ordered twice by mistake.",Priya,2025-04-07T16:09:00Z,1
+TCK-20338,2025-05-09T04:39:00+05:30,100071,noah.rossi32@proton.me,phone,urgent,closed,Refund not received,"Still waiting on the refund for 100071, it's been two weeks.",Priya,2025-05-12T16:09:00Z,3
+TCK-20339,2025-06-01T02:28:00Z,ORD100494,hannah.taylor31@yahoo.com,Email,Medium,Resolved,Cancel my order,"Please cancel ORD100494, I ordered twice by mistake.",Priya,2025-06-05T12:28:00Z,1/5
+TCK-20340,2025-06-14 01:02:00,,chen.taylor79@icloud.com,WEB,Normal,Open,Change delivery address,"Please send my last order to my work address instead, thanks!",Priya,,
+TCK-20341,2025-04-22T20:30:00Z,100067,ahmed.lee77@gmail.com,Live Chat,P4,RESOLVED,Missing item in package,The box for 100067 was missing the trekking poles.,Grace,2025-04-25T20:30:00Z,N/A
+TCK-20342,2025-04-05T17:07:00+05:30,ORD-100402,olivia.brown95@outlook.com,EMAIL,HIGH,Closed,Damaged item on arrival,"The stove arrived with a broken zip, can I get a replacement?",Kenji,2025-04-06T11:37:00Z,1
+TCK-20343,2025-04-13T09:34:00+05:00,ORD-100434,maria.taylor40@gmail.com,email,P4,Pending,Cancel my order,"Please cancel ORD-100434, I ordered twice by mistake.",Kenji,,
+TCK-20344,2025-05-29T20:59:00Z,100063,chloe.ali79@gmail.com,phone,High,open,Missing item in package,The box for 100063 was missing the headlamp.,Kenji,-,
+TCK-20345,2025-06-03T00:23:00+01:00,ORD-100354,chloe.ali66@proton.me,phone,P3,Open,Missing item in package,The box for ORD-100354 was missing the trekking poles.,Elena,,
+TCK-20346,2025-05-13T12:41:00Z,ORD100131,lucas.smith29@proton.me,Phone,low,resolved,Refund not received,"Still waiting on the refund for ORD100131, it's been two weeks.",Kenji,2025-05-18T02:41:00Z,4
+TCK-20347,2025-04-27T00:35:00Z,ORD-100326,zoe.patel57@proton.me,Web,P1,Pending,Cancel my order,"Please cancel ORD-100326, I ordered twice by mistake. You can reach me at zoe.patel57@proton.me.",Tomás,,
+TCK-20067,2025-04-07T04:01:00+05:30,ORD-100234,ethan.muller54@outlook.com,WEB,urgent,pending,Where is my order?,"Hi, my order ORD-100234 hasn't arrived yet. Could you check the status?",Tomás,,
+TCK-20348,2025-06-07 05:05:00,ORD-100074,bjorn.rossi70@proton.me,web form,High,pending,Change delivery address,"Please send ORD-100074 to my work address instead, thanks!",Elena,,
+TCK-20349,2025-04-24T11:21:00Z,100206,ahmed.kowalski5@outlook.com,Email,P3,Pending,Damaged item on arrival,"The stove arrived with a broken zip, can I get a replacement?",Marcus,,
+TCK-20350,2025-06-15T17:00:00+01:00,N/A,ravi.ali4@yahoo.com,web form,Urgent,pending,Cancel my order,"Please cancel my last order, I ordered twice by mistake.",Tomás,,
+TCK-20351,2025-06-06T14:55:00Z,N/A,olivia.dubois68@proton.me,Chat,P2,Pending,Discount code not working,"The code ""TRAIL20"" says it's expired but your email said it runs until July.",Marcus,,
+TCK-20352,2025-06-14 05:00:00,,chen.oneil33@yahoo.com,Phone,Medium,RESOLVED,Where is my order?,"Hi, my order my last order hasn't arrived yet. Could you check the status?",Tomás,2025-06-15T11:00:00Z,5
+TCK-20353,2025-04-16T16:10:00+01:00,ORD100149,hannah.wang38@icloud.com,Phone,Medium,OPEN,Change delivery address,"Please send ORD100149 to my work address instead, thanks!",Grace,,
+TCK-20354,2025-04-20 05:57:00,N/A,jose.muller88@proton.me,web form,urgent,open,Warranty claim,My stove stopped working after a month - is that covered?,Kenji,,
+TCK-20355,2025-06-18 01:13:00,#100465,olivia.dubois68@proton.me,web form,P4,OPEN,Question about tent setup,How do I pitch the tent in wind? The guide isn't clear. Or call +1 (481) 259-4893.,Elena,-,
+TCK-20356,2025-05-17T23:54:00Z,#100237,ahmed.nguyen41@outlook.com,EMAIL,P1,Open,Missing item in package,The box for #100237 was missing the trekking poles.,Elena,,
+TCK-20357,2025-04-20T06:38:00Z,-,olivia.brown95@outlook.com,Phone call,normal,Pending,Missing item in package,Olivia here. The box for my last order was missing the tent.,Tomás,,
+TCK-20358,2025-04-22 10:27:00,#100171,hannah.khan10@gmail.com,Chat,P2,resolved,Where is my order?,"Hi, my order #100171 hasn't arrived yet. Could you check the status?",Grace,2025-04-26T10:27:00Z,2/5
+TCK-20359,2025-06-22T04:43:00Z,ORD-100094,emma.rossi50@icloud.com,web form,High,Open,Question about tent setup,Emma here. How do I pitch the tent in wind? The guide isn't clear.,Elena,,
+TCK-20360,2025-05-05T05:10:00Z,-,sofia.brown50@gmail.com,email,urgent,Pending,Change delivery address,"Please send my last order to my work address instead, thanks! You can reach me at sofia.brown50@gmail.com.",Grace,,
+TCK-20361,2025-06-06 17:28:00,ORD-100282,FATIMA.BROWN77@ICLOUD.COM,Chat,Low,open,Where is my order?,"Hi, my order ORD-100282 hasn't arrived yet. Could you check the status?",Marcus,,
+TCK-20362,2025-06-02T17:11:00Z,ORD-100062,hannah.brown12@icloud.com,chat,Normal,Closed,Change delivery address,"Please send ORD-100062 to my work address instead, thanks!",Tomás,2025-06-05T09:11:00Z,
+TCK-20363,2025-04-03T11:34:00Z,ORD100324,lucas.brown79@outlook.com,Live Chat,P4,OPEN,Discount code not working,"Lucas here. The code ""TRAIL20"" says it's expired but your email said it runs until July.",Priya,-,
+TCK-20364,2025-05-13T14:03:00+01:00,ORD100141,jose.wang2@yahoo.com,Live Chat,Normal,Open,Cancel my order,"Please cancel ORD100141, I ordered twice by mistake.",Elena,,
+TCK-20365,2025-05-08T22:08:00+05:00,ORD-100131,ahmed.silva18@icloud.com,Chat,normal,closed,Change delivery address,"Please send ORD-100131 to my work address instead, thanks!",Elena,2025-05-09T09:08:00Z,1
+TCK-20366,2025-04-23 00:07:00,ORD100031,chen.taylor89@icloud.com,Live Chat,Urgent,open,Change delivery address,"Please send ORD100031 to my work address instead, thanks!",Tomás,-,
+TCK-20367,2025-04-22T18:14:00-04:00,-,mateo.hernandez37@icloud.com,chat,High,resolved,Wrong size delivered,"I ordered a medium but got a large, how do I swap it?",Marcus,2025-04-26T09:14:00Z,5
+TCK-20368,2025-06-10T17:46:00+05:30,#100111,sofia.dubois81@gmail.com,Live Chat,Low,closed,Wrong size delivered,"I ordered a medium but got a large, how do I swap it?",Elena,2025-06-10T21:16:00Z,3
+TCK-20369,2025-06-24T14:04:00Z,ORD-100353,ahmed.silva18@icloud.com,Web,P2,Resolved,Refund not received,"Ahmed here. Still waiting on the refund for ORD-100353, it's been two weeks.",Tomás,2025-06-29T00:04:00Z,5
+TCK-20370,2025-06-29T09:45:00Z,#100394,aisha.dubois13@icloud.com,web form,P1,OPEN,Damaged item on arrival,"The rain jacket arrived with a broken zip, can I get a replacement? You can reach me at aisha.dubois13@icloud.com.",Priya,,
+TCK-20371,2025-04-04 10:15:00,ORD-100300,emma.ali58@yahoo.com,WEB,P2,open,Where is my order?,"Hi, my order ORD-100300 hasn't arrived yet. Could you check the status?",Elena,,
+TCK-20372,2025-04-17T22:52:00-04:00,ORD-100080,ethan.wang95@outlook.com,Email,Normal,Pending,Question about tent setup,How do I pitch the tent in wind? The guide isn't clear. You can reach me at ethan.wang95@outlook.com.,Grace,-,
+TCK-20373,2025-06-27 00:15:00,ORD100460,maria.patel14@outlook.com,EMAIL,Low,Closed,Refund not received,"Still waiting on the refund for ORD100460, it's been two weeks.",Elena,2025-06-30T18:15:00Z,5
+TCK-20374,2025-04-29T22:38:00Z,ORD-100109,james.nguyen77@gmail.com,Live Chat,High,open,Refund not received,"Still waiting on the refund for ORD-100109, it's been two weeks.",Tomás,,
+TCK-20375,2025-04-26T14:06:00-04:00,ORD-100024,lucas.taylor93@yahoo.com,Web,Medium,Pending,Missing item in package,The box for ORD-100024 was missing the headlamp. You can reach me at lucas.taylor93@yahoo.com.,Marcus,,
+TCK-20376,2025-06-29T14:00:00Z,N/A,noah.brown63@proton.me,chat,Low,resolved,Damaged item on arrival,"The tent arrived with a broken zip, can I get a replacement?",Kenji,2025-07-04T07:00:00Z,4 stars
+TCK-20377,2025-06-30T16:19:00+05:00,,bjorn.kowalski3@icloud.com,web form,High,Pending,Wrong size delivered,"I ordered a medium but got a large, how do I swap it? You can reach me at bjorn.kowalski3@icloud.com. Or call +1 (848) 623-9672.",Priya,,
+TCK-20378,2025-05-04T02:26:00+01:00,ORD-100423,sofia.kowalski69@gmail.com,phone,urgent,open,Wrong size delivered,"I ordered a medium but got a large, how do I swap it?",Marcus,-,
+TCK-20379,2025-05-03 20:34:00,#100449,mateo.patel47@gmail.com,Phone call,HIGH,pending,Damaged item on arrival,"The trekking poles arrived with a broken zip, can I get a replacement?",Grace,-,
+TCK-20380,2025-04-02 07:51:00,ORD-100158,ahmed.nguyen41@outlook.com,Chat,P2,Resolved,Cancel my order,"Ahmed here. Please cancel ORD-100158, I ordered twice by mistake.",Grace,2025-04-06T18:51:00Z,4/5
+TCK-20180,2025-05-25 23:20:00,ORD100186,sofia.patel44@icloud.com,EMAIL,Urgent,Pending,Wrong size delivered,"I ordered a medium but got a large, how do I swap it?",Marcus,,
+TCK-20381,2025-06-10T00:55:00Z,ORD-100477,fatima.smith83@outlook.com,Phone,Medium,Pending,Refund not received,"Still waiting on the refund for ORD-100477, it's been two weeks. You can reach me at fatima.smith83@outlook.com.",Elena,,
+TCK-20382,2025-04-19T18:47:00Z,-,james.nguyen77@gmail.com,chat,P4,Open,Refund not received,"Still waiting on the refund for my last order, it's been two weeks.",Priya,,
+TCK-20383,2025-04-12T22:37:00Z,ORD100499,noah.rossi32@proton.me,web form,urgent,OPEN,Refund not received,"Still waiting on the refund for ORD100499, it's been two weeks.",Tomás,-,
+TCK-20384,2025-06-25 16:34:00,100139,aisha.brown6@proton.me,phone,Normal,pending,Damaged item on arrival,"The trekking poles arrived with a broken zip, can I get a replacement?",Priya,,
+TCK-20385,2025-04-06 13:18:00,#100487,ravi.kowalski99@gmail.com,Live Chat,low,Open,Discount code not working,"The code ""TRAIL20"" says it's expired but your email said it runs until July.",Priya,-,
+TCK-20386,2025-04-19T10:58:00-04:00,100280,chen.taylor79@icloud.com,chat,P4,open,Question about tent setup,How do I pitch the tent in wind? The guide isn't clear.,Kenji,,
+TCK-20387,2025-05-19 02:52:00,ORD-100468,ravi.dubois35@outlook.com,Email,HIGH,open,Cancel my order,"Please cancel ORD-100468, I ordered twice by mistake.",Priya,-,
+TCK-20388,2025-06-26T17:04:00-04:00,,emma.lee54@yahoo.com,EMAIL,HIGH,Open,Damaged item on arrival,"The tent arrived with a broken zip, can I get a replacement?",Tomás,,
+TCK-20389,2025-04-01T07:40:00+05:30,ORD-100141,RAVI.KOWALSKI99@GMAIL.COM,Web,P2,pending,Missing item in package,The box for ORD-100141 was missing the trekking poles.,Grace,-,
+TCK-20390,2025-04-25T21:54:00Z,,emma.khan91@icloud.com,Phone call,low,pending,Wrong size delivered,"I ordered a medium but got a large, how do I swap it?",Marcus,,
+TCK-20391,2025-06-30T14:50:00-04:00,ORD100482,james.taylor48@icloud.com,EMAIL,Medium,resolved,Question about tent setup,How do I pitch the tent in wind? The guide isn't clear.,Marcus,2025-07-01T08:50:00Z,5
+TCK-20392,2025-06-13T03:07:00Z,#100102,emma.khan4@outlook.com,Email,P2,open,Missing item in package,Emma here. The box for #100102 was missing the headlamp.,Priya,-,
+TCK-20393,2025-04-30T09:38:00Z,ORD-100295,ravi.garcia14@gmail.com,Email,low,Resolved,Discount code not working,"The code ""TRAIL20"" says it's expired but your email said it runs until July. You can reach me at ravi.garcia14@gmail.com.",Grace,2025-05-03T06:38:00Z,4
+TCK-20394,2025-05-14T04:03:00Z,ORD-100414,bjorn.johnson82@proton.me,email,Low,Resolved,Refund not received,"Still waiting on the refund for ORD-100414, it's been two weeks.",Grace,2025-05-16T14:03:00Z,5
+TCK-20395,2025-06-09T14:40:00+05:00,ORD-100439,emma.kowalski61@proton.me,WEB,P2,Resolved,Refund not received,"Still waiting on the refund for ORD-100439, it's been two weeks.",Grace,2025-06-13T04:40:00Z,5 stars
+TCK-20396,2025-06-06T21:08:00-04:00,100338,fatima.taylor74@outlook.com,chat,Medium,closed,Where is my order?,"Hi, my order 100338 hasn't arrived yet. Could you check the status? Or call +1 (595) 387-3525.",Marcus,2025-06-09T09:08:00Z,5
+TCK-20397,2025-04-23T11:49:00Z,100380,aisha.rossi26@icloud.com,email,HIGH,Open,Discount code not working,"The code ""TRAIL20"" says it's expired but your email said it runs until July.",Priya,-,
+TCK-20398,2025-05-18T03:27:00Z,100473,hannah.andersson96@gmail.com,EMAIL,Low,open,Missing item in package,The box for 100473 was missing the tent.,Marcus,-,
+TCK-20399,2025-05-02T18:41:00+01:00,ORD-100099,james.oneil31@outlook.com,phone,High,Pending,Damaged item on arrival,"The stove arrived with a broken zip, can I get a replacement? Or call +1 (248) 844-2889.",Priya,,
+TCK-20400,2025-04-29T23:05:00+05:30,,FATIMA.KHAN13@OUTLOOK.COM,Phone call,urgent,Pending,Damaged item on arrival,"The trekking poles arrived with a broken zip, can I get a replacement?",Elena,,

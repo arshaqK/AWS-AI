@@ -1,0 +1,100 @@
+{
+  "dataset": "inventory_snapshot.csv",
+  "description": "End-of-month inventory snapshot from Trailhead Outfitters' warehouse system (fictional)",
+  "seed": 7,
+  "primary_key": [
+    "sku",
+    "warehouse"
+  ],
+  "vendor_conventions": {
+    "timestamps": "all timestamps are UTC; numeric ones are Unix epoch seconds or milliseconds",
+    "slash_dates": "DD/MM/YYYY HH:MM",
+    "negative_on_hand": "a negative on_hand is a backorder (more sold than in stock) and is valid",
+    "weights": "1 lb = 0.45359237 kg, 1 oz = 0.028349523125 kg"
+  },
+  "counts": {
+    "negative_on_hand": 7,
+    "on_hand_with_thousands_separator": 27
+  },
+  "null_tokens": {
+    "on_hand": {
+      "<empty>": 2,
+      "-": 3,
+      "null": 1,
+      "N/A": 1
+    },
+    "reserved": {
+      "-": 4,
+      "<empty>": 2,
+      "N/A": 2
+    },
+    "weight": {
+      "N/A": 3,
+      "null": 3,
+      "-": 2,
+      "<empty>": 1
+    }
+  },
+  "weight_units": {
+    "g": 73,
+    "kg": 98,
+    "lb": 30,
+    "lbs": 16,
+    "oz": 13
+  },
+  "counted_at_formats": {
+    "DD/MM/YYYY HH:MM (UTC)": 14,
+    "ISO-8601 UTC (...Z)": 126,
+    "epoch milliseconds": 48,
+    "epoch seconds": 51
+  },
+  "tags_formats": {
+    "JSON list": 160,
+    "no tags ([])": 8,
+    "no tags (empty)": 5,
+    "semicolon list": 21,
+    "single value": 45
+  },
+  "is_active_raw_to_bool": {
+    "0": false,
+    "1": true,
+    "FALSE": false,
+    "N": false,
+    "No": false,
+    "TRUE": true,
+    "Y": true,
+    "Yes": true,
+    "false": false,
+    "no": false,
+    "true": true,
+    "yes": true
+  },
+  "rows_in_file": 243,
+  "unique_rows": 239,
+  "exact_duplicate_rows": 4,
+  "products": 74,
+  "columns": [
+    "snapshot_date",
+    "warehouse",
+    "sku",
+    "product_name",
+    "on_hand",
+    "reserved",
+    "weight",
+    "last_counted_at",
+    "tags",
+    "is_active"
+  ],
+  "pii_columns": [],
+  "expected_clean_output": {
+    "rows_after_dedup": 239,
+    "distinct_warehouses": 5,
+    "distinct_skus": 73,
+    "null_on_hand": 7,
+    "negative_on_hand": 7,
+    "null_weight_kg": 9,
+    "sum_weight_kg": "187.250",
+    "active_rows": 199,
+    "rows_without_tags": 13
+  }
+}
